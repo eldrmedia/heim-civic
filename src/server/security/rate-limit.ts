@@ -82,3 +82,14 @@ export function checkCorrectionRateLimit(
     now,
   );
 }
+
+export function checkWaitlistRateLimit(
+  request: Request,
+  now = Date.now(),
+): RateLimitResult {
+  return checkRateLimit(
+    request,
+    { namespace: "waitlist", windowMs: 60 * 60_000, requestLimit: 3 },
+    now,
+  );
+}

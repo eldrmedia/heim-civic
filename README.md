@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 7 private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, cross-record civic search, and evidence-based correction intake.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 8 private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, civic search, auditable correction workflow contracts, confirmed-opt-in waitlist intake, and public trust disclosures.
 
 ## Requirements
 
@@ -72,3 +72,12 @@ Read `AGENTS.md` before making changes. Exact representative-lookup addresses mu
 ## Correction intake
 
 Public corrections require a reviewed external case-management receiver. Set `CORRECTIONS_INTAKE_WEBHOOK_URL` and `CORRECTIONS_INTAKE_WEBHOOK_TOKEN` only in the server environment. Without both values, the form fails closed and tells the submitter that nothing was retained. The receiving-system contract and privacy controls are documented in `docs/phase-6-search-and-corrections.md`.
+
+## Confirmed-opt-in waitlist
+
+Waitlist requests require an approved confirmation receiver. Set
+`WAITLIST_INTAKE_WEBHOOK_URL` and `WAITLIST_INTAKE_WEBHOOK_TOKEN` only in the
+server environment. The application sends pending requests only and never
+claims confirmation. Confirmation, unsubscribe, retention, deletion,
+provider-limit, and recovery requirements are documented in
+`docs/phase-8-trust-operations.md`.

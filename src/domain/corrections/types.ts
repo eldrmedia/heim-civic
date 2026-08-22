@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import type { CorrectionAuditEvent } from "@/domain/corrections/workflow";
+
 export const correctionRecordTypes = [
   "official",
   "district",
@@ -47,7 +49,7 @@ export const correctionRequestSchema = z.object({
 export type CorrectionRequest = z.infer<typeof correctionRequestSchema>;
 
 export type CorrectionIntakeEnvelope = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   caseId: string;
   status: "received";
   submittedAt: string;
@@ -63,11 +65,7 @@ export type CorrectionIntakeEnvelope = {
     email: string;
     contactConsent: true;
   };
-  audit: Array<{
-    event: "received";
-    actor: "public-intake";
-    occurredAt: string;
-  }>;
+  audit: [CorrectionAuditEvent];
 };
 
 export type CorrectionResponse =

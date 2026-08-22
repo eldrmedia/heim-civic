@@ -90,14 +90,22 @@ describe("POST /api/corrections", () => {
     const [, init] = fetchMock.mock.calls[0] ?? [];
     const delivered = JSON.parse(String(init?.body));
     expect(delivered).toMatchObject({
-      schemaVersion: 1,
+      schemaVersion: 2,
       status: "received",
       record: {
         type: "official",
         reference: "/officials/us-congress-h001066",
       },
       reporter: { contactConsent: true },
-      audit: [{ event: "received", actor: "public-intake" }],
+      audit: [
+        {
+          sequence: 1,
+          event: "status-transition",
+          actor: "public-intake",
+          fromStatus: null,
+          toStatus: "received",
+        },
+      ],
     });
   });
 });

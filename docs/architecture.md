@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 7 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 8 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -87,6 +87,24 @@ Candidate-authorized committee activity is not combined with independent expendi
 Phase 6 builds a server-only search index from the accepted official, boundary, and pilot-legislation snapshots. Search is server-rendered, bounded to published records, and never includes address lookup values, correction reports, voter files, or inferred attributes.
 
 Correction intake uses a client form with a same-origin, validated, no-store route handler. The route applies a separate rate-limit policy, creates a case reference and initial immutable audit event, and forwards the envelope to a configured HTTPS case-management endpoint. The application does not claim receipt when delivery is unavailable and does not use the local filesystem as a production queue. See `docs/phase-6-search-and-corrections.md` for the receiving-system contract.
+
+Phase 8 adds a domain state machine for every correction lifecycle state and a
+sequenced material-change event requiring actor, time, reason, evidence,
+affected records, and before/after references. Durable enforcement remains the
+responsibility of the reviewed case receiver.
+
+## Waitlist and public trust disclosures
+
+The waitlist follows the same server-only delivery boundary as corrections. It
+accepts only email and affirmative consent as required fields, minimizes optional
+preferences, rate-limits abuse, and emits a pending-confirmation envelope. A
+receiver must complete double opt-in, unsubscribe, retention, deletion, limit,
+and recovery behavior before the route can be enabled in production.
+
+Editorial, funding, future-pricing, privacy, and source-freshness pages are
+server-rendered public disclosures. The pricing page exposes no checkout or paid
+entitlement. Source freshness reports only checked-in snapshot facts and does not
+claim live upstream health.
 
 ## Planned data boundary
 

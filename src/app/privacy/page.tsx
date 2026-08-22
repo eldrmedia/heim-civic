@@ -41,6 +41,17 @@ export default function PrivacyPage() {
           retention policy.
         </p>
       </section>
+      <section>
+        <h2>Corrections and waitlist</h2>
+        <p>
+          Correction contact information is used only to acknowledge and
+          investigate the submitted report. Waitlist requests require email
+          confirmation; unconfirmed requests must be deleted after seven days.
+          Confirmed contacts can unsubscribe immediately and request deletion,
+          targeted for completion within 30 days. Neither workflow requests an
+          exact address or political preference.
+        </p>
+      </section>
     </ContentPageTemplate>
   );
 }

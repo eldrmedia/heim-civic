@@ -13,8 +13,8 @@ const foundations = [
   },
   {
     icon: ReceiptText,
-    title: "Districts in statewide context",
-    text: "Phase 7 publishes all 67 official districts with a statewide boundary view, complete text equivalent, current officeholder, and source vintage.",
+    title: "Public trust operations",
+    text: "Phase 8 adds enforced correction states, immutable audit-event contracts, confirmed-opt-in waitlist intake, and public editorial, funding, pricing, and freshness disclosures.",
   },
 ] as const;
 
@@ -27,14 +27,13 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 7 · Public pilot content</p>
+          <p className="eyebrow">Phase 8 · Trust and civic operations</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            The seventh phase turns every official Nevada boundary into a
-            discoverable district record while the larger Pilot Bill Set passes
-            its published selection gate.
+            The eighth phase makes participation and editorial accountability
+            explicit before the private alpha asks the public for trust.
           </p>
         </div>
 
@@ -50,13 +49,13 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-seven">
+        <div className="phase-note" id="phase-eight">
           <div>
             <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">
-              The district directory is complete. Bill coverage remains at the
-              two-record vertical slice while an explicit PRD conflict between
-              the 30–50 target and 86 automatic veto inclusions is resolved.
+              Application contracts are complete, but hosted correction and
+              waitlist receivers, a verified material-funder roster, and live
+              monitoring remain required before public launch.
             </p>
           </div>
         </div>

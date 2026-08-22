@@ -426,6 +426,64 @@ test("correction intake explains a failed delivery without claiming receipt", as
   expect(results.violations).toEqual([]);
 });
 
+test("waitlist requires consent and fails closed without a confirmation provider", async ({
+  page,
+}) => {
+  await page.goto("/join");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "Help shape the public pilot.",
+    }),
+  ).toBeVisible();
+  await page.getByLabel("Email address").fill("reader@example.com");
+  await page
+    .getByLabel("Nevada ZIP or county (optional)")
+    .fill("Washoe County");
+  await page
+    .getByLabel(/Send me a confirmation email for the Heim Civic Nevada/)
+    .check();
+  await page.getByRole("button", { name: "Join the waitlist" }).click();
+
+  await expect(
+    page.getByText(/The waitlist is temporarily unavailable/),
+  ).toBeVisible();
+  await expect(page.getByText(/information was not retained/)).toBeVisible();
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("trust disclosures expose coverage limits without enabling payment", async ({
+  page,
+}) => {
+  await page.goto("/status");
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "What is published—and when it was checked.",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Nevada district boundaries" }),
+  ).toBeVisible();
+  await expect(page.getByText("67", { exact: true })).toBeVisible();
+
+  await page.goto("/pricing");
+  await expect(
+    page.getByRole("heading", { level: 1, name: "The civic facts stay free." }),
+  ).toBeVisible();
+  await expect(page.getByText("$5 monthly", { exact: true })).toBeVisible();
+  await expect(page.getByText("$10 monthly", { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /checkout|purchase|buy/i }),
+  ).toHaveCount(0);
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test("home page has no automatically detectable accessibility violations", async ({
   page,
 }) => {

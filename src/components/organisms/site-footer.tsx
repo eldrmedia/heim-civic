@@ -21,8 +21,23 @@ export function SiteFooter() {
           <Link className="site-footer__link" href="/privacy">
             Privacy
           </Link>
+          <Link className="site-footer__link" href="/editorial">
+            Editorial
+          </Link>
+          <Link className="site-footer__link" href="/funding">
+            Funding
+          </Link>
+          <Link className="site-footer__link" href="/status">
+            Source freshness
+          </Link>
+          <Link className="site-footer__link" href="/pricing">
+            Future pricing
+          </Link>
           <Link className="site-footer__link" href="/corrections">
             Corrections
+          </Link>
+          <Link className="site-footer__link" href="/join">
+            Waitlist
           </Link>
         </nav>
       </div>

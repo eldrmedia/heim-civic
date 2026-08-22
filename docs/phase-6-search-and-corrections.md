@@ -28,9 +28,9 @@ If either value is missing, malformed, or delivery fails, the public endpoint
 returns `503`, explicitly says that no information was retained, and does not
 claim receipt.
 
-Accepted requests are sent as schema version 1 with a generated case ID,
+Accepted requests are sent as schema version 2 with a generated case ID,
 `received` status, submission time, record reference, evidence, reporter contact
-consent, and the first immutable audit event. The receiving system must:
+consent, and the first sequenced immutable audit event. The receiving system must:
 
 1. persist the envelope transactionally and deduplicate on `caseId`;
 2. restrict reporter contact information to authorized reviewers;

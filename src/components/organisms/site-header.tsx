@@ -30,7 +30,7 @@ export function SiteHeader() {
         </nav>
         <div className="site-header__actions">
           <Button asChild intent="secondary" size="small">
-            <Link href="/corrections">Report a correction</Link>
+            <Link href="/join">Join the waitlist</Link>
           </Button>
         </div>
       </div>

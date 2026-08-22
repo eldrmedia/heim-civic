@@ -7,10 +7,12 @@ import {
   type CorrectionIntakeEnvelope,
   type CorrectionResponse,
 } from "@/domain/corrections/types";
+import { createCorrectionAuditEvent } from "@/domain/corrections/workflow";
 import {
   deliverCorrection,
   getCorrectionDeliveryConfig,
 } from "@/server/corrections/delivery";
+import { isSameOriginRequest } from "@/server/security/same-origin";
 import { checkCorrectionRateLimit } from "@/server/security/rate-limit";
 
 export const runtime = "nodejs";
@@ -26,25 +28,6 @@ function json(body: CorrectionResponse, status = 200, headers?: HeadersInit) {
     status,
     headers: { ...responseHeaders, ...headers },
   });
-}
-
-function isSameOrigin(request: Request): boolean {
-  const origin = request.headers.get("origin");
-  if (!origin) return true;
-
-  try {
-    const originHost = new URL(origin).host;
-    const allowedHosts = new Set(
-      [
-        new URL(request.url).host,
-        request.headers.get("host"),
-        request.headers.get("x-forwarded-host"),
-      ].filter((host): host is string => Boolean(host)),
-    );
-    return allowedHosts.has(originHost);
-  } catch {
-    return false;
-  }
 }
 
 export async function POST(request: Request) {
@@ -66,7 +49,7 @@ export async function POST(request: Request) {
     );
   }
 
-  if (!isSameOrigin(request)) {
+  if (!isSameOriginRequest(request)) {
     return json(
       { status: "invalid", message: "This submission origin is not allowed." },
       403,
@@ -143,7 +126,7 @@ export async function POST(request: Request) {
   const submittedAt = new Date().toISOString();
   const caseId = `HCN-${submittedAt.slice(0, 10).replaceAll("-", "")}-${randomUUID().slice(0, 8).toUpperCase()}`;
   const envelope: CorrectionIntakeEnvelope = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     caseId,
     status: "received",
     submittedAt,
@@ -157,7 +140,18 @@ export async function POST(request: Request) {
     },
     reporter: { email: parsed.data.email, contactConsent: true },
     audit: [
-      { event: "received", actor: "public-intake", occurredAt: submittedAt },
+      createCorrectionAuditEvent({
+        caseId,
+        sequence: 1,
+        event: "status-transition",
+        actor: "public-intake",
+        occurredAt: submittedAt,
+        reason: "Public correction submitted.",
+        fromStatus: null,
+        toStatus: "received",
+        affectedRecordIds: [parsed.data.recordReference],
+        evidenceUrls: parsed.data.evidenceUrl ? [parsed.data.evidenceUrl] : [],
+      }),
     ],
   };
 

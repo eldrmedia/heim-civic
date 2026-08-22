@@ -39,9 +39,11 @@ export default async function CorrectionsPage({
         <h2>Review targets and accountable history</h2>
         <p>
           Current-officeholder and district reports are targeted for triage
-          within one business day; other factual reports within two. Material
-          manual changes retain the reason, time, evidence, and before-and-after
-          references. A visible correction note is published when appropriate.
+          within one business day; other factual reports within three. Ordinary
+          factual corrections are targeted for resolution within ten business
+          days. Material manual changes retain the reason, time, evidence, and
+          before-and-after references. A visible correction note is published
+          when appropriate.
         </p>
       </section>
       <section>
