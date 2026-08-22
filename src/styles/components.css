@@ -98,7 +98,11 @@
   }
 
   .hero__inner {
-    @apply relative grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-20;
+    @apply relative py-14 lg:py-20;
+  }
+
+  .hero__intro {
+    @apply max-w-4xl;
   }
 
   .hero__title {
@@ -118,7 +122,7 @@
   }
 
   .address-lookup {
-    @apply mt-8 max-w-2xl;
+    @apply max-w-2xl;
   }
 
   .address-lookup__label {
@@ -130,63 +134,166 @@
   }
 
   .address-lookup__field {
-    @apply min-h-13 min-w-0 flex-1 rounded-lg border bg-white px-4 text-base text-slate-900 placeholder:text-slate-500 disabled:bg-white;
+    @apply min-h-13 min-w-0 flex-1 rounded-lg border bg-white px-4 text-base text-slate-900 placeholder:text-slate-500;
   }
 
   .address-lookup__hint {
     @apply mt-2 text-xs leading-5 text-slate-500;
   }
 
-  .map-preview {
-    @apply shadow-soft rounded-2xl border bg-white p-5 sm:p-7;
+  .lookup-experience {
+    @apply mt-10 grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-start;
   }
 
-  .map-preview__header {
-    @apply flex flex-wrap items-start justify-between gap-4;
+  .lookup-experience__content {
+    @apply rounded-2xl border bg-white/75 p-5 sm:p-7;
   }
 
-  .map-preview__title {
-    @apply text-juniper-800 m-0 font-serif text-2xl font-bold;
+  .lookup-experience__matched {
+    @apply bg-sage-100 text-juniper-800 mb-3 rounded-lg border px-4 py-3 text-sm leading-6;
   }
 
-  .map-preview__status {
-    @apply bg-sage-100 text-juniper-800 rounded-full px-3 py-1 text-xs font-bold;
+  .lookup-feedback {
+    @apply mt-5 min-h-6;
   }
 
-  .map-preview__canvas {
-    @apply bg-sage-100 mt-6 flex min-h-72 items-center justify-center rounded-xl p-8;
+  .lookup-feedback__message {
+    @apply border-clay-500/35 bg-desert-100 flex items-start gap-3 rounded-lg border px-4 py-3 text-sm leading-6 text-slate-700;
   }
 
-  .map-preview__state {
-    @apply h-64 w-auto drop-shadow-sm;
+  .lookup-feedback__message > svg {
+    @apply text-clay-600 mt-0.5 shrink-0;
   }
 
-  .map-preview__legend {
-    @apply mt-5 grid gap-2 sm:grid-cols-3;
+  .lookup-feedback__suggestions {
+    @apply mt-3 space-y-2 pl-0;
   }
 
-  .map-preview__layer {
-    @apply bg-desert-50 flex items-center gap-2 rounded-md border px-3 py-2 text-xs font-semibold text-slate-700;
+  .lookup-feedback__suggestion {
+    @apply text-juniper-800 cursor-pointer border-0 bg-transparent p-0 text-left font-semibold underline underline-offset-4;
   }
 
-  .map-preview__swatch {
-    @apply h-3 w-3 rounded-full;
+  .lookup-placeholder {
+    @apply shadow-soft rounded-2xl border bg-white p-6 sm:p-8;
   }
 
-  .map-preview__swatch--congress {
+  .lookup-placeholder__mark {
+    @apply bg-sage-100 mb-7 flex min-h-64 items-center justify-center gap-2 overflow-hidden rounded-xl;
+  }
+
+  .lookup-placeholder__mark span {
+    @apply h-44 w-16 -rotate-12 rounded-full opacity-80;
+  }
+
+  .lookup-placeholder__mark span:nth-child(1) {
     @apply bg-juniper-700;
   }
 
-  .map-preview__swatch--senate {
+  .lookup-placeholder__mark span:nth-child(2) {
+    @apply bg-clay-500 mt-8;
+  }
+
+  .lookup-placeholder__mark span:nth-child(3) {
+    @apply bg-sage-400 -mt-6;
+  }
+
+  .lookup-placeholder__title {
+    @apply text-juniper-800 mt-2 font-serif text-2xl font-bold;
+  }
+
+  .lookup-placeholder__text {
+    @apply mt-3 text-sm leading-6 text-slate-700;
+  }
+
+  .district-map {
+    @apply shadow-soft rounded-2xl border bg-white p-5 sm:p-7;
+  }
+
+  .district-map__header {
+    @apply flex items-start justify-between gap-4;
+  }
+
+  .district-map__title {
+    @apply text-juniper-800 mt-1 font-serif text-2xl font-bold;
+  }
+
+  .district-map__icon {
+    @apply text-juniper-700 h-6 w-6;
+  }
+
+  .district-map__layers {
+    @apply mt-5 grid gap-2 sm:grid-cols-3;
+  }
+
+  .district-map__layer {
+    @apply bg-desert-50 flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-md border px-3 py-2 text-xs font-semibold text-slate-700 transition-opacity data-[state=off]:opacity-45;
+  }
+
+  .district-map__swatch {
+    @apply h-3 w-3 rounded-full;
+  }
+
+  .district-map__layer--congressional .district-map__swatch {
+    @apply bg-juniper-700;
+  }
+
+  .district-map__layer--state-senate .district-map__swatch {
     @apply bg-clay-500;
   }
 
-  .map-preview__swatch--assembly {
+  .district-map__layer--state-assembly .district-map__swatch {
     @apply bg-sage-400;
   }
 
-  .map-preview__note {
+  .district-map__canvas {
+    @apply bg-sage-100 mt-4 overflow-hidden rounded-xl;
+  }
+
+  .district-map__svg {
+    @apply block min-h-72 w-full;
+  }
+
+  .district-map__shape {
+    vector-effect: non-scaling-stroke;
+    @apply transition-opacity;
+  }
+
+  .district-map__shape--congressional {
+    fill: rgb(15 81 63 / 0.18);
+    stroke: var(--color-juniper-700);
+    stroke-width: 4;
+  }
+
+  .district-map__shape--state-senate {
+    fill: rgb(201 103 63 / 0.2);
+    stroke: var(--color-clay-500);
+    stroke-width: 3;
+  }
+
+  .district-map__shape--state-assembly {
+    fill: rgb(136 161 132 / 0.25);
+    stroke: #60795d;
+    stroke-width: 2;
+  }
+
+  .district-map__results {
+    @apply mt-5 grid gap-2 p-0 sm:grid-cols-3;
+  }
+
+  .district-map__result {
+    @apply bg-desert-50 flex flex-col rounded-lg border px-3 py-3 text-sm;
+  }
+
+  .district-map__result-label {
+    @apply mb-1 text-xs text-slate-500;
+  }
+
+  .district-map__note {
     @apply mt-4 text-xs leading-5 text-slate-500;
+  }
+
+  .district-map__note a {
+    @apply text-juniper-800 font-semibold underline underline-offset-4;
   }
 
   .trust-strip {

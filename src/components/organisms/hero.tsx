@@ -1,13 +1,10 @@
-import { ShieldCheck } from "lucide-react";
-
-import { AddressLookup } from "@/components/molecules/address-lookup";
-import { DistrictMapPreview } from "@/components/molecules/district-map-preview";
+import { LookupExperience } from "@/components/organisms/lookup-experience";
 
 export function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="layout-shell hero__inner">
-        <div>
+        <div className="hero__intro">
           <p className="eyebrow">Independent · Nonpartisan · Nevada</p>
           <h1 className="hero__title" id="hero-title">
             Understand who represents you.
@@ -16,14 +13,8 @@ export function Hero() {
             Heim Civic Nevada is building one clear, source-driven place to find
             your districts, representatives, bills, votes, and public records.
           </p>
-          <AddressLookup />
-          <p className="hero__privacy">
-            <ShieldCheck className="hero__privacy-icon" aria-hidden="true" />
-            Exact residential addresses will be used transiently to determine
-            districts and will never be retained.
-          </p>
         </div>
-        <DistrictMapPreview />
+        <LookupExperience />
       </div>
     </section>
   );

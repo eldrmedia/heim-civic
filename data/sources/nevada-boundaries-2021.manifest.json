@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "sourcePageUrl": "https://www.leg.state.nv.us/Division/Research/Districts/Reapp/2021/district-plans/",
+  "sourceOrganization": "Nevada Legislative Counsel Bureau",
+  "retrievedAt": "2026-08-22T15:41:45Z",
+  "sourceCrs": "EPSG:4269",
+  "normalizedCrs": "RFC 7946 WGS84 longitude/latitude",
+  "datasets": [
+    {
+      "id": "nv-lcb-congressional-2021-sb1-amd2",
+      "districtType": "congressional",
+      "sourceUrl": "https://www.leg.state.nv.us/Division/Research/Documents/2021Congressional_Final_SB1_Amd2.zip",
+      "sha256": "ae32ce18f1d4ba7a0a055533bf9f02a8faffef6967f0a787e7586e4191b2c5dc",
+      "lastModified": "2021-11-17T19:55:50Z",
+      "expectedFeatureCount": 4,
+      "effectiveFrom": "2023-01-03T09:00:00-08:00",
+      "displayNamePattern": "U.S. Congressional District {district}"
+    },
+    {
+      "id": "nv-lcb-state-senate-2021-sb1-amd2",
+      "districtType": "state-senate",
+      "sourceUrl": "https://www.leg.state.nv.us/Division/Research/Documents/2021Senate_Final_SB1_Amd2.zip",
+      "sha256": "1f548d0b45b399c969e07d0418dc69d73ea097b39d3d56669a02f87feec38839",
+      "lastModified": "2021-11-17T19:58:09Z",
+      "expectedFeatureCount": 21,
+      "effectiveFrom": "2022-11-09T00:00:00-08:00",
+      "displayNamePattern": "Nevada Senate District {district}"
+    },
+    {
+      "id": "nv-lcb-state-assembly-2021-sb1-amd2",
+      "districtType": "state-assembly",
+      "sourceUrl": "https://www.leg.state.nv.us/Division/Research/Documents/2021Assembly_Final_SB1_Amd2.zip",
+      "sha256": "5abe506cfc011f8b0fc0264136cff491dfbb979f357e6a0e6375746486404aaa",
+      "lastModified": "2021-11-30T00:16:12Z",
+      "expectedFeatureCount": 42,
+      "effectiveFrom": "2022-11-09T00:00:00-08:00",
+      "displayNamePattern": "Nevada Assembly District {district}"
+    }
+  ]
+}

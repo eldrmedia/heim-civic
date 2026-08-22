@@ -2,7 +2,7 @@
 
 ## Status
 
-Initial Phase 1 architecture for Heim Civic Nevada. Material changes should be recorded in `docs/decisions/`.
+Phase 2 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -44,6 +44,18 @@ Address lookup is a transient pipeline:
 
 The exact address must not cross into persistence, analytics, screenshots, fixtures, or ordinary application logs.
 
+The `/api/lookup` route accepts same-product JSON POST requests, validates a small body, disables caching, rate-limits a keyed hash of the client address, and returns only the minimum district result. The precise geocoded point is never returned to the browser. The current in-memory rate limit is appropriate for private alpha only; a shared edge or data-store-backed limiter is required before public launch.
+
+## Geographic resolution
+
+1. A server-only adapter sends the transient address to the U.S. Census Geocoder.
+2. The geocoder result must be a single Nevada match.
+3. A pure domain service resolves the point against the checked-in, checksum-pinned Nevada LCB boundary bundle.
+4. When Census comparison districts are present, disagreement fails closed to manual review.
+5. The response contains selected district polygons for display, but no precise address coordinate.
+
+The map is progressive enhancement. Its three district results are always repeated as structured text and its layers use accessible Radix toggle controls.
+
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store. Schema work begins only after the source-discovery inventory and a provenance-focused schema decision are reviewed.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 2 lookup intentionally uses an immutable versioned GeoJSON bundle and does not create an address table. A PostGIS migration requires a separate reviewed schema decision.

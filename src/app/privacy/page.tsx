@@ -12,14 +12,15 @@ export default function PrivacyPage() {
     <ContentPageTemplate
       eyebrow="Privacy model"
       title="Your address identifies a district—not you."
-      introduction="Exact residential addresses used for representative lookup will not be retained."
+      introduction="Exact residential addresses used for district lookup are processed transiently and are not retained."
     >
       <section>
         <h2>Transient processing</h2>
         <p>
-          A lookup address will be validated, sent through an approved
-          server-side geocoding flow, converted to a coordinate, matched to
-          districts, and discarded.
+          A lookup address is validated, sent from our server to the U.S. Census
+          Geocoder, converted to a coordinate, matched to official Nevada
+          district boundaries, and discarded. The precise coordinate is not
+          returned to the browser.
         </p>
       </section>
       <section>
@@ -31,10 +32,13 @@ export default function PrivacyPage() {
         </p>
       </section>
       <section>
-        <h2>Current Phase 1 state</h2>
+        <h2>Private-alpha safeguards</h2>
         <p>
-          The lookup field is disabled and transmits nothing while the privacy
-          boundary, source validation, and geographic tests are being built.
+          Lookup responses cannot be cached. Requests are rate-limited using a
+          one-way keyed fingerprint of the client network address; the raw
+          network address is not retained by the application limiter. Hosting
+          infrastructure may still create security or access logs under its own
+          retention policy.
         </p>
       </section>
     </ContentPageTemplate>

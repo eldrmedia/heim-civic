@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { HomePageTemplate } from "./home-page-template";
 
 describe("HomePageTemplate", () => {
-  it("communicates the product, privacy boundary, and preview status", () => {
+  it("communicates the product, privacy boundary, and enables lookup", () => {
     render(<HomePageTemplate />);
 
     expect(
@@ -16,7 +16,12 @@ describe("HomePageTemplate", () => {
     expect(screen.getByLabelText("Product commitments")).toBeInTheDocument();
     expect(
       screen.getByRole("textbox", { name: "Find who represents you" }),
-    ).toBeDisabled();
-    expect(screen.getByText(/Decorative Phase 1 preview/i)).toBeInTheDocument();
+    ).toBeEnabled();
+    expect(
+      screen.getByText(/not written to our database/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Three boundaries, one answer" }),
+    ).toBeInTheDocument();
   });
 });

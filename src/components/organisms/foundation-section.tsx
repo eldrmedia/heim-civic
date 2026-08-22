@@ -1,20 +1,20 @@
-import { Blocks, DatabaseZap, ScanSearch } from "lucide-react";
+import { MapPinned, ScanSearch, ShieldCheck } from "lucide-react";
 
 const foundations = [
   {
-    icon: Blocks,
-    title: "A durable product system",
-    text: "Accessible primitives, reusable Atomic Design components, strict TypeScript, and a restrained Nevada Commons visual language.",
+    icon: MapPinned,
+    title: "Official Nevada boundaries",
+    text: "All 67 congressional and state legislative districts come from checksum-pinned Nevada Legislative Counsel Bureau shapefiles.",
   },
   {
-    icon: DatabaseZap,
-    title: "Provenance before volume",
-    text: "Every future import carries its source, retrieval time, original value, normalized value, parser version, and review state.",
+    icon: ShieldCheck,
+    title: "A private lookup boundary",
+    text: "Addresses are validated and geocoded server-side, excluded from persistence, and never returned as a precise point on the map.",
   },
   {
     icon: ScanSearch,
-    title: "Discovery before ingestion",
-    text: "Official Nevada and federal sources are inventoried and tested with representative fixtures before adapters are generalized.",
+    title: "Uncertainty stays visible",
+    text: "Ambiguous matches ask for clarification, while boundary gaps or source disagreements fail closed for review.",
   },
 ] as const;
 
@@ -27,14 +27,14 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 1 foundation</p>
+          <p className="eyebrow">Phase 2 · Geographic private alpha</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            The first phase establishes the product, engineering, privacy, and
-            source standards needed before any address lookup or political
-            record is published.
+            The second phase turns the foundation into a working Nevada district
+            finder while keeping representative, bill, vote, and finance records
+            outside the product until their own source gates are complete.
           </p>
         </div>
 
@@ -50,14 +50,14 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-one">
+        <div className="phase-note" id="phase-two">
           <div>
-            <h3 className="phase-note__title">This is a foundation preview.</h3>
+            <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">
-              It intentionally contains no live address processing, district
-              boundaries, officeholders, bills, votes, or campaign-finance data.
-              Those become public only after source validation and
-              requirement-specific tests.
+              District lookup is live for private testing. Officeholders, bills,
+              votes, and campaign-finance records remain intentionally excluded
+              until later phases satisfy their provenance and reconciliation
+              requirements.
             </p>
           </div>
         </div>
