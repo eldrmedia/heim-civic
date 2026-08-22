@@ -1,0 +1,41 @@
+@layer components {
+  .not-found {
+    @apply mx-auto flex min-h-screen max-w-xl flex-col items-start justify-center px-6 py-16;
+  }
+
+  .not-found h1 {
+    @apply text-juniper-800 mt-4 font-serif text-5xl leading-tight font-bold;
+  }
+
+  .not-found p:not(.eyebrow) {
+    @apply my-6 text-lg leading-8 text-slate-700;
+  }
+
+  .content-page__header {
+    @apply bg-desert-100 border-b py-14 sm:py-20;
+  }
+
+  .content-page__title {
+    @apply text-juniper-800 mt-4 max-w-4xl font-serif text-5xl leading-tight font-bold tracking-[-0.03em] sm:text-6xl;
+  }
+
+  .content-page__introduction {
+    @apply mt-6 max-w-3xl text-lg leading-8 text-slate-700;
+  }
+
+  .content-page__body {
+    @apply max-w-3xl py-14 sm:py-20;
+  }
+
+  .content-page__body section + section {
+    @apply mt-10 border-t pt-10;
+  }
+
+  .content-page__body h2 {
+    @apply text-juniper-800 font-serif text-3xl font-bold;
+  }
+
+  .content-page__body p {
+    @apply mt-4 text-base leading-8 text-slate-700;
+  }
+}

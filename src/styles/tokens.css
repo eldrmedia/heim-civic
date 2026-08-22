@@ -1,0 +1,26 @@
+@theme {
+  --color-desert-50: #fffdf8;
+  --color-desert-100: #f7eddc;
+  --color-desert-200: #ead8bb;
+  --color-juniper-500: #397a68;
+  --color-juniper-600: #246553;
+  --color-juniper-700: #0f513f;
+  --color-juniper-800: #0a3c30;
+  --color-clay-400: #dd845f;
+  --color-clay-500: #c9673f;
+  --color-clay-600: #a94f30;
+  --color-sage-100: #e7eee6;
+  --color-sage-400: #88a184;
+  --color-slate-500: #52636a;
+  --color-slate-700: #2e3e45;
+  --color-slate-900: #14272d;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --shadow-soft: 0 18px 50px rgb(20 39 45 / 0.1);
+  --shadow-card: 0 8px 24px rgb(20 39 45 / 0.08);
+}
+
+:root {
+  --layout-max: 75rem;
+  --focus-ring: 0 0 0 3px rgb(201 103 63 / 0.35);
+}

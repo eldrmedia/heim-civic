@@ -1,0 +1,31 @@
+@layer base {
+  * {
+    @apply border-slate-900/15;
+  }
+
+  html {
+    @apply bg-desert-50 scroll-smooth;
+  }
+
+  body {
+    @apply bg-desert-50 m-0 min-h-screen font-sans text-slate-900 antialiased;
+  }
+
+  a {
+    @apply text-inherit;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  :focus-visible {
+    @apply outline-none;
+    box-shadow: var(--focus-ring);
+  }
+
+  ::selection {
+    @apply bg-clay-500 text-white;
+  }
+}

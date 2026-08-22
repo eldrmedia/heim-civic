@@ -1,0 +1,8 @@
+.next
+coverage
+node_modules
+playwright-report
+test-results
+package-lock.json
+docs/brand-concepts
+docs/Nevada_Civic_Transparency_PRD.md
