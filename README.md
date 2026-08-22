@@ -52,7 +52,7 @@ Read `AGENTS.md` before making changes. Exact representative-lookup addresses mu
 
 ## Boundary refresh
 
-`npm run data:boundaries` downloads the three official Nevada LCB shapefiles, verifies their pinned SHA-256 checksums, normalizes them to RFC 7946 GeoJSON, validates expected district coverage, and updates the checked-in generated artifact. A checksum change is a review event, not an automatic update.
+`npm run data:boundaries` downloads the three official Nevada LCB shapefiles, verifies their pinned SHA-256 checksums, normalizes them to RFC 7946 GeoJSON, validates expected district coverage, derives a lightweight statewide display outline, and updates the checked-in generated artifact. District matching continues to use the unsimplified official geometry. A checksum change is a review event, not an automatic update.
 
 ## Current officeholder refresh
 

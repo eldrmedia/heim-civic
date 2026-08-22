@@ -49,7 +49,7 @@ function syntheticBundle(): BoundaryBundle {
   ) as BoundaryBundle["collections"];
 
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     vintage: 2021,
     generatedFrom: {
       manifestPath: "test-manifest.json",
@@ -58,6 +58,19 @@ function syntheticBundle(): BoundaryBundle {
       normalizedCrs: "RFC 7946 WGS84 longitude/latitude",
       sourceOrganization: "Public test source",
       sourcePageUrl: "https://example.gov/boundaries",
+    },
+    stateOutline: {
+      type: "Feature",
+      geometry: square,
+      properties: {
+        id: "nv:state:outline:2021",
+        displayName: "Nevada",
+        datasetIds: ["test-congressional"],
+        effectiveFrom: "2022-01-01T00:00:00-08:00",
+        derivation: "union-and-display-simplify",
+        toleranceDegrees: 0.001,
+        validationState: "source-derived-display",
+      },
     },
     collections,
   };

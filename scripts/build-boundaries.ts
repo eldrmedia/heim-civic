@@ -11,6 +11,8 @@ import type {
   Position,
 } from "geojson";
 import shp from "shpjs";
+import { simplify } from "@turf/simplify";
+import { union } from "@turf/union";
 import { z } from "zod";
 
 const projectRoot = process.cwd();
@@ -67,8 +69,18 @@ type NormalizedCollection = FeatureCollection<
   BoundaryProperties
 >;
 
+type StateOutlineProperties = {
+  id: "nv:state:outline:2021";
+  displayName: "Nevada";
+  datasetIds: string[];
+  effectiveFrom: string;
+  derivation: "union-and-display-simplify";
+  toleranceDegrees: 0.001;
+  validationState: "source-derived-display";
+};
+
 type BoundaryBundle = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   vintage: 2021;
   generatedFrom: {
     manifestPath: string;
@@ -78,6 +90,7 @@ type BoundaryBundle = {
     sourceOrganization: string;
     sourcePageUrl: string;
   };
+  stateOutline: Feature<Polygon | MultiPolygon, StateOutlineProperties>;
   collections: Record<Dataset["districtType"], NormalizedCollection>;
 };
 
@@ -96,8 +109,9 @@ async function main() {
   const collections = Object.fromEntries(
     entries,
   ) as BoundaryBundle["collections"];
+  const stateOutline = buildStateOutline(collections.congressional);
   const bundle: BoundaryBundle = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     vintage: 2021,
     generatedFrom: {
       manifestPath: "data/sources/nevada-boundaries-2021.manifest.json",
@@ -107,6 +121,7 @@ async function main() {
       sourceOrganization: manifest.sourceOrganization,
       sourcePageUrl: manifest.sourcePageUrl,
     },
+    stateOutline,
     collections,
   };
 
@@ -120,6 +135,60 @@ async function main() {
     ]),
   );
   console.info("Built verified Nevada boundary bundle", counts);
+}
+
+function buildStateOutline(
+  congressional: NormalizedCollection,
+): BoundaryBundle["stateOutline"] {
+  const effectiveFrom = congressional.features[0]?.properties.effectiveFrom;
+
+  if (!effectiveFrom) {
+    throw new Error(
+      "Unable to derive the Nevada outline without a congressional boundary vintage",
+    );
+  }
+
+  const properties: StateOutlineProperties = {
+    id: "nv:state:outline:2021",
+    displayName: "Nevada",
+    datasetIds: [
+      ...new Set(
+        congressional.features.map((feature) => feature.properties.datasetId),
+      ),
+    ],
+    effectiveFrom,
+    derivation: "union-and-display-simplify",
+    toleranceDegrees: 0.001,
+    validationState: "source-derived-display",
+  };
+  const merged = union(congressional, { properties });
+
+  if (!merged) {
+    throw new Error(
+      "Unable to derive the Nevada outline from congressional districts",
+    );
+  }
+
+  const outline = simplify(merged, {
+    tolerance: properties.toleranceDegrees,
+    highQuality: true,
+    mutate: false,
+  }) as BoundaryBundle["stateOutline"];
+
+  visitPositions(outline.geometry.coordinates, ([longitude, latitude]) => {
+    if (
+      longitude === undefined ||
+      latitude === undefined ||
+      longitude < -121 ||
+      longitude > -113 ||
+      latitude < 34 ||
+      latitude > 43
+    ) {
+      throw new Error("Derived Nevada outline contains an invalid coordinate");
+    }
+  });
+
+  return outline;
 }
 
 async function buildCollection(

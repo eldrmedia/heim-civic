@@ -30,6 +30,9 @@ System fonts avoid font-network requests, reduce layout shift, and keep the pilo
 - **Atoms:** Button, brand lockup, icon, label, badge.
 - **Molecules:** Address lookup, source badge, representative summary, map legend.
 - **Organisms:** Header, lookup hero, district results, representative grid, source panel.
+
+District results use one full-width statewide map that layers the selected congressional, Nevada Senate, and Nevada Assembly districts in their true positions. The map omits the precise lookup point and retains a complete textual equivalent.
+
 - **Templates:** Stable page composition and landmarks.
 - **Pages:** Route metadata, data loading, and template selection.
 

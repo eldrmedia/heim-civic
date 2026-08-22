@@ -124,7 +124,10 @@ export function LookupExperience() {
               <strong>Address matched.</strong> Your precise location is not
               shown on the map.
             </p>
-            <AccessibleDistrictMap districts={response.districts} />
+            <AccessibleDistrictMap
+              districts={response.districts}
+              stateOutline={response.mapContext.stateOutline}
+            />
           </div>
           <RepresentativeResults representation={response.representation} />
         </>

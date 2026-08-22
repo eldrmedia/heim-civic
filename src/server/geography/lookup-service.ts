@@ -42,8 +42,9 @@ export async function lookupNevadaAddress(
     };
   }
 
+  const boundaryBundle = getBoundaryBundle();
   const resolution = resolveDistricts(
-    getBoundaryBundle(),
+    boundaryBundle,
     geocode.candidate.longitude,
     geocode.candidate.latitude,
     geocode.candidate.comparisonDistricts,
@@ -60,6 +61,7 @@ export async function lookupNevadaAddress(
   return {
     status: "confirmed",
     districts: resolution.districts,
+    mapContext: { stateOutline: boundaryBundle.stateOutline },
     representation: getCurrentRepresentation(resolution.districts),
   };
 }

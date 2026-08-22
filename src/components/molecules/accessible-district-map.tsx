@@ -1,14 +1,15 @@
 "use client";
 
-import { geoMercator, geoPath } from "d3-geo";
+import { geoIdentity, geoPath } from "d3-geo";
 import { Layers3 } from "lucide-react";
 import { ToggleGroup } from "radix-ui";
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 
 import {
   districtTypes,
   type DistrictSummary,
   type DistrictType,
+  type StateOutline,
 } from "@/domain/geography/types";
 
 const labels: Record<DistrictType, string> = {
@@ -19,31 +20,22 @@ const labels: Record<DistrictType, string> = {
 
 export function AccessibleDistrictMap({
   districts,
+  stateOutline,
 }: {
   districts: DistrictSummary[];
+  stateOutline: StateOutline;
 }) {
   const [visibleLayers, setVisibleLayers] = useState<DistrictType[]>([
     ...districtTypes,
   ]);
-  const paths = useMemo(() => {
-    const collection = {
-      type: "FeatureCollection" as const,
-      features: districts.map((district) => district.boundary),
-    };
-    const projection = geoMercator().fitExtent(
-      [
-        [24, 24],
-        [576, 356],
-      ],
-      collection,
-    );
-    const path = geoPath(projection);
-
-    return districts.map((district) => ({
-      district,
-      path: path(district.boundary) ?? "",
-    }));
-  }, [districts]);
+  const mapId = useId().replaceAll(":", "");
+  const statewideTitleId = `${mapId}-statewide-title`;
+  const statewideDescriptionId = `${mapId}-statewide-description`;
+  const stateClipId = `${mapId}-state-clip`;
+  const paths = useMemo(
+    () => buildMapPaths(districts, stateOutline),
+    [districts, stateOutline],
+  );
   const source = districts[0]?.source;
 
   return (
@@ -65,10 +57,10 @@ export function AccessibleDistrictMap({
       >
         {districtTypes.map((type) => (
           <ToggleGroup.Item
-            className={`district-map__layer district-map__layer--${type}`}
+            className={"district-map__layer district-map__layer--" + type}
             key={type}
             value={type}
-            aria-label={`Toggle ${labels[type]} boundary`}
+            aria-label={"Toggle " + labels[type] + " boundary"}
           >
             <span className="district-map__swatch" aria-hidden="true" />
             {labels[type]}
@@ -76,32 +68,60 @@ export function AccessibleDistrictMap({
         ))}
       </ToggleGroup.Root>
 
-      <div className="district-map__canvas">
-        <svg
-          className="district-map__svg"
-          viewBox="0 0 600 380"
-          role="img"
-          aria-labelledby="district-map-title district-map-description"
-        >
-          <title id="district-map-title">
-            Selected Nevada district boundaries
-          </title>
-          <desc id="district-map-description">
-            The selected congressional, state Senate, and state Assembly
-            districts. Equivalent district names are listed below the map.
-          </desc>
-          {paths.map(({ district, path }) =>
-            visibleLayers.includes(district.type) ? (
-              <path
-                className={`district-map__shape district-map__shape--${district.type}`}
-                d={path}
-                key={district.type}
-                aria-hidden="true"
-              />
-            ) : null,
-          )}
-        </svg>
-      </div>
+      <section
+        className="district-map__overview"
+        aria-labelledby={`${mapId}-overview-title`}
+      >
+        <div className="district-map__overview-header">
+          <p className="district-map__overview-label">
+            Where your districts are
+          </p>
+          <h3 id={`${mapId}-overview-title`}>
+            All three districts, in statewide context
+          </h3>
+          <p>
+            Your matched address is within every highlighted boundary. Its
+            precise location is not shown.
+          </p>
+        </div>
+        <div className="district-map__canvas">
+          <svg
+            className="district-map__svg"
+            viewBox="0 0 1000 600"
+            role="img"
+            aria-labelledby={`${statewideTitleId} ${statewideDescriptionId}`}
+          >
+            <title id={statewideTitleId}>Your districts across Nevada</title>
+            <desc id={statewideDescriptionId}>
+              The complete Nevada outline with the selected U.S. congressional,
+              Nevada Senate, and Nevada Assembly district boundaries highlighted
+              in their statewide positions. No precise address location is
+              shown.
+            </desc>
+            <defs>
+              <clipPath id={stateClipId}>
+                <path d={paths.stateOutline} />
+              </clipPath>
+            </defs>
+            <path
+              className="district-map__state-outline"
+              d={paths.stateOutline}
+              aria-hidden="true"
+            />
+            {paths.districts.map(({ path, type }) =>
+              visibleLayers.includes(type) ? (
+                <path
+                  className={"district-map__shape district-map__shape--" + type}
+                  d={path}
+                  clipPath={`url(#${stateClipId})`}
+                  key={type}
+                  aria-hidden="true"
+                />
+              ) : null,
+            )}
+          </svg>
+        </div>
+      </section>
 
       <ul
         className="district-map__results"
@@ -118,8 +138,8 @@ export function AccessibleDistrictMap({
       </ul>
 
       <p className="district-map__note">
-        The map shows district boundaries only—not your precise location.
-        Boundaries: Nevada Legislative Counsel Bureau, effective{" "}
+        Maps show boundary context only—not your precise location. Boundaries:
+        Nevada Legislative Counsel Bureau, effective{" "}
         {source
           ? new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(
               new Date(source.effectiveFrom),
@@ -134,4 +154,28 @@ export function AccessibleDistrictMap({
       </p>
     </figure>
   );
+}
+
+function buildMapPaths(
+  districts: DistrictSummary[],
+  stateOutline: StateOutline,
+) {
+  const statewideProjection = geoIdentity()
+    .reflectY(true)
+    .fitExtent(
+      [
+        [120, 40],
+        [880, 560],
+      ],
+      stateOutline,
+    );
+  const statewidePath = geoPath(statewideProjection);
+
+  return {
+    stateOutline: statewidePath(stateOutline) ?? "",
+    districts: districts.map((district) => ({
+      type: district.type,
+      path: statewidePath(district.boundary) ?? "",
+    })),
+  };
 }

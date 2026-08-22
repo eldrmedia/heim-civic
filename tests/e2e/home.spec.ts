@@ -43,6 +43,32 @@ const confirmedLookup = {
       datasetId: `fixture-${type}`,
     },
   })),
+  mapContext: {
+    stateOutline: {
+      type: "Feature",
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          [
+            [-120.01, 35],
+            [-114.04, 35],
+            [-114.04, 42],
+            [-120.01, 42],
+            [-120.01, 35],
+          ],
+        ],
+      },
+      properties: {
+        id: "nv:state:outline:2021",
+        displayName: "Nevada",
+        datasetIds: ["fixture-congressional"],
+        effectiveFrom: "2022-01-01T00:00:00-08:00",
+        derivation: "union-and-display-simplify",
+        toleranceDegrees: 0.001,
+        validationState: "source-derived-display",
+      },
+    },
+  },
   representation: [
     [
       "us-house",
@@ -187,14 +213,17 @@ test("a confirmed lookup shows an accessible map and equivalent text", async ({
   ]);
   expect(response.ok()).toBe(true);
 
+  const textResults = page.getByRole("list", {
+    name: "District results in text",
+  });
   await expect(
-    page.getByText("Congressional District 2", { exact: true }),
+    textResults.getByText("Congressional District 2", { exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByText("State Senate District 16", { exact: true }),
+    textResults.getByText("State Senate District 16", { exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByText("State Assembly District 40", { exact: true }),
+    textResults.getByText("State Assembly District 40", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("Mark E. Amodei")).toBeVisible();
   await expect(page.getByText("Lisa Krasner")).toBeVisible();
@@ -202,8 +231,17 @@ test("a confirmed lookup shows an accessible map and equivalent text", async ({
   await expect(page.getByText("Catherine Cortez Masto")).toBeVisible();
   await expect(page.getByText("Jacky Rosen")).toBeVisible();
   await expect(
-    page.getByRole("img", { name: "Selected Nevada district boundaries" }),
+    page.getByRole("img", { name: /Your districts across Nevada/ }),
   ).toBeVisible();
+  const addressCard = await page
+    .locator(".lookup-experience__content")
+    .boundingBox();
+  const mapCard = await page.locator(".district-map").boundingBox();
+
+  expect(addressCard).not.toBeNull();
+  expect(mapCard).not.toBeNull();
+  expect(Math.abs(addressCard!.width - mapCard!.width)).toBeLessThanOrEqual(1);
+  expect(mapCard!.y).toBeGreaterThan(addressCard!.y + addressCard!.height);
   await expect(
     page.getByRole("textbox", { name: "Find who represents you" }),
   ).toHaveValue("");

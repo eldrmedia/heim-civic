@@ -122,7 +122,7 @@
   }
 
   .address-lookup {
-    @apply max-w-2xl;
+    @apply w-full;
   }
 
   .address-lookup__label {
@@ -141,8 +141,12 @@
     @apply mt-2 text-xs leading-5 text-slate-500;
   }
 
+  .address-lookup .button {
+    @apply sm:min-w-64;
+  }
+
   .lookup-experience {
-    @apply mt-10 grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-start;
+    @apply mt-10 flex flex-col gap-7;
   }
 
   .lookup-experience__content {
@@ -174,11 +178,11 @@
   }
 
   .lookup-placeholder {
-    @apply shadow-soft rounded-2xl border bg-white p-6 sm:p-8;
+    @apply shadow-soft grid rounded-2xl border bg-white p-6 sm:p-8 md:grid-cols-[0.8fr_1.2fr] md:items-center md:gap-8;
   }
 
   .lookup-placeholder__mark {
-    @apply bg-sage-100 mb-7 flex min-h-64 items-center justify-center gap-2 overflow-hidden rounded-xl;
+    @apply bg-sage-100 mb-7 flex min-h-56 items-center justify-center gap-2 overflow-hidden rounded-xl md:mb-0;
   }
 
   .lookup-placeholder__mark span {
@@ -245,12 +249,39 @@
     @apply bg-sage-400;
   }
 
+  .district-map__overview {
+    @apply bg-desert-50 mt-5 rounded-xl border p-3 sm:p-4;
+  }
+
+  .district-map__overview-header {
+    @apply px-1 pt-1;
+  }
+
+  .district-map__overview-label {
+    @apply text-clay-600 text-[0.65rem] font-bold tracking-[0.1em] uppercase;
+  }
+
+  .district-map__overview-header h3 {
+    @apply text-juniper-800 mt-1 font-serif text-xl leading-tight font-bold sm:text-2xl;
+  }
+
+  .district-map__overview-header > p:last-child {
+    @apply mt-1 max-w-3xl text-sm leading-6 text-slate-500;
+  }
+
   .district-map__canvas {
-    @apply bg-sage-100 mt-4 overflow-hidden rounded-xl;
+    @apply bg-sage-100 mt-3 overflow-hidden rounded-lg;
   }
 
   .district-map__svg {
-    @apply block min-h-72 w-full;
+    @apply block h-80 w-full sm:h-[28rem] lg:h-[36rem];
+  }
+
+  .district-map__state-outline {
+    fill: rgb(255 253 248 / 0.88);
+    stroke: var(--color-slate-500);
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
   }
 
   .district-map__shape {
@@ -259,21 +290,21 @@
   }
 
   .district-map__shape--congressional {
-    fill: rgb(15 81 63 / 0.18);
+    fill: rgb(15 81 63 / 0.2);
     stroke: var(--color-juniper-700);
     stroke-width: 4;
   }
 
   .district-map__shape--state-senate {
-    fill: rgb(201 103 63 / 0.2);
+    fill: rgb(201 103 63 / 0.35);
     stroke: var(--color-clay-500);
-    stroke-width: 3;
+    stroke-width: 5;
   }
 
   .district-map__shape--state-assembly {
-    fill: rgb(136 161 132 / 0.25);
+    fill: rgb(136 161 132 / 0.5);
     stroke: #60795d;
-    stroke-width: 2;
+    stroke-width: 4;
   }
 
   .district-map__results {
@@ -309,7 +340,7 @@
   }
 
   .lookup-experience > .representative-results {
-    @apply mt-0 lg:col-span-2;
+    @apply mt-0;
   }
 
   .representative-results__title {

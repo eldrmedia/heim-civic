@@ -52,9 +52,9 @@ The `/api/lookup` route accepts same-product JSON POST requests, validates a sma
 2. The geocoder result must be a single Nevada match.
 3. A pure domain service resolves the point against the checked-in, checksum-pinned Nevada LCB boundary bundle.
 4. When Census comparison districts are present, disagreement fails closed to manual review.
-5. The response contains selected district polygons for display, but no precise address coordinate.
+5. The response contains selected district polygons and a source-derived Nevada display outline, but no precise address coordinate.
 
-The map is progressive enhancement. Its three district results are always repeated as structured text and its layers use accessible Radix toggle controls.
+The map is progressive enhancement. It presents the selected congressional, Nevada Senate, and Nevada Assembly districts together in their true positions within a complete statewide outline. Its three district results are always repeated as structured text, and its layers use accessible Radix toggle controls.
 
 ## Current representation
 

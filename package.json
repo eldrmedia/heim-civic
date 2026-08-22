@@ -26,6 +26,8 @@
   "packageManager": "npm@11.12.1",
   "dependencies": {
     "@turf/boolean-point-in-polygon": "^7.4.0",
+    "@turf/simplify": "^7.4.0",
+    "@turf/union": "^7.4.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "d3-geo": "^3.1.1",

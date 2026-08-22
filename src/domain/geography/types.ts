@@ -33,8 +33,21 @@ export type BoundaryCollection = FeatureCollection<
   BoundaryProperties
 >;
 
+export type StateOutline = Feature<
+  DistrictGeometry,
+  {
+    id: "nv:state:outline:2021";
+    displayName: "Nevada";
+    datasetIds: string[];
+    effectiveFrom: string;
+    derivation: "union-and-display-simplify";
+    toleranceDegrees: 0.001;
+    validationState: "source-derived-display";
+  }
+>;
+
 export type BoundaryBundle = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   vintage: 2021;
   generatedFrom: {
     manifestPath: string;
@@ -44,6 +57,7 @@ export type BoundaryBundle = {
     sourceOrganization: string;
     sourcePageUrl: string;
   };
+  stateOutline: StateOutline;
   collections: Record<DistrictType, BoundaryCollection>;
 };
 
@@ -79,6 +93,9 @@ export type LookupResponse =
   | {
       status: "confirmed";
       districts: DistrictSummary[];
+      mapContext: {
+        stateOutline: StateOutline;
+      };
       representation: RepresentationSummary[];
     }
   | { status: "ambiguous"; suggestions: string[] }

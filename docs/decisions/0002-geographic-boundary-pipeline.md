@@ -24,7 +24,7 @@ The generated application artifact is normalized GeoJSON in WGS84 longitude/lati
 - Full normalized geometry—not display-simplified geometry—drives lookup.
 - A point matching exactly one feature in each layer is confirmed.
 - Zero matches, multiple matches, or disagreement with supported Census geography enter a review/uncertainty state.
-- Public map rendering may derive a smaller display geometry later, but it cannot replace lookup geometry.
+- Public map rendering derives a lightweight statewide outline by unioning the official congressional polygons and applying a documented display-only simplification. It cannot replace the unsimplified lookup geometry.
 
 ## Future PostGIS migration
 
