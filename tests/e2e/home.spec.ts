@@ -366,6 +366,40 @@ test("civic search discovers officials, districts, bills, and subjects", async (
   expect(results.violations).toEqual([]);
 });
 
+test("a district page provides statewide context, representation, and sources", async ({
+  page,
+}) => {
+  await page.goto("/districts/state-senate-1");
+
+  await expect(
+    page.getByRole("heading", { level: 1, name: "Nevada Senate District 1" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("img", { name: "Nevada Senate District 1 within Nevada" }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/highlighted within the full Nevada outline/),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: /Michelee.*Cruz-Crawford/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "View official boundary plan" }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.leg.state.nv.us/Division/Research/Districts/Reapp/2021/district-plans/",
+  );
+  await expect(
+    page.getByRole("link", { name: "Report a factual correction" }),
+  ).toHaveAttribute(
+    "href",
+    "/corrections?record=%2Fdistricts%2Fstate-senate-1",
+  );
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test("correction intake explains a failed delivery without claiming receipt", async ({
   page,
 }) => {

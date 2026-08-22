@@ -2,7 +2,10 @@ import "server-only";
 
 import type { DistrictType } from "@/domain/geography/types";
 import type { SearchRecord, SearchResult } from "@/domain/search/types";
-import { getBoundaryBundle } from "@/server/geography/boundaries";
+import {
+  getAllPublishedDistricts,
+  getBoundaryBundle,
+} from "@/server/geography/boundaries";
 import { getAllPilotBills } from "@/server/legislation/repository";
 import { getAllCurrentOfficials } from "@/server/officials/repository";
 
@@ -56,15 +59,12 @@ export function buildSearchIndex(): SearchRecord[] {
     verifiedAt: official.sources[0]?.retrievedAt ?? "",
   }));
 
-  const districtRecords: SearchRecord[] = Object.entries(
-    boundaries.collections,
-  ).flatMap(([type, collection]) =>
-    collection.features.map((feature) => {
-      const districtType = type as DistrictType;
+  const districtRecords: SearchRecord[] = getAllPublishedDistricts().map(
+    (district) => {
+      const districtType = district.type;
       const position = officials.find(
         (official) =>
-          official.office.districtNumber ===
-            feature.properties.districtNumber &&
+          official.office.districtNumber === district.number &&
           ((districtType === "congressional" &&
             official.office.chamber === "us-house") ||
             (districtType === "state-senate" &&
@@ -72,29 +72,27 @@ export function buildSearchIndex(): SearchRecord[] {
             (districtType === "state-assembly" &&
               official.office.chamber === "state-assembly")),
       );
-      const label = `${districtLabels[districtType]} District ${feature.properties.districtNumber}`;
+      const label = `${districtLabels[districtType]} District ${district.number}`;
 
       return {
-        id: `district:${feature.properties.id}`,
+        id: `district:${district.boundary.properties.id}`,
         kind: "district" as const,
         title: label,
         description: position
           ? `Currently represented by ${position.name}. Use the address lookup to confirm whether this is your district.`
           : "Use the address lookup to confirm whether this is your district.",
-        href: position ? `/officials/${position.slug}` : "/#address-lookup",
-        actionLabel: position
-          ? "View current representative"
-          : "Check an address",
+        href: `/districts/${district.slug}`,
+        actionLabel: "View district",
         keywords: [
           label,
-          feature.properties.displayName,
+          district.displayName,
           districtType,
           position?.name ?? "",
         ],
         sourceLabel: boundaries.generatedFrom.sourceOrganization,
         verifiedAt: boundaries.generatedFrom.retrievedAt,
       };
-    }),
+    },
   );
 
   const billRecords: SearchRecord[] = bills.map((bill) => ({

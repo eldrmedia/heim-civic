@@ -8,7 +8,7 @@ import { getAllPilotBills } from "@/server/legislation/repository";
 export const metadata: Metadata = {
   title: "Pilot bills and votes",
   description:
-    "The Phase 4 Nevada and federal legislation records used to validate sourced bill and vote coverage.",
+    "Reviewed Nevada and federal legislation records plus the published Pilot Bill Set methodology.",
 };
 
 export default function BillsPage() {
@@ -16,9 +16,9 @@ export default function BillsPage() {
 
   return (
     <ContentPageTemplate
-      eyebrow="Phase 4 vertical slice"
+      eyebrow="Phase 7 · Pilot Bill Set"
       title="Pilot bills and recorded votes."
-      introduction="These two official-source records prove the path from a bill to its sponsors, history, recorded votes, and connected Nevada profiles. They are not complete legislative coverage."
+      introduction="These two reviewed records remain the published vertical slice while the complete 2025 Nevada set passes a source-backed selection review. They are not complete legislative coverage."
     >
       <section aria-labelledby="pilot-bills-title">
         <h2 id="pilot-bills-title">Included records</h2>
@@ -39,12 +39,14 @@ export default function BillsPage() {
         </div>
       </section>
       <section>
-        <h2>Why only two?</h2>
+        <h2>Why the set has not expanded yet</h2>
         <p>
-          Nevada and federal systems publish different identifiers, summaries,
-          histories, and roll-call formats. This narrow slice lets those source
-          and reconciliation rules be reviewed before the product generalizes to
-          every bill.
+          The PRD targets approximately 30–50 bills and also automatically
+          includes every governor-vetoed measure. The official 2025 NELIS report
+          contains 86 vetoed bills before other automatic or two-factor
+          selections are counted. The project will not silently omit qualifying
+          records or invent a new editorial rule; the final size rule must be
+          resolved before bulk publication.
         </p>
       </section>
     </ContentPageTemplate>

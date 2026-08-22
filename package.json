@@ -16,6 +16,7 @@
     "data:boundaries": "tsx scripts/build-boundaries.ts",
     "data:officials": "tsx scripts/build-officials.ts",
     "data:legislation": "tsx scripts/build-legislation.ts",
+    "data:bill-selection": "tsx scripts/audit-pilot-bill-selection.ts",
     "data:finance": "tsx scripts/build-finance.ts",
     "audit": "npm audit --audit-level=high",
     "format": "prettier --write .",

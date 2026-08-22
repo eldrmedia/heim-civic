@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 6 private-alpha vertical slice: transient address lookup, official Nevada district boundaries, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, cross-record civic search, and evidence-based correction intake.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 7 private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, cross-record civic search, and evidence-based correction intake.
 
 ## Requirements
 

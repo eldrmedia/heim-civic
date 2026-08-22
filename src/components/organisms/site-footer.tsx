@@ -12,6 +12,9 @@ export function SiteFooter() {
           <Link className="site-footer__link" href="/search">
             Search
           </Link>
+          <Link className="site-footer__link" href="/districts">
+            Districts
+          </Link>
           <Link className="site-footer__link" href="/docs">
             Methodology
           </Link>

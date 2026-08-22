@@ -5,6 +5,7 @@ import { Button } from "@/components/atoms/button";
 
 const navigation = [
   { href: "/search", label: "Search records" },
+  { href: "/districts", label: "Districts" },
   { href: "/#foundation", label: "What we’re building" },
   { href: "/bills", label: "Pilot bills" },
   { href: "/finance", label: "Finance pilot" },

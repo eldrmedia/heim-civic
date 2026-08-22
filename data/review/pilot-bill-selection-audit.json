@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-22T21:16:36.765Z",
+  "source": {
+    "organization": "Nevada Legislature (NELIS)",
+    "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed",
+    "retrievedAt": "2026-08-22T21:16:36.765Z",
+    "documentSha256": "2ed737a8e03cf607f1e852b03f260fe277ecf25a1ef2ecaa0f6b3e9f1c1bec71"
+  },
+  "prdRules": {
+    "targetRange": {
+      "minimum": 30,
+      "maximum": 50
+    },
+    "automaticFactor": "governor-veto-or-override",
+    "automaticRule": "All measures vetoed by the governor are included."
+  },
+  "result": {
+    "mandatoryVetoedBillCount": 86,
+    "status": "requires-prd-decision",
+    "conflict": "The official veto report contains 86 automatically qualifying bills, exceeding the PRD target maximum of 50."
+  },
+  "records": [
+    {
+      "billIdentifier": "AB44",
+      "billKey": "11833",
+      "summary": "Prohibits manipulating the price of an essential good or service in this State. (BDR 52-503)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11833/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB79",
+      "billKey": "11899",
+      "summary": "Revises provisions relating to governmental administration. (BDR 24-483)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11899/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB82",
+      "billKey": "11903",
+      "summary": "Requires the Governor to proclaim certain days of observance. (BDR 19-60)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11903/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB83",
+      "billKey": "11904",
+      "summary": "Designates “Larry Itliong Day” as a day of observance in this State. (BDR 19-99)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB88",
+      "billKey": "11952",
+      "summary": "Revises provisions relating to juvenile justice. (BDR 5-495)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11952/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB98",
+      "billKey": "11980",
+      "summary": "Creates a day of observance for labor leader, Dolores Huerta. (BDR 19-642)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11980/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB105",
+      "billKey": "12000",
+      "summary": "Revises provisions governing firearms. (BDR 15-64)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12000/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB112",
+      "billKey": "12013",
+      "summary": "Removes an exemption from provisions providing certain employees with the right to use sick leave to assist family members. (BDR 53-318)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12013/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB140",
+      "billKey": "12066",
+      "summary": "Revises provisions governing driver authorization cards. (BDR 43-200)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12066/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB144",
+      "billKey": "12070",
+      "summary": "Revises provisions relating to “Indigenous Peoples Day” in Nevada. (BDR 19-7)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12070/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB155",
+      "billKey": "12097",
+      "summary": "Revises provisions relating to public employees. (BDR 23-612)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12097/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB185",
+      "billKey": "12155",
+      "summary": "Revises provisions relating to child care. (BDR 10-187)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12155/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB188",
+      "billKey": "12158",
+      "summary": "Revises provisions relating to the Public Employees' Benefits Program. (BDR 23-673)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12158/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB201",
+      "billKey": "12171",
+      "summary": "Revises provisions relating to the sealing of certain records. (BDR 3-843)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12171/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB204",
+      "billKey": "12174",
+      "summary": "Revises provisions relating to medical debt. (BDR 52-135)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12174/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB205",
+      "billKey": "12175",
+      "summary": "Revises provisions governing sexual education. (BDR 34-597)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12175/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB209",
+      "billKey": "12210",
+      "summary": "Provides immunity from criminal liability for engaging in prostitution or solicitation for prostitution. (BDR 15-781)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12210/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB213",
+      "billKey": "12215",
+      "summary": "Revises provisions governing public works projects. (BDR 28-816)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12215/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB217",
+      "billKey": "12219",
+      "summary": "Revises provisions relating to law enforcement on school property. (BDR 34-201)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12219/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB223",
+      "billKey": "12225",
+      "summary": "Revises provisions relating to the habitability of rental property. (BDR 10-684)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12225/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB226",
+      "billKey": "12228",
+      "summary": "Revises provisions relating to economic development. (BDR 32-690)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12228/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB237",
+      "billKey": "12257",
+      "summary": "Authorizes any county to create the office of registrar of voters. (BDR 20-363)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12257/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB244",
+      "billKey": "12274",
+      "summary": "Enacts prohibitions relating to the use of disposable foodware containers containing polystyrene foam by certain food dispensing establishments. (BDR 40-685)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12274/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB245",
+      "billKey": "12275",
+      "summary": "Revises provisions relating to firearms. (BDR 15-648)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12275/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB259",
+      "billKey": "12296",
+      "summary": "Establishes provisions governing prescription drugs. (BDR 40-165)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12296/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB278",
+      "billKey": "12329",
+      "summary": "Designates the month of July as Muslim American Heritage Month. (BDR 19-924)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12329/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB280",
+      "billKey": "12333",
+      "summary": "Revises provisions relating to housing. (BDR 10-337)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12333/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB282",
+      "billKey": "12336",
+      "summary": "Revises provisions relating to billing for health care. (BDR 40-785)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12336/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB283",
+      "billKey": "12338",
+      "summary": "Revises provisions governing certain actions and proceedings relating to real property. (BDR 3-819)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12338/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB306",
+      "billKey": "12386",
+      "summary": "Revises provisions relating to elections. (BDR 24-569)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12386/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB320",
+      "billKey": "12408",
+      "summary": "Revises provisions related to the administration of justice. (BDR 1-810)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12408/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB328",
+      "billKey": "12420",
+      "summary": "Creates certain commissions and subcommittees for the purpose of educating the general public concerning certain cultural affairs relating to African-Americans. (BDR 18-619)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12420/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB342",
+      "billKey": "12434",
+      "summary": "Designates the month of March as “Women Veterans History Month.” (BDR 19-459)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12434/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB388",
+      "billKey": "12544",
+      "summary": "Revises provisions relating to employment. (BDR 23-1027)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12544/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB392",
+      "billKey": "12557",
+      "summary": "Revises provisions relating to interlocal agreements and contracts with tribal governments. (BDR 22-1059)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12557/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB397",
+      "billKey": "12562",
+      "summary": "Revises provisions relating to higher education. (BDR 34-653)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12562/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB411",
+      "billKey": "12589",
+      "summary": "Revises provisions relating to prescription drugs. (BDR 54-1100)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12589/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB414",
+      "billKey": "12593",
+      "summary": "Revises provisions relating to occupational safety and health. (BDR 53-666)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12593/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB416",
+      "billKey": "12595",
+      "summary": "Revises provisions concerning access to certain library materials. (BDR 34-925)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12595/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB434",
+      "billKey": "12640",
+      "summary": "Prohibits certain employment practices. (BDR 53-188)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12640/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB441",
+      "billKey": "12649",
+      "summary": "Revises provisions governing the Nevada Educational Choice Scholarship Program. (BDR 32-6)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12649/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB445",
+      "billKey": "12653",
+      "summary": "Revises provisions relating to libraries. (BDR 34-1071)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12653/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB480",
+      "billKey": "12737",
+      "summary": "Revises provisions relating to discrimination in housing. (BDR 10-1101)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12737/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB488",
+      "billKey": "12753",
+      "summary": "Revises provisions relating to criminal convictions of certain victims. (BDR 14-873)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12753/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB490",
+      "billKey": "12755",
+      "summary": "Revises provisions relating to the venue for certain proceedings. (BDR 24-870)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12755/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB496",
+      "billKey": "12761",
+      "summary": "Revises provisions relating to elections. (BDR 24-997)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12761/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB499",
+      "billKey": "12768",
+      "summary": "Revises provisions relating to elections. (BDR 24-998)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12768/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB534",
+      "billKey": "12825",
+      "summary": "Revises provisions relating to elections. (BDR 24-975)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12825/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB585",
+      "billKey": "12937",
+      "summary": "Revises provisions relating to bill draft requests. (BDR 17-1137)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12937/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB588",
+      "billKey": "12944",
+      "summary": "Revises provisions relating to members of the Assembly of the Nevada Legislature. (BDR 17-1235)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12944/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB589",
+      "billKey": "12949",
+      "summary": "Establishes requirements to protect the privacy of certain information and genetic material. (BDR 19-1241)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12949/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB597",
+      "billKey": "12961",
+      "summary": "Revises provisions relating to elections. (BDR 24-1245)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12961/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "AB600",
+      "billKey": "12966",
+      "summary": "Revises provisions relating to legislative affairs. (BDR 17-1251)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12966/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB71",
+      "billKey": "11878",
+      "summary": "Revises provisions relating to governmental administration. (BDR 27-366)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11878/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB85",
+      "billKey": "11961",
+      "summary": "Revises provisions relating to public safety. (BDR 43-490)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11961/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB89",
+      "billKey": "11966",
+      "summary": "Revises provisions relating to firearms. (BDR 15-174)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11966/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB93",
+      "billKey": "11972",
+      "summary": "Establishes certain labor standards for the award of grants of federal money by a state agency for certain purposes. (BDR 18-556)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11972/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB100",
+      "billKey": "11990",
+      "summary": "Revises provisions relating to elections. (BDR 24-197)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11990/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB102",
+      "billKey": "11992",
+      "summary": "Revises provisions relating to elections. (BDR 24-90)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11992/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB121",
+      "billKey": "12040",
+      "summary": "Revises provisions governing common-interest communities. (BDR 10-80)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12040/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB128",
+      "billKey": "12063",
+      "summary": "Makes changes related to health care. (BDR 57-87)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12063/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB141",
+      "billKey": "12086",
+      "summary": "Revises provisions relating to local facilities for detention. (BDR 16-241)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12086/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB142",
+      "billKey": "12087",
+      "summary": "Revises provisions governing property that is exempt from execution. (BDR 2-707)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12087/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB155",
+      "billKey": "12127",
+      "summary": "Revises provisions governing peace officers. (BDR 23-326)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12127/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB156",
+      "billKey": "12137",
+      "summary": "Revises provisions relating to the prevention of gun violence. (BDR 18-958)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12137/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB160",
+      "billKey": "12178",
+      "summary": "Revises provisions relating to the Nevada Equal Rights Commission. (BDR 18-82)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12178/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB167",
+      "billKey": "12185",
+      "summary": "Prohibits the importation and sale of household cleaning products for which animal testing was performed. (BDR 52-892)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12185/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB171",
+      "billKey": "12189",
+      "summary": "Enacts a shield law to protect the transgender community. (BDR 54-12)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12189/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB182",
+      "billKey": "12200",
+      "summary": "Revises provisions relating to the staffing of health care facilities. (BDR 40-33)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12200/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB198",
+      "billKey": "12245",
+      "summary": "Revises requirements relating to payment of wages and compensation to certain employees. (BDR 53-557)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12245/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB217",
+      "billKey": "12292",
+      "summary": "Makes revisions relating to reproductive health care. (BDR 40-24)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12292/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB295",
+      "billKey": "12507",
+      "summary": "Revises provisions related to food establishments. (BDR 40-44)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12507/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB297",
+      "billKey": "12509",
+      "summary": "Revises provisions relating to periods of observance. (BDR 19-803)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12509/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB301",
+      "billKey": "12514",
+      "summary": "Revises provisions relating to public employees. (BDR 23-1024)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12514/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB303",
+      "billKey": "12517",
+      "summary": "Revises provisions relating to civil liability to persons using certain premises for recreational activity under certain circumstances. (BDR 3-1021)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12517/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB305",
+      "billKey": "12527",
+      "summary": "Revises provisions relating to interscholastic activities. (BDR 34-1007)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12527/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB327",
+      "billKey": "12572",
+      "summary": "Revises provisions relating to contractors. (BDR 54-1025)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12572/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB334",
+      "billKey": "12581",
+      "summary": "Revises provisions relating to the employment of offenders. (BDR 16-1115)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12581/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB350",
+      "billKey": "12617",
+      "summary": "Revises provisions relating to the death penalty. (BDR 14-1110)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12617/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB352",
+      "billKey": "12980",
+      "summary": "Revises provisions relating to health care. (BDR 57-712)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12980/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB378",
+      "billKey": "12674",
+      "summary": "Makes revisions relating to health care. (BDR 40-705)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12674/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB410",
+      "billKey": "12733",
+      "summary": "Revises provisions relating to public employees. (BDR 23-562)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12733/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB414",
+      "billKey": "12745",
+      "summary": "Revises provisions relating to governmental administration. (BDR 23-1111)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12745/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB422",
+      "billKey": "12767",
+      "summary": "Revises provisions relating to voting. (BDR 24-954)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12767/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB428",
+      "billKey": "12775",
+      "summary": "Revises provisions relating to public office. (BDR 23-955)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12775/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    },
+    {
+      "billIdentifier": "SB447",
+      "billKey": "12835",
+      "summary": "Revises provisions relating to public works. (BDR 28-968)",
+      "overviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12835/Overview",
+      "automaticFactor": "governor-veto-or-override"
+    }
+  ]
+}

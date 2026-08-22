@@ -37,7 +37,7 @@ District results use one full-width statewide map that layers the selected congr
 - **Templates:** Stable page composition and landmarks.
 - **Pages:** Route metadata, data loading, and template selection.
 
-Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Phase 4 adds the bill-card molecule and bill-page template. Phase 5 adds the finance-overview molecule and finance-page template. Phase 6 adds search-result and correction-form organisms using the same BEM and token layers. Party, vote, and finance values are always written in text; neutral brand color does not imply partisan meaning. Finance categories use accessible tables rather than color-only charts.
+Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Phase 4 adds the bill-card molecule and bill-page template. Phase 5 adds the finance-overview molecule and finance-page template. Phase 6 adds search-result and correction-form organisms. Phase 7 adds the district-boundary-map molecule and district-page template. Party, vote, finance, and map values are always written in text; neutral brand color does not imply partisan meaning. Finance categories use accessible tables rather than color-only charts.
 
 ## Styling rules
 

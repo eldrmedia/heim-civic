@@ -66,6 +66,20 @@ export default function MethodologyPage() {
           correction reports, voter files, or inferred political attributes.
         </p>
       </section>
+      <section>
+        <h2>Pilot Bill Set selection</h2>
+        <p>
+          Budget and major appropriation measures, constitutional amendments or
+          statewide questions, governor vetoes and overrides, major statewide
+          program changes, and measures with a material official fiscal effect
+          qualify automatically. Other measures require at least two published
+          impact factors: broad statewide reach, a material change to rights,
+          benefits, taxes, penalties, or regulation, material fiscal effect, a
+          contested recorded vote, substantial documented testimony, or a major
+          change from existing law. Every approval retains its evidence and
+          human review state.
+        </p>
+      </section>
     </ContentPageTemplate>
   );
 }

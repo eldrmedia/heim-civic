@@ -51,6 +51,22 @@ export function getCurrentRepresentation(
   return [...districtPositions, ...statewideSenators];
 }
 
+export function getCurrentDistrictRepresentation(
+  district: DistrictSummary,
+): RepresentationSummary {
+  const position = bundle.positions.find(
+    (candidate) =>
+      candidate.districtType === district.type &&
+      candidate.districtNumber === district.number,
+  );
+
+  if (!position) {
+    throw new Error(`Missing reviewed office position for ${district.type}`);
+  }
+
+  return toRepresentation(position);
+}
+
 function toRepresentation(
   position: OfficialsBundle["positions"][number],
 ): RepresentationSummary {

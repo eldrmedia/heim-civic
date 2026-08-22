@@ -812,4 +812,142 @@
   .finance-page__scope p {
     @apply mt-2 text-sm leading-6;
   }
+
+  .district-index {
+    @apply mt-6 grid gap-3 sm:grid-cols-2;
+  }
+
+  .district-index__link {
+    @apply bg-desert-50 text-juniper-800 flex min-h-12 items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm font-bold no-underline hover:underline;
+  }
+
+  .district-page__hero {
+    @apply bg-desert-100 border-b py-10 sm:py-14;
+  }
+
+  .district-page__back {
+    @apply text-juniper-800 mb-7 inline-flex text-sm font-semibold underline-offset-4 hover:underline;
+  }
+
+  .district-page__hero h1 {
+    @apply text-juniper-800 mt-3 font-serif text-4xl leading-tight font-bold tracking-[-0.03em] sm:text-6xl;
+  }
+
+  .district-page__hero p:not(.eyebrow) {
+    @apply mt-4 max-w-2xl text-lg leading-8 text-slate-700;
+  }
+
+  .district-page__layout {
+    @apply grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-16;
+  }
+
+  .district-page__content {
+    @apply min-w-0;
+  }
+
+  .district-page__content section + section {
+    @apply mt-10 border-t pt-10;
+  }
+
+  .district-page__content h2,
+  .district-page__panel h2 {
+    @apply text-juniper-800 mt-2 font-serif text-2xl font-bold;
+  }
+
+  .district-boundary-map {
+    @apply mt-5 overflow-hidden rounded-xl border bg-white;
+  }
+
+  .district-boundary-map__canvas {
+    @apply bg-sage-100 p-4 sm:p-6;
+  }
+
+  .district-boundary-map__svg {
+    @apply block h-auto w-full;
+  }
+
+  .district-boundary-map__state {
+    fill: rgb(136 161 132 / 0.18);
+    stroke: var(--color-juniper-700);
+    stroke-width: 5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .district-boundary-map__district {
+    stroke-width: 6;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .district-boundary-map__district--congressional {
+    fill: rgb(15 81 63 / 0.55);
+    stroke: var(--color-juniper-800);
+  }
+
+  .district-boundary-map__district--state-senate {
+    fill: rgb(169 79 48 / 0.6);
+    stroke: var(--color-clay-600);
+  }
+
+  .district-boundary-map__district--state-assembly {
+    fill: rgb(136 161 132 / 0.8);
+    stroke: var(--color-slate-900);
+  }
+
+  .district-boundary-map__caption {
+    @apply px-5 pt-5 text-sm leading-6 text-slate-700;
+  }
+
+  .district-boundary-map__caption strong {
+    @apply text-slate-900;
+  }
+
+  .district-boundary-map__facts {
+    @apply grid gap-3 p-5 sm:grid-cols-2;
+  }
+
+  .district-boundary-map__facts > div {
+    @apply bg-desert-50 rounded-lg border p-4;
+  }
+
+  .district-boundary-map__facts dt,
+  .district-page__panel dt {
+    @apply text-xs font-bold tracking-[0.06em] text-slate-500 uppercase;
+  }
+
+  .district-boundary-map__facts dd,
+  .district-page__panel dd {
+    @apply mt-1 text-sm font-semibold text-slate-900;
+  }
+
+  .district-page__representative {
+    @apply mt-5;
+  }
+
+  .district-page__sidebar {
+    @apply space-y-5;
+  }
+
+  .district-page__panel {
+    @apply shadow-card rounded-xl border bg-white p-5;
+  }
+
+  .district-page__panel dl {
+    @apply mt-4 grid gap-3;
+  }
+
+  .district-page__panel dl > div {
+    @apply border-t pt-3 first:border-0 first:pt-0;
+  }
+
+  .district-page__panel p {
+    @apply mt-4 text-sm leading-6 text-slate-700;
+  }
+
+  .district-page__panel a {
+    @apply text-juniper-800 mt-4 inline-flex items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
+  .district-page__correction {
+    @apply border-clay-600 text-clay-600 flex min-h-11 items-center justify-center rounded-lg border px-4 py-3 text-sm font-bold underline-offset-4 hover:underline;
+  }
 }

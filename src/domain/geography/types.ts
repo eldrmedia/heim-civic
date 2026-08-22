@@ -74,6 +74,10 @@ export type DistrictSummary = {
   };
 };
 
+export type PublishedDistrict = DistrictSummary & {
+  slug: string;
+};
+
 export type ComparisonDistricts = Partial<Record<DistrictType, number>>;
 
 export type GeocodeCandidate = {

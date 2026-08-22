@@ -23,7 +23,11 @@ describe("civic search index", () => {
     const results = searchCivicRecords("Assembly District 1");
 
     expect(results.some((result) => result.kind === "district")).toBe(true);
-    expect(results[0]?.title).toContain("Nevada Assembly District 1");
+    expect(results[0]).toMatchObject({
+      title: "Nevada Assembly District 1",
+      href: "/districts/state-assembly-1",
+      actionLabel: "View district",
+    });
   });
 
   it("finds bills by identifier and subjects by common terms", () => {

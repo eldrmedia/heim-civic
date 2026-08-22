@@ -13,8 +13,8 @@ const foundations = [
   },
   {
     icon: ReceiptText,
-    title: "Discovery and correction",
-    text: "Phase 6 adds source-bounded civic search and a free correction intake with validation, case references, and an auditable received state.",
+    title: "Districts in statewide context",
+    text: "Phase 7 publishes all 67 official districts with a statewide boundary view, complete text equivalent, current officeholder, and source vintage.",
   },
 ] as const;
 
@@ -27,13 +27,14 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 6 · Search and corrections</p>
+          <p className="eyebrow">Phase 7 · Public pilot content</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            The sixth phase makes the reviewed pilot records discoverable and
-            opens an evidence-based path for the public to challenge a fact.
+            The seventh phase turns every official Nevada boundary into a
+            discoverable district record while the larger Pilot Bill Set passes
+            its published selection gate.
           </p>
         </div>
 
@@ -49,14 +50,13 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-six">
+        <div className="phase-note" id="phase-seven">
           <div>
             <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">
-              Search covers published officials, districts, pilot bills, and
-              subjects only. Finance coverage remains limited to two federal
-              House profiles; Nevada state finance and outside-spending totals
-              stay excluded until their separate provenance gates are met.
+              The district directory is complete. Bill coverage remains at the
+              two-record vertical slice while an explicit PRD conflict between
+              the 30–50 target and 86 automatic veto inclusions is resolved.
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 6 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 7 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -55,6 +55,12 @@ The `/api/lookup` route accepts same-product JSON POST requests, validates a sma
 5. The response contains selected district polygons and a source-derived Nevada display outline, but no precise address coordinate.
 
 The map is progressive enhancement. It presents the selected congressional, Nevada Senate, and Nevada Assembly districts together in their true positions within a complete statewide outline. Its three district results are always repeated as structured text, and its layers use accessible Radix toggle controls.
+
+All 67 official boundaries also publish as stable district routes. Each route
+uses a server-rendered statewide SVG, complete text equivalent, current-position
+join, boundary vintage, official source link, private lookup path, and correction
+entry point. Search results link to the district record rather than treating an
+officeholder profile as a substitute for a district page.
 
 ## Current representation
 
