@@ -23,6 +23,7 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
+      - run: npm run ops:source-health
       - run: npm run audit
       - run: npm run build
 

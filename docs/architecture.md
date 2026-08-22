@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 8 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 9 hardened private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -105,6 +105,24 @@ Editorial, funding, future-pricing, privacy, and source-freshness pages are
 server-rendered public disclosures. The pricing page exposes no checkout or paid
 entitlement. Source freshness reports only checked-in snapshot facts and does not
 claim live upstream health.
+
+## Pilot operations boundary
+
+Phase 9 evaluates checked-in snapshot age through a pure domain policy shared by
+the public status page, uncached `/api/health` route, and CI command. Invalid or
+stale required snapshots degrade readiness and produce a failing exit status;
+due-soon snapshots remain available while signaling the next refresh. External
+uptime and source-event monitoring must still be configured by an operator.
+
+Stable public routes are emitted through the Next.js sitemap metadata convention,
+while APIs are excluded from indexing. Responsible disclosure uses a server-only
+mailbox configuration and fails closed when it is absent. No request data,
+address, correction content, waitlist contact, token, or raw network address is
+included in health output.
+
+The current recovery unit is the immutable private Git repository and its
+checked-in snapshots; there is no application database. External correction and
+waitlist receivers own their separate backup, retention, and restore controls.
 
 ## Planned data boundary
 

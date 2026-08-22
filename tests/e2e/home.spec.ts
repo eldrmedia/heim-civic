@@ -484,6 +484,42 @@ test("trust disclosures expose coverage limits without enabling payment", async 
   expect(results.violations).toEqual([]);
 });
 
+test("pilot operations expose discovery, readiness, and honest security states", async ({
+  page,
+  request,
+}) => {
+  const health = await request.get("/api/health");
+  expect(health.status()).toBe(200);
+  await expect(health.json()).resolves.toMatchObject({
+    schemaVersion: 1,
+    scope: "published-snapshot-readiness",
+    status: "ready",
+  });
+
+  const sitemap = await request.get("/sitemap.xml");
+  expect(sitemap.status()).toBe(200);
+  expect(await sitemap.text()).toContain("/districts/congressional-1");
+
+  const robots = await request.get("/robots.txt");
+  expect(robots.status()).toBe(200);
+  expect(await robots.text()).toContain("Disallow: /api/");
+
+  await page.goto("/security");
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "Help us protect civic information.",
+    }),
+  ).toBeVisible();
+  await expect(page.getByText(/This is a launch blocker/)).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /security@|mailto/i }),
+  ).toHaveCount(0);
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test("home page has no automatically detectable accessibility violations", async ({
   page,
 }) => {

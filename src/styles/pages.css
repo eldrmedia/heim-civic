@@ -1028,6 +1028,24 @@
     @apply mt-5 text-sm leading-6;
   }
 
+  .source-status__card .source-status__health {
+    @apply mt-4 flex items-start gap-2 rounded-lg border px-3 py-2 text-sm leading-6 font-semibold;
+  }
+
+  .source-status__health > span {
+    @apply mt-2 h-2 w-2 shrink-0 rounded-full bg-current;
+  }
+
+  .source-status__health--current {
+    @apply border-juniper-500/30 bg-sage-100 text-juniper-800;
+  }
+
+  .source-status__health--due-soon,
+  .source-status__health--stale,
+  .source-status__health--invalid {
+    @apply border-clay-500/35 bg-desert-100 text-clay-600;
+  }
+
   .future-pricing {
     @apply grid gap-5 md:grid-cols-2;
   }

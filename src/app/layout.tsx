@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { getSiteUrl } from "@/lib/site-url";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,9 +12,8 @@ export const metadata: Metadata = {
   },
   description:
     "A nonpartisan, source-driven way for Nevada residents to understand who represents them.",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
+  metadataBase: new URL(getSiteUrl()),
+  robots: { index: true, follow: true },
 };
 
 type RootLayoutProps = Readonly<{

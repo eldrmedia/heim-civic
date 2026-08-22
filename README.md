@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 8 private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, civic search, auditable correction workflow contracts, confirmed-opt-in waitlist intake, and public trust disclosures.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, snapshot-health monitoring, public-route discovery, and operator runbooks.
 
 ## Requirements
 
@@ -31,9 +31,15 @@ npm run data:boundaries
 npm run data:officials
 npm run data:legislation
 npm run data:finance
+npm run ops:source-health
 ```
 
 `npm run check` runs all non-browser gates in sequence.
+
+The machine-readable `/api/health` route and `npm run ops:source-health` apply
+the same snapshot-freshness policy. Production probes, restore evidence, and
+remaining launch blockers are documented in `docs/phase-9-pilot-hardening.md`
+and `docs/launch-readiness.md`.
 
 ## Structure
 
@@ -81,3 +87,9 @@ server environment. The application sends pending requests only and never
 claims confirmation. Confirmation, unsubscribe, retention, deletion,
 provider-limit, and recovery requirements are documented in
 `docs/phase-8-trust-operations.md`.
+
+## Production security contact
+
+Set `SECURITY_CONTACT_EMAIL` to a monitored private mailbox before launch. The
+public security page and `/.well-known/security.txt` fail closed when the value
+is absent or invalid; the application does not invent a placeholder contact.

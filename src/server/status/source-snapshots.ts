@@ -4,9 +4,10 @@ import { getFinanceBundle } from "@/server/finance/repository";
 import { getBoundaryBundle } from "@/server/geography/boundaries";
 import { getLegislationBundle } from "@/server/legislation/repository";
 import { getOfficialsBundle } from "@/server/officials/repository";
+import type { SourceHealthId } from "@/domain/status/source-health";
 
 export type SourceSnapshotStatus = {
-  id: string;
+  id: SourceHealthId;
   label: string;
   coverage: string;
   generatedAt: string;

@@ -52,6 +52,17 @@ export default function PrivacyPage() {
           exact address or political preference.
         </p>
       </section>
+      <section>
+        <h2>Monitoring without address capture</h2>
+        <p>
+          Application health reports only route-independent snapshot state,
+          record counts, source counts, and freshness. Production analytics and
+          error tools must exclude form values, request bodies, precise
+          coordinates, correction text, emails, tokens, cookies, and raw network
+          addresses. Session replay and form capture are prohibited on lookup,
+          correction, and waitlist journeys.
+        </p>
+      </section>
     </ContentPageTemplate>
   );
 }

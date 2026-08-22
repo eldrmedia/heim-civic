@@ -21,6 +21,9 @@ export function SiteFooter() {
           <Link className="site-footer__link" href="/privacy">
             Privacy
           </Link>
+          <Link className="site-footer__link" href="/security">
+            Security
+          </Link>
           <Link className="site-footer__link" href="/editorial">
             Editorial
           </Link>
