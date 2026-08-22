@@ -28,10 +28,25 @@ const censusResponseSchema = z.object({
 const defaultEndpoint =
   "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress";
 
-const geographyFields: Record<DistrictType, string> = {
-  congressional: "CD",
-  "state-senate": "SLDU",
-  "state-assembly": "SLDL",
+const geographyDefinitions: Record<
+  DistrictType,
+  {
+    layerPattern: RegExp;
+    fieldPatterns: RegExp[];
+  }
+> = {
+  congressional: {
+    layerPattern: /Congressional Districts$/,
+    fieldPatterns: [/^CD\d+$/],
+  },
+  "state-senate": {
+    layerPattern: /State Legislative Districts - Upper$/,
+    fieldPatterns: [/^SLDU$/, /^BASENAME$/],
+  },
+  "state-assembly": {
+    layerPattern: /State Legislative Districts - Lower$/,
+    fieldPatterns: [/^SLDL$/, /^BASENAME$/],
+  },
 };
 
 function parseDistrictNumber(value: unknown): number | undefined {
@@ -48,14 +63,20 @@ function extractComparisonDistricts(
 ): ComparisonDistricts {
   const result: ComparisonDistricts = {};
 
-  for (const [type, prefix] of Object.entries(geographyFields) as [
+  for (const [type, definition] of Object.entries(geographyDefinitions) as [
     DistrictType,
-    string,
+    (typeof geographyDefinitions)[DistrictType],
   ][]) {
-    for (const records of Object.values(geographies)) {
-      for (const record of records) {
-        const matchingField = Object.keys(record).find(
-          (field) => field === prefix || field.startsWith(prefix),
+    const layer = Object.entries(geographies).find(([layerName]) =>
+      definition.layerPattern.test(layerName),
+    );
+
+    if (!layer) continue;
+
+    for (const record of layer[1]) {
+      for (const fieldPattern of definition.fieldPatterns) {
+        const matchingField = Object.keys(record).find((field) =>
+          fieldPattern.test(field),
         );
         const districtNumber = matchingField
           ? parseDistrictNumber(record[matchingField])

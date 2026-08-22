@@ -18,12 +18,18 @@ describe("geocodeAddress", () => {
                   coordinates: { x: -119.766909132818, y: 39.1639660332 },
                   addressComponents: { state: "NV" },
                   geographies: {
-                    "119th Congressional Districts": [{ CD119: "02" }],
+                    "119th Congressional Districts": [
+                      {
+                        CDSESSN: "119",
+                        CD119: "02",
+                        BASENAME: "2",
+                      },
+                    ],
                     "2024 State Legislative Districts - Upper": [
-                      { SLDU: "016" },
+                      { GEOID: "32016", BASENAME: "16" },
                     ],
                     "2024 State Legislative Districts - Lower": [
-                      { SLDL: "040" },
+                      { GEOID: "32040", BASENAME: "40" },
                     ],
                   },
                 },
