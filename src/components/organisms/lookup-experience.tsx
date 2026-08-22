@@ -118,14 +118,16 @@ export function LookupExperience() {
       </div>
 
       {response?.status === "confirmed" ? (
-        <div className="lookup-experience__result">
-          <p className="lookup-experience__matched">
-            <strong>Address matched.</strong> Your precise location is not shown
-            on the map.
-          </p>
-          <AccessibleDistrictMap districts={response.districts} />
+        <>
+          <div className="lookup-experience__result">
+            <p className="lookup-experience__matched">
+              <strong>Address matched.</strong> Your precise location is not
+              shown on the map.
+            </p>
+            <AccessibleDistrictMap districts={response.districts} />
+          </div>
           <RepresentativeResults representation={response.representation} />
-        </div>
+        </>
       ) : (
         <div
           className="lookup-placeholder"
