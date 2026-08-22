@@ -6,6 +6,7 @@ import {
   getAllCurrentOfficials,
   getOfficialBySlug,
 } from "@/server/officials/repository";
+import { getLegislationForOfficial } from "@/server/legislation/repository";
 
 export const metadata: Metadata = {
   title: "Current official profile",
@@ -29,5 +30,10 @@ export default async function OfficialProfilePage({
 
   if (!official) notFound();
 
-  return <OfficialProfileTemplate official={official} />;
+  return (
+    <OfficialProfileTemplate
+      official={official}
+      legislation={getLegislationForOfficial(official.id)}
+    />
+  );
 }

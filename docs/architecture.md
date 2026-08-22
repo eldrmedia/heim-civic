@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 3 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 4 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -64,6 +64,12 @@ Office positions are separate from people. Each position records whether it is o
 
 Basic official profiles are statically generated from stable local slugs. They show source-verified office, party, term label, contact details, committee assignments, freshness, and correction links. Remote portraits are restricted to explicit official Nevada Legislature and Congressional Biographical Directory paths.
 
+## Pilot legislation
+
+Phase 4 adds a deliberately narrow legislation repository backed by a checked-in, versioned snapshot. One Nevada bill and one federal bill exercise sponsors, official summaries, actions, status, committees, and recorded votes end to end. Bill pages are statically generated from stable slugs and link every record back to the authoritative source.
+
+Nevada vote records retain all lawmakers serving at the time of the vote. Only identities that safely reconcile to the separate current-officeholder snapshot link to a current profile. Federal roll calls retain authoritative chamber totals while publishing only the Nevada House delegation’s member-level values. Original vote labels are preserved alongside a small normalized vocabulary.
+
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 3 intentionally uses immutable, versioned geographic and current-officeholder snapshots and does not create an address table. Historical terms, bills, votes, and finance records require separate reviewed schema decisions.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 4 intentionally uses immutable, versioned geographic, current-officeholder, and two-bill legislation snapshots and does not create an address table. Generalized historical terms, full bill coverage, and finance records require separate reviewed schema decisions.

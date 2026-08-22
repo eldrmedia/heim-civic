@@ -173,9 +173,7 @@ const confirmedLookup = {
   ),
 };
 
-test("home page exposes the Phase 3 representative lookup", async ({
-  page,
-}) => {
+test("home page exposes the representative lookup", async ({ page }) => {
   await page.goto("/", { waitUntil: "networkidle" });
 
   await expect(
@@ -266,6 +264,38 @@ test("a standardized official profile exposes sources and correction access", as
   await expect(
     page.getByRole("link", { name: "Report a factual correction" }),
   ).toHaveAttribute("href", "/corrections");
+  await expect(
+    page.getByRole("link", { name: "View sourced bill record" }),
+  ).toHaveAttribute("href", "/bills/us-119-hr1366");
+});
+
+test("a pilot bill page exposes official summary, Nevada votes, and sources", async ({
+  page,
+}) => {
+  await page.goto("/bills/us-119-hr1366");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "Mining Regulatory Clarity Act",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "How Nevada lawmakers voted" }),
+  ).toBeVisible();
+  await expect(page.getByText("This text is not AI-generated.")).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Mark E. Amodei" }).first(),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /Official bill page/ }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.congress.gov/bill/119th-congress/house-bill/1366",
+  );
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
 });
 
 test("home page has no automatically detectable accessibility violations", async ({

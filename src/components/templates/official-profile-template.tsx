@@ -3,14 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PartyLabel } from "@/components/atoms/party-label";
+import { BillCard } from "@/components/molecules/bill-card";
 import { SiteFooter } from "@/components/organisms/site-footer";
 import { SiteHeader } from "@/components/organisms/site-header";
 import type { CurrentOfficial } from "@/domain/officials/types";
+import type { OfficialLegislationActivity } from "@/domain/legislation/types";
 
 export function OfficialProfileTemplate({
   official,
+  legislation,
 }: {
   official: CurrentOfficial;
+  legislation: OfficialLegislationActivity[];
 }) {
   const latestVerification = official.sources
     .map((source) => source.retrievedAt)
@@ -110,14 +114,26 @@ export function OfficialProfileTemplate({
               )}
             </section>
 
-            <section aria-labelledby="coverage-title">
-              <h2 id="coverage-title">Coverage in this phase</h2>
+            <section aria-labelledby="legislation-title">
+              <h2 id="legislation-title">Bills and recorded votes</h2>
               <p>
-                This basic profile covers current office, party, term label,
-                official contact information, and committee assignments. Bills,
-                recorded votes, and campaign-finance records will appear only
-                after their later source and reconciliation gates are complete.
+                Phase 4 connects current profiles to two source-verified pilot
+                bills. This is a vertical slice, not a complete legislative
+                history.
               </p>
+              {legislation.length > 0 ? (
+                <div className="official-profile__legislation">
+                  {legislation.map((activity) => (
+                    <BillCard activity={activity} key={activity.bill.id} />
+                  ))}
+                </div>
+              ) : (
+                <p className="official-profile__empty">
+                  This official has no sponsorship or recorded vote in the
+                  current two-bill pilot. That does not mean they have no other
+                  legislative activity.
+                </p>
+              )}
             </section>
           </article>
 

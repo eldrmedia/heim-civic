@@ -36,7 +36,7 @@ District results use one full-width statewide map that layers the selected congr
 - **Templates:** Stable page composition and landmarks.
 - **Pages:** Route metadata, data loading, and template selection.
 
-Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Party is always written in text; neutral brand color does not imply partisan meaning. Vacancy cards use explicit status language and do not reserve a portrait-shaped empty state.
+Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Phase 4 adds the bill-card molecule and bill-page template for the two-bill vertical slice. Party and vote values are always written in text; neutral brand color does not imply partisan meaning. Vacancy cards use explicit status language and do not reserve a portrait-shaped empty state.
 
 ## Styling rules
 

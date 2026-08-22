@@ -39,6 +39,30 @@
     @apply mt-4 text-base leading-8 text-slate-700;
   }
 
+  .bill-index {
+    @apply mt-6 grid gap-4;
+  }
+
+  .bill-index__card {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .bill-index__card > p {
+    @apply text-clay-600 m-0 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .bill-index__card h3 {
+    @apply text-juniper-800 mt-2 font-serif text-xl font-bold;
+  }
+
+  .bill-index__card > span {
+    @apply mt-3 block text-sm font-semibold text-slate-700;
+  }
+
+  .bill-index__card > a {
+    @apply text-juniper-800 mt-4 inline-flex items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
   .official-profile__hero {
     @apply bg-desert-100 border-b py-10 sm:py-14;
   }
@@ -160,5 +184,245 @@
 
   .official-profile__correction {
     @apply border-clay-500 text-clay-600 flex min-h-11 items-center justify-center rounded-lg border px-4 py-3 text-sm font-bold underline-offset-4 hover:underline;
+  }
+
+  .official-profile__legislation {
+    @apply mt-5 grid gap-4;
+  }
+
+  .official-profile__empty {
+    @apply bg-desert-50 rounded-lg border p-4 text-sm;
+  }
+
+  .bill-card {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .bill-card__meta {
+    @apply text-clay-600 m-0 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .bill-card h3 {
+    @apply text-juniper-800 mt-2 font-serif text-xl font-bold;
+  }
+
+  .bill-card .bill-card__status,
+  .bill-card .bill-card__relationship,
+  .bill-card .bill-card__vote {
+    @apply mt-2 text-sm leading-6;
+  }
+
+  .bill-card__relationship {
+    @apply font-bold text-slate-900;
+  }
+
+  .bill-card__vote {
+    @apply flex items-center gap-2;
+  }
+
+  .bill-card > a {
+    @apply text-juniper-800 mt-4 inline-flex items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
+  .bill-page__hero {
+    @apply bg-desert-100 border-b py-10 sm:py-14;
+  }
+
+  .bill-page__back {
+    @apply text-juniper-800 mb-7 inline-flex text-sm font-semibold underline-offset-4 hover:underline;
+  }
+
+  .bill-page__heading {
+    @apply mt-4 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end;
+  }
+
+  .bill-page__identifier {
+    @apply text-base font-bold text-slate-700;
+  }
+
+  .bill-page__heading h1 {
+    @apply text-juniper-800 mt-2 max-w-4xl font-serif text-4xl leading-tight font-bold tracking-[-0.03em] sm:text-6xl;
+  }
+
+  .bill-page__status {
+    @apply bg-sage-100 border-juniper-700/20 rounded-xl border p-5;
+  }
+
+  .bill-page__status span,
+  .bill-page__status small {
+    @apply block text-xs text-slate-600;
+  }
+
+  .bill-page__status strong {
+    @apply text-juniper-800 my-1 block text-lg;
+  }
+
+  .bill-page__layout {
+    @apply grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-16;
+  }
+
+  .bill-page__content section + section {
+    @apply mt-12 border-t pt-12;
+  }
+
+  .bill-page__content h2,
+  .bill-page__panel h2 {
+    @apply text-juniper-800 mt-2 font-serif text-3xl font-bold;
+  }
+
+  .bill-page__content section > p:not(.eyebrow) {
+    @apply mt-5 max-w-3xl text-base leading-8 text-slate-700;
+  }
+
+  .bill-page__content .bill-page__attribution {
+    @apply border-clay-500/30 bg-desert-50 rounded-lg border p-4 text-sm leading-6;
+  }
+
+  .bill-page__attribution a,
+  .bill-page__panel a,
+  .vote-card__source {
+    @apply text-juniper-800 font-semibold underline underline-offset-4;
+  }
+
+  .bill-page__votes {
+    @apply mt-6 grid gap-5;
+  }
+
+  .vote-card {
+    @apply rounded-xl border bg-white p-5 shadow-sm sm:p-6;
+  }
+
+  .vote-card__header {
+    @apply flex flex-col gap-3 border-b pb-4 sm:flex-row sm:items-start sm:justify-between;
+  }
+
+  .vote-card__header p {
+    @apply text-xs font-bold tracking-[0.06em] text-slate-500 uppercase;
+  }
+
+  .vote-card__header h3 {
+    @apply text-juniper-800 mt-1 font-serif text-xl font-bold;
+  }
+
+  .vote-card__header > strong {
+    @apply bg-sage-100 text-juniper-800 rounded-full px-3 py-1 text-sm;
+  }
+
+  .vote-card__totals {
+    @apply my-5 grid grid-cols-3 gap-2;
+  }
+
+  .vote-card__totals > div {
+    @apply bg-desert-50 rounded-lg p-3 text-center;
+  }
+
+  .vote-card__totals dt {
+    @apply text-xs text-slate-600;
+  }
+
+  .vote-card__totals dd {
+    @apply text-juniper-800 mt-1 text-xl font-bold;
+  }
+
+  .vote-card__members {
+    @apply grid gap-x-5 gap-y-1 p-0 sm:grid-cols-2;
+  }
+
+  .vote-card__members li {
+    @apply flex min-h-10 items-center justify-between gap-3 border-b py-2 text-sm;
+  }
+
+  .vote-card__members a {
+    @apply text-juniper-800 font-semibold underline-offset-4 hover:underline;
+  }
+
+  .vote-card__members strong {
+    @apply rounded-full bg-slate-100 px-2 py-1 text-xs;
+  }
+
+  .vote-card__members strong[data-vote="yes"] {
+    @apply bg-sage-100 text-juniper-800;
+  }
+
+  .vote-card__members strong[data-vote="no"] {
+    @apply bg-desert-100 text-clay-600;
+  }
+
+  .vote-card__source {
+    @apply mt-5 inline-flex items-center gap-1 text-sm;
+  }
+
+  .bill-page__timeline {
+    @apply mt-6 grid gap-0 border-l-2 border-slate-200 pl-6;
+  }
+
+  .bill-page__timeline li {
+    @apply relative pb-6 last:pb-0;
+  }
+
+  .bill-page__timeline li::before {
+    content: "";
+    @apply bg-clay-500 absolute top-1.5 -left-[1.94rem] h-3 w-3 rounded-full ring-4 ring-white;
+  }
+
+  .bill-page__timeline time {
+    @apply text-xs font-bold text-slate-500;
+  }
+
+  .bill-page__timeline p {
+    @apply mt-1 text-sm leading-6 text-slate-700;
+  }
+
+  .bill-page__sidebar {
+    @apply space-y-5;
+  }
+
+  .bill-page__panel {
+    @apply shadow-card rounded-xl border bg-white p-5;
+  }
+
+  .bill-page__panel h2 {
+    @apply mt-0 text-2xl;
+  }
+
+  .bill-page__panel dl,
+  .bill-page__panel ul {
+    @apply mt-4 grid gap-3 p-0;
+  }
+
+  .bill-page__panel dl > div,
+  .bill-page__panel li {
+    @apply border-t pt-3 first:border-0 first:pt-0;
+  }
+
+  .bill-page__panel dt,
+  .bill-page__panel li > span {
+    @apply block text-xs font-bold tracking-[0.06em] text-slate-500 uppercase;
+  }
+
+  .bill-page__panel dd,
+  .bill-page__panel li > strong,
+  .bill-page__panel li > a {
+    @apply mt-1 block text-sm font-semibold;
+  }
+
+  .bill-page__panel > a {
+    @apply mt-4 flex items-center gap-2 text-sm;
+  }
+
+  .bill-page__panel > p {
+    @apply mt-4 text-xs leading-5 text-slate-500;
+  }
+
+  .bill-page__scope {
+    @apply border-clay-500/35 bg-desert-100 rounded-xl border p-5;
+  }
+
+  .bill-page__scope strong {
+    @apply text-juniper-800;
+  }
+
+  .bill-page__scope p {
+    @apply mt-2 text-sm leading-6 text-slate-700;
   }
 }

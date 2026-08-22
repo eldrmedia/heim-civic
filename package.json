@@ -15,6 +15,7 @@
     "test:e2e": "playwright test",
     "data:boundaries": "tsx scripts/build-boundaries.ts",
     "data:officials": "tsx scripts/build-officials.ts",
+    "data:legislation": "tsx scripts/build-legislation.ts",
     "audit": "npm audit --audit-level=high",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

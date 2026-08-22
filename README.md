@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 3 private-alpha flow: transient address lookup, official Nevada district boundaries, source-verified current officeholders, and basic static profiles.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 4 private-alpha vertical slice: transient address lookup, official Nevada district boundaries, source-verified current officeholders, static profiles, and one Nevada plus one federal bill with recorded votes.
 
 ## Requirements
 
@@ -28,6 +28,8 @@ npm run audit
 npm run build
 npm run test:e2e
 npm run data:boundaries
+npm run data:officials
+npm run data:legislation
 ```
 
 `npm run check` runs all non-browser gates in sequence.
@@ -38,8 +40,8 @@ npm run data:boundaries
 src/
   app/          Next.js routes and metadata
   components/   Atomic Design component layers
-  data/         Checked-in generated boundary and officeholder artifacts
-  domain/       Framework-independent geography and official records
+  data/         Checked-in generated boundary, officeholder, and legislation artifacts
+  domain/       Framework-independent geography, official, and legislation records
   lib/          Framework-independent helpers
   server/       Server-only geocoding, lookup, official repository, and abuse controls
   styles/       Tailwind theme, base, BEM components, pages
@@ -57,3 +59,7 @@ Read `AGENTS.md` before making changes. Exact representative-lookup addresses mu
 ## Current officeholder refresh
 
 `npm run data:officials` downloads six official Nevada Legislature, U.S. House, House Clerk, and U.S. Senate sources. It validates the complete 69-position Nevada representation set, stable external identifiers, unique profile slugs, and exact district sequences before updating the checked-in snapshot. Source hashes, retrieval times, coverage labels, and parser version remain attached to the generated records. A schema or record-count change stops generation for review.
+
+## Pilot legislation refresh
+
+`npm run data:legislation` downloads seven official NELIS, GovInfo, and U.S. House Clerk records for the two-bill Phase 4 vertical slice. It validates bill coverage, official vote totals, member counts, Nevada delegation reconciliation, and current-profile links before updating the checked-in snapshot. Historical Nevada voters remain in the roll call even when they no longer have a current profile. This pilot is intentionally not a complete bill database.

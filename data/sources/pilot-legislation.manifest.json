@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "coverageLabel": "Phase 4 bills and votes vertical slice",
+  "sources": [
+    {
+      "id": "nv-ab83-overview",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/FillSelectedBillTab?billKey=11904&selectedTab=Overview",
+      "format": "html"
+    },
+    {
+      "id": "nv-ab83-votes",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVotes?billKey=11904&voteTypeId=3",
+      "format": "html"
+    },
+    {
+      "id": "nv-ab83-assembly-members",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12381&voteResultPanel=All",
+      "format": "html"
+    },
+    {
+      "id": "nv-ab83-senate-members",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12798&voteResultPanel=All",
+      "format": "html"
+    },
+    {
+      "id": "us-hr1366-status",
+      "organization": "U.S. Government Publishing Office",
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr1366.xml",
+      "format": "xml"
+    },
+    {
+      "id": "us-hr1366-roll357",
+      "organization": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/evs/2025/roll357.xml",
+      "format": "xml"
+    },
+    {
+      "id": "us-hr1366-roll358",
+      "organization": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/evs/2025/roll358.xml",
+      "format": "xml"
+    }
+  ]
+}

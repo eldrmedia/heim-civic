@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function MethodologyPage() {
   return (
     <ContentPageTemplate
-      eyebrow="Phase 3 methodology"
+      eyebrow="Phase 4 methodology"
       title="Sources before summaries."
-      introduction="Every current officeholder record is tied to official government sources, a retrieval time, and a reproducible source snapshot."
+      introduction="Every current officeholder and pilot legislation record is tied to official government sources, a retrieval time, and a reproducible source snapshot."
     >
       <section>
         <h2>Authoritative sources first</h2>
@@ -36,11 +36,11 @@ export default function MethodologyPage() {
       <section>
         <h2>Coverage honesty</h2>
         <p>
-          Profiles show the current office and term label, party, official
-          contact channels, committee assignments, source links, and the most
-          recent verification date. Bills, votes, and campaign finance are
-          clearly excluded from this phase rather than shown as incomplete
-          facts.
+          Profiles show current office facts and connect to activity from the
+          two-bill pilot when identities reconcile. Bill pages distinguish
+          official-source summaries from product-authored context, preserve
+          original vote values, and state that the pilot is not complete
+          legislative coverage. Campaign finance remains excluded.
         </p>
       </section>
       <section>
