@@ -4,17 +4,21 @@ import Link from "next/link";
 
 import { PartyLabel } from "@/components/atoms/party-label";
 import { BillCard } from "@/components/molecules/bill-card";
+import { FinanceOverviewCard } from "@/components/molecules/finance-overview-card";
 import { SiteFooter } from "@/components/organisms/site-footer";
 import { SiteHeader } from "@/components/organisms/site-header";
+import type { CampaignFinanceSummary } from "@/domain/finance/types";
 import type { CurrentOfficial } from "@/domain/officials/types";
 import type { OfficialLegislationActivity } from "@/domain/legislation/types";
 
 export function OfficialProfileTemplate({
   official,
   legislation,
+  finance,
 }: {
   official: CurrentOfficial;
   legislation: OfficialLegislationActivity[];
+  finance: CampaignFinanceSummary | null;
 }) {
   const latestVerification = official.sources
     .map((source) => source.retrievedAt)
@@ -132,6 +136,26 @@ export function OfficialProfileTemplate({
                   This official has no sponsorship or recorded vote in the
                   current two-bill pilot. That does not mean they have no other
                   legislative activity.
+                </p>
+              )}
+            </section>
+
+            <section aria-labelledby="finance-title">
+              <h2 id="finance-title">Campaign finance</h2>
+              <p>
+                Phase 5 adds a federal-only, current-cycle finance pilot. Direct
+                campaign activity remains separate from spending by outside
+                groups.
+              </p>
+              {finance ? (
+                <div className="official-profile__finance">
+                  <FinanceOverviewCard summary={finance} />
+                </div>
+              ) : (
+                <p className="official-profile__empty">
+                  No finance overview is published for this profile in the
+                  current two-record federal pilot. This does not mean the
+                  official or candidate has no campaign-finance filings.
                 </p>
               )}
             </section>

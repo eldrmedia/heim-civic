@@ -190,6 +190,10 @@
     @apply mt-5 grid gap-4;
   }
 
+  .official-profile__finance {
+    @apply mt-5;
+  }
+
   .official-profile__empty {
     @apply bg-desert-50 rounded-lg border p-4 text-sm;
   }
@@ -424,5 +428,252 @@
 
   .bill-page__scope p {
     @apply mt-2 text-sm leading-6 text-slate-700;
+  }
+
+  .finance-overview-card {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .finance-overview-card__heading {
+    @apply text-juniper-800 flex items-start gap-3;
+  }
+
+  .finance-overview-card__heading > svg {
+    @apply mt-1 shrink-0;
+  }
+
+  .finance-overview-card__heading p {
+    @apply m-0 text-xs font-bold tracking-[0.08em] text-slate-500 uppercase;
+  }
+
+  .finance-overview-card__heading h3 {
+    @apply mt-1 font-serif text-xl font-bold;
+  }
+
+  .finance-overview-card__totals {
+    @apply mt-5 grid gap-2 sm:grid-cols-3;
+  }
+
+  .finance-overview-card__totals > div {
+    @apply rounded-lg border bg-white p-3;
+  }
+
+  .finance-overview-card__totals dt {
+    @apply text-xs text-slate-500;
+  }
+
+  .finance-overview-card__totals dd {
+    @apply text-juniper-800 mt-1 text-base font-bold;
+  }
+
+  .official-profile__content .finance-overview-card > p {
+    @apply mt-4 text-sm leading-6;
+  }
+
+  .finance-overview-card > a {
+    @apply text-juniper-800 mt-4 inline-flex items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
+  .finance-index {
+    @apply mt-6 grid gap-4;
+  }
+
+  .finance-index__card {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .finance-index__card > p {
+    @apply text-clay-600 m-0 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .finance-index__card h3 {
+    @apply text-juniper-800 mt-2 font-serif text-xl font-bold;
+  }
+
+  .finance-index__card > span {
+    @apply mt-1 block text-sm text-slate-600;
+  }
+
+  .finance-index__card dl {
+    @apply mt-4 grid grid-cols-2 gap-2;
+  }
+
+  .finance-index__card dl > div {
+    @apply rounded-lg border bg-white p-3;
+  }
+
+  .finance-index__card dt {
+    @apply text-xs text-slate-500;
+  }
+
+  .finance-index__card dd {
+    @apply text-juniper-800 mt-1 font-bold;
+  }
+
+  .finance-index__card > a {
+    @apply text-juniper-800 mt-4 inline-flex items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
+  .finance-page__hero {
+    @apply bg-desert-100 border-b py-10 sm:py-14;
+  }
+
+  .finance-page__back {
+    @apply text-juniper-800 mb-7 inline-flex text-sm font-semibold underline-offset-4 hover:underline;
+  }
+
+  .finance-page__heading {
+    @apply mt-4 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end;
+  }
+
+  .finance-page__candidate {
+    @apply text-base font-bold text-slate-700;
+  }
+
+  .finance-page__heading h1 {
+    @apply text-juniper-800 mt-2 max-w-4xl font-serif text-4xl leading-tight font-bold tracking-[-0.03em] sm:text-6xl;
+  }
+
+  .finance-page__heading > div:first-child > p:last-child {
+    @apply mt-3 text-lg text-slate-700;
+  }
+
+  .finance-page__period {
+    @apply bg-sage-100 border-juniper-700/20 rounded-xl border p-5;
+  }
+
+  .finance-page__period span,
+  .finance-page__period small {
+    @apply block text-xs text-slate-600;
+  }
+
+  .finance-page__period strong {
+    @apply text-juniper-800 my-1 block text-base;
+  }
+
+  .finance-page__layout {
+    @apply grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-16;
+  }
+
+  .finance-page__content section + section {
+    @apply mt-12 border-t pt-12;
+  }
+
+  .finance-page__content h2,
+  .finance-page__panel h2,
+  .finance-page__warning h2 {
+    @apply text-juniper-800 mt-2 font-serif text-3xl font-bold;
+  }
+
+  .finance-page__section-intro {
+    @apply mt-4 max-w-3xl text-sm leading-7 text-slate-700;
+  }
+
+  .finance-page__headline-totals {
+    @apply mt-6 grid gap-3 sm:grid-cols-2;
+  }
+
+  .finance-page__headline-totals > div {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .finance-page__headline-totals dt {
+    @apply text-sm text-slate-600;
+  }
+
+  .finance-page__headline-totals dd {
+    @apply text-juniper-800 mt-2 font-serif text-3xl font-bold;
+  }
+
+  .finance-table-wrap {
+    @apply mt-6 overflow-x-auto rounded-xl border;
+  }
+
+  .finance-table {
+    @apply w-full min-w-[32rem] border-collapse bg-white text-left;
+  }
+
+  .finance-table caption {
+    @apply sr-only;
+  }
+
+  .finance-table th,
+  .finance-table td {
+    @apply border-b px-4 py-3 text-sm;
+  }
+
+  .finance-table thead th {
+    @apply bg-sage-100 text-juniper-800 text-xs tracking-[0.06em] uppercase;
+  }
+
+  .finance-table tbody th {
+    @apply font-medium text-slate-700;
+  }
+
+  .finance-table td,
+  .finance-table thead th:last-child {
+    @apply text-right tabular-nums;
+  }
+
+  .finance-table tbody tr:last-child th,
+  .finance-table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .finance-page__sidebar {
+    @apply space-y-5;
+  }
+
+  .finance-page__panel {
+    @apply shadow-card rounded-xl border bg-white p-5;
+  }
+
+  .finance-page__panel h2,
+  .finance-page__warning h2 {
+    @apply mt-0 text-2xl;
+  }
+
+  .finance-page__panel dl {
+    @apply mt-4 grid gap-3;
+  }
+
+  .finance-page__panel dl > div {
+    @apply border-t pt-3 first:border-0 first:pt-0;
+  }
+
+  .finance-page__panel dt {
+    @apply text-xs font-bold tracking-[0.06em] text-slate-500 uppercase;
+  }
+
+  .finance-page__panel dd {
+    @apply mt-1 text-sm font-semibold break-words;
+  }
+
+  .finance-page__panel > p {
+    @apply mt-4 text-sm leading-6 text-slate-700;
+  }
+
+  .finance-page__panel > a {
+    @apply text-juniper-800 mt-4 flex items-center gap-2 text-sm font-semibold underline underline-offset-4;
+  }
+
+  .finance-page__warning {
+    @apply border-clay-500/35 bg-desert-100 flex items-start gap-3 rounded-xl border p-5;
+  }
+
+  .finance-page__warning > svg {
+    @apply text-clay-600 mt-1 shrink-0;
+  }
+
+  .finance-page__warning p {
+    @apply mt-2 text-sm leading-6 text-slate-700;
+  }
+
+  .finance-page__scope {
+    @apply bg-sage-100 text-juniper-800 rounded-xl border p-5;
+  }
+
+  .finance-page__scope p {
+    @apply mt-2 text-sm leading-6;
   }
 }

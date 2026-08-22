@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 4 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 5 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -70,6 +70,12 @@ Phase 4 adds a deliberately narrow legislation repository backed by a checked-in
 
 Nevada vote records retain all lawmakers serving at the time of the vote. Only identities that safely reconcile to the separate current-officeholder snapshot link to a current profile. Federal roll calls retain authoritative chamber totals while publishing only the Nevada House delegation’s member-level values. Original vote labels are preserved alongside a small normalized vocabulary.
 
+## Pilot campaign finance
+
+Phase 5 adds a separate, checked-in FEC snapshot for two current Nevada House profiles. The finance domain preserves the election cycle, reporting-period boundaries, principal committee identity, official receipt and spending categories, cash, debt, source hashes, and retrieval times. Profile and finance routes read the normalized snapshot through a server-only repository.
+
+Candidate-authorized committee activity is not combined with independent expenditures, electioneering communications, party spending, or Nevada state filings. The interface labels unitemized contributions precisely and does not infer donor type, geography, ideology, or grassroots support from an aggregate category.
+
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 4 intentionally uses immutable, versioned geographic, current-officeholder, and two-bill legislation snapshots and does not create an address table. Generalized historical terms, full bill coverage, and finance records require separate reviewed schema decisions.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 5 intentionally uses immutable, versioned geographic, current-officeholder, two-bill legislation, and two-record federal finance snapshots and does not create an address table. Generalized historical terms, full bill coverage, Nevada finance, outside spending, and complete federal finance require separate reviewed schema decisions.

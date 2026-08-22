@@ -6,6 +6,7 @@ import { Button } from "@/components/atoms/button";
 const navigation = [
   { href: "/#foundation", label: "What we’re building" },
   { href: "/bills", label: "Pilot bills" },
+  { href: "/finance", label: "Finance pilot" },
   { href: "/docs", label: "Methodology" },
 ] as const;
 
@@ -27,7 +28,7 @@ export function SiteHeader() {
         </nav>
         <div className="site-header__actions">
           <Button asChild intent="secondary" size="small">
-            <Link href="/#phase-four">Phase 4</Link>
+            <Link href="/#phase-five">Phase 5</Link>
           </Button>
         </div>
       </div>

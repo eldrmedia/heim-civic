@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { OfficialProfileTemplate } from "@/components/templates/official-profile-template";
+import { getFinanceForOfficial } from "@/server/finance/repository";
 import {
   getAllCurrentOfficials,
   getOfficialBySlug,
@@ -34,6 +35,7 @@ export default async function OfficialProfilePage({
     <OfficialProfileTemplate
       official={official}
       legislation={getLegislationForOfficial(official.id)}
+      finance={getFinanceForOfficial(official.id)}
     />
   );
 }

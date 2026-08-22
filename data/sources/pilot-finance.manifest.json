@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "cycle": 2026,
+  "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
+  "records": [
+    {
+      "officialId": "us-congress:bioguide:A000369",
+      "candidateId": "H2NV02395",
+      "expectedCommitteeId": "C00496760",
+      "candidatePageUrl": "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true"
+    },
+    {
+      "officialId": "us-congress:bioguide:H001066",
+      "candidateId": "H2NV04011",
+      "expectedCommitteeId": "C00668228",
+      "candidatePageUrl": "https://www.fec.gov/data/candidate/H2NV04011/?cycle=2026&election_full=true"
+    }
+  ]
+}

@@ -267,6 +267,9 @@ test("a standardized official profile exposes sources and correction access", as
   await expect(
     page.getByRole("link", { name: "View sourced bill record" }),
   ).toHaveAttribute("href", "/bills/us-119-hr1366");
+  await expect(
+    page.getByRole("link", { name: "View sourced finance overview" }),
+  ).toHaveAttribute("href", "/finance/fec-h2nv02395-2026");
 });
 
 test("a pilot bill page exposes official summary, Nevada votes, and sources", async ({
@@ -292,6 +295,37 @@ test("a pilot bill page exposes official summary, Nevada votes, and sources", as
   ).toHaveAttribute(
     "href",
     "https://www.congress.gov/bill/119th-congress/house-bill/1366",
+  );
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("a federal finance page preserves official categories and coverage limits", async ({
+  page,
+}) => {
+  await page.goto("/finance/fec-h2nv02395-2026");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "Mark E. Amodei campaign finance",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.locator(".finance-page__headline-totals").getByText("$525,367.70"),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("row", { name: /Unitemized individual contributions/ }),
+  ).toContainText("$977.70");
+  await expect(
+    page.getByRole("heading", { name: "Outside spending is separate" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /View candidate record at the FEC/ }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true",
   );
 
   const results = await new AxeBuilder({ page }).analyze();

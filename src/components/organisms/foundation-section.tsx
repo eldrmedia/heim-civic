@@ -1,4 +1,4 @@
-import { BadgeCheck, Landmark, Vote } from "lucide-react";
+import { BadgeCheck, Landmark, ReceiptText } from "lucide-react";
 
 const foundations = [
   {
@@ -12,9 +12,9 @@ const foundations = [
     text: "Every officeholder carries authoritative source links, stable identifiers, retrieval times, and source-document hashes.",
   },
   {
-    icon: Vote,
-    title: "Bills connected to people",
-    text: "The Phase 4 pilot links official summaries, sponsors, actions, and recorded votes back to current profiles when identities reconcile.",
+    icon: ReceiptText,
+    title: "Finance with honest boundaries",
+    text: "The Phase 5 pilot preserves official FEC categories and separates candidate-authorized activity from spending by outside groups.",
   },
 ] as const;
 
@@ -27,13 +27,14 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 4 · Bills and votes vertical slice</p>
+          <p className="eyebrow">Phase 5 · Campaign-finance vertical slice</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            The fourth phase adds one Nevada and one federal bill end to end,
-            proving the source, vote, and profile connections before scaling.
+            The fifth phase adds two current-cycle federal finance records,
+            proving reporting-period, classification, and profile connections
+            before broader coverage.
           </p>
         </div>
 
@@ -49,14 +50,14 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-four">
+        <div className="phase-note" id="phase-five">
           <div>
             <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">
-              District lookup and current profiles remain live for private
-              testing. Legislative coverage is limited to two clearly labeled
-              pilot bills; complete bill history and campaign finance remain
-              excluded until their later provenance gates are satisfied.
+              District lookup, current profiles, and the two-bill legislation
+              slice remain live. Finance coverage is limited to two federal
+              House profiles; Nevada state finance and outside-spending totals
+              remain excluded until their separate provenance gates are met.
             </p>
           </div>
         </div>
