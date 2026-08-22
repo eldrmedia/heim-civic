@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function MethodologyPage() {
   return (
     <ContentPageTemplate
-      eyebrow="Phase 5 methodology"
+      eyebrow="Phase 6 methodology"
       title="Sources before summaries."
       introduction="Every current officeholder, pilot legislation record, and federal finance summary is tied to official government sources, a retrieval time, and a reproducible source snapshot."
     >
@@ -52,8 +52,18 @@ export default function MethodologyPage() {
         <p>
           Seats are modeled independently from people so vacancies and office
           transitions can be published explicitly. Every profile links to the
-          correction process; a current officeholder or district error receives
-          urgent human review.
+          correction process; requests begin in a received state with a case
+          reference and immutable intake event. A current officeholder or
+          district error receives urgent human review.
+        </p>
+      </section>
+      <section>
+        <h2>Search coverage</h2>
+        <p>
+          Search is generated only from records already accepted for public
+          display: current officials, official district boundaries, and the
+          reviewed pilot bill set. It does not search submitted addresses,
+          correction reports, voter files, or inferred political attributes.
         </p>
       </section>
     </ContentPageTemplate>

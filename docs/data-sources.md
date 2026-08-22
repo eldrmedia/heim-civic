@@ -1,6 +1,6 @@
 # Official source discovery inventory
 
-- **Status:** Phase 5 geographic, officeholder, legislation, and two-record federal finance vertical slices implemented; Nevada finance remains blocked on a supported source
+- **Status:** Phase 6 search and correction intake implemented over the geographic, officeholder, legislation, and two-record federal finance slices; Nevada finance remains blocked on a supported source
 - **Reviewed:** 2026-08-22
 - **Rule:** Re-check schemas, access terms, licenses, and effective dates before implementation.
 

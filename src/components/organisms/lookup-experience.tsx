@@ -44,7 +44,7 @@ export function LookupExperience() {
     response && response.status !== "confirmed" ? response : null;
 
   return (
-    <div className="lookup-experience">
+    <div className="lookup-experience" id="address-lookup">
       <div className="lookup-experience__content">
         <form className="address-lookup" onSubmit={handleSubmit}>
           <label className="address-lookup__label" htmlFor="nevada-address">

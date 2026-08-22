@@ -21,7 +21,7 @@
   }
 
   .button--primary {
-    @apply border-clay-500 bg-clay-500 hover:border-clay-600 hover:bg-clay-600 text-white;
+    @apply border-clay-600 bg-clay-600 hover:border-juniper-700 hover:bg-juniper-700 text-white;
   }
 
   .button--secondary {

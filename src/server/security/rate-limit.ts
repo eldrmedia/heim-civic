@@ -2,8 +2,6 @@ import "server-only";
 
 import { createHmac, randomBytes } from "node:crypto";
 
-const windowMs = 60_000;
-const requestLimit = 10;
 const buckets = new Map<string, { count: number; resetsAt: number }>();
 const processSecret =
   process.env.LOOKUP_RATE_LIMIT_SECRET ?? randomBytes(32).toString("hex");
@@ -13,6 +11,12 @@ export type RateLimitResult = {
   limit: number;
   remaining: number;
   retryAfterSeconds: number;
+};
+
+type RateLimitPolicy = {
+  namespace: string;
+  windowMs: number;
+  requestLimit: number;
 };
 
 function requestFingerprint(request: Request): string {
@@ -28,15 +32,16 @@ function requestFingerprint(request: Request): string {
     .digest("hex");
 }
 
-export function checkLookupRateLimit(
+function checkRateLimit(
   request: Request,
+  policy: RateLimitPolicy,
   now = Date.now(),
 ): RateLimitResult {
-  const key = requestFingerprint(request);
+  const key = `${policy.namespace}:${requestFingerprint(request)}`;
   const existing = buckets.get(key);
   const bucket =
     !existing || existing.resetsAt <= now
-      ? { count: 0, resetsAt: now + windowMs }
+      ? { count: 0, resetsAt: now + policy.windowMs }
       : existing;
 
   bucket.count += 1;
@@ -49,9 +54,31 @@ export function checkLookupRateLimit(
   }
 
   return {
-    allowed: bucket.count <= requestLimit,
-    limit: requestLimit,
-    remaining: Math.max(0, requestLimit - bucket.count),
+    allowed: bucket.count <= policy.requestLimit,
+    limit: policy.requestLimit,
+    remaining: Math.max(0, policy.requestLimit - bucket.count),
     retryAfterSeconds: Math.max(1, Math.ceil((bucket.resetsAt - now) / 1_000)),
   };
+}
+
+export function checkLookupRateLimit(
+  request: Request,
+  now = Date.now(),
+): RateLimitResult {
+  return checkRateLimit(
+    request,
+    { namespace: "lookup", windowMs: 60_000, requestLimit: 10 },
+    now,
+  );
+}
+
+export function checkCorrectionRateLimit(
+  request: Request,
+  now = Date.now(),
+): RateLimitResult {
+  return checkRateLimit(
+    request,
+    { namespace: "correction", windowMs: 10 * 60_000, requestLimit: 5 },
+    now,
+  );
 }

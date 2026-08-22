@@ -9,6 +9,9 @@ export function SiteFooter() {
           Civic Foundation. It is not an official government service.
         </p>
         <nav className="site-footer__links" aria-label="Footer navigation">
+          <Link className="site-footer__link" href="/search">
+            Search
+          </Link>
           <Link className="site-footer__link" href="/docs">
             Methodology
           </Link>

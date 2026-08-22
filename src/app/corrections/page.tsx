@@ -1,41 +1,56 @@
 import type { Metadata } from "next";
 
+import { CorrectionForm } from "@/components/organisms/correction-form";
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
 
 export const metadata: Metadata = {
   title: "Corrections",
   description:
-    "The planned evidence-based Heim Civic Nevada correction process.",
+    "Submit an evidence-based factual correction to Heim Civic Nevada.",
 };
 
-export default function CorrectionsPage() {
+type CorrectionsPageProps = {
+  searchParams: Promise<{ record?: string | string[] }>;
+};
+
+export default async function CorrectionsPage({
+  searchParams,
+}: CorrectionsPageProps) {
+  const params = await searchParams;
+  const initialRecord =
+    typeof params.record === "string" ? params.record.slice(0, 240) : "";
+
   return (
     <ContentPageTemplate
-      eyebrow="Corrections policy preview"
+      eyebrow="Public correction intake"
       title="Factual corrections are always free."
-      introduction="Payment will never affect correction priority, factual treatment, or public-record placement."
+      introduction="Identify a published record, explain the suspected error, and share an authoritative source when possible. Payment never affects priority or factual treatment."
     >
+      <CorrectionForm initialRecord={initialRecord} />
       <section>
-        <h2>Evidence-based review</h2>
+        <h2>What happens next</h2>
         <p>
-          Anyone will be able to identify a record and explain a suspected
-          error. Editors will compare authoritative sources, import history, and
-          affected records before resolving the request.
+          A submitted request receives a reference number and enters the
+          correction queue as “received.” Editors compare authoritative sources,
+          import history, and every affected record before resolving it.
         </p>
       </section>
       <section>
-        <h2>Accountable history</h2>
+        <h2>Review targets and accountable history</h2>
         <p>
-          Material manual changes will create an audit event with the actor,
-          reason, time, and before-and-after references. Material public
-          corrections will receive a visible note when appropriate.
+          Current-officeholder and district reports are targeted for triage
+          within one business day; other factual reports within two. Material
+          manual changes retain the reason, time, evidence, and before-and-after
+          references. A visible correction note is published when appropriate.
         </p>
       </section>
       <section>
-        <h2>Submission is not open yet</h2>
+        <h2>Privacy and scope</h2>
         <p>
-          The intake form launches alongside sourced public records so no one is
-          asked to submit information before the review workflow is operational.
+          Contact information is used only to acknowledge and investigate the
+          report. Do not submit a home address, political preferences, or
+          unrelated sensitive information. Corrections cover verifiable facts;
+          disagreements about policy or opinion are outside this workflow.
         </p>
       </section>
     </ContentPageTemplate>

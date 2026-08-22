@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 5 private-alpha vertical slice: transient address lookup, official Nevada district boundaries, source-verified current officeholders, two pilot bills with recorded votes, and two federal campaign-finance summaries.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 6 private-alpha vertical slice: transient address lookup, official Nevada district boundaries, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, cross-record civic search, and evidence-based correction intake.
 
 ## Requirements
 
@@ -42,9 +42,9 @@ src/
   app/          Next.js routes and metadata
   components/   Atomic Design component layers
   data/         Checked-in generated boundary, officeholder, legislation, and finance artifacts
-  domain/       Framework-independent geography, official, legislation, and finance records
+  domain/       Framework-independent civic records, search, and correction contracts
   lib/          Framework-independent helpers
-  server/       Server-only geocoding, lookup, official repository, and abuse controls
+  server/       Server-only repositories, search, delivery adapters, and abuse controls
   styles/       Tailwind theme, base, BEM components, pages
   test/         Shared unit-test setup
 tests/e2e/      Playwright journeys and automated accessibility scans
@@ -68,3 +68,7 @@ Read `AGENTS.md` before making changes. Exact representative-lookup addresses mu
 ## Pilot finance refresh
 
 `npm run data:finance` downloads candidate totals and principal-committee records from four official FEC API endpoints for the two-profile Phase 5 vertical slice. It validates candidate and committee identities, the 2026 election cycle, reporting periods, nonnegative aggregates, and reconciliation of official contribution categories before updating the checked-in snapshot. `FEC_API_KEY` may provide a production key; the public `DEMO_KEY` is the local fallback. Outside spending and Nevada state campaign finance are explicitly excluded.
+
+## Correction intake
+
+Public corrections require a reviewed external case-management receiver. Set `CORRECTIONS_INTAKE_WEBHOOK_URL` and `CORRECTIONS_INTAKE_WEBHOOK_TOKEN` only in the server environment. Without both values, the form fails closed and tells the submitter that nothing was retained. The receiving-system contract and privacy controls are documented in `docs/phase-6-search-and-corrections.md`.

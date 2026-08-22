@@ -263,7 +263,10 @@ test("a standardized official profile exposes sources and correction access", as
   ).toBeVisible();
   await expect(
     page.getByRole("link", { name: "Report a factual correction" }),
-  ).toHaveAttribute("href", "/corrections");
+  ).toHaveAttribute(
+    "href",
+    "/corrections?record=%2Fofficials%2Fus-congress-a000369",
+  );
   await expect(
     page.getByRole("link", { name: "View sourced bill record" }),
   ).toHaveAttribute("href", "/bills/us-119-hr1366");
@@ -327,6 +330,63 @@ test("a federal finance page preserves official categories and coverage limits",
     "href",
     "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true",
   );
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("civic search discovers officials, districts, bills, and subjects", async ({
+  page,
+}) => {
+  await page.goto("/search?q=Assembly+District+1");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "Find a Nevada public record.",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/results for “Assembly District 1”/),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      name: "Nevada Assembly District 1",
+      exact: true,
+    }),
+  ).toBeVisible();
+
+  await page.getByRole("searchbox").fill("Steven Horsford");
+  await page.getByRole("button", { name: "Search" }).click();
+  await expect(
+    page.getByRole("heading", { name: "Steven Horsford" }),
+  ).toBeVisible();
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("correction intake explains a failed delivery without claiming receipt", async ({
+  page,
+}) => {
+  await page.goto("/corrections?record=%2Fofficials%2Fus-congress-a000369");
+
+  await expect(page.getByLabel("Page or record")).toHaveValue(
+    "/officials/us-congress-a000369",
+  );
+  await page
+    .getByLabel("What appears to be incorrect?")
+    .fill(
+      "The committee assignment appears to be out of date according to the official roster.",
+    );
+  await page.getByLabel("Your email").fill("reader@example.com");
+  await page.getByRole("checkbox").check();
+  await page.getByRole("button", { name: "Submit factual correction" }).click();
+
+  await expect(
+    page.getByText(/Correction intake is temporarily unavailable/),
+  ).toBeVisible();
+  await expect(page.getByText(/No information was retained/)).toBeVisible();
 
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations).toEqual([]);

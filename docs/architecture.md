@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 5 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 6 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -76,6 +76,12 @@ Phase 5 adds a separate, checked-in FEC snapshot for two current Nevada House pr
 
 Candidate-authorized committee activity is not combined with independent expenditures, electioneering communications, party spending, or Nevada state filings. The interface labels unitemized contributions precisely and does not infer donor type, geography, ideology, or grassroots support from an aggregate category.
 
+## Civic search and corrections
+
+Phase 6 builds a server-only search index from the accepted official, boundary, and pilot-legislation snapshots. Search is server-rendered, bounded to published records, and never includes address lookup values, correction reports, voter files, or inferred attributes.
+
+Correction intake uses a client form with a same-origin, validated, no-store route handler. The route applies a separate rate-limit policy, creates a case reference and initial immutable audit event, and forwards the envelope to a configured HTTPS case-management endpoint. The application does not claim receipt when delivery is unavailable and does not use the local filesystem as a production queue. See `docs/phase-6-search-and-corrections.md` for the receiving-system contract.
+
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 5 intentionally uses immutable, versioned geographic, current-officeholder, two-bill legislation, and two-record federal finance snapshots and does not create an address table. Generalized historical terms, full bill coverage, Nevada finance, outside spending, and complete federal finance require separate reviewed schema decisions.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 6 intentionally uses immutable, versioned geographic, current-officeholder, two-bill legislation, and two-record federal finance snapshots and does not create an address table. Correction cases remain behind a delivery interface until the durable schema and access controls are reviewed. Generalized historical terms, full bill coverage, Nevada finance, outside spending, and complete federal finance require separate reviewed schema decisions.

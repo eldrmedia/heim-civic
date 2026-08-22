@@ -11,7 +11,8 @@ Nevada warmth on the surface; rigorous civic data underneath. The interface shou
 | Desert 50   | `#fffdf8` | Primary page background              |
 | Desert 100  | `#f7eddc` | Warm section background              |
 | Juniper 700 | `#0f513f` | Primary identity and headings        |
-| Clay 500    | `#c9673f` | Primary action and emphasis          |
+| Clay 500    | `#c9673f` | Decorative emphasis                  |
+| Clay 600    | `#a94f30` | Accessible primary action            |
 | Sage 400    | `#88a184` | Map layers and secondary information |
 | Slate 900   | `#14272d` | Primary text                         |
 
@@ -36,7 +37,7 @@ District results use one full-width statewide map that layers the selected congr
 - **Templates:** Stable page composition and landmarks.
 - **Pages:** Route metadata, data loading, and template selection.
 
-Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Phase 4 adds the bill-card molecule and bill-page template. Phase 5 adds the finance-overview molecule and finance-page template. Party, vote, and finance values are always written in text; neutral brand color does not imply partisan meaning. Finance categories use accessible tables rather than color-only charts.
+Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Phase 4 adds the bill-card molecule and bill-page template. Phase 5 adds the finance-overview molecule and finance-page template. Phase 6 adds search-result and correction-form organisms using the same BEM and token layers. Party, vote, and finance values are always written in text; neutral brand color does not imply partisan meaning. Finance categories use accessible tables rather than color-only charts.
 
 ## Styling rules
 

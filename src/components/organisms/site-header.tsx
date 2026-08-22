@@ -4,6 +4,7 @@ import { BrandLockup } from "@/components/atoms/brand-lockup";
 import { Button } from "@/components/atoms/button";
 
 const navigation = [
+  { href: "/search", label: "Search records" },
   { href: "/#foundation", label: "What we’re building" },
   { href: "/bills", label: "Pilot bills" },
   { href: "/finance", label: "Finance pilot" },
@@ -28,7 +29,7 @@ export function SiteHeader() {
         </nav>
         <div className="site-header__actions">
           <Button asChild intent="secondary" size="small">
-            <Link href="/#phase-five">Phase 5</Link>
+            <Link href="/corrections">Report a correction</Link>
           </Button>
         </div>
       </div>

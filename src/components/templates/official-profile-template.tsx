@@ -220,7 +220,10 @@ export function OfficialProfileTemplate({
               </p>
             </section>
 
-            <Link className="official-profile__correction" href="/corrections">
+            <Link
+              className="official-profile__correction"
+              href={`/corrections?record=${encodeURIComponent(`/officials/${official.slug}`)}`}
+            >
               Report a factual correction
             </Link>
           </aside>

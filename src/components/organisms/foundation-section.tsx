@@ -13,8 +13,8 @@ const foundations = [
   },
   {
     icon: ReceiptText,
-    title: "Finance with honest boundaries",
-    text: "The Phase 5 pilot preserves official FEC categories and separates candidate-authorized activity from spending by outside groups.",
+    title: "Discovery and correction",
+    text: "Phase 6 adds source-bounded civic search and a free correction intake with validation, case references, and an auditable received state.",
   },
 ] as const;
 
@@ -27,14 +27,13 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 5 · Campaign-finance vertical slice</p>
+          <p className="eyebrow">Phase 6 · Search and corrections</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            The fifth phase adds two current-cycle federal finance records,
-            proving reporting-period, classification, and profile connections
-            before broader coverage.
+            The sixth phase makes the reviewed pilot records discoverable and
+            opens an evidence-based path for the public to challenge a fact.
           </p>
         </div>
 
@@ -50,14 +49,14 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-five">
+        <div className="phase-note" id="phase-six">
           <div>
             <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">
-              District lookup, current profiles, and the two-bill legislation
-              slice remain live. Finance coverage is limited to two federal
+              Search covers published officials, districts, pilot bills, and
+              subjects only. Finance coverage remains limited to two federal
               House profiles; Nevada state finance and outside-spending totals
-              remain excluded until their separate provenance gates are met.
+              stay excluded until their separate provenance gates are met.
             </p>
           </div>
         </div>
