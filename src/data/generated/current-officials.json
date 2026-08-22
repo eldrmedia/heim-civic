@@ -1,0 +1,4714 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "nv-current-officials:2026-08-22",
+  "generatedAt": "2026-08-22T16:30:15.373Z",
+  "parserVersion": "official-roster-v1",
+  "jurisdiction": "Nevada",
+  "sources": [
+    {
+      "id": "nv-lcb-assembly-current",
+      "organization": "Nevada Legislature",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+      "retrievedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "nv-lcb-senate-current",
+      "organization": "Nevada Legislature",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+      "retrievedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "us-house-clerk-current",
+      "organization": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/Members/ViewMemberList",
+      "documentSha256": "7abb4df68be58dd9c605db0322c7152437498dad2556af07c6ecb2d8c290511a",
+      "retrievedAt": "2026-08-22T16:30:13.712Z"
+    },
+    {
+      "id": "us-house-directory-current",
+      "organization": "U.S. House of Representatives",
+      "url": "https://www.house.gov/representatives",
+      "documentSha256": "a9675ed3488ef0ba08b9e9e01ca13cf9fa6252e4f94ee8b04dd0854de11d1beb",
+      "retrievedAt": "2026-08-22T16:30:13.608Z"
+    },
+    {
+      "id": "us-senate-contact-current",
+      "organization": "U.S. Senate",
+      "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+      "documentSha256": "984865a4a6e00af68c9617ea45f52b8939f49143780c832cb68c747fa4bfef5e",
+      "retrievedAt": "2026-08-22T16:30:13.940Z"
+    },
+    {
+      "id": "us-senate-detail-current",
+      "organization": "U.S. Senate",
+      "url": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
+      "documentSha256": "9727326ea3559ce8f0743cdb0e3a277608a261eff3813f95a27c7fd2cffda22a",
+      "retrievedAt": "2026-08-22T16:30:13.851Z"
+    }
+  ],
+  "officials": [
+    {
+      "id": "nv-lcb:legislator:307",
+      "slug": "nv-lcb-307",
+      "name": "Daniele Monroe-Moreno",
+      "sortName": "Monroe-Moreno, Daniele",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/MonroeMoreno.Daniele.307.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "1",
+        "districtLabel": "Nevada Assembly District 1",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/1",
+        "contactUrl": "mailto:Daniele.MonroeMoreno@asm.state.nv.us",
+        "email": "Daniele.MonroeMoreno@asm.state.nv.us",
+        "phone": "(775) 684-8509",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        },
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:1",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/1",
+          "externalId": "nv-lcb:legislator:307",
+          "retrievedAt": "2026-08-22T16:30:14.621Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "00a146d4e4fae7e8eb3718cd7fa3993272a2ef359ae0ee11d8e017d9b4be73ba",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:379",
+      "slug": "nv-lcb-379",
+      "name": "Heidi Kasama",
+      "sortName": "Kasama, Heidi",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Kasama.Heidi.379.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "2",
+        "districtLabel": "Nevada Assembly District 2",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/2",
+        "contactUrl": "mailto:Heidi.Kasama@asm.state.nv.us",
+        "email": "Heidi.Kasama@asm.state.nv.us",
+        "phone": "(775) 684-8827",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:2",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/2",
+          "externalId": "nv-lcb:legislator:379",
+          "retrievedAt": "2026-08-22T16:30:14.520Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "fb297c0fc600e1d92b18e4b6824c2d706f30fa198b22521bc9fb8ca357bc9139",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:359",
+      "slug": "nv-lcb-359",
+      "name": "Selena Torres-Fossett",
+      "sortName": "Torres-Fossett, Selena",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/TorresFossett.Selena.359.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "3",
+        "districtLabel": "Nevada Assembly District 3",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/3",
+        "contactUrl": "mailto:Selena.Torres@asm.state.nv.us",
+        "email": "Selena.Torres@asm.state.nv.us",
+        "phone": "(775) 684-8599",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:3",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/3",
+          "externalId": "nv-lcb:legislator:359",
+          "retrievedAt": "2026-08-22T16:30:14.829Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "0cba31a7586f24ba65c55680a5ef7d3a1cd7dfec7104ebcb8d8660263c27ed1e",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:410",
+      "slug": "nv-lcb-410",
+      "name": "Lisa K. Cole",
+      "sortName": "Cole, Lisa K.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Cole.Lisa.410.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "4",
+        "districtLabel": "Nevada Assembly District 4",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/4",
+        "contactUrl": "mailto:lisa.cole@asm.state.nv.us",
+        "email": "lisa.cole@asm.state.nv.us",
+        "phone": "(775) 684-8829",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        },
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:4",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/4",
+          "externalId": "nv-lcb:legislator:410",
+          "retrievedAt": "2026-08-22T16:30:14.161Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "362e7686fb3bdf9b1253db490732d015df9d6a0bf6e1020d4c6ddbf35c337bb7",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:304",
+      "slug": "nv-lcb-304",
+      "name": "Brittney M. Miller",
+      "sortName": "Miller, Brittney M.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Miller.Brittney.304.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "5",
+        "districtLabel": "Nevada Assembly District 5",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/5",
+        "contactUrl": "mailto:Brittney.Miller@asm.state.nv.us",
+        "email": "Brittney.Miller@asm.state.nv.us",
+        "phone": "(775) 684-8833",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        },
+        {
+          "name": "Assembly Public Safety and Security (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:5",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/5",
+          "externalId": "nv-lcb:legislator:304",
+          "retrievedAt": "2026-08-22T16:30:14.614Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "10b219d660c82df9e27c81c7d0c0434da78358ec02ae8364c4b503dc50dff26a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:422",
+      "slug": "nv-lcb-422",
+      "name": "Jovan A. Jackson",
+      "sortName": "Jackson, Jovan A.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Jackson.Jovan.422.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "6",
+        "districtLabel": "Nevada Assembly District 6",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/6",
+        "contactUrl": "mailto:jovan.jackson@asm.state.nv.us",
+        "email": "jovan.jackson@asm.state.nv.us",
+        "phone": "(775) 684-8545",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:6",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/6",
+          "externalId": "nv-lcb:legislator:422",
+          "retrievedAt": "2026-08-22T16:30:14.513Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "2f5dfbb845af71583e1239dea5f8d76de0a6f70e89e8f1d29611b9fed8ac6401",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:423",
+      "slug": "nv-lcb-423",
+      "name": "Tanya P. Flanagan",
+      "sortName": "Flanagan, Tanya P.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Flanagan.Tanya.423.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "7",
+        "districtLabel": "Nevada Assembly District 7",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/7",
+        "contactUrl": "mailto:tanya.flanagan@asm.state.nv.us",
+        "email": "tanya.flanagan@asm.state.nv.us",
+        "phone": "(775) 684-8587",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:7",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/7",
+          "externalId": "nv-lcb:legislator:423",
+          "retrievedAt": "2026-08-22T16:30:14.260Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "6af8523a2438da56617cb2531e592ee9b13eb98b45c33dc31ea6bc9de1121f2b",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:392",
+      "slug": "nv-lcb-392",
+      "name": "Duy Nguyen",
+      "sortName": "Nguyen, Duy",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Nguyen.Duy.392.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "8",
+        "districtLabel": "Nevada Assembly District 8",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/8",
+        "contactUrl": "mailto:Duy.Nguyen@asm.state.nv.us",
+        "email": "Duy.Nguyen@asm.state.nv.us",
+        "phone": "(775) 684-8537",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:8",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/8",
+          "externalId": "nv-lcb:legislator:392",
+          "retrievedAt": "2026-08-22T16:30:14.718Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "e1110168b806001aed10c49ffca1bfe708285ea899b3f8d2009886bdf4f5bf33",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:310",
+      "slug": "nv-lcb-310",
+      "name": "Steve Yeager",
+      "sortName": "Yeager, Steve",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Yeager.Steve.310.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "9",
+        "districtLabel": "Nevada Assembly District 9",
+        "leadershipTitle": "Speaker"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/9",
+        "contactUrl": "mailto:Steve.Yeager@asm.state.nv.us",
+        "email": "Steve.Yeager@asm.state.nv.us",
+        "phone": "(775) 684-8549",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:9",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/9",
+          "externalId": "nv-lcb:legislator:310",
+          "retrievedAt": "2026-08-22T16:30:14.834Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "87de92597b428af62586753bf49f439e4de51ee2a37e5426c4f3a152ae271f79",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:421",
+      "slug": "nv-lcb-421",
+      "name": "Venise Karris",
+      "sortName": "Karris, Venise",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Karris.Venise.421.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "10",
+        "districtLabel": "Nevada Assembly District 10",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/10",
+        "contactUrl": "mailto:venise.karris@asm.state.nv.us",
+        "email": "venise.karris@asm.state.nv.us",
+        "phone": "(775) 684-8541",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:10",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/10",
+          "externalId": "nv-lcb:legislator:421",
+          "retrievedAt": "2026-08-22T16:30:14.515Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "631b2b9cbcd59b6b1631f11e197868d039e74c0cf2d224b4d5ab3eb69e94ba3e",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:412",
+      "slug": "nv-lcb-412",
+      "name": "Cinthia Zermeño Moore",
+      "sortName": "Moore, Cinthia Zermeño",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Moore.CinthiaZermeo.412.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "11",
+        "districtLabel": "Nevada Assembly District 11",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/11",
+        "contactUrl": "mailto:cinthia.moore@asm.state.nv.us",
+        "email": "cinthia.moore@asm.state.nv.us",
+        "phone": "(775) 684-8553",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        },
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:11",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/11",
+          "externalId": "nv-lcb:legislator:412",
+          "retrievedAt": "2026-08-22T16:30:14.628Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "21f17bfac494e904bab9444bea65c2bcca41bb59fd4dd1afdb7b625755d2adef",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:393",
+      "slug": "nv-lcb-393",
+      "name": "Max E. Carter, II",
+      "sortName": "Carter, Max E., II",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Carter.Max.393.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "12",
+        "districtLabel": "Nevada Assembly District 12",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/12",
+        "contactUrl": "mailto:Max.Carter@asm.state.nv.us",
+        "email": "Max.Carter@asm.state.nv.us",
+        "phone": "(775) 684-8819",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:12",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/12",
+          "externalId": "nv-lcb:legislator:393",
+          "retrievedAt": "2026-08-22T16:30:14.163Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "4e173c46d7a73b2c5b2e90cb3515ce059bd991e5d9df3492b20c343349dc8875",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:394",
+      "slug": "nv-lcb-394",
+      "name": "Brian Hibbetts",
+      "sortName": "Hibbetts, Brian",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Hibbetts.Brian.394.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "13",
+        "districtLabel": "Nevada Assembly District 13",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/13",
+        "contactUrl": "mailto:Brian.Hibbetts@asm.state.nv.us",
+        "email": "Brian.Hibbetts@asm.state.nv.us",
+        "phone": "(775) 684-8853",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:13",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/13",
+          "externalId": "nv-lcb:legislator:394",
+          "retrievedAt": "2026-08-22T16:30:14.493Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "e763d1ae4a9f9046ea3ef839d53079a4383dfd12f0d72c2babe01f8dc0c3f1c9",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:395",
+      "slug": "nv-lcb-395",
+      "name": "Erica Mosca",
+      "sortName": "Mosca, Erica",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Mosca.Erica.395.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "14",
+        "districtLabel": "Nevada Assembly District 14",
+        "leadershipTitle": "Assistant Majority Floor Leader"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/14",
+        "contactUrl": "mailto:Erica.Mosca@asm.state.nv.us",
+        "email": "Erica.Mosca@asm.state.nv.us",
+        "phone": "(775) 684-8597",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        },
+        {
+          "name": "Assembly Legislative Operations and Elections (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:14",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/14",
+          "externalId": "nv-lcb:legislator:395",
+          "retrievedAt": "2026-08-22T16:30:14.694Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "c85021fd8a6c79738f4d42eb6e1a5abb7bcd950b4a0f2fca020496981f5645f4",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:363",
+      "slug": "nv-lcb-363",
+      "name": "Howard Watts",
+      "sortName": "Watts, Howard",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Watts.Howard.363.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "15",
+        "districtLabel": "Nevada Assembly District 15",
+        "leadershipTitle": "Majority Whip"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/15",
+        "contactUrl": "mailto:Howard.Watts@asm.state.nv.us",
+        "email": "Howard.Watts@asm.state.nv.us",
+        "phone": "(775) 684-8835",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:15",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/15",
+          "externalId": "nv-lcb:legislator:363",
+          "retrievedAt": "2026-08-22T16:30:14.825Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "b1625836b03b3b2cf1fd8e7e8149de9f7ab657fbea586d2f93729b7040804879",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:378",
+      "slug": "nv-lcb-378",
+      "name": "Cecelia González",
+      "sortName": "González, Cecelia",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Gonzlez.Cecelia.378.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "16",
+        "districtLabel": "Nevada Assembly District 16",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/16",
+        "contactUrl": "mailto:Cecelia.Gonzalez@asm.state.nv.us",
+        "email": "Cecelia.Gonzalez@asm.state.nv.us",
+        "phone": "(775) 684-8595",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Legislative Operations and Elections (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        },
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:16",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/16",
+          "externalId": "nv-lcb:legislator:378",
+          "retrievedAt": "2026-08-22T16:30:14.350Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "ef9a9494abc84946172aabfeb18de29c5254daf784ebb4d41a380dd1f58792dc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:420",
+      "slug": "nv-lcb-420",
+      "name": "Linda F. Hunt",
+      "sortName": "Hunt, Linda F.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Hunt.Linda.420.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "17",
+        "districtLabel": "Nevada Assembly District 17",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/17",
+        "contactUrl": "mailto:linda.hunt@asm.state.nv.us",
+        "email": "linda.hunt@asm.state.nv.us",
+        "phone": "(775) 684-8569",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:17",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/17",
+          "externalId": "nv-lcb:legislator:420",
+          "retrievedAt": "2026-08-22T16:30:14.499Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "e743ca0d01489609adc1954f0802602f6c552fc53df50c56a34333b72815ea50",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:380",
+      "slug": "nv-lcb-380",
+      "name": "Venicia Considine",
+      "sortName": "Considine, Venicia",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Considine.Venicia.380.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "18",
+        "districtLabel": "Nevada Assembly District 18",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/18",
+        "contactUrl": "mailto:Venicia.Considine@asm.state.nv.us",
+        "email": "Venicia.Considine@asm.state.nv.us",
+        "phone": "(775) 684-8801",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:18",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/18",
+          "externalId": "nv-lcb:legislator:380",
+          "retrievedAt": "2026-08-22T16:30:14.149Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "9558c3990bdfe6a7ed18be34c9c6e40bcbea9a702fe4de626391bd2594a8eb8e",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:426",
+      "slug": "nv-lcb-426",
+      "name": "Jason Patchett",
+      "sortName": "Patchett, Jason",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Patchett.Jason.426.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "19",
+        "districtLabel": "Nevada Assembly District 19",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/19",
+        "contactUrl": "mailto:jason.patchett@asm.state.nv.us",
+        "email": "jason.patchett@asm.state.nv.us",
+        "phone": "(775) 684-8857",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:19",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/19",
+          "externalId": "nv-lcb:legislator:426",
+          "retrievedAt": "2026-08-22T16:30:14.785Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "64a01e6e715ef94b8d5616525003252e0b350bc726ddd450fc00475d216dabbf",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:377",
+      "slug": "nv-lcb-377",
+      "name": "David Orentlicher",
+      "sortName": "Orentlicher, David",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Orentlicher.David.377.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "20",
+        "districtLabel": "Nevada Assembly District 20",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/20",
+        "contactUrl": "mailto:David.Orentlicher@asm.state.nv.us",
+        "email": "David.Orentlicher@asm.state.nv.us",
+        "phone": "(775) 684-8577",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:20",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/20",
+          "externalId": "nv-lcb:legislator:377",
+          "retrievedAt": "2026-08-22T16:30:14.735Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "99c926f4eb6bfb6bde58209e836a1a2d69f1e7ceba036235a848b0d75736b0b8",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:376",
+      "slug": "nv-lcb-376",
+      "name": "Elaine H. Marzola",
+      "sortName": "Marzola, Elaine H.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Marzola.Elaine.376.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "21",
+        "districtLabel": "Nevada Assembly District 21",
+        "leadershipTitle": "Speaker Pro Tempore"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/21",
+        "contactUrl": "mailto:Elaine.Marzola@asm.state.nv.us",
+        "email": "Elaine.Marzola@asm.state.nv.us",
+        "phone": "(775) 684-8839",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:21",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/21",
+          "externalId": "nv-lcb:legislator:376",
+          "retrievedAt": "2026-08-22T16:30:14.596Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "eff3a86c7ec83b71d37e2ec761b2a644bcb53f2ca8ee2400234bfe55b86e2717",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:364",
+      "slug": "nv-lcb-364",
+      "name": "Melissa R.. Hardy",
+      "sortName": "Hardy, Melissa R..",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Hardy.Melissa.364.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "22",
+        "districtLabel": "Nevada Assembly District 22",
+        "leadershipTitle": "Assistant Minority Floor Leader South"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/22",
+        "contactUrl": "mailto:Melissa.Hardy@asm.state.nv.us",
+        "email": "Melissa.Hardy@asm.state.nv.us",
+        "phone": "(775) 684-8823",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:22",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/22",
+          "externalId": "nv-lcb:legislator:364",
+          "retrievedAt": "2026-08-22T16:30:14.422Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "e446f550e0606e090371cb514206edebc2a4677c64846f64126b2485580e82ad",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:397",
+      "slug": "nv-lcb-397",
+      "name": "Danielle Gallant",
+      "sortName": "Gallant, Danielle",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Gallant.Danielle.397.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "23",
+        "districtLabel": "Nevada Assembly District 23",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/23",
+        "contactUrl": "mailto:Danielle.Gallant@asm.state.nv.us",
+        "email": "Danielle.Gallant@asm.state.nv.us",
+        "phone": "(775) 684-8503",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:23",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/23",
+          "externalId": "nv-lcb:legislator:397",
+          "retrievedAt": "2026-08-22T16:30:14.318Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "5d418a0e902baaf29934e3f0af1e562b43d9f78806e91a1d17be45eea7957448",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:413",
+      "slug": "nv-lcb-413",
+      "name": "Erica P. Roth",
+      "sortName": "Roth, Erica P.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Roth.Erica.413.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "24",
+        "districtLabel": "Nevada Assembly District 24",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/24",
+        "contactUrl": "mailto:erica.roth@asm.state.nv.us",
+        "email": "erica.roth@asm.state.nv.us",
+        "phone": "(775) 684-8559",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:24",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/24",
+          "externalId": "nv-lcb:legislator:413",
+          "retrievedAt": "2026-08-22T16:30:14.832Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "c7fbed0fa6cae02eed91d45bf59061fa7abbd31240c95f65476db5bb77d1d499",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:398",
+      "slug": "nv-lcb-398",
+      "name": "Selena La Rue Hatch",
+      "sortName": "La Rue Hatch, Selena",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/LaRueHatch.Selena.398.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "25",
+        "districtLabel": "Nevada Assembly District 25",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/25",
+        "contactUrl": "mailto:Selena.La.Rue.Hatch@asm.state.nv.us",
+        "email": "Selena.La.Rue.Hatch@asm.state.nv.us",
+        "phone": "(775) 684-8837",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:25",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/25",
+          "externalId": "nv-lcb:legislator:398",
+          "retrievedAt": "2026-08-22T16:30:14.612Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "fa66fcebd9ec1f61e588c822c031579d5de9b71f4c12bdcc71c51f5d58323e6f",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:399",
+      "slug": "nv-lcb-399",
+      "name": "Rich DeLong",
+      "sortName": "DeLong, Rich",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/DeLong.Richard.399.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "26",
+        "districtLabel": "Nevada Assembly District 26",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/26",
+        "contactUrl": "mailto:Rich.Delong@asm.state.nv.us",
+        "email": "Rich.Delong@asm.state.nv.us",
+        "phone": "(775) 684-8848",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:26",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/26",
+          "externalId": "nv-lcb:legislator:399",
+          "retrievedAt": "2026-08-22T16:30:14.222Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "060b3d8a06eb9e04c72ce7bdde40eab5e4c57cb42cda1fe50f6d5b705c0d9631",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:416",
+      "slug": "nv-lcb-416",
+      "name": "Heather Goulding",
+      "sortName": "Goulding, Heather",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Goulding.Heather.416.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "27",
+        "districtLabel": "Nevada Assembly District 27",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/27",
+        "contactUrl": "mailto:heather.goulding@asm.state.nv.us",
+        "email": "heather.goulding@asm.state.nv.us",
+        "phone": "(775) 684-8845",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:27",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/27",
+          "externalId": "nv-lcb:legislator:416",
+          "retrievedAt": "2026-08-22T16:30:14.397Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "fab420e0f651e12d5b86e09fbb560229b2b704dc5ba19787ee3530e85e707fb6",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:401",
+      "slug": "nv-lcb-401",
+      "name": "Reuben D'Silva",
+      "sortName": "D'Silva, Reuben",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/DSilva.Reuben.401.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "28",
+        "districtLabel": "Nevada Assembly District 28",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/28",
+        "contactUrl": "mailto:Reuben.DSilva@asm.state.nv.us",
+        "email": "Reuben.DSilva@asm.state.nv.us",
+        "phone": "(775) 684-8583",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:28",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/28",
+          "externalId": "nv-lcb:legislator:401",
+          "retrievedAt": "2026-08-22T16:30:14.269Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "dd8427faf432fc212021c603484e2d37e83fc486ee11807979dbda100f5ca9c1",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:414",
+      "slug": "nv-lcb-414",
+      "name": "Joe Dalia",
+      "sortName": "Dalia, Joe",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Dalia.Joe.414.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "29",
+        "districtLabel": "Nevada Assembly District 29",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/29",
+        "contactUrl": "mailto:joe.dalia@asm.state.nv.us",
+        "email": "joe.dalia@asm.state.nv.us",
+        "phone": "(775) 684-8855",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:29",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/29",
+          "externalId": "nv-lcb:legislator:414",
+          "retrievedAt": "2026-08-22T16:30:14.214Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "e363136ed134da21dd635c8f2ac85b0f4368bd9900b4f5cdef9a15ddc5db77b6",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:375",
+      "slug": "nv-lcb-375",
+      "name": "Natha C. Anderson",
+      "sortName": "Anderson, Natha C.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Anderson.Natha.375.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "30",
+        "districtLabel": "Nevada Assembly District 30",
+        "leadershipTitle": "Assistant Majority Whip"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/30",
+        "contactUrl": "mailto:Natha.Anderson@asm.state.nv.us",
+        "email": "Natha.Anderson@asm.state.nv.us",
+        "phone": "(775) 684-8841",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:30",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/30",
+          "externalId": "nv-lcb:legislator:375",
+          "retrievedAt": "2026-08-22T16:30:14.118Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "bf10fecb05018ac9f5cf8db09a2a5970294f074321a5090f89f6ea6bbde154ea",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:277",
+      "slug": "nv-lcb-277",
+      "name": "Jill Dickman",
+      "sortName": "Dickman, Jill",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Dickman.Jill.277.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "31",
+        "districtLabel": "Nevada Assembly District 31",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/31",
+        "contactUrl": "mailto:Jill.Dickman@asm.state.nv.us",
+        "email": "Jill.Dickman@asm.state.nv.us",
+        "phone": "(775) 684-8563",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        },
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:31",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/31",
+          "externalId": "nv-lcb:legislator:277",
+          "retrievedAt": "2026-08-22T16:30:14.264Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "3e8e8d077ab24ed1ad38759841bfe811b3fcd17b0d3690a74cd9af1613a7fcbc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:366",
+      "slug": "nv-lcb-366",
+      "name": "Alexis M. Hansen",
+      "sortName": "Hansen, Alexis M.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Hansen.Alexis.366.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "32",
+        "districtLabel": "Nevada Assembly District 32",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/32",
+        "contactUrl": "mailto:Alexis.Hansen@asm.state.nv.us",
+        "email": "Alexis.Hansen@asm.state.nv.us",
+        "phone": "(775) 684-8851",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:32",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/32",
+          "externalId": "nv-lcb:legislator:366",
+          "retrievedAt": "2026-08-22T16:30:14.408Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "a8099e38b75e9b24d82810a1d66c005702c339fd140ddc369d518cc4c3fc14ff",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:402",
+      "slug": "nv-lcb-402",
+      "name": "Bert K. Gurr",
+      "sortName": "Gurr, Bert K.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Gurr.Bert.402.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "33",
+        "districtLabel": "Nevada Assembly District 33",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33",
+        "contactUrl": "mailto:Bert.Gurr@asm.state.nv.us",
+        "email": "Bert.Gurr@asm.state.nv.us",
+        "phone": "(775) 684-8831",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/456/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:33",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33",
+          "externalId": "nv-lcb:legislator:402",
+          "retrievedAt": "2026-08-22T16:30:14.399Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "2bb4030b27bd9f658d4737df6644ed44f29e51244f317d2f727aa31f626abe3a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:415",
+      "slug": "nv-lcb-415",
+      "name": "Hanadi Nadeem",
+      "sortName": "Nadeem, Hanadi",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Nadeem.Hanadi.415.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "34",
+        "districtLabel": "Nevada Assembly District 34",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/34",
+        "contactUrl": "mailto:hanadi.nadeem@asm.state.nv.us",
+        "email": "hanadi.nadeem@asm.state.nv.us",
+        "phone": "(775) 684-8847",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        },
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:34",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/34",
+          "externalId": "nv-lcb:legislator:415",
+          "retrievedAt": "2026-08-22T16:30:14.720Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "4be68e3d4bee0c7076b9ad475316aeeecaa54c1a3fcb0acc8b245d99c412718c",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:411",
+      "slug": "nv-lcb-411",
+      "name": "Rebecca Edgeworth",
+      "sortName": "Edgeworth, Rebecca",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Edgeworth.Rebecca.411.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "35",
+        "districtLabel": "Nevada Assembly District 35",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/35",
+        "contactUrl": "mailto:rebecca.edgeworth@asm.state.nv.us",
+        "email": "rebecca.edgeworth@asm.state.nv.us",
+        "phone": "(775) 684-8573",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        },
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:35",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/35",
+          "externalId": "nv-lcb:legislator:411",
+          "retrievedAt": "2026-08-22T16:30:14.278Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "a75bb767269d85e3e791b7e2d6dfd04dbb738a8d449af48e6c82cfab0682d6c4",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:371",
+      "slug": "nv-lcb-371",
+      "name": "Gregory T. Hafen, II",
+      "sortName": "Hafen, Gregory T., II",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Hafen.Gregory.371.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "36",
+        "districtLabel": "Nevada Assembly District 36",
+        "leadershipTitle": "Minority Floor Leader"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/36",
+        "contactUrl": "mailto:Gregory.Hafen@asm.state.nv.us",
+        "email": "Gregory.Hafen@asm.state.nv.us",
+        "phone": "(775) 684-8805",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:36",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/36",
+          "externalId": "nv-lcb:legislator:371",
+          "retrievedAt": "2026-08-22T16:30:14.406Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "87bba198e7fa50e6e6984b8a3330eeae0090fc39e419221420d55a9fb1940199",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:368",
+      "slug": "nv-lcb-368",
+      "name": "Shea M. Backus",
+      "sortName": "Backus, Shea M.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Backus.Shea.368.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "37",
+        "districtLabel": "Nevada Assembly District 37",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/37",
+        "contactUrl": "mailto:Shea.Backus@asm.state.nv.us",
+        "email": "Shea.Backus@asm.state.nv.us",
+        "phone": "(775) 684-8505",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:37",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/37",
+          "externalId": "nv-lcb:legislator:368",
+          "retrievedAt": "2026-08-22T16:30:14.113Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "e96321f1af356ca4c9c481311bded9baa87e64f9f718711029c2f2ccda793b11",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:403",
+      "slug": "nv-lcb-403",
+      "name": "Gregory S. Koenig",
+      "sortName": "Koenig, Gregory S.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Koenig.Gregory.403.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "38",
+        "districtLabel": "Nevada Assembly District 38",
+        "leadershipTitle": "Assistant Minority Floor Leader North"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/38",
+        "contactUrl": "mailto:Gregory.Koenig@asm.state.nv.us",
+        "email": "Gregory.Koenig@asm.state.nv.us",
+        "phone": "(775) 684-8507",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:38",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/38",
+          "externalId": "nv-lcb:legislator:403",
+          "retrievedAt": "2026-08-22T16:30:14.625Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "478cb9209dcca5b4b8c77ee33728872b482096cbfae4ced718db0f13d49f7ffc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:427",
+      "slug": "nv-lcb-427",
+      "name": "Blayne Osborn",
+      "sortName": "Osborn, Blayne",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Osborn.Blayne.427.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "39",
+        "districtLabel": "Nevada Assembly District 39",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/39",
+        "contactUrl": "mailto:blayne.osborn@asm.state.nv.us",
+        "email": "blayne.osborn@asm.state.nv.us",
+        "phone": "(775) 684-8843",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:39",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/39",
+          "externalId": "nv-lcb:legislator:427",
+          "retrievedAt": "2026-08-22T16:30:14.724Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "826a90b46d73b518406af70a38212974dab3c12ac8a800709a69bbbd51cc7b75",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:285",
+      "slug": "nv-lcb-285",
+      "name": "PK O’Neill",
+      "sortName": "O’Neill, PK",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/ONeill.PhilipPK.285.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "40",
+        "districtLabel": "Nevada Assembly District 40",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/40",
+        "contactUrl": "mailto:PK.Oneill@asm.state.nv.us",
+        "email": "PK.Oneill@asm.state.nv.us",
+        "phone": "(775) 684-8825",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:40",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/40",
+          "externalId": "nv-lcb:legislator:285",
+          "retrievedAt": "2026-08-22T16:30:14.730Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "99002882e6be6ba9d5fc98ca701f7ff1d1423d6973feb634757ec5cd698f5f39",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:344",
+      "slug": "nv-lcb-344",
+      "name": "Sandra Jauregui",
+      "sortName": "Jauregui, Sandra",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/Jauregui.Sandra.344.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "41",
+        "districtLabel": "Nevada Assembly District 41",
+        "leadershipTitle": "Majority Floor Leader"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/41",
+        "contactUrl": "mailto:Sandra.Jauregui@asm.state.nv.us",
+        "email": "Sandra.Jauregui@asm.state.nv.us",
+        "phone": "(775) 684-8821",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/458/Overview/"
+        },
+        {
+          "name": "Assembly Legislative Operations and Elections (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/461/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:41",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/41",
+          "externalId": "nv-lcb:legislator:344",
+          "retrievedAt": "2026-08-22T16:30:14.502Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "3112a67383fa6087c375e5609a1bc0688eb485bc3ee989e579e2ba6d4e66da65",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:353",
+      "slug": "nv-lcb-353",
+      "name": "Tracy Brown-May",
+      "sortName": "Brown-May, Tracy",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Assembly/Images/BrownMay.Tracy.353.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-assembly",
+        "title": "Nevada State Assembly Member",
+        "districtNumber": "42",
+        "districtLabel": "Nevada Assembly District 42",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/42",
+        "contactUrl": "mailto:Tracy.BrownMay@asm.state.nv.us",
+        "email": "Tracy.BrownMay@asm.state.nv.us",
+        "phone": "(775) 684-8803",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Assembly Health and Wellness (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/460/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+          "externalId": "state-assembly:42",
+          "retrievedAt": "2026-08-22T16:30:13.662Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "287a68e3ae0ad12015db73dc6b7fbe6c953ac807b19da4e050ae9d36b4021dfc",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/42",
+          "externalId": "nv-lcb:legislator:353",
+          "retrievedAt": "2026-08-22T16:30:14.164Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "1784855198f4342a68eeacc5b273731142a09d49b29e690564c2b41e5e621ed5",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:419",
+      "slug": "nv-lcb-419",
+      "name": "Michelee \"Shelly\" Cruz-Crawford",
+      "sortName": "Cruz-Crawford, Michelee \"Shelly\"",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/CruzCrawford.MicheleeShelly.419.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "1",
+        "districtLabel": "Nevada Senate District 1",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/1",
+        "contactUrl": "mailto:Shelly.Cruzcrawford@sen.state.nv.us",
+        "email": "Shelly.Cruzcrawford@sen.state.nv.us",
+        "phone": "(775) 684-1424",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/457/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:1",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/1",
+          "externalId": "nv-lcb:legislator:419",
+          "retrievedAt": "2026-08-22T16:30:14.926Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "a69f24ba2e475c82615080033f4b2f21cfaddb307bf35d56fed91725eeab20c6",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:273",
+      "slug": "nv-lcb-273",
+      "name": "Edgar Flores",
+      "sortName": "Flores, Edgar",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Flores.Edgar.273.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "2",
+        "districtLabel": "Nevada Senate District 2",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/2",
+        "contactUrl": "mailto:Edgar.Flores@sen.state.nv.us",
+        "email": "Edgar.Flores@sen.state.nv.us",
+        "phone": "(775) 684-1431",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:2",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/2",
+          "externalId": "nv-lcb:legislator:273",
+          "retrievedAt": "2026-08-22T16:30:14.985Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "41f440c80dea107f4763fcd616e1293a8712c573b473db9db1c59ad552b12ca2",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:372",
+      "slug": "nv-lcb-372",
+      "name": "Rochelle T. Nguyen",
+      "sortName": "Nguyen, Rochelle T.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Nguyen.Rochelle.372.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "3",
+        "districtLabel": "Nevada Senate District 3",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/3",
+        "contactUrl": "mailto:Rochelle.Nguyen@sen.state.nv.us",
+        "email": "Rochelle.Nguyen@sen.state.nv.us",
+        "phone": "(775) 684-1422",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:3",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/3",
+          "externalId": "nv-lcb:legislator:372",
+          "retrievedAt": "2026-08-22T16:30:15.095Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "0aa4855f2045f3c6312de1ad57fb6e062f870fec1845d8c2c92e9e3b34366061",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:129",
+      "slug": "nv-lcb-129",
+      "name": "Dina Neal",
+      "sortName": "Neal, Dina",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Neal.Dina.129.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "4",
+        "districtLabel": "Nevada Senate District 4",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/4",
+        "contactUrl": "mailto:Dina.Neal@sen.state.nv.us",
+        "email": "Dina.Neal@sen.state.nv.us",
+        "phone": "(775) 684-1429",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:4",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/4",
+          "externalId": "nv-lcb:legislator:129",
+          "retrievedAt": "2026-08-22T16:30:15.042Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "c3fa486713723c99b51bfa8c392cf8eb3b3198d220ec9ed59623410b3cf9068d",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:387",
+      "slug": "nv-lcb-387",
+      "name": "Carrie Ann Buck",
+      "sortName": "Buck, Carrie Ann",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Buck.Carrie.387.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "5",
+        "districtLabel": "Nevada Senate District 5",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/5",
+        "contactUrl": "mailto:Carrie.Buck@sen.state.nv.us",
+        "email": "Carrie.Buck@sen.state.nv.us",
+        "phone": "(775) 684-1457",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/457/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:5",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/5",
+          "externalId": "nv-lcb:legislator:387",
+          "retrievedAt": "2026-08-22T16:30:14.837Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "9b8e135a04a31b7a6c8a8958c64b012bbf4ee8fdf47e97873140a0ea34b15431",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:347",
+      "slug": "nv-lcb-347",
+      "name": "Nicole J. Cannizzaro",
+      "sortName": "Cannizzaro, Nicole J.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Cannizzaro.Nicole.347.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "6",
+        "districtLabel": "Nevada Senate District 6",
+        "leadershipTitle": "Majority Leader"
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/6",
+        "contactUrl": "mailto:Nicole.Cannizzaro@sen.state.nv.us",
+        "email": "Nicole.Cannizzaro@sen.state.nv.us",
+        "phone": "(775) 684-1475",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:6",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/6",
+          "externalId": "nv-lcb:legislator:347",
+          "retrievedAt": "2026-08-22T16:30:14.885Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "a4b8daac5b6cd8c74b0f1350fcaf9cc632d5a0aa582d21709fc6f3c9d02ee4bb",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:383",
+      "slug": "nv-lcb-383",
+      "name": "Roberta Lange",
+      "sortName": "Lange, Roberta",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Lange.Roberta.383.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "7",
+        "districtLabel": "Nevada Senate District 7",
+        "leadershipTitle": "Assistant Majority Leader"
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/7",
+        "contactUrl": "mailto:Roberta.Lange@sen.state.nv.us",
+        "email": "Roberta.Lange@sen.state.nv.us",
+        "phone": "(775) 684-6504",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Health and Wellness (Vice Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/457/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:7",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/7",
+          "externalId": "nv-lcb:legislator:383",
+          "retrievedAt": "2026-08-22T16:30:15.037Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "c50bb9816492c4caff9aabf66a0971b2c3a00116f00911300079fb331df48380",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:92",
+      "slug": "nv-lcb-92",
+      "name": "Marilyn Dondero Loop",
+      "sortName": "Dondero Loop, Marilyn",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/DonderoLoop.Marilyn.92.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "8",
+        "districtLabel": "Nevada Senate District 8",
+        "leadershipTitle": "President pro Tempore"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/8",
+        "contactUrl": "mailto:Marilyn.DonderoLoop@sen.state.nv.us",
+        "email": "Marilyn.DonderoLoop@sen.state.nv.us",
+        "phone": "(775) 684-1445",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:8",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/8",
+          "externalId": "nv-lcb:legislator:92",
+          "retrievedAt": "2026-08-22T16:30:14.954Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "3dae69e1b84332f043fd2ef9ee3f009063ea3b9314965dd2c08e5830ed3ea94f",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:358",
+      "slug": "nv-lcb-358",
+      "name": "Melanie Scheible",
+      "sortName": "Scheible, Melanie",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Scheible.Melanie.358.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "9",
+        "districtLabel": "Nevada Senate District 9",
+        "leadershipTitle": "Chief Majority Whip"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/9",
+        "contactUrl": "mailto:Melanie.Scheible@sen.state.nv.us",
+        "email": "Melanie.Scheible@sen.state.nv.us",
+        "phone": "(775) 684-1421",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:9",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/9",
+          "externalId": "nv-lcb:legislator:358",
+          "retrievedAt": "2026-08-22T16:30:15.150Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "3812c26fe0c6365fb1b6541bf616a5d84f023a91c313a76a55fa41bc33163d62",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:350",
+      "slug": "nv-lcb-350",
+      "name": "Fabian Doñate",
+      "sortName": "Doñate, Fabian",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Doate.Fabian.350.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "10",
+        "districtLabel": "Nevada Senate District 10",
+        "leadershipTitle": "Deputy Majority Whip"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/10",
+        "contactUrl": "mailto:Fabian.Donate@sen.state.nv.us",
+        "email": "Fabian.Donate@sen.state.nv.us",
+        "phone": "(775) 684-1427",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Health and Wellness (Chair)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/457/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:10",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/10",
+          "externalId": "nv-lcb:legislator:350",
+          "retrievedAt": "2026-08-22T16:30:14.935Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "cc212a05a40d68cbe62dd0327906c3d7c22dce1da22b957f8ebc6c3a3bbbe160",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:425",
+      "slug": "nv-lcb-425",
+      "name": "Lori Rogich",
+      "sortName": "Rogich, Lori",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Rogich.Lori.425.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "11",
+        "districtLabel": "Nevada Senate District 11",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/11",
+        "contactUrl": "mailto:Lori.Rogich@sen.state.nv.us",
+        "email": "Lori.Rogich@sen.state.nv.us",
+        "phone": "(775) 684-6502",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:11",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/11",
+          "externalId": "nv-lcb:legislator:425",
+          "retrievedAt": "2026-08-22T16:30:15.139Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "3b3475469b2c12a5a8631d35bf61648742583db22f4285bf63fff48b0846882f",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:391",
+      "slug": "nv-lcb-391",
+      "name": "Julie Pazina",
+      "sortName": "Pazina, Julie",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Pazina.Julie.391.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "12",
+        "districtLabel": "Nevada Senate District 12",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/12",
+        "contactUrl": "mailto:Julie.Pazina@sen.state.nv.us",
+        "email": "Julie.Pazina@sen.state.nv.us",
+        "phone": "(775) 684-1462",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:12",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/12",
+          "externalId": "nv-lcb:legislator:391",
+          "retrievedAt": "2026-08-22T16:30:15.127Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "45b11ffec90644d936308d269488426bcbc02e44adc5a4b7400d6638ada14f77",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:155",
+      "slug": "nv-lcb-155",
+      "name": "Skip Daly",
+      "sortName": "Daly, Skip",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Daly.Skip.155.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "13",
+        "districtLabel": "Nevada Senate District 13",
+        "leadershipTitle": "Deputy Majority Whip"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/13",
+        "contactUrl": "mailto:Skip.Daly@sen.state.nv.us",
+        "email": "Skip.Daly@sen.state.nv.us",
+        "phone": "(775) 684-1433",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:13",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/13",
+          "externalId": "nv-lcb:legislator:155",
+          "retrievedAt": "2026-08-22T16:30:14.931Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "6d3cfc9809d8389df53ddd42c5fdb43caa205b63503757c3acdc1abd610f7793",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:157",
+      "slug": "nv-lcb-157",
+      "name": "Ira Hansen",
+      "sortName": "Hansen, Ira",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Hansen.Ira.157.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "14",
+        "districtLabel": "Nevada Senate District 14",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/14",
+        "contactUrl": "mailto:Ira.Hansen@sen.state.nv.us",
+        "email": "Ira.Hansen@sen.state.nv.us",
+        "phone": "(775) 684-1480",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:14",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/14",
+          "externalId": "nv-lcb:legislator:157",
+          "retrievedAt": "2026-08-22T16:30:15.034Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "b5be3602ca48e67c3bc171f87e188d0b29e977109f6ca758a54d011945bd40b4",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:424",
+      "slug": "nv-lcb-424",
+      "name": "Angela D. Taylor",
+      "sortName": "Taylor, Angela D.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Taylor.Angela.424.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "15",
+        "districtLabel": "Nevada Senate District 15",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/15",
+        "contactUrl": "mailto:Angela.Taylor@sen.state.nv.us",
+        "email": "Angela.Taylor@sen.state.nv.us",
+        "phone": "(775) 684-1419",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/457/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:15",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/15",
+          "externalId": "nv-lcb:legislator:424",
+          "retrievedAt": "2026-08-22T16:30:15.192Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "032720675de2fa1fa6ceaa8c28c04b3f92f07f1a2ee782321b44420792d7ddc4",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:327",
+      "slug": "nv-lcb-327",
+      "name": "Lisa Krasner",
+      "sortName": "Krasner, Lisa",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Krasner.Lisa.327.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "16",
+        "districtLabel": "Nevada Senate District 16",
+        "leadershipTitle": "Minority Whip"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/16",
+        "contactUrl": "mailto:Lisa.Krasner@sen.state.nv.us",
+        "email": "Lisa.Krasner@sen.state.nv.us",
+        "phone": "(775) 684-1450",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:16",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/16",
+          "externalId": "nv-lcb:legislator:327",
+          "retrievedAt": "2026-08-22T16:30:15.030Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "f25fa7038a2670b02c6366fdd630968e7886015ddcd064b12de01b4ed25e57c7",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:281",
+      "slug": "nv-lcb-281",
+      "name": "Robin L. Titus",
+      "sortName": "Titus, Robin L.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Titus.Robin.281.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "17",
+        "districtLabel": "Nevada Senate District 17",
+        "leadershipTitle": "Minority Leader"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/17",
+        "contactUrl": "mailto:Robin.Titus@sen.state.nv.us",
+        "email": "Robin.Titus@sen.state.nv.us",
+        "phone": "(775) 684-1470",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:17",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/17",
+          "externalId": "nv-lcb:legislator:281",
+          "retrievedAt": "2026-08-22T16:30:15.244Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "951881cf955a2f982e998a4131df3f6c9b83bac2adc9b5f9aa34add470c92a84",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:418",
+      "slug": "nv-lcb-418",
+      "name": "John C. Steinbeck",
+      "sortName": "Steinbeck, John C.",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Steinbeck.John.418.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "18",
+        "districtLabel": "Nevada Senate District 18",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/18",
+        "contactUrl": "mailto:John.Steinbeck@sen.state.nv.us",
+        "email": "John.Steinbeck@sen.state.nv.us",
+        "phone": "(775) 684-1442",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Jobs and Economy (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/462/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:18",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/18",
+          "externalId": "nv-lcb:legislator:418",
+          "retrievedAt": "2026-08-22T16:30:15.152Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "72e17248631a2fd4d4e24ff95a35dadce1a81e9e2454154ec0ccee9b2c16c5a6",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:417",
+      "slug": "nv-lcb-417",
+      "name": "John Ellison",
+      "sortName": "Ellison, John",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Ellison.John.417.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "19",
+        "districtLabel": "Nevada Senate District 19",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2028", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/19",
+        "contactUrl": "mailto:John.Ellison@sen.state.nv.us",
+        "email": "John.Ellison@sen.state.nv.us",
+        "phone": "(775) 684-1447",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:19",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2028",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/19",
+          "externalId": "nv-lcb:legislator:417",
+          "retrievedAt": "2026-08-22T16:30:14.939Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "17f600a9286b2ac025cbedf9758a97094ef6204d66a50f362f0c66a1184a5690",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:390",
+      "slug": "nv-lcb-390",
+      "name": "Jeff Stone",
+      "sortName": "Stone, Jeff",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Stone.Jeff.390.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "20",
+        "districtLabel": "Nevada Senate District 20",
+        "leadershipTitle": "Assistant Minority Leader"
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/20",
+        "contactUrl": "mailto:Jeff.Stone@sen.state.nv.us",
+        "email": "Jeff.Stone@sen.state.nv.us",
+        "phone": "(775) 684-1481",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Health and Wellness (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/457/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:20",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/20",
+          "externalId": "nv-lcb:legislator:390",
+          "retrievedAt": "2026-08-22T16:30:15.179Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "5de13cbb0cbcb6c2bda74870dd089912969e3a549b2d9bf8f2a36e4908c269d3",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "nv-lcb:legislator:67",
+      "slug": "nv-lcb-67",
+      "name": "James Ohrenschall",
+      "sortName": "Ohrenschall, James",
+      "imageUrl": "https://www.leg.state.nv.us/Session/84th2027/legislators/Senators/Images/Ohrenschall.James.67.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "state",
+        "chamber": "state-senate",
+        "title": "Nevada State Senator",
+        "districtNumber": "21",
+        "districtLabel": "Nevada Senate District 21",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Term ends 2026", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/21",
+        "contactUrl": "mailto:James.Ohrenschall@sen.state.nv.us",
+        "email": "James.Ohrenschall@sen.state.nv.us",
+        "phone": "(775) 684-6503",
+        "officeAddress": "401 South Carson Street, Carson City, NV 89701-4747"
+      },
+      "committees": [
+        {
+          "name": "Senate Public Safety and Security (Member)",
+          "role": null,
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/36th2025Special/Committee/459/Overview/"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+          "externalId": "state-senate:21",
+          "retrievedAt": "2026-08-22T16:30:13.600Z",
+          "coverageLabel": "Current roster; term ends 2026",
+          "documentSha256": "b2414fc9a92f1d427e56aa239574746043eb43b015b3ff1e6547403b23a070ca",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "Nevada Legislature",
+          "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/21",
+          "externalId": "nv-lcb:legislator:67",
+          "retrievedAt": "2026-08-22T16:30:15.078Z",
+          "coverageLabel": "Current official profile",
+          "documentSha256": "bb2eb803e8b4a53f71cba50995ec3ebcd660b2b10773050727a71c73d8e17da7",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "us-congress:bioguide:T000468",
+      "slug": "us-congress-t000468",
+      "name": "Dina Titus",
+      "sortName": "Titus, Dina",
+      "imageUrl": "https://bioguide.congress.gov/bioguide/photo/T/T000468.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "federal",
+        "chamber": "us-house",
+        "title": "U.S. Representative",
+        "districtNumber": "1",
+        "districtLabel": "Nevada Congressional District 1",
+        "leadershipTitle": null
+      },
+      "term": {
+        "label": "119th Congress (2025–2027)",
+        "startsOn": "2025-01-03",
+        "endsOn": "2027-01-02"
+      },
+      "contact": {
+        "officialWebsite": "https://titus.house.gov/",
+        "contactUrl": "https://titus.house.gov/",
+        "email": null,
+        "phone": "(202) 225-5965",
+        "officeAddress": "2370 RHOB, Washington, DC 20515"
+      },
+      "committees": [
+        {
+          "name": "Foreign Affairs",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        },
+        {
+          "name": "Transportation and Infrastructure",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Office of the Clerk, U.S. House of Representatives",
+          "sourceUrl": "https://clerk.house.gov/Members/T000468",
+          "externalId": "us-congress:bioguide:T000468",
+          "retrievedAt": "2026-08-22T16:30:13.712Z",
+          "coverageLabel": "Current members of the 119th Congress",
+          "documentSha256": "7abb4df68be58dd9c605db0322c7152437498dad2556af07c6ecb2d8c290511a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "U.S. House of Representatives",
+          "sourceUrl": "https://www.house.gov/representatives",
+          "externalId": "us-house:nv:1",
+          "retrievedAt": "2026-08-22T16:30:13.608Z",
+          "coverageLabel": "Current House directory and committee assignments",
+          "documentSha256": "a9675ed3488ef0ba08b9e9e01ca13cf9fa6252e4f94ee8b04dd0854de11d1beb",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "us-congress:bioguide:A000369",
+      "slug": "us-congress-a000369",
+      "name": "Mark E. Amodei",
+      "sortName": "Amodei, Mark E.",
+      "imageUrl": "https://bioguide.congress.gov/bioguide/photo/A/A000369.jpg",
+      "party": { "code": "R", "label": "Republican" },
+      "office": {
+        "jurisdiction": "federal",
+        "chamber": "us-house",
+        "title": "U.S. Representative",
+        "districtNumber": "2",
+        "districtLabel": "Nevada Congressional District 2",
+        "leadershipTitle": null
+      },
+      "term": {
+        "label": "119th Congress (2025–2027)",
+        "startsOn": "2025-01-03",
+        "endsOn": "2027-01-02"
+      },
+      "contact": {
+        "officialWebsite": "https://amodei.house.gov",
+        "contactUrl": "https://amodei.house.gov",
+        "email": null,
+        "phone": "(202) 225-6155",
+        "officeAddress": "104 CHOB, Washington, DC 20515"
+      },
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        },
+        {
+          "name": "Natural Resources",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Office of the Clerk, U.S. House of Representatives",
+          "sourceUrl": "https://clerk.house.gov/Members/A000369",
+          "externalId": "us-congress:bioguide:A000369",
+          "retrievedAt": "2026-08-22T16:30:13.712Z",
+          "coverageLabel": "Current members of the 119th Congress",
+          "documentSha256": "7abb4df68be58dd9c605db0322c7152437498dad2556af07c6ecb2d8c290511a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "U.S. House of Representatives",
+          "sourceUrl": "https://www.house.gov/representatives",
+          "externalId": "us-house:nv:2",
+          "retrievedAt": "2026-08-22T16:30:13.608Z",
+          "coverageLabel": "Current House directory and committee assignments",
+          "documentSha256": "a9675ed3488ef0ba08b9e9e01ca13cf9fa6252e4f94ee8b04dd0854de11d1beb",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "us-congress:bioguide:L000590",
+      "slug": "us-congress-l000590",
+      "name": "Susie Lee",
+      "sortName": "Lee, Susie",
+      "imageUrl": "https://bioguide.congress.gov/bioguide/photo/L/L000590.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "federal",
+        "chamber": "us-house",
+        "title": "U.S. Representative",
+        "districtNumber": "3",
+        "districtLabel": "Nevada Congressional District 3",
+        "leadershipTitle": null
+      },
+      "term": {
+        "label": "119th Congress (2025–2027)",
+        "startsOn": "2025-01-03",
+        "endsOn": "2027-01-02"
+      },
+      "contact": {
+        "officialWebsite": "https://susielee.house.gov",
+        "contactUrl": "https://susielee.house.gov",
+        "email": null,
+        "phone": "(202) 225-3252",
+        "officeAddress": "365 CHOB, Washington, DC 20515"
+      },
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        },
+        {
+          "name": "Natural Resources",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Office of the Clerk, U.S. House of Representatives",
+          "sourceUrl": "https://clerk.house.gov/Members/L000590",
+          "externalId": "us-congress:bioguide:L000590",
+          "retrievedAt": "2026-08-22T16:30:13.712Z",
+          "coverageLabel": "Current members of the 119th Congress",
+          "documentSha256": "7abb4df68be58dd9c605db0322c7152437498dad2556af07c6ecb2d8c290511a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "U.S. House of Representatives",
+          "sourceUrl": "https://www.house.gov/representatives",
+          "externalId": "us-house:nv:3",
+          "retrievedAt": "2026-08-22T16:30:13.608Z",
+          "coverageLabel": "Current House directory and committee assignments",
+          "documentSha256": "a9675ed3488ef0ba08b9e9e01ca13cf9fa6252e4f94ee8b04dd0854de11d1beb",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "us-congress:bioguide:H001066",
+      "slug": "us-congress-h001066",
+      "name": "Steven Horsford",
+      "sortName": "Horsford, Steven",
+      "imageUrl": "https://bioguide.congress.gov/bioguide/photo/H/H001066.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "federal",
+        "chamber": "us-house",
+        "title": "U.S. Representative",
+        "districtNumber": "4",
+        "districtLabel": "Nevada Congressional District 4",
+        "leadershipTitle": null
+      },
+      "term": {
+        "label": "119th Congress (2025–2027)",
+        "startsOn": "2025-01-03",
+        "endsOn": "2027-01-02"
+      },
+      "contact": {
+        "officialWebsite": "https://horsford.house.gov",
+        "contactUrl": "https://horsford.house.gov",
+        "email": null,
+        "phone": "(202) 225-9894",
+        "officeAddress": "406 CHOB, Washington, DC 20515"
+      },
+      "committees": [
+        {
+          "name": "Ways and Means",
+          "role": null,
+          "sourceUrl": "https://www.house.gov/representatives"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "Office of the Clerk, U.S. House of Representatives",
+          "sourceUrl": "https://clerk.house.gov/Members/H001066",
+          "externalId": "us-congress:bioguide:H001066",
+          "retrievedAt": "2026-08-22T16:30:13.712Z",
+          "coverageLabel": "Current members of the 119th Congress",
+          "documentSha256": "7abb4df68be58dd9c605db0322c7152437498dad2556af07c6ecb2d8c290511a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "U.S. House of Representatives",
+          "sourceUrl": "https://www.house.gov/representatives",
+          "externalId": "us-house:nv:4",
+          "retrievedAt": "2026-08-22T16:30:13.608Z",
+          "coverageLabel": "Current House directory and committee assignments",
+          "documentSha256": "a9675ed3488ef0ba08b9e9e01ca13cf9fa6252e4f94ee8b04dd0854de11d1beb",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "us-congress:bioguide:C001113",
+      "slug": "us-congress-c001113",
+      "name": "Catherine Cortez Masto",
+      "sortName": "Cortez Masto, Catherine",
+      "imageUrl": "https://bioguide.congress.gov/bioguide/photo/C/C001113.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "federal",
+        "chamber": "us-senate",
+        "title": "U.S. Senator",
+        "districtNumber": null,
+        "districtLabel": "Nevada statewide · Class III",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Class III", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.cortezmasto.senate.gov",
+        "contactUrl": "https://www.cortezmasto.senate.gov/contact",
+        "email": null,
+        "phone": "(202) 224-3542",
+        "officeAddress": "309 Hart Senate Office Building Washington DC 20510"
+      },
+      "committees": [
+        {
+          "name": "Committee on Indian Affairs",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        },
+        {
+          "name": "Committee on Finance",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        },
+        {
+          "name": "Committee on Energy and Natural Resources",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        },
+        {
+          "name": "Committee on Banking, Housing, and Urban Affairs",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "U.S. Senate",
+          "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+          "externalId": "us-congress:bioguide:C001113",
+          "retrievedAt": "2026-08-22T16:30:13.940Z",
+          "coverageLabel": "Current senators of the 119th Congress",
+          "documentSha256": "984865a4a6e00af68c9617ea45f52b8939f49143780c832cb68c747fa4bfef5e",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "U.S. Senate",
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
+          "externalId": "us-senate:lis:S385",
+          "retrievedAt": "2026-08-22T16:30:13.851Z",
+          "coverageLabel": "Current Senate information and committee assignments",
+          "documentSha256": "9727326ea3559ce8f0743cdb0e3a277608a261eff3813f95a27c7fd2cffda22a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    },
+    {
+      "id": "us-congress:bioguide:R000608",
+      "slug": "us-congress-r000608",
+      "name": "Jacky Rosen",
+      "sortName": "Rosen, Jacky",
+      "imageUrl": "https://bioguide.congress.gov/bioguide/photo/R/R000608.jpg",
+      "party": { "code": "D", "label": "Democratic" },
+      "office": {
+        "jurisdiction": "federal",
+        "chamber": "us-senate",
+        "title": "U.S. Senator",
+        "districtNumber": null,
+        "districtLabel": "Nevada statewide · Class I",
+        "leadershipTitle": null
+      },
+      "term": { "label": "Class I", "startsOn": null, "endsOn": null },
+      "contact": {
+        "officialWebsite": "https://www.rosen.senate.gov",
+        "contactUrl": "https://www.rosen.senate.gov/contact_jacky",
+        "email": null,
+        "phone": "(202) 224-6244",
+        "officeAddress": "713 Hart Senate Office Building Washington DC 20510"
+      },
+      "committees": [
+        {
+          "name": "Committee on Small Business and Entrepreneurship",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        },
+        {
+          "name": "Committee on Foreign Relations",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        },
+        {
+          "name": "Committee on Armed Services",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        },
+        {
+          "name": "Committee on Commerce, Science, and Transportation",
+          "role": null,
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml"
+        }
+      ],
+      "sources": [
+        {
+          "organization": "U.S. Senate",
+          "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+          "externalId": "us-congress:bioguide:R000608",
+          "retrievedAt": "2026-08-22T16:30:13.940Z",
+          "coverageLabel": "Current senators of the 119th Congress",
+          "documentSha256": "984865a4a6e00af68c9617ea45f52b8939f49143780c832cb68c747fa4bfef5e",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "organization": "U.S. Senate",
+          "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
+          "externalId": "us-senate:lis:S402",
+          "retrievedAt": "2026-08-22T16:30:13.851Z",
+          "coverageLabel": "Current Senate information and committee assignments",
+          "documentSha256": "9727326ea3559ce8f0743cdb0e3a277608a261eff3813f95a27c7fd2cffda22a",
+          "parserVersion": "official-roster-v1",
+          "validationState": "source-verified"
+        }
+      ]
+    }
+  ],
+  "positions": [
+    {
+      "id": "state-assembly:nv:1",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "1",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:307",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:10",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "10",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:421",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:11",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "11",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:412",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:12",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "12",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:393",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:13",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "13",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:394",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:14",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "14",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:395",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:15",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "15",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:363",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:16",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "16",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:378",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:17",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "17",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:420",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:18",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "18",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:380",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:19",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "19",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:426",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:2",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "2",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:379",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:20",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "20",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:377",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:21",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "21",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:376",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:22",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "22",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:364",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:23",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "23",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:397",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:24",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "24",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:413",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:25",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "25",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:398",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:26",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "26",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:399",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:27",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "27",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:416",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:28",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "28",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:401",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:29",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "29",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:414",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:3",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "3",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:359",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:30",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "30",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:375",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:31",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "31",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:277",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:32",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "32",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:366",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:33",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "33",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:402",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:34",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "34",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:415",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:35",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "35",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:411",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:36",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "36",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:371",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:37",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "37",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:368",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:38",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "38",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:403",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:39",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "39",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:427",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:4",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "4",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:410",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:40",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "40",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:285",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:41",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "41",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:344",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:42",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "42",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:353",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:5",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "5",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:304",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:6",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "6",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:422",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:7",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "7",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:423",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:8",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "8",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:392",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-assembly:nv:9",
+      "jurisdiction": "state",
+      "chamber": "state-assembly",
+      "districtType": "state-assembly",
+      "districtNumber": "9",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:310",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.662Z"
+    },
+    {
+      "id": "state-senate:nv:1",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "1",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:419",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:10",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "10",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:350",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:11",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "11",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:425",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:12",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "12",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:391",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:13",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "13",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:155",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:14",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "14",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:157",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:15",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "15",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:424",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:16",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "16",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:327",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:17",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "17",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:281",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:18",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "18",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:418",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:19",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "19",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:417",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:2",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "2",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:273",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:20",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "20",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:390",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:21",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "21",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:67",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:3",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "3",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:372",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:4",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "4",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:129",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:5",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "5",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:387",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:6",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "6",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:347",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:7",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "7",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:383",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:8",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "8",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:92",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "state-senate:nv:9",
+      "jurisdiction": "state",
+      "chamber": "state-senate",
+      "districtType": "state-senate",
+      "districtNumber": "9",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "nv-lcb:legislator:358",
+      "statusNote": null,
+      "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "lastVerifiedAt": "2026-08-22T16:30:13.600Z"
+    },
+    {
+      "id": "us-house:nv:1",
+      "jurisdiction": "federal",
+      "chamber": "us-house",
+      "districtType": "congressional",
+      "districtNumber": "1",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "us-congress:bioguide:T000468",
+      "statusNote": null,
+      "sourceUrl": "https://clerk.house.gov/Members/T000468",
+      "lastVerifiedAt": "2026-08-22T16:30:13.712Z"
+    },
+    {
+      "id": "us-house:nv:2",
+      "jurisdiction": "federal",
+      "chamber": "us-house",
+      "districtType": "congressional",
+      "districtNumber": "2",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "us-congress:bioguide:A000369",
+      "statusNote": null,
+      "sourceUrl": "https://clerk.house.gov/Members/A000369",
+      "lastVerifiedAt": "2026-08-22T16:30:13.712Z"
+    },
+    {
+      "id": "us-house:nv:3",
+      "jurisdiction": "federal",
+      "chamber": "us-house",
+      "districtType": "congressional",
+      "districtNumber": "3",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "us-congress:bioguide:L000590",
+      "statusNote": null,
+      "sourceUrl": "https://clerk.house.gov/Members/L000590",
+      "lastVerifiedAt": "2026-08-22T16:30:13.712Z"
+    },
+    {
+      "id": "us-house:nv:4",
+      "jurisdiction": "federal",
+      "chamber": "us-house",
+      "districtType": "congressional",
+      "districtNumber": "4",
+      "seatClass": null,
+      "status": "occupied",
+      "currentOfficialId": "us-congress:bioguide:H001066",
+      "statusNote": null,
+      "sourceUrl": "https://clerk.house.gov/Members/H001066",
+      "lastVerifiedAt": "2026-08-22T16:30:13.712Z"
+    },
+    {
+      "id": "us-senate:nv:class-i",
+      "jurisdiction": "federal",
+      "chamber": "us-senate",
+      "districtType": null,
+      "districtNumber": null,
+      "seatClass": "Class I",
+      "status": "occupied",
+      "currentOfficialId": "us-congress:bioguide:R000608",
+      "statusNote": null,
+      "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+      "lastVerifiedAt": "2026-08-22T16:30:13.940Z"
+    },
+    {
+      "id": "us-senate:nv:class-iii",
+      "jurisdiction": "federal",
+      "chamber": "us-senate",
+      "districtType": null,
+      "districtNumber": null,
+      "seatClass": "Class III",
+      "status": "occupied",
+      "currentOfficialId": "us-congress:bioguide:C001113",
+      "statusNote": null,
+      "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+      "lastVerifiedAt": "2026-08-22T16:30:13.940Z"
+    }
+  ]
+}

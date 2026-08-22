@@ -5,39 +5,51 @@ import { ContentPageTemplate } from "@/components/templates/content-page-templat
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "How Heim Civic Nevada will source, validate, and publish records.",
+    "How Heim Civic Nevada sources, validates, and publishes current officeholder records.",
 };
 
 export default function MethodologyPage() {
   return (
     <ContentPageTemplate
-      eyebrow="Methodology preview"
+      eyebrow="Phase 3 methodology"
       title="Sources before summaries."
-      introduction="The public methodology will explain where every record comes from, how it was normalized, and how recently it was reviewed."
+      introduction="Every current officeholder record is tied to official government sources, a retrieval time, and a reproducible source snapshot."
     >
       <section>
         <h2>Authoritative sources first</h2>
         <p>
-          Primary government records, documented government APIs, and official
-          bulk datasets take precedence. Maintained page adapters are used only
-          when a supported machine-readable source is unavailable.
+          Nevada legislative profiles and rosters, the U.S. House directory and
+          Clerk records, and official U.S. Senate XML records are the current
+          authorities. Maintained page adapters are used only where those
+          authorities do not publish a supported machine-readable equivalent.
         </p>
       </section>
       <section>
         <h2>Publication controls</h2>
         <p>
-          Unexpected schemas, record-count changes, or reconciliation failures
-          stop automatic publication. Machine assistance may help draft or
-          classify content, but public explanations require accountable human
-          review.
+          The import expects 42 Nevada Assembly seats, 21 Nevada Senate seats,
+          four U.S. House seats, and two U.S. Senate seats. Unexpected schemas,
+          missing districts, duplicate identifiers, count changes, or failed
+          validation stop publication for review.
         </p>
       </section>
       <section>
         <h2>Coverage honesty</h2>
         <p>
-          Pages will show coverage dates, retrieval times, source links, and
-          known limitations. Verified partial coverage is preferable to
-          unreliable comprehensive coverage.
+          Profiles show the current office and term label, party, official
+          contact channels, committee assignments, source links, and the most
+          recent verification date. Bills, votes, and campaign finance are
+          clearly excluded from this phase rather than shown as incomplete
+          facts.
+        </p>
+      </section>
+      <section>
+        <h2>Corrections and transitions</h2>
+        <p>
+          Seats are modeled independently from people so vacancies and office
+          transitions can be published explicitly. Every profile links to the
+          correction process; a current officeholder or district error receives
+          urgent human review.
         </p>
       </section>
     </ContentPageTemplate>

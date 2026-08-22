@@ -4,6 +4,7 @@ import { resolveDistricts } from "@/domain/geography/resolve-districts";
 import type { GeocodeResult, LookupResponse } from "@/domain/geography/types";
 import { getBoundaryBundle } from "@/server/geography/boundaries";
 import { geocodeAddress } from "@/server/geography/census-geocoder";
+import { getCurrentRepresentation } from "@/server/officials/repository";
 
 type LookupDependencies = {
   geocode: (address: string) => Promise<GeocodeResult>;
@@ -59,5 +60,6 @@ export async function lookupNevadaAddress(
   return {
     status: "confirmed",
     districts: resolution.districts,
+    representation: getCurrentRepresentation(resolution.districts),
   };
 }

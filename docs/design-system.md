@@ -33,6 +33,8 @@ System fonts avoid font-network requests, reduce layout shift, and keep the pilo
 - **Templates:** Stable page composition and landmarks.
 - **Pages:** Route metadata, data loading, and template selection.
 
+Phase 3 implements the representative summary molecule, representative-results organism, party label atom, and official-profile template. Party is always written in text; neutral brand color does not imply partisan meaning. Vacancy cards use explicit status language and do not reserve a portrait-shaped empty state.
+
 ## Styling rules
 
 1. JSX uses semantic BEM classes.

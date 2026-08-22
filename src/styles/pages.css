@@ -38,4 +38,127 @@
   .content-page__body p {
     @apply mt-4 text-base leading-8 text-slate-700;
   }
+
+  .official-profile__hero {
+    @apply bg-desert-100 border-b py-10 sm:py-14;
+  }
+
+  .official-profile__hero-inner {
+    @apply grid gap-7 sm:grid-cols-[13rem_1fr] sm:items-center;
+  }
+
+  .official-profile__portrait {
+    @apply bg-sage-100 relative h-48 w-40 overflow-hidden rounded-2xl border sm:h-64 sm:w-52;
+  }
+
+  .official-profile__image {
+    @apply object-cover object-top;
+  }
+
+  .official-profile__initial {
+    @apply text-juniper-700 flex h-full items-center justify-center font-serif text-6xl font-bold;
+  }
+
+  .official-profile__back {
+    @apply text-juniper-800 mb-5 inline-flex text-sm font-semibold underline-offset-4 hover:underline;
+  }
+
+  .official-profile__title {
+    @apply text-juniper-800 mt-3 font-serif text-4xl leading-tight font-bold tracking-[-0.025em] sm:text-6xl;
+  }
+
+  .official-profile__office {
+    @apply mt-3 text-lg leading-7 text-slate-700;
+  }
+
+  .official-profile__leadership {
+    @apply text-clay-600 mt-3 text-sm font-bold;
+  }
+
+  .official-profile__layout {
+    @apply grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-16;
+  }
+
+  .official-profile__content {
+    @apply min-w-0;
+  }
+
+  .official-profile__content section + section {
+    @apply mt-10 border-t pt-10;
+  }
+
+  .official-profile__content h2,
+  .official-profile__panel h2 {
+    @apply text-juniper-800 font-serif text-2xl font-bold;
+  }
+
+  .official-profile__content p {
+    @apply mt-4 max-w-3xl text-base leading-8 text-slate-700;
+  }
+
+  .official-profile__facts {
+    @apply mt-5 grid gap-3 sm:grid-cols-2;
+  }
+
+  .official-profile__facts > div {
+    @apply bg-desert-50 rounded-lg border p-4;
+  }
+
+  .official-profile__facts dt {
+    @apply text-xs font-bold tracking-[0.08em] text-slate-500 uppercase;
+  }
+
+  .official-profile__facts dd {
+    @apply mt-1 text-sm font-semibold text-slate-900;
+  }
+
+  .official-profile__committees {
+    @apply mt-5 grid gap-2 p-0;
+  }
+
+  .official-profile__committees a {
+    @apply bg-desert-50 text-juniper-800 flex min-h-11 items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm font-semibold underline-offset-4 hover:underline;
+  }
+
+  .official-profile__sidebar {
+    @apply space-y-5;
+  }
+
+  .official-profile__panel {
+    @apply shadow-card rounded-xl border bg-white p-5;
+  }
+
+  .official-profile__contact-list,
+  .official-profile__sources {
+    @apply mt-4 grid gap-3 p-0;
+  }
+
+  .official-profile__contact-list a {
+    @apply text-juniper-800 flex items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline;
+  }
+
+  .official-profile__panel address,
+  .official-profile__panel > p {
+    @apply mt-4 text-sm leading-6 text-slate-700 not-italic;
+  }
+
+  .official-profile__sources li {
+    @apply border-t pt-3 text-sm first:border-0 first:pt-0;
+  }
+
+  .official-profile__sources a {
+    @apply text-juniper-800 block font-semibold underline underline-offset-4;
+  }
+
+  .official-profile__sources span {
+    @apply mt-1 block text-xs leading-5 text-slate-500;
+  }
+
+  .official-profile__panel > p.official-profile__source-note {
+    @apply text-xs text-slate-500;
+  }
+
+  .official-profile__correction {
+    @apply border-clay-500 text-clay-600 flex min-h-11 items-center justify-center rounded-lg border px-4 py-3 text-sm font-bold underline-offset-4 hover:underline;
+  }
 }

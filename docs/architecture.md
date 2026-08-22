@@ -2,7 +2,7 @@
 
 ## Status
 
-Phase 2 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
+Phase 3 private-alpha architecture for Heim Civic Nevada. Material changes are recorded in `docs/decisions/`.
 
 ## Layers
 
@@ -56,6 +56,14 @@ The `/api/lookup` route accepts same-product JSON POST requests, validates a sma
 
 The map is progressive enhancement. Its three district results are always repeated as structured text and its layers use accessible Radix toggle controls.
 
+## Current representation
+
+The lookup service joins each confirmed district to an immutable, checked-in current-officeholder snapshot. A server-only repository resolves the three district seats and the two statewide U.S. Senate seats without exposing source-specific shapes to the route or client.
+
+Office positions are separate from people. Each position records whether it is occupied, vacant, or transitional, plus its current official identifier, status note, source, and verification time. This prevents a vacancy from being represented as a missing or guessed person.
+
+Basic official profiles are statically generated from stable local slugs. They show source-verified office, party, term label, contact details, committee assignments, freshness, and correction links. Remote portraits are restricted to explicit official Nevada Legislature and Congressional Biographical Directory paths.
+
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 2 lookup intentionally uses an immutable versioned GeoJSON bundle and does not create an address table. A PostGIS migration requires a separate reviewed schema decision.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 3 intentionally uses immutable, versioned geographic and current-officeholder snapshots and does not create an address table. Historical terms, bills, votes, and finance records require separate reviewed schema decisions.

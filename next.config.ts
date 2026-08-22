@@ -13,6 +13,24 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.leg.state.nv.us",
+        port: "",
+        pathname: "/Session/**/legislators/**/Images/**",
+        search: "",
+      },
+      {
+        protocol: "https",
+        hostname: "bioguide.congress.gov",
+        port: "",
+        pathname: "/bioguide/photo/**",
+        search: "",
+      },
+    ],
+  },
   async headers() {
     return [
       {

@@ -5,6 +5,7 @@ import { type FormEvent, useState } from "react";
 
 import { Button } from "@/components/atoms/button";
 import { AccessibleDistrictMap } from "@/components/molecules/accessible-district-map";
+import { RepresentativeResults } from "@/components/organisms/representative-results";
 import type { LookupResponse } from "@/domain/geography/types";
 
 export function LookupExperience() {
@@ -123,6 +124,7 @@ export function LookupExperience() {
             on the map.
           </p>
           <AccessibleDistrictMap districts={response.districts} />
+          <RepresentativeResults representation={response.representation} />
         </div>
       ) : (
         <div

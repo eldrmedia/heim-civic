@@ -296,6 +296,83 @@
     @apply text-juniper-800 font-semibold underline underline-offset-4;
   }
 
+  .party-label {
+    @apply mt-2 inline-flex w-fit items-center gap-2 rounded-full border bg-white px-2.5 py-1 text-xs font-semibold text-slate-700;
+  }
+
+  .party-label > span:first-child {
+    @apply bg-sage-100 text-juniper-800 flex h-5 w-5 items-center justify-center rounded-full text-[0.65rem] font-bold;
+  }
+
+  .representative-results {
+    @apply shadow-soft mt-5 rounded-2xl border bg-white p-5 sm:p-7;
+  }
+
+  .representative-results__title {
+    @apply text-juniper-800 mt-1 font-serif text-2xl font-bold;
+  }
+
+  .representative-results__introduction {
+    @apply mt-2 text-sm leading-6 text-slate-700;
+  }
+
+  .representative-results__grid {
+    @apply mt-5 grid gap-3;
+  }
+
+  .representative-results__subheading {
+    @apply text-juniper-800 mt-7 text-sm font-bold;
+  }
+
+  .representative-card {
+    @apply bg-desert-50 grid grid-cols-[6rem_1fr] gap-4 overflow-hidden rounded-xl border p-3;
+  }
+
+  .representative-card--vacant {
+    @apply block border-dashed p-5;
+  }
+
+  .representative-card__vacancy-icon {
+    @apply text-clay-600 mb-3;
+  }
+
+  .representative-card__image-wrap {
+    @apply bg-sage-100 relative min-h-32 overflow-hidden rounded-lg;
+  }
+
+  .representative-card__image {
+    @apply object-cover object-top;
+  }
+
+  .representative-card__initial {
+    @apply text-juniper-700 flex h-full items-center justify-center font-serif text-4xl font-bold;
+  }
+
+  .representative-card__body {
+    @apply min-w-0 py-1;
+  }
+
+  .representative-card__office {
+    @apply text-clay-600 text-[0.7rem] font-bold tracking-[0.08em] uppercase;
+  }
+
+  .representative-card__name {
+    @apply text-juniper-800 mt-1 font-serif text-xl leading-tight font-bold;
+  }
+
+  .representative-card__meta {
+    @apply mt-2 text-xs leading-5 text-slate-700;
+  }
+
+  .representative-card__verified {
+    @apply mt-1 text-[0.7rem] text-slate-500;
+  }
+
+  .representative-card__link,
+  .representative-card__source {
+    @apply text-juniper-800 mt-3 inline-flex items-center gap-1 text-xs font-bold underline-offset-4 hover:underline;
+  }
+
   .trust-strip {
     @apply bg-juniper-800 border-b text-white;
   }

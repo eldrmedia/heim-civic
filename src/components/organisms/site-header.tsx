@@ -26,7 +26,7 @@ export function SiteHeader() {
         </nav>
         <div className="site-header__actions">
           <Button asChild intent="secondary" size="small">
-            <Link href="#phase-two">Phase 2</Link>
+            <Link href="#phase-three">Phase 3</Link>
           </Button>
         </div>
       </div>

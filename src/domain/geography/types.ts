@@ -5,6 +5,8 @@ import type {
   Polygon,
 } from "geojson";
 
+import type { RepresentationSummary } from "@/domain/officials/types";
+
 export const districtTypes = [
   "congressional",
   "state-senate",
@@ -77,6 +79,7 @@ export type LookupResponse =
   | {
       status: "confirmed";
       districts: DistrictSummary[];
+      representation: RepresentationSummary[];
     }
   | { status: "ambiguous"; suggestions: string[] }
   | { status: "invalid"; message: string }

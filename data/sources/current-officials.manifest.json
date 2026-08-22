@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "parserVersion": "official-roster-v1",
+  "sources": [
+    {
+      "id": "nv-lcb-assembly-current",
+      "organization": "Nevada Legislature",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
+      "format": "html",
+      "expectedNevadaRecords": 42
+    },
+    {
+      "id": "nv-lcb-senate-current",
+      "organization": "Nevada Legislature",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
+      "format": "html",
+      "expectedNevadaRecords": 21
+    },
+    {
+      "id": "us-house-clerk-current",
+      "organization": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/Members/ViewMemberList",
+      "format": "html",
+      "expectedNevadaRecords": 4
+    },
+    {
+      "id": "us-house-directory-current",
+      "organization": "U.S. House of Representatives",
+      "url": "https://www.house.gov/representatives",
+      "format": "html",
+      "expectedNevadaRecords": 4
+    },
+    {
+      "id": "us-senate-contact-current",
+      "organization": "U.S. Senate",
+      "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+      "format": "xml",
+      "expectedNevadaRecords": 2
+    },
+    {
+      "id": "us-senate-detail-current",
+      "organization": "U.S. Senate",
+      "url": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
+      "format": "xml",
+      "expectedNevadaRecords": 2
+    }
+  ]
+}
