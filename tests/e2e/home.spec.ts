@@ -304,6 +304,47 @@ test("a pilot bill page exposes official summary, Nevada votes, and sources", as
   expect(results.violations).toEqual([]);
 });
 
+test("the complete Nevada bill index distinguishes official and enhanced coverage", async ({
+  page,
+}) => {
+  await page.goto("/bills");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "Every source-listed 2025 Nevada bill, in one place.",
+    }),
+  ).toBeVisible();
+  await expect(page.getByText("1,152", { exact: true }).first()).toBeVisible();
+
+  await page.getByLabel("Bill number or official wording").fill("AB84");
+  await page.getByLabel("Chamber").selectOption("assembly");
+  await page.getByRole("button", { name: "Search bills" }).click();
+
+  await expect(page.getByText("1 record matching “AB84”")).toBeVisible();
+  await expect(page.getByText("Official index", { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Open official NELIS record" }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11905/Overview",
+  );
+
+  await page.goto("/bills?q=AB83&coverage=automatic-qualifier");
+  const ab83Card = page
+    .locator(".bill-directory-card")
+    .filter({ hasText: "AB83" });
+  await expect(
+    ab83Card.getByText("Enhanced coverage", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    ab83Card.getByText("Automatic veto qualifier", { exact: true }),
+  ).toBeVisible();
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test("a federal finance page preserves official categories and coverage limits", async ({
   page,
 }) => {

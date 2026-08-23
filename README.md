@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, two pilot bills with recorded votes, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, snapshot-health monitoring, public-route discovery, and operator runbooks.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9.1 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, a complete 1,152-record official Nevada bill index, two enhanced bills with recorded votes, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, snapshot-health monitoring, public-route discovery, and operator runbooks.
 
 ## Requirements
 
@@ -30,6 +30,7 @@ npm run test:e2e
 npm run data:boundaries
 npm run data:officials
 npm run data:legislation
+npm run data:bill-index
 npm run data:finance
 npm run ops:source-health
 ```
@@ -67,7 +68,15 @@ Read `AGENTS.md` before making changes. Exact representative-lookup addresses mu
 
 `npm run data:officials` downloads six official Nevada Legislature, U.S. House, House Clerk, and U.S. Senate sources. It validates the complete 69-position Nevada representation set, stable external identifiers, unique profile slugs, and exact district sequences before updating the checked-in snapshot. Source hashes, retrieval times, coverage labels, and parser version remain attached to the generated records. A schema or record-count change stops generation for review.
 
-## Pilot legislation refresh
+## Nevada bill index and enhanced legislation
+
+`npm run data:bill-index` downloads the official NELIS Assembly Bill and Senate
+Bill listings in two requests and validates 1,152 records: 1,109 standard
+identifiers and 43 identifiers carrying an uninterpreted NELIS asterisk. Every
+record retains the stable bill key, official synopsis, long title, source link,
+retrieval time, parser version, and source hash. The builder also reconciles all
+86 official veto qualifiers by identifier and bill key. Count or schema changes
+stop generation for review.
 
 `npm run data:legislation` downloads seven official NELIS, GovInfo, and U.S. House Clerk records for the two-bill Phase 4 vertical slice. It validates bill coverage, official vote totals, member counts, Nevada delegation reconciliation, and current-profile links before updating the checked-in snapshot. Historical Nevada voters remain in the roll call even when they no longer have a current profile. This pilot is intentionally not a complete bill database.
 

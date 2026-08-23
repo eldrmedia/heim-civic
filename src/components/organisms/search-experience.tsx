@@ -42,8 +42,9 @@ export function SearchExperience({ query, results }: SearchExperienceProps) {
           </Button>
         </div>
         <p className="civic-search__hint">
-          This searches the reviewed Nevada records currently published in the
-          pilot.
+          This searches current officials, districts, all source-listed 2025
+          Nevada Assembly and Senate bills, and enhanced federal records. It
+          never searches submitted addresses.
         </p>
       </form>
 
@@ -62,8 +63,7 @@ export function SearchExperience({ query, results }: SearchExperienceProps) {
           <h2>No published record matched that search.</h2>
           <p>
             Try an official’s full name, a district such as “Assembly 24,” a
-            bill identifier, or a broad subject. Search does not include home
-            addresses.
+            bill identifier, official bill wording, or a broad subject.
           </p>
         </div>
       ) : null}

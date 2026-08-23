@@ -111,7 +111,7 @@ Enter where you live, see who represents you, understand what they have done, an
 - Correctly resolve a Nevada address to its current U.S. congressional, Nevada Senate, and Nevada Assembly districts.
 - Display the correct current officeholder for each district.
 - Publish consistent official profiles with authoritative links.
-- Publish a neutral 30–50-bill Pilot Bill Set with human-reviewed summaries, recorded votes, and a public selection log.
+- Publish a complete official index of 2025 Nevada Assembly and Senate bills plus neutral Enhanced Pilot Coverage for approximately 30–50 measures with human-reviewed summaries, recorded votes, and a public selection log.
 - Establish provenance, freshness, correction, and data-monitoring workflows.
 - Determine whether people return, subscribe to updates, and share or cite the product.
 
@@ -241,7 +241,8 @@ Enterprise can initially be a contact form. Do not build enterprise billing, SSO
 - All current Nevada federal and state legislators.
 - Representative lookup, profiles, and district pages.
 - Committee assignments.
-- A neutral 30–50-bill Pilot Bill Set selected through the published rubric in FR-007.
+- A complete official index of 2025 Nevada Assembly and Senate bills.
+- Neutral Enhanced Pilot Coverage for approximately 30–50 measures selected through the published rubric in FR-007.
 - Recorded yes/no/other votes and official roll-call links.
 - Human-reviewed plain-language bill summaries.
 - Initial aggregate campaign-finance information.
@@ -391,11 +392,16 @@ Each supported profile must include, where available:
 
 Office changes must create time-bounded terms rather than overwrite historical officeholders.
 
-### FR-007 — Pilot Bill Set and bill page (P0)
+### FR-007 — Complete Bill Index, Enhanced Pilot Coverage, and bill page (P0)
 
-The pilot shall provide enhanced coverage for approximately 30–50 bills from the 2025 Nevada legislative session. “Pilot Bill Set” is the public label; “significant” must not appear as an unexplained editorial judgment.
+The pilot shall provide two explicit coverage levels for the 2025 Nevada legislative session:
 
-Automatically include:
+1. **Complete Bill Index:** every Assembly Bill and Senate Bill record returned by the official NELIS 83rd Session bill listings, including the official identifier, NELIS synopsis, official long title, stable source key, official overview link, retrieval time, parser version, and validation state. Source markers such as an asterisk are preserved exactly and are not interpreted without authoritative documentation. Index-only records link to NELIS and do not claim local summary, sponsor, action, status, committee, or vote completeness.
+2. **Enhanced Pilot Coverage:** approximately 30–50 measures selected through the published rubric below. Enhanced records receive the deeper sourced bill page, human review, vote reconciliation, and public selection log. “Significant” must not appear as an unexplained editorial judgment.
+
+Every governor-vetoed measure is visibly marked as an automatic qualifier in the Complete Bill Index. Automatic qualification guarantees discovery and inclusion in the published selection log; it does not imply that all qualifying measures have completed Enhanced Pilot Coverage. The enhanced queue is prioritized with the same neutral rules and review capacity is disclosed.
+
+Automatically qualify for the enhanced review queue:
 
 - State budget and major appropriations measures.
 - Measures proposing constitutional amendments or statewide ballot questions.
@@ -413,9 +419,9 @@ Other bills qualify by meeting at least two published impact factors:
 - Substantial documented public testimony.
 - Major change from existing Nevada law.
 
-The final set must cover a broad range of subjects, including budget/tax, education, health, housing, elections/government, labor/business, criminal justice/public safety, environment/water/energy, transportation, and civil rights/social services. Selection runs year-round using the same rules and cannot be altered to favor or oppose candidates.
+The final enhanced set must cover a broad range of subjects, including budget/tax, education, health, housing, elections/government, labor/business, criminal justice/public safety, environment/water/energy, transportation, and civil rights/social services. Selection runs year-round using the same rules and cannot be altered to favor or oppose candidates.
 
-Each supported bill page must include jurisdiction, session, bill number, official title, summary, status, latest action, sponsors, committees, key dates, recorded votes, official text/history links, and the selection rule that placed it in the Pilot Bill Set.
+Each enhanced bill page must include jurisdiction, session, bill number, official title, summary, status, latest action, sponsors, committees, key dates, recorded votes, official text/history links, and the selection rule that placed it in Enhanced Pilot Coverage. Index-only results must remain clearly labeled and link directly to the authoritative NELIS record.
 
 ### FR-008 — Plain-language summary controls (P0)
 
@@ -1019,7 +1025,7 @@ docs/
 1. **Brand:** Heim Civic Foundation is the nonprofit organization; Heim Civic Nevada is the first product; the planned public URL is `heimcivic.org/nevada`, pending clearance and acquisition.
 2. **Structure:** Form a Nevada nonprofit corporation for public benefit and seek 501(c)(3) public-charity recognition. Heim Creative LLC remains a separate for-profit consultancy with no common corporate parent.
 3. **Repository:** The source repository is private. Methodology, sources, corrections, funding, freshness, and later API documentation are public.
-4. **Pilot bills:** Publish a neutral 30–50-bill Pilot Bill Set chosen through the broad, year-round rubric in FR-007 and retain a public selection log.
+4. **Bill coverage:** Publish a complete official index of 2025 Nevada Assembly and Senate bills. Maintain separate Enhanced Pilot Coverage for approximately 30–50 measures chosen through the broad, year-round rubric in FR-007, and retain a public selection log. All vetoed measures remain discoverable and visibly marked as automatic qualifiers even when enhanced review is pending.
 5. **Campaign finance:** Separate direct campaign receipts from outside spending and use source-specific disclosure-status labels instead of unsupported dark-money claims.
 6. **Email:** Phase 1 includes a confirmed-opt-in waitlist only; recurring general and personalized digests begin after data operations are reliable.
 7. **Nevada sources:** Prefer official downloads and exports; maintain versioned adapters for NELIS and Secretary of State interfaces only where supported machine-readable access is unavailable.

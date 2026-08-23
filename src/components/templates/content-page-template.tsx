@@ -8,6 +8,7 @@ type ContentPageTemplateProps = {
   title: string;
   introduction: string;
   children: ReactNode;
+  width?: "standard" | "wide";
 };
 
 export function ContentPageTemplate({
@@ -15,6 +16,7 @@ export function ContentPageTemplate({
   eyebrow,
   introduction,
   title,
+  width = "standard",
 }: ContentPageTemplateProps) {
   return (
     <>
@@ -30,7 +32,9 @@ export function ContentPageTemplate({
             <p className="content-page__introduction">{introduction}</p>
           </div>
         </header>
-        <article className="layout-shell content-page__body">
+        <article
+          className={`layout-shell content-page__body content-page__body--${width}`}
+        >
           {children}
         </article>
       </main>

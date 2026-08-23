@@ -1,6 +1,6 @@
 # 0006: Phase 7 district pages and Pilot Bill Set gate
 
-- **Status:** Accepted for district pages; bill-count decision required
+- **Status:** Superseded for bill coverage by decision 0007; district-page decision remains accepted
 - **Date:** 2026-08-22
 - **PRD requirements:** FR-002, FR-003, FR-004, FR-007, FR-011
 

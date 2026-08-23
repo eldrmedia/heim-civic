@@ -13,8 +13,8 @@ const foundations = [
   },
   {
     icon: ReceiptText,
-    title: "Public trust operations",
-    text: "Phase 8 adds enforced correction states, immutable audit-event contracts, confirmed-opt-in waitlist intake, and public editorial, funding, pricing, and freshness disclosures.",
+    title: "Every 2025 Nevada bill",
+    text: "The complete official index covers 1,152 source-listed Assembly and Senate bill records while enhanced coverage remains clearly labeled.",
   },
 ] as const;
 
@@ -27,13 +27,13 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 8 · Trust and civic operations</p>
+          <p className="eyebrow">Phase 9.1 · Complete bill discovery</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            The eighth phase makes participation and editorial accountability
-            explicit before the private alpha asks the public for trust.
+            Comprehensive discovery and deeper editorial review now have
+            separate, visible coverage levels.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-eight">
+        <div className="phase-note" id="phase-nine-one">
           <div>
             <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">

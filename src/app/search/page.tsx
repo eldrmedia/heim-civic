@@ -7,7 +7,7 @@ import { searchCivicRecords } from "@/server/search/index";
 export const metadata: Metadata = {
   title: "Search Nevada civic records",
   description:
-    "Search reviewed Nevada officials, districts, pilot bills, and civic subjects.",
+    "Search Nevada officials, districts, the complete 2025 bill index, enhanced legislation, and civic subjects.",
 };
 
 type SearchPageProps = {
@@ -23,7 +23,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     <ContentPageTemplate
       eyebrow="Phase 6 · Civic discovery"
       title="Find a Nevada public record."
-      introduction="Search current officials, electoral districts, and the bills and subjects included in this source-reviewed pilot."
+      introduction="Search current officials, electoral districts, every source-listed 2025 Nevada Assembly and Senate bill, enhanced federal legislation, and reviewed civic subjects."
     >
       <SearchExperience query={query} results={results} />
     </ContentPageTemplate>

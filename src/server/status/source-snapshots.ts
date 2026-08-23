@@ -2,6 +2,7 @@ import "server-only";
 
 import { getFinanceBundle } from "@/server/finance/repository";
 import { getBoundaryBundle } from "@/server/geography/boundaries";
+import { getNevadaBillIndexBundle } from "@/server/legislation/bill-index-repository";
 import { getLegislationBundle } from "@/server/legislation/repository";
 import { getOfficialsBundle } from "@/server/officials/repository";
 import type { SourceHealthId } from "@/domain/status/source-health";
@@ -20,6 +21,7 @@ export type SourceSnapshotStatus = {
 export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
   const boundaries = getBoundaryBundle();
   const officials = getOfficialsBundle();
+  const billIndex = getNevadaBillIndexBundle();
   const legislation = getLegislationBundle();
   const finance = getFinanceBundle();
 
@@ -50,15 +52,26 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
         "Vacancies and transitions are position states and are never inferred from parser failures.",
     },
     {
+      id: "bill-index",
+      label: "Complete 2025 Nevada bill index",
+      coverage: billIndex.coverageLabel,
+      generatedAt: billIndex.generatedAt,
+      version: billIndex.parserVersion,
+      recordCount: billIndex.records.length,
+      sourceCount: billIndex.sources.length,
+      scopeNote:
+        "Official NELIS Assembly and Senate listings; index-only records do not claim locally verified status, sponsors, actions, committees, or votes.",
+    },
+    {
       id: "legislation",
-      label: "Pilot bills and votes",
+      label: "Enhanced bills and votes",
       coverage: legislation.coverageLabel,
       generatedAt: legislation.generatedAt,
       version: legislation.parserVersion,
       recordCount: legislation.bills.length,
       sourceCount: legislation.sources.length,
       scopeNote:
-        "Two reviewed vertical-slice records; the full Pilot Bill Set selection gate remains open.",
+        "Two reviewed vertical-slice records; additional enhanced reviews remain an editorial workflow.",
     },
     {
       id: "finance",

@@ -7,7 +7,7 @@ validation.
 
 ## Source and application readiness
 
-`GET /api/health` evaluates the four checked-in public snapshots. It returns
+`GET /api/health` evaluates the five checked-in public snapshots. It returns
 `200` while every snapshot is valid and within its freshness target and `503`
 when any required snapshot is stale or invalid. The response is deliberately
 small, uncached, excluded from indexing, and contains no request, address,
@@ -19,7 +19,8 @@ The targets implement the PRD's outside-active-period cadence:
 | --------------------- | ----------: |
 | District boundaries   |     92 days |
 | Current officeholders |      8 days |
-| Pilot legislation     |      8 days |
+| Complete bill index   |      8 days |
+| Enhanced legislation  |      8 days |
 | Federal finance       |      8 days |
 
 The command `npm run ops:source-health` runs the same policy in CI. A due-soon
@@ -61,6 +62,6 @@ reports into correction intake.
 
 Phase 9 does not provision a monitoring vendor, off-site backup destination,
 production hosting account, email receiver, case-management receiver, or public
-domain. It does not resolve the Pilot Bill Set count conflict or claim that the
-private alpha is ready for public launch. Those require owner decisions or
-deployment authority outside the repository.
+domain. Phase 9.1 resolves the bill-count conflict through separate complete-
+index and enhanced-coverage layers, but the private alpha is not ready for
+public launch until the remaining P0 and deployment gates pass.

@@ -27,6 +27,10 @@
     @apply max-w-3xl py-14 sm:py-20;
   }
 
+  .content-page__body--wide {
+    @apply max-w-6xl;
+  }
+
   .content-page__body section + section {
     @apply mt-10 border-t pt-10;
   }
@@ -236,6 +240,123 @@
 
   .bill-index__card > a {
     @apply text-juniper-800 mt-4 inline-flex items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
+  .bill-coverage-levels {
+    @apply mt-6 grid gap-4 md:grid-cols-2;
+  }
+
+  .bill-coverage-levels article {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .bill-coverage-levels p {
+    @apply text-clay-600 m-0 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .bill-coverage-levels strong {
+    @apply text-juniper-800 mt-3 block font-serif text-3xl;
+  }
+
+  .bill-coverage-levels span {
+    @apply mt-3 block text-sm leading-6 text-slate-700;
+  }
+
+  .content-page__body .bill-directory__source-note {
+    @apply mt-6 text-sm leading-6;
+  }
+
+  .bill-directory__introduction {
+    @apply max-w-3xl;
+  }
+
+  .bill-directory__filters {
+    @apply shadow-card mt-6 grid gap-4 rounded-xl border bg-white p-5 md:grid-cols-2 lg:grid-cols-[minmax(16rem,1fr)_12rem_14rem_auto] lg:items-end;
+  }
+
+  .bill-directory__filters label {
+    @apply mb-2 block text-sm font-bold text-slate-900;
+  }
+
+  .bill-directory__filters input,
+  .bill-directory__filters select {
+    @apply min-h-12 w-full rounded-lg border bg-white px-4 text-base text-slate-900 placeholder:text-slate-500;
+  }
+
+  .bill-directory__filters button {
+    @apply w-full lg:w-auto;
+  }
+
+  .content-page__body .bill-directory__summary {
+    @apply mt-7 text-sm font-bold text-slate-700;
+  }
+
+  .bill-directory__results {
+    @apply mt-4 grid items-start gap-4 lg:grid-cols-2;
+  }
+
+  .bill-directory-card {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .bill-directory-card__labels {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .bill-directory-card__labels span {
+    @apply bg-sage-100 text-juniper-800 rounded-full border px-3 py-1 text-xs font-bold;
+  }
+
+  .bill-directory-card__labels span + span {
+    @apply bg-desert-100 text-clay-600;
+  }
+
+  .content-page__body .bill-directory-card__identifier {
+    @apply text-clay-600 mt-4 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .bill-directory-card h3 {
+    @apply text-juniper-800 mt-2 font-serif text-xl leading-7 font-bold;
+  }
+
+  .content-page__body .bill-directory-card__title {
+    @apply mt-3 text-sm leading-6 text-slate-700;
+  }
+
+  .content-page__body .bill-directory-card__marker {
+    @apply border-clay-500/35 bg-desert-100 mt-4 rounded-lg border px-3 py-2 text-xs leading-5 text-slate-700;
+  }
+
+  .bill-directory-card > a {
+    @apply text-juniper-800 mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-bold underline underline-offset-4;
+  }
+
+  .bill-directory__empty {
+    @apply bg-desert-50 mt-4 rounded-xl border p-5;
+  }
+
+  .bill-directory__empty h3 {
+    @apply text-juniper-800 font-serif text-xl font-bold;
+  }
+
+  .content-page__body .bill-directory__empty p {
+    @apply mt-2 text-sm leading-6;
+  }
+
+  .bill-directory__pagination {
+    @apply mt-8 grid grid-cols-3 items-center gap-3 border-t pt-6 text-center text-sm font-bold;
+  }
+
+  .bill-directory__pagination a {
+    @apply text-juniper-800 min-h-11 rounded-lg border bg-white px-4 py-3 underline-offset-4 hover:underline;
+  }
+
+  .bill-directory__pagination a:first-child {
+    @apply justify-self-start;
+  }
+
+  .bill-directory__pagination a:last-child {
+    @apply justify-self-end;
   }
 
   .official-profile__hero {

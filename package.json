@@ -16,6 +16,7 @@
     "data:boundaries": "tsx scripts/build-boundaries.ts",
     "data:officials": "tsx scripts/build-officials.ts",
     "data:legislation": "tsx scripts/build-legislation.ts",
+    "data:bill-index": "node --import tsx scripts/build-nevada-bill-index.ts",
     "data:bill-selection": "tsx scripts/audit-pilot-bill-selection.ts",
     "data:finance": "tsx scripts/build-finance.ts",
     "ops:source-health": "node --import tsx scripts/check-source-health.ts",

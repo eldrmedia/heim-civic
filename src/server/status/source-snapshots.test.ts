@@ -9,6 +9,7 @@ describe("public source freshness", () => {
     expect(snapshots.map((snapshot) => snapshot.id)).toEqual([
       "boundaries",
       "officials",
+      "bill-index",
       "legislation",
       "finance",
     ]);
@@ -22,6 +23,12 @@ describe("public source freshness", () => {
       snapshots.find((snapshot) => snapshot.id === "officials"),
     ).toMatchObject({
       recordCount: 69,
+    });
+    expect(
+      snapshots.find((snapshot) => snapshot.id === "bill-index"),
+    ).toMatchObject({
+      recordCount: 1152,
+      sourceCount: 2,
     });
     expect(
       snapshots.find((snapshot) => snapshot.id === "legislation"),

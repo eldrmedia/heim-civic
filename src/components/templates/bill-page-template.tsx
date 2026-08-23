@@ -29,7 +29,9 @@ export function BillPageTemplate({
             <Link className="bill-page__back" href="/">
               ← Back to district lookup
             </Link>
-            <p className="eyebrow">Pilot Bill Set · sourced legislation</p>
+            <p className="eyebrow">
+              Enhanced Pilot Coverage · sourced legislation
+            </p>
             <div className="bill-page__heading">
               <div>
                 <p className="bill-page__identifier">
@@ -212,8 +214,9 @@ export function BillPageTemplate({
             <section className="bill-page__scope">
               <strong>About this coverage</strong>
               <p>
-                {bill.selectionReason} This reviewed record remains part of the
-                vertical slice while the full 2025 selection gate is resolved.
+                {bill.selectionReason} This record has completed enhanced
+                review; index-only bills link to NELIS without claiming the same
+                depth of local coverage.
               </p>
             </section>
           </aside>

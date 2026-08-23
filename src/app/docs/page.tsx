@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function MethodologyPage() {
   return (
     <ContentPageTemplate
-      eyebrow="Phase 6 methodology"
+      eyebrow="Phase 9.1 methodology"
       title="Sources before summaries."
-      introduction="Every current officeholder, pilot legislation record, and federal finance summary is tied to official government sources, a retrieval time, and a reproducible source snapshot."
+      introduction="Every current officeholder, indexed Nevada bill, enhanced legislation record, and federal finance summary is tied to official government sources, a retrieval time, and a reproducible source snapshot."
     >
       <section>
         <h2>Authoritative sources first</h2>
@@ -60,14 +60,17 @@ export default function MethodologyPage() {
       <section>
         <h2>Search coverage</h2>
         <p>
-          Search is generated only from records already accepted for public
-          display: current officials, official district boundaries, and the
-          reviewed pilot bill set. It does not search submitted addresses,
-          correction reports, voter files, or inferred political attributes.
+          Search includes current officials, official district boundaries, all
+          1,152 Assembly and Senate bill records returned by the official 2025
+          NELIS listings, and enhanced federal legislation. Index-only bills
+          link to NELIS and do not imply locally verified status, sponsors,
+          actions, committees, or votes. Search never includes submitted
+          addresses, correction reports, voter files, or inferred political
+          attributes.
         </p>
       </section>
       <section>
-        <h2>Pilot Bill Set selection</h2>
+        <h2>Enhanced Pilot Coverage selection</h2>
         <p>
           Budget and major appropriation measures, constitutional amendments or
           statewide questions, governor vetoes and overrides, major statewide
@@ -76,8 +79,10 @@ export default function MethodologyPage() {
           impact factors: broad statewide reach, a material change to rights,
           benefits, taxes, penalties, or regulation, material fiscal effect, a
           contested recorded vote, substantial documented testimony, or a major
-          change from existing law. Every approval retains its evidence and
-          human review state.
+          change from existing law. Every vetoed measure is visibly marked as an
+          automatic qualifier in the complete index. Enhanced publication
+          remains a separate human review state, and every approval retains its
+          evidence.
         </p>
       </section>
     </ContentPageTemplate>

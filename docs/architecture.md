@@ -76,6 +76,13 @@ Phase 4 adds a deliberately narrow legislation repository backed by a checked-in
 
 Nevada vote records retain all lawmakers serving at the time of the vote. Only identities that safely reconcile to the separate current-officeholder snapshot link to a current profile. Federal roll calls retain authoritative chamber totals while publishing only the Nevada House delegation’s member-level values. Original vote labels are preserved alongside a small normalized vocabulary.
 
+Phase 9.1 adds a separate complete-index bundle generated from two official
+NELIS listing responses. It preserves source wording and keys for 1,152 Assembly
+and Senate records and marks all veto-audit matches. The directory and global
+search join a record to enhanced coverage only when its identifier reconciles to
+the reviewed legislation bundle. Index-only records link directly to NELIS and
+never flow through the enhanced bill-page template.
+
 ## Pilot campaign finance
 
 Phase 5 adds a separate, checked-in FEC snapshot for two current Nevada House profiles. The finance domain preserves the election cycle, reporting-period boundaries, principal committee identity, official receipt and spending categories, cash, debt, source hashes, and retrieval times. Profile and finance routes read the normalized snapshot through a server-only repository.
@@ -126,4 +133,4 @@ waitlist receivers own their separate backup, retention, and restore controls.
 
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. Phase 6 intentionally uses immutable, versioned geographic, current-officeholder, two-bill legislation, and two-record federal finance snapshots and does not create an address table. Correction cases remain behind a delivery interface until the durable schema and access controls are reviewed. Generalized historical terms, full bill coverage, Nevada finance, outside spending, and complete federal finance require separate reviewed schema decisions.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. The current application intentionally uses immutable, versioned geographic, officeholder, complete Nevada bill-index, enhanced-legislation, and federal-finance snapshots and does not create an address table. Correction cases remain behind a delivery interface until the durable schema and access controls are reviewed. Generalized bill details and votes, historical terms, Nevada finance, outside spending, and complete federal finance require separate reviewed schema decisions.

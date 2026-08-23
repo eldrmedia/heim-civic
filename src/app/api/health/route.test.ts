@@ -9,7 +9,7 @@ afterEach(() => {
 describe("GET /api/health", () => {
   it("returns a privacy-safe readiness report for current snapshots", async () => {
     vi.useFakeTimers();
-    vi.setSystemTime(new Date("2026-08-22T21:00:00.000Z"));
+    vi.setSystemTime(new Date("2026-08-23T00:00:00.000Z"));
 
     const response = GET();
     const result = await response.json();
@@ -22,7 +22,7 @@ describe("GET /api/health", () => {
       scope: "published-snapshot-readiness",
       status: "ready",
     });
-    expect(result.checks).toHaveLength(4);
+    expect(result.checks).toHaveLength(5);
     expect(JSON.stringify(result)).not.toMatch(/address|email|token/i);
   });
 

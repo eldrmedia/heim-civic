@@ -7,7 +7,7 @@ const navigation = [
   { href: "/search", label: "Search records" },
   { href: "/districts", label: "Districts" },
   { href: "/#foundation", label: "What we’re building" },
-  { href: "/bills", label: "Pilot bills" },
+  { href: "/bills", label: "2025 bills" },
   { href: "/finance", label: "Finance pilot" },
   { href: "/docs", label: "Methodology" },
 ] as const;

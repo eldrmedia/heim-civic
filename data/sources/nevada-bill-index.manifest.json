@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "session": "83rd (2025) Nevada Legislature",
+  "parserVersion": "nelis-bill-index-v1",
+  "coverageLabel": "All Assembly and Senate bill records listed by NELIS for the 83rd (2025) Session",
+  "sources": [
+    {
+      "id": "nelis-83rd-assembly-bills",
+      "organization": "Nevada Legislature (NELIS)",
+      "billType": "AB",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/HomeBill/BillsTab?Page=1&Filters.OnlyTrackedBills=False&Filters.DisplayTitles=True&Filters.DisplayNotes=False&Filters.DisplayTags=False&Filters.PageSize=2147483647&SelectedBillTypes=AB",
+      "expectedRecordCount": 623,
+      "expectedStandardCount": 601,
+      "expectedStarredCount": 22
+    },
+    {
+      "id": "nelis-83rd-senate-bills",
+      "organization": "Nevada Legislature (NELIS)",
+      "billType": "SB",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/HomeBill/BillsTab?Page=1&Filters.OnlyTrackedBills=False&Filters.DisplayTitles=True&Filters.DisplayNotes=False&Filters.DisplayTags=False&Filters.PageSize=2147483647&SelectedBillTypes=SB",
+      "expectedRecordCount": 529,
+      "expectedStandardCount": 508,
+      "expectedStarredCount": 21
+    }
+  ]
+}

@@ -6,6 +6,10 @@ import {
   getAllPublishedDistricts,
   getBoundaryBundle,
 } from "@/server/geography/boundaries";
+import {
+  getAllNevadaBillIndexRecords,
+  getNevadaBillIndexBundle,
+} from "@/server/legislation/bill-index-repository";
 import { getAllPilotBills } from "@/server/legislation/repository";
 import { getAllCurrentOfficials } from "@/server/officials/repository";
 
@@ -38,6 +42,10 @@ export function buildSearchIndex(): SearchRecord[] {
   const boundaries = getBoundaryBundle();
   const officials = getAllCurrentOfficials();
   const bills = getAllPilotBills();
+  const billIndex = getNevadaBillIndexBundle();
+  const billIndexSources = new Map(
+    billIndex.sources.map((source) => [source.id, source]),
+  );
 
   const officialRecords: SearchRecord[] = officials.map((official) => ({
     id: `official:${official.id}`,
@@ -95,25 +103,61 @@ export function buildSearchIndex(): SearchRecord[] {
     },
   );
 
-  const billRecords: SearchRecord[] = bills.map((bill) => ({
-    id: `bill:${bill.id}`,
-    kind: "bill",
-    title: `${bill.identifier}: ${bill.title}`,
-    description: `${bill.policyArea} · ${bill.status.label}`,
-    href: `/bills/${bill.slug}`,
-    actionLabel: "View bill record",
-    keywords: [
-      bill.identifier,
-      bill.title,
-      bill.officialTitle,
-      bill.policyArea,
-      bill.status.label,
-      ...bill.committees,
-      ...bill.people.map((person) => person.name),
-    ],
-    sourceLabel: bill.sources[0]?.organization ?? "Official source",
-    verifiedAt: bill.sources[0]?.retrievedAt ?? "",
-  }));
+  const indexedBillRecords: SearchRecord[] = getAllNevadaBillIndexRecords().map(
+    (bill) => {
+      const source = billIndexSources.get(bill.sourceId);
+
+      if (!source)
+        throw new Error(`Missing bill-index source ${bill.sourceId}`);
+
+      return {
+        id: `bill:${bill.id}`,
+        kind: "bill" as const,
+        title: `${bill.identifier}: ${bill.synopsis}`,
+        description: bill.enhancedSlug
+          ? "Enhanced Pilot Coverage · Nevada Legislature"
+          : `${bill.automaticQualifier ? "Automatic veto qualifier · " : ""}Official NELIS index record`,
+        href: bill.enhancedSlug
+          ? `/bills/${bill.enhancedSlug}`
+          : bill.officialPageUrl,
+        actionLabel: bill.enhancedSlug
+          ? "View enhanced bill record"
+          : "Open official NELIS record",
+        keywords: [
+          bill.identifier,
+          bill.canonicalIdentifier,
+          bill.synopsis,
+          bill.officialTitle,
+          bill.measureType,
+          bill.automaticQualifier ? "vetoed veto governor" : "",
+        ],
+        sourceLabel: source.organization,
+        verifiedAt: source.retrievedAt,
+      };
+    },
+  );
+
+  const enhancedFederalBillRecords: SearchRecord[] = bills
+    .filter((bill) => bill.jurisdiction === "federal")
+    .map((bill) => ({
+      id: `bill:${bill.id}`,
+      kind: "bill",
+      title: `${bill.identifier}: ${bill.title}`,
+      description: `${bill.policyArea} · ${bill.status.label}`,
+      href: `/bills/${bill.slug}`,
+      actionLabel: "View bill record",
+      keywords: [
+        bill.identifier,
+        bill.title,
+        bill.officialTitle,
+        bill.policyArea,
+        bill.status.label,
+        ...bill.committees,
+        ...bill.people.map((person) => person.name),
+      ],
+      sourceLabel: bill.sources[0]?.organization ?? "Official source",
+      verifiedAt: bill.sources[0]?.retrievedAt ?? "",
+    }));
 
   const subjectRecords: SearchRecord[] = Array.from(
     new Map(
@@ -123,9 +167,9 @@ export function buildSearchIndex(): SearchRecord[] {
     id: `subject:${normalize(bill.policyArea).replaceAll(" ", "-")}`,
     kind: "subject",
     title: bill.policyArea,
-    description: `A subject represented in the current pilot bill set by ${bill.identifier}.`,
+    description: `A subject represented in current Enhanced Pilot Coverage by ${bill.identifier}.`,
     href: `/bills/${bill.slug}`,
-    actionLabel: "View related pilot bill",
+    actionLabel: "View related enhanced bill",
     keywords: [bill.policyArea, bill.title, bill.identifier],
     sourceLabel: bill.sources[0]?.organization ?? "Official source",
     verifiedAt: bill.sources[0]?.retrievedAt ?? "",
@@ -134,7 +178,8 @@ export function buildSearchIndex(): SearchRecord[] {
   return [
     ...officialRecords,
     ...districtRecords,
-    ...billRecords,
+    ...indexedBillRecords,
+    ...enhancedFederalBillRecords,
     ...subjectRecords,
   ];
 }

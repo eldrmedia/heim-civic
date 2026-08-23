@@ -32,6 +32,16 @@ describe("civic search index", () => {
 
   it("finds bills by identifier and subjects by common terms", () => {
     expect(searchCivicRecords("H.R. 1366")[0]).toMatchObject({ kind: "bill" });
+    expect(searchCivicRecords("AB597")[0]).toMatchObject({
+      kind: "bill",
+      title: expect.stringContaining("AB597"),
+      actionLabel: "Open official NELIS record",
+      href: "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12961/Overview",
+    });
+    expect(searchCivicRecords("AB83")[0]).toMatchObject({
+      actionLabel: "View enhanced bill record",
+      href: "/bills/nv-83-2025-ab83",
+    });
     expect(
       searchCivicRecords("Environmental Protection").some(
         (result) => result.kind === "subject",
