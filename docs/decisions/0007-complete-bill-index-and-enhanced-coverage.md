@@ -47,3 +47,12 @@ complete.
   as a status or category.
 - Resolutions, initiative petitions, prior-session measures, comprehensive local
   bill pages, and bulk vote ingestion require separate reviewed expansions.
+
+## Phase 9.2 implementation note
+
+The first enhanced-review batch contains ten governor-veto qualifiers, one for
+each PRD subject area. Automated source preparation validates identifiers, bill
+keys, official digests, veto actions, final-vote totals, individual member
+counts, source hashes, and current-profile joins. The generated records remain
+`awaiting-human-review`; automation cannot populate reviewer identity or approval
+time, and queued records do not receive local enhanced routes.

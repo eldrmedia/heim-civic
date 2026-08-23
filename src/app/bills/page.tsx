@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { BillDirectory } from "@/components/organisms/bill-directory";
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
@@ -70,6 +71,12 @@ export default async function BillsPage({ searchParams }: BillsPageProps) {
           The index preserves that source marker without assigning it a meaning.
           Resolutions and initiative petitions are outside this bill-only index.
         </p>
+        <Link
+          className="bill-directory__selection-link"
+          href="/bills/selection"
+        >
+          View the enhanced bill selection log →
+        </Link>
       </section>
       <BillDirectory
         filters={{ query, chamber, coverage }}

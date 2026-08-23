@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "coverageLabel": "Phase 9.2 first enhanced-review batch",
+  "targetRange": { "minimum": 30, "maximum": 50 },
+  "records": [
+    {
+      "billIdentifier": "AB226",
+      "billKey": "12228",
+      "subjectArea": "Budget and tax",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: taxation and economic development.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB397",
+      "billKey": "12562",
+      "subjectArea": "Education",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: higher education fee waivers.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "SB128",
+      "billKey": "12063",
+      "subjectArea": "Health",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: health care prior authorization.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB223",
+      "billKey": "12225",
+      "subjectArea": "Housing",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: rental-property habitability.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB306",
+      "billKey": "12386",
+      "subjectArea": "Elections and government",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: election administration.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB44",
+      "billKey": "11833",
+      "subjectArea": "Labor and business",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: essential-goods trade practices.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB105",
+      "billKey": "12000",
+      "subjectArea": "Criminal justice and public safety",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: firearm restrictions at election sites.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB244",
+      "billKey": "12274",
+      "subjectArea": "Environment, water, and energy",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: polystyrene foodware restrictions.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB140",
+      "billKey": "12066",
+      "subjectArea": "Transportation",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: driver authorization cards.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "SB171",
+      "billKey": "12189",
+      "subjectArea": "Civil rights and social services",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "First-batch subject breadth: protections related to gender-affirming care.",
+      "reviewState": "source-preparation"
+    }
+  ]
+}

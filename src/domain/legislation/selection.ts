@@ -4,6 +4,7 @@ export const automaticSelectionFactors = [
   "state-budget-or-major-appropriation",
   "constitutional-amendment-or-statewide-question",
   "governor-veto-or-override",
+  "election-administration-or-government-structure-change",
   "major-statewide-program-change",
   "material-official-fiscal-effect",
 ] as const;

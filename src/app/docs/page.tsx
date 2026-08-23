@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function MethodologyPage() {
   return (
     <ContentPageTemplate
-      eyebrow="Phase 9.1 methodology"
+      eyebrow="Phase 9.2 methodology"
       title="Sources before summaries."
       introduction="Every current officeholder, indexed Nevada bill, enhanced legislation record, and federal finance summary is tied to official government sources, a retrieval time, and a reproducible source snapshot."
     >
@@ -82,7 +82,8 @@ export default function MethodologyPage() {
           change from existing law. Every vetoed measure is visibly marked as an
           automatic qualifier in the complete index. Enhanced publication
           remains a separate human review state, and every approval retains its
-          evidence.
+          evidence. The public selection log shows ten source-prepared records
+          awaiting review without presenting them as completed enhanced pages.
         </p>
       </section>
     </ContentPageTemplate>

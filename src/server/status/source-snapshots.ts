@@ -3,6 +3,7 @@ import "server-only";
 import { getFinanceBundle } from "@/server/finance/repository";
 import { getBoundaryBundle } from "@/server/geography/boundaries";
 import { getNevadaBillIndexBundle } from "@/server/legislation/bill-index-repository";
+import { getEnhancedBillReviewBundle } from "@/server/legislation/enhanced-review-repository";
 import { getLegislationBundle } from "@/server/legislation/repository";
 import { getOfficialsBundle } from "@/server/officials/repository";
 import type { SourceHealthId } from "@/domain/status/source-health";
@@ -22,6 +23,7 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
   const boundaries = getBoundaryBundle();
   const officials = getOfficialsBundle();
   const billIndex = getNevadaBillIndexBundle();
+  const enhancedReview = getEnhancedBillReviewBundle();
   const legislation = getLegislationBundle();
   const finance = getFinanceBundle();
 
@@ -63,6 +65,17 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
         "Official NELIS Assembly and Senate listings; index-only records do not claim locally verified status, sponsors, actions, committees, or votes.",
     },
     {
+      id: "enhanced-review",
+      label: "Enhanced bill editorial queue",
+      coverage: enhancedReview.coverageLabel,
+      generatedAt: enhancedReview.generatedAt,
+      version: enhancedReview.parserVersion,
+      recordCount: enhancedReview.records.length,
+      sourceCount: enhancedReview.sources.length,
+      scopeNote:
+        "Source-verified review packages awaiting accountable human approval; these records are not yet labeled as enhanced coverage.",
+    },
+    {
       id: "legislation",
       label: "Enhanced bills and votes",
       coverage: legislation.coverageLabel,
@@ -71,7 +84,7 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
       recordCount: legislation.bills.length,
       sourceCount: legislation.sources.length,
       scopeNote:
-        "Two reviewed vertical-slice records; additional enhanced reviews remain an editorial workflow.",
+        "One published Nevada record and one federal vertical-slice record; queued Nevada packages remain separate until human approval.",
     },
     {
       id: "finance",

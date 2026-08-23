@@ -1,5 +1,6 @@
 import boundariesData from "../src/data/generated/nevada-boundaries-2021.json";
 import billIndexData from "../src/data/generated/nevada-bill-index.json";
+import enhancedReviewData from "../src/data/generated/enhanced-bill-review.json";
 import financeData from "../src/data/generated/pilot-finance.json";
 import legislationData from "../src/data/generated/pilot-legislation.json";
 import officialsData from "../src/data/generated/current-officials.json";
@@ -26,6 +27,12 @@ const report = evaluateSourceHealth([
     generatedAt: billIndexData.generatedAt,
     recordCount: billIndexData.records.length,
     sourceCount: billIndexData.sources.length,
+  },
+  {
+    id: "enhanced-review",
+    generatedAt: enhancedReviewData.generatedAt,
+    recordCount: enhancedReviewData.records.length,
+    sourceCount: enhancedReviewData.sources.length,
   },
   {
     id: "legislation",

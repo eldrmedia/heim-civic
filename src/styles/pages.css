@@ -266,6 +266,10 @@
     @apply mt-6 text-sm leading-6;
   }
 
+  .bill-directory__selection-link {
+    @apply text-juniper-800 mt-4 inline-flex min-h-11 items-center text-sm font-bold underline underline-offset-4;
+  }
+
   .bill-directory__introduction {
     @apply max-w-3xl;
   }
@@ -357,6 +361,86 @@
 
   .bill-directory__pagination a:last-child {
     @apply justify-self-end;
+  }
+
+  .selection-progress {
+    @apply mt-6 grid gap-4 md:grid-cols-3;
+  }
+
+  .selection-progress article {
+    @apply bg-desert-50 rounded-xl border p-5;
+  }
+
+  .selection-progress span {
+    @apply text-clay-600 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .selection-progress strong {
+    @apply text-juniper-800 mt-3 block font-serif text-4xl;
+  }
+
+  .content-page__body .selection-progress p {
+    @apply mt-3 text-sm leading-6;
+  }
+
+  .selection-notice {
+    @apply border-clay-500/35 bg-desert-100 mt-6 rounded-xl border p-5;
+  }
+
+  .selection-notice strong {
+    @apply text-juniper-800 text-base;
+  }
+
+  .content-page__body .selection-notice p {
+    @apply mt-2 max-w-4xl text-sm leading-6;
+  }
+
+  .selection-log {
+    @apply mt-6 grid items-start gap-4 lg:grid-cols-2;
+  }
+
+  .selection-record {
+    @apply rounded-xl border bg-white p-5;
+  }
+
+  .selection-record__labels {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .selection-record__labels span {
+    @apply bg-sage-100 text-juniper-800 rounded-full border px-3 py-1 text-xs font-bold;
+  }
+
+  .selection-record__labels span + span {
+    @apply bg-desert-100 text-clay-600;
+  }
+
+  .content-page__body .selection-record__identifier {
+    @apply text-clay-600 mt-4 text-xs font-bold tracking-[0.08em] uppercase;
+  }
+
+  .selection-record h3 {
+    @apply text-juniper-800 mt-2 font-serif text-xl leading-7 font-bold;
+  }
+
+  .content-page__body .selection-record > p:not(.selection-record__identifier) {
+    @apply mt-3 text-sm leading-6;
+  }
+
+  .selection-record dl {
+    @apply mt-4 grid gap-3 border-t pt-4 sm:grid-cols-2;
+  }
+
+  .selection-record dt {
+    @apply text-xs font-bold tracking-[0.06em] text-slate-500 uppercase;
+  }
+
+  .selection-record dd {
+    @apply mt-1 text-sm font-semibold text-slate-800;
+  }
+
+  .selection-record > a {
+    @apply text-juniper-800 mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-bold underline underline-offset-4;
   }
 
   .official-profile__hero {

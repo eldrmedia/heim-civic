@@ -7,7 +7,7 @@ validation.
 
 ## Source and application readiness
 
-`GET /api/health` evaluates the five checked-in public snapshots. It returns
+`GET /api/health` evaluates the six checked-in public snapshots. It returns
 `200` while every snapshot is valid and within its freshness target and `503`
 when any required snapshot is stale or invalid. The response is deliberately
 small, uncached, excluded from indexing, and contains no request, address,
@@ -63,5 +63,7 @@ reports into correction intake.
 Phase 9 does not provision a monitoring vendor, off-site backup destination,
 production hosting account, email receiver, case-management receiver, or public
 domain. Phase 9.1 resolves the bill-count conflict through separate complete-
-index and enhanced-coverage layers, but the private alpha is not ready for
-public launch until the remaining P0 and deployment gates pass.
+index and enhanced-coverage layers. Phase 9.2 establishes a public selection log
+and first ten-bill source package, but it does not substitute automation for
+human editorial approval. The private alpha is not ready for public launch until
+the remaining P0 and deployment gates pass.

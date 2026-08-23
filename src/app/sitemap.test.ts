@@ -12,11 +12,12 @@ describe("public sitemap", () => {
     const entries = sitemap();
     const urls = entries.map((entry) => entry.url);
 
-    expect(urls).toHaveLength(154);
+    expect(urls).toHaveLength(155);
     expect(urls).toContain("https://civic.example/nevada");
     expect(urls).toContain(
       "https://civic.example/nevada/districts/congressional-1",
     );
+    expect(urls).toContain("https://civic.example/nevada/bills/selection");
     expect(urls.some((url) => url.includes("/api/"))).toBe(false);
     expect(new Set(urls).size).toBe(urls.length);
   });

@@ -345,6 +345,40 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   expect(results.violations).toEqual([]);
 });
 
+test("the enhanced bill selection log exposes a sourced queue without claiming approval", async ({
+  page,
+}) => {
+  await page.goto("/bills/selection");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: "A transparent queue for deeper bill review.",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Awaiting human review", { exact: true }).first(),
+  ).toBeVisible();
+  await expect(
+    page.getByText("No queued bill is labeled enhanced yet."),
+  ).toBeVisible();
+  await expect(page.locator(".selection-record")).toHaveCount(10);
+
+  const ab226 = page.locator(".selection-record").filter({ hasText: "AB226" });
+  await expect(
+    ab226.getByText("Budget and tax", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    ab226.getByRole("link", { name: "Open official NELIS record" }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12228/Overview",
+  );
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test("a federal finance page preserves official categories and coverage limits", async ({
   page,
 }) => {

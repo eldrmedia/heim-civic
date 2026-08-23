@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9.1 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, a complete 1,152-record official Nevada bill index, two enhanced bills with recorded votes, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, snapshot-health monitoring, public-route discovery, and operator runbooks.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9.2 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, a complete 1,152-record official Nevada bill index, one published enhanced Nevada bill, a ten-bill source-verified editorial queue, one enhanced federal bill, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, snapshot-health monitoring, public-route discovery, and operator runbooks.
 
 ## Requirements
 
@@ -31,6 +31,7 @@ npm run data:boundaries
 npm run data:officials
 npm run data:legislation
 npm run data:bill-index
+npm run data:enhanced-bill-review
 npm run data:finance
 npm run ops:source-health
 ```
@@ -79,6 +80,14 @@ retrieval time, parser version, and source hash. The builder also reconciles all
 stop generation for review.
 
 `npm run data:legislation` downloads seven official NELIS, GovInfo, and U.S. House Clerk records for the two-bill Phase 4 vertical slice. It validates bill coverage, official vote totals, member counts, Nevada delegation reconciliation, and current-profile links before updating the checked-in snapshot. Historical Nevada voters remain in the roll call even when they no longer have a current profile. This pilot is intentionally not a complete bill database.
+
+`npm run data:enhanced-bill-review` builds the first ten-bill Nevada editorial
+queue from the checked-in selection manifest. It reconciles every identifier and
+bill key against the complete index and official veto audit, downloads official
+NELIS overview, history, sponsor, committee, and final-vote fragments, validates
+member totals, and writes a checksummed 41-source review package. Successful
+generation advances records only to `awaiting-human-review`; it never grants
+editorial approval or creates an enhanced bill page.
 
 ## Pilot finance refresh
 

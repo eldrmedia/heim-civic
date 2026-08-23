@@ -11,6 +11,7 @@ const publicRoutes = [
   "/search",
   "/districts",
   "/bills",
+  "/bills/selection",
   "/finance",
   "/docs",
   "/privacy",

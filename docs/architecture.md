@@ -127,10 +127,17 @@ mailbox configuration and fails closed when it is absent. No request data,
 address, correction content, waitlist contact, token, or raw network address is
 included in health output.
 
+The Phase 9.2 review queue follows a staged-publication boundary. A checked-in
+manifest selects candidates under FR-007, a server-side generator builds and
+validates checksummed official-source packages, and the public selection-log
+repository exposes only queue facts. Generated records remain
+`awaiting-human-review` and are excluded from enhanced routes until an
+accountable editor records approval.
+
 The current recovery unit is the immutable private Git repository and its
-checked-in snapshots; there is no application database. External correction and
+checked-in snapshots and review packages; there is no application database. External correction and
 waitlist receivers own their separate backup, retention, and restore controls.
 
 ## Planned data boundary
 
-Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. The current application intentionally uses immutable, versioned geographic, officeholder, complete Nevada bill-index, enhanced-legislation, and federal-finance snapshots and does not create an address table. Correction cases remain behind a delivery interface until the durable schema and access controls are reviewed. Generalized bill details and votes, historical terms, Nevada finance, outside spending, and complete federal finance require separate reviewed schema decisions.
+Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. The current application intentionally uses immutable, versioned geographic, officeholder, complete Nevada bill-index, enhanced-review, enhanced-legislation, and federal-finance snapshots and does not create an address table. Correction cases remain behind a delivery interface until the durable schema and access controls are reviewed. Promoting the remaining enhanced bill queue, historical terms, Nevada finance, outside spending, and complete federal finance require separate reviewed operations or schema decisions.

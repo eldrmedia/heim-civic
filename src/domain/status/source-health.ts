@@ -2,6 +2,7 @@ export const sourceFreshnessTargets = {
   boundaries: 92,
   officials: 8,
   "bill-index": 8,
+  "enhanced-review": 8,
   legislation: 8,
   finance: 8,
 } as const;

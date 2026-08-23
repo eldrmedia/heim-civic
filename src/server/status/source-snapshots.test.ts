@@ -10,6 +10,7 @@ describe("public source freshness", () => {
       "boundaries",
       "officials",
       "bill-index",
+      "enhanced-review",
       "legislation",
       "finance",
     ]);
@@ -29,6 +30,12 @@ describe("public source freshness", () => {
     ).toMatchObject({
       recordCount: 1152,
       sourceCount: 2,
+    });
+    expect(
+      snapshots.find((snapshot) => snapshot.id === "enhanced-review"),
+    ).toMatchObject({
+      recordCount: 10,
+      sourceCount: 41,
     });
     expect(
       snapshots.find((snapshot) => snapshot.id === "legislation"),

@@ -27,13 +27,13 @@ export function FoundationSection() {
     >
       <div className="layout-shell">
         <div className="section-heading">
-          <p className="eyebrow">Phase 9.1 · Complete bill discovery</p>
+          <p className="eyebrow">Phase 9.2 · Enhanced review workflow</p>
           <h2 className="section-heading__title" id="foundation-title">
             Nevada warmth. Rigorous civic data underneath.
           </h2>
           <p className="section-heading__body">
-            Comprehensive discovery and deeper editorial review now have
-            separate, visible coverage levels.
+            Comprehensive discovery, source preparation, and human editorial
+            approval now have separate, visible states.
           </p>
         </div>
 
@@ -49,13 +49,13 @@ export function FoundationSection() {
           ))}
         </div>
 
-        <div className="phase-note" id="phase-nine-one">
+        <div className="phase-note" id="phase-nine-two">
           <div>
             <h3 className="phase-note__title">Private alpha scope</h3>
             <p className="phase-note__text">
-              Application contracts are complete, but hosted correction and
-              waitlist receivers, a verified material-funder roster, and live
-              monitoring remain required before public launch.
+              Ten additional Nevada bill source packages now await human
+              editorial review. Hosted receivers, a verified material-funder
+              roster, and live monitoring also remain required before launch.
             </p>
           </div>
         </div>
