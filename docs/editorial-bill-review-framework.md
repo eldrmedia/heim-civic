@@ -38,6 +38,12 @@ Every bill receives the same checks:
 7. **Votes:** each displayed roll call has matching members and totals and a
    supported public label. Reconsideration, concurrence, amendment, override,
    and procedural votes must not be flattened into an ambiguous label.
+
+For a passage vote that is subsequently reconsidered, label the original event
+“Initial passage — later reconsidered” and the later result “Passage after
+reconsideration.” Retain both roll calls, their sequence, totals, and official
+links. Do not relabel either event as merely procedural.
+
 8. **Selection neutrality:** the reason follows the published rubric and does
    not depend on party, ideology, electoral status, or predicted popularity.
 9. **Uncertainty:** unresolved conflicts are explicit and do not affect a

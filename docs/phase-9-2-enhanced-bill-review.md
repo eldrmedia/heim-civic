@@ -53,8 +53,9 @@ can enter the published enhanced snapshot:
 1. Compare the official digest with the enrolled and vetoed bill text.
 2. Confirm that material amendments are represented and uncertainty is explicit.
 3. Confirm status and latest action against the official history.
-4. Classify each displayed vote as passage, concurrence, amendment, procedural,
-   or veto override where the official record supports that distinction.
+4. Classify each displayed vote as passage, initial passage later reconsidered,
+   passage after reconsideration, concurrence, amendment, procedural, or veto
+   override where the official record supports that distinction.
 5. Review sponsor and committee coverage for omissions or source ambiguity.
 6. Approve the selection explanation under the published neutral rubric.
 7. Record a non-placeholder reviewer identity and ISO approval time.
@@ -68,10 +69,7 @@ The implemented packet and promotion workflow is documented in
 
 ## Remaining work
 
-- Complete accountable review for Batch 1.
 - Select and prepare later batches until approximately 30–50 Nevada bills are
   published with broad subject coverage.
-- Review repeated same-day NELIS final-vote entries instead of inferring their
-  procedural meaning.
 - Test special sessions, non-final vote types, and bills without recorded floor
   votes before broadening the parser.

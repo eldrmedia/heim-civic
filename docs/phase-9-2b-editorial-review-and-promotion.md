@@ -43,3 +43,8 @@ queue.
 William Elder, founder, approved nine Batch 1 records on August 24, 2026 after
 accepting the documented assessment. AB44 remains unapproved because its two
 same-day Senate passage events require reconsideration-aware public labels.
+
+Phase 9.2C adds those distinct labels to the reviewed vote vocabulary and a
+regression test for AB44. William Elder, founder, accepted the corrected
+readiness assessment on August 24, 2026; the decision ledger retains the exact
+UTC approval time and vote-level evidence used for promotion.

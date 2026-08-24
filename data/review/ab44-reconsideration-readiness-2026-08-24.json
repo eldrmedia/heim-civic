@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "frameworkVersion": "editorial-bill-review-v1",
+  "sourceSnapshotId": "phase-9.2-enhanced-review:2026-08-23",
+  "billIdentifier": "AB44",
+  "candidateFingerprint": "a0ae12d93e934d8d79161cce580e928423821d49042d6841ad9ebff5e83cb6e0",
+  "assessedAt": "2026-08-24T12:44:40.968Z",
+  "assessor": {
+    "type": "ai-assisted",
+    "system": "OpenAI Codex",
+    "humanApprovalRequired": true
+  },
+  "previousAssessment": {
+    "artifact": "data/review/enhanced-bill-ai-assessment-2026-08-23.json",
+    "disposition": "changes-required",
+    "blocker": "The public vote vocabulary could not distinguish an initial Senate passage that was later reconsidered from the second passage after reconsideration."
+  },
+  "implementedCorrection": {
+    "classificationVocabulary": [
+      "initial-passage-later-reconsidered",
+      "passage-after-reconsideration"
+    ],
+    "publicLabels": [
+      "Initial passage — later reconsidered",
+      "Passage after reconsideration"
+    ],
+    "validation": "A regression test promotes an isolated AB44 fixture and requires all three public vote labels in official chronological order."
+  },
+  "evidence": {
+    "officialOverviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11833/Overview",
+    "enrolledTextUrl": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB44_EN.pdf",
+    "enrolledTextSha256": "227a6f9d9f81c3b50a587800d24b69f5fc4d6c30974662a45a99d745b30b3a48",
+    "historySourceSha256": "03364bfde1fbcb576d572d0a576a499929442ca712fedae24172cb96595476cb",
+    "voteSummarySha256": "d5c7f19a0be24146c371ea2e6d81398fc14f459b58ae2d05707754bacdf9b2c4",
+    "vetoReportUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+  },
+  "proposedVoteDecisions": [
+    {
+      "voteId": "nv-vote:12518",
+      "classification": "passage",
+      "publicLabel": "Passage",
+      "reason": "Assembly passage on April 22, 2025, by 24–18."
+    },
+    {
+      "voteId": "nv-vote:12963",
+      "classification": "initial-passage-later-reconsidered",
+      "publicLabel": "Initial passage — later reconsidered",
+      "reason": "The Senate initially passed AB44 on May 22, 2025, by 14–7, after which the official history records that the action of passage was reconsidered."
+    },
+    {
+      "voteId": "nv-vote:12964",
+      "classification": "passage-after-reconsideration",
+      "publicLabel": "Passage after reconsideration",
+      "reason": "After reconsideration, the Senate passed AB44 again on May 22, 2025, by 13–8."
+    }
+  ],
+  "checks": {
+    "identity": "pass",
+    "sourceIntegrity": "pass",
+    "digestFidelity": "pass",
+    "amendments": "pass",
+    "status": "pass",
+    "peopleAndCommittees": "pass",
+    "votes": "pass",
+    "selectionNeutrality": "pass",
+    "uncertainty": "pass"
+  },
+  "disposition": "recommend-approval",
+  "humanDecisionState": "approved",
+  "humanDecision": {
+    "reviewer": {
+      "name": "william elder",
+      "role": "founder"
+    },
+    "reviewedAt": "2026-08-24T16:30:46.025Z",
+    "decisionLedger": "data/review/enhanced-bill-editorial-decisions.json"
+  },
+  "reason": "The sole prior blocker is resolved. The official sequence and both distinct Senate outcomes can now be published without flattening reconsideration into an ambiguous passage label."
+}

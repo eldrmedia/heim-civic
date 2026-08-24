@@ -5787,6 +5787,803 @@
         "candidateFingerprint": "f8e955bf956a59b294de9074cc16c9e7bb159bc5dd3bd7dff60af1b910e22615",
         "uncertaintyNotes": []
       }
+    },
+    {
+      "id": "nv-83-2025-ab44",
+      "slug": "nv-83-2025-ab44",
+      "jurisdiction": "state",
+      "identifier": "AB44",
+      "session": "Nevada 83rd Session (2025)",
+      "title": "Prohibits manipulating the price of an essential good or service in this State. (BDR 52-503)",
+      "officialTitle": "AN ACT relating to unfair trade practices; revising the list of activities that constitute an unlawful contract, combination or conspiracy in restraint of trade to include manipulating the price of an essential good or service in this State; providing a penalty; and providing other matters properly relating thereto.",
+      "policyArea": "Labor and business",
+      "status": {
+        "label": "Vetoed",
+        "asOf": "2025-06-05",
+        "latestAction": "Vetoed by the Governor."
+      },
+      "officialSummary": {
+        "text": "The Nevada Unfair Trade Practice Act sets forth various activities that constitute an unlawful contract, combination or conspiracy in restraint of trade and authorizes the Attorney General to investigate and take certain actions against persons who engage in such activities, which may include, without limitation, criminal prosecution and the imposition of civil penalties. (Chapter 598A of NRS) Existing law makes it a category D felony to engage in such activities. (NRS 598A.280) This bill includes among the activities that constitute an unlawful contract, combination or conspiracy in restraint of trade manipulating the price of an essential good or service in this State. This bill defines “essential good or service” to mean any good or service which is needed on a daily or recurring basis for the livelihood of a person and which falls within certain specified categories of goods and services. Section 1 of this bill provides that a person manipulates the price of an essential good or service when the person, alone or in concert with others, knowingly engages in any deceptive trade practice which: (1) involves conduct engaged in by the person either with the intent to mislead consumers or for the purpose of manipulating the market for an essential good or service; and (2) is intended to and does cause the price of an essential good or service in this State to increase in a manner that does not reflect the basic forces of supply and demand and results in a person paying, over a 1-year period, an amount for the good or service which represents a percentage increase over the amount paid by the person over the immediately preceding year that is equal to or greater than the average percentage increase for the most recent 5-year average annual percentage change for the category of good or service, as set forth in the Personal Consumption Expenditures by State (SAPCE3) for the State of Nevada as published by the Bureau of Economic Analysis of the United States Department of Commerce. Section 1 sets forth certain exceptions from the prohibition against manipulating the price of an essential good or service. Existing law, with certain exceptions, authorizes a person who is injured or damaged, or threatened with injury or damage, by a violation of the Nevada Unfair Trade Practice Act to bring an action to obtain certain relief. (NRS 598A.210) Sections 1 and 2 of this bill provide that the provisions relating to the manipulation of an essential good or service do not establish a private right of action against any person.",
+        "attribution": "Official Nevada Legislative Counsel Bureau digest",
+        "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11833/Overview",
+        "reviewState": "official-source"
+      },
+      "committees": [
+        "Assembly Commerce and Labor",
+        "Senate Commerce and Labor"
+      ],
+      "people": [],
+      "actions": [
+        {
+          "occurredOn": "2024-11-19",
+          "text": "Prefiled. Referred to Committee on Commerce and Labor. To printer."
+        },
+        {
+          "occurredOn": "2024-11-22",
+          "text": "From printer."
+        },
+        {
+          "occurredOn": "2025-02-04",
+          "text": "Read first time. To committee."
+        },
+        {
+          "occurredOn": "2025-04-21",
+          "text": "From committee: Amend, and do pass as amended. Placed on Second Reading File. Read second time. Amended. (Amend. No. 154.) Dispensed with reprinting."
+        },
+        {
+          "occurredOn": "2025-04-22",
+          "text": "Read third time. Passed, as amended. Title approved. (Yeas: 24, Nays: 18.) To printer."
+        },
+        {
+          "occurredOn": "2025-04-25",
+          "text": "From printer. To engrossment. Engrossed. First reprint. To Senate."
+        },
+        {
+          "occurredOn": "2025-04-28",
+          "text": "In Senate. Read first time. Referred to Committee on Commerce and Labor. To committee."
+        },
+        {
+          "occurredOn": "2025-05-20",
+          "text": "From committee: Amend, and do pass as amended. Placed on Second Reading File. Taken from Second Reading File. Placed on Second Reading File for next legislative day."
+        },
+        {
+          "occurredOn": "2025-05-21",
+          "text": "Read second time. Amended. (Amend. No. 667.) Reprinting dispensed with."
+        },
+        {
+          "occurredOn": "2025-05-22",
+          "text": "Read third time. Passed, as amended. Title approved. (Yeas: 14, Nays: 7.) Action of passage reconsidered. Read third time. Passed, as amended. Title approved. (Yeas: 13, Nays: 8.) To printer."
+        },
+        {
+          "occurredOn": "2025-05-23",
+          "text": "From printer. To re-engrossment. Re-engrossed. Second reprint. To Assembly. In Assembly."
+        },
+        {
+          "occurredOn": "2025-05-26",
+          "text": "Senate Amendment No. 667 concurred in. To enrollment."
+        },
+        {
+          "occurredOn": "2025-05-29",
+          "text": "Enrolled and delivered to Governor."
+        },
+        {
+          "occurredOn": "2025-06-05",
+          "text": "Vetoed by the Governor."
+        }
+      ],
+      "votes": [
+        {
+          "id": "nv-vote:12518",
+          "chamber": "Assembly (1st Reprint)",
+          "question": "Passage",
+          "result": "Passed",
+          "occurredOn": "2025-04-22",
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12518&voteResultPanel=All",
+          "memberCoverage": "all-nevada-legislators",
+          "totals": {
+            "yes": 24,
+            "no": 18,
+            "present": 0,
+            "notVoting": 0,
+            "excused": 0,
+            "absent": 0,
+            "total": 42
+          },
+          "memberVotes": [
+            {
+              "officialId": null,
+              "externalId": "nelis-member:anderson,-natha",
+              "name": "Anderson, Natha",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:backus,-shea",
+              "name": "Backus, Shea",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:353",
+              "externalId": "nelis-member:brown-may,-tracy",
+              "name": "Brown-May, Tracy",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:carter,-max",
+              "name": "Carter, Max",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:cole,-lisa",
+              "name": "Cole, Lisa",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:380",
+              "externalId": "nelis-member:considine,-venicia",
+              "name": "Considine, Venicia",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:414",
+              "externalId": "nelis-member:dalia,-joe",
+              "name": "Dalia, Joe",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:399",
+              "externalId": "nelis-member:delong,-rich",
+              "name": "DeLong, Rich",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:277",
+              "externalId": "nelis-member:dickman,-jill",
+              "name": "Dickman, Jill",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:401",
+              "externalId": "nelis-member:d'silva,-reuben",
+              "name": "D'Silva, Reuben",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:411",
+              "externalId": "nelis-member:edgeworth,-rebecca",
+              "name": "Edgeworth, Rebecca",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:flanagan,-tanya",
+              "name": "Flanagan, Tanya",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:397",
+              "externalId": "nelis-member:gallant,-danielle",
+              "name": "Gallant, Danielle",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:378",
+              "externalId": "nelis-member:gonzalez,-cecelia",
+              "name": "González, Cecelia",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:416",
+              "externalId": "nelis-member:goulding,-heather",
+              "name": "Goulding, Heather",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:gray,-ken",
+              "name": "Gray, Ken",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:gurr,-bert",
+              "name": "Gurr, Bert",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:hafen,-gregory",
+              "name": "Hafen, Gregory",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:hansen,-alexis",
+              "name": "Hansen, Alexis",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:hardy,-melissa",
+              "name": "Hardy, Melissa",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:394",
+              "externalId": "nelis-member:hibbetts,-brian",
+              "name": "Hibbetts, Brian",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:hunt,-linda",
+              "name": "Hunt, Linda",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:jackson,-jovan",
+              "name": "Jackson, Jovan",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:344",
+              "externalId": "nelis-member:jauregui,-sandra",
+              "name": "Jauregui, Sandra",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:421",
+              "externalId": "nelis-member:karris,-venise",
+              "name": "Karris, Venise",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:379",
+              "externalId": "nelis-member:kasama,-heidi",
+              "name": "Kasama, Heidi",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:koenig,-gregory",
+              "name": "Koenig, Gregory",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:398",
+              "externalId": "nelis-member:la-rue-hatch,-selena",
+              "name": "La Rue Hatch, Selena",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:marzola,-elaine",
+              "name": "Marzola, Elaine",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:miller,-brittney",
+              "name": "Miller, Brittney",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:307",
+              "externalId": "nelis-member:monroe-moreno,-daniele",
+              "name": "Monroe-Moreno, Daniele",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:412",
+              "externalId": "nelis-member:moore,-cinthia-zermeno",
+              "name": "Moore, Cinthia Zermeño",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:395",
+              "externalId": "nelis-member:mosca,-erica",
+              "name": "Mosca, Erica",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:415",
+              "externalId": "nelis-member:nadeem,-hanadi",
+              "name": "Nadeem, Hanadi",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:392",
+              "externalId": "nelis-member:nguyen,-duy",
+              "name": "Nguyen, Duy",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:285",
+              "externalId": "nelis-member:o'neill,-pk",
+              "name": "O’Neill, PK",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:377",
+              "externalId": "nelis-member:orentlicher,-david",
+              "name": "Orentlicher, David",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:roth,-erica",
+              "name": "Roth, Erica",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:359",
+              "externalId": "nelis-member:torres-fossett,-selena",
+              "name": "Torres-Fossett, Selena",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:363",
+              "externalId": "nelis-member:watts,-howard",
+              "name": "Watts, Howard",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:310",
+              "externalId": "nelis-member:yeager,-steve",
+              "name": "Yeager, Steve",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:yurek,-toby",
+              "name": "Yurek, Toby",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            }
+          ]
+        },
+        {
+          "id": "nv-vote:12963",
+          "chamber": "Senate (2nd Reprint)",
+          "question": "Initial passage — later reconsidered",
+          "result": "Passed",
+          "occurredOn": "2025-05-22",
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12963&voteResultPanel=All",
+          "memberCoverage": "all-nevada-legislators",
+          "totals": {
+            "yes": 14,
+            "no": 7,
+            "present": 0,
+            "notVoting": 0,
+            "excused": 0,
+            "absent": 0,
+            "total": 21
+          },
+          "memberVotes": [
+            {
+              "officialId": "nv-lcb:legislator:387",
+              "externalId": "nelis-member:buck,-carrie-ann",
+              "name": "Buck, Carrie Ann",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:cannizzaro,-nicole",
+              "name": "Cannizzaro, Nicole",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:419",
+              "externalId": "nelis-member:cruz-crawford,-michelee-shelly",
+              "name": "Cruz-Crawford, Michelee \"Shelly\"",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:155",
+              "externalId": "nelis-member:daly,-skip",
+              "name": "Daly, Skip",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:350",
+              "externalId": "nelis-member:donate,-fabian",
+              "name": "Doñate, Fabian",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:92",
+              "externalId": "nelis-member:dondero-loop,-marilyn",
+              "name": "Dondero Loop, Marilyn",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:417",
+              "externalId": "nelis-member:ellison,-john",
+              "name": "Ellison, John",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:273",
+              "externalId": "nelis-member:flores,-edgar",
+              "name": "Flores, Edgar",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:157",
+              "externalId": "nelis-member:hansen,-ira",
+              "name": "Hansen, Ira",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:327",
+              "externalId": "nelis-member:krasner,-lisa",
+              "name": "Krasner, Lisa",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:383",
+              "externalId": "nelis-member:lange,-roberta",
+              "name": "Lange, Roberta",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:129",
+              "externalId": "nelis-member:neal,-dina",
+              "name": "Neal, Dina",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:nguyen,-rochelle",
+              "name": "Nguyen, Rochelle",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:67",
+              "externalId": "nelis-member:ohrenschall,-james",
+              "name": "Ohrenschall, James",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:391",
+              "externalId": "nelis-member:pazina,-julie",
+              "name": "Pazina, Julie",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:425",
+              "externalId": "nelis-member:rogich,-lori",
+              "name": "Rogich, Lori",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:358",
+              "externalId": "nelis-member:scheible,-melanie",
+              "name": "Scheible, Melanie",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:steinbeck,-john",
+              "name": "Steinbeck, John",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:390",
+              "externalId": "nelis-member:stone,-jeff",
+              "name": "Stone, Jeff",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:taylor,-angela",
+              "name": "Taylor, Angela",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:titus,-robin",
+              "name": "Titus, Robin",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            }
+          ]
+        },
+        {
+          "id": "nv-vote:12964",
+          "chamber": "Senate (2nd Reprint)",
+          "question": "Passage after reconsideration",
+          "result": "Passed",
+          "occurredOn": "2025-05-22",
+          "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12964&voteResultPanel=All",
+          "memberCoverage": "all-nevada-legislators",
+          "totals": {
+            "yes": 13,
+            "no": 8,
+            "present": 0,
+            "notVoting": 0,
+            "excused": 0,
+            "absent": 0,
+            "total": 21
+          },
+          "memberVotes": [
+            {
+              "officialId": "nv-lcb:legislator:387",
+              "externalId": "nelis-member:buck,-carrie-ann",
+              "name": "Buck, Carrie Ann",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:cannizzaro,-nicole",
+              "name": "Cannizzaro, Nicole",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:419",
+              "externalId": "nelis-member:cruz-crawford,-michelee-shelly",
+              "name": "Cruz-Crawford, Michelee \"Shelly\"",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:155",
+              "externalId": "nelis-member:daly,-skip",
+              "name": "Daly, Skip",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:350",
+              "externalId": "nelis-member:donate,-fabian",
+              "name": "Doñate, Fabian",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:92",
+              "externalId": "nelis-member:dondero-loop,-marilyn",
+              "name": "Dondero Loop, Marilyn",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:417",
+              "externalId": "nelis-member:ellison,-john",
+              "name": "Ellison, John",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:273",
+              "externalId": "nelis-member:flores,-edgar",
+              "name": "Flores, Edgar",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:157",
+              "externalId": "nelis-member:hansen,-ira",
+              "name": "Hansen, Ira",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:327",
+              "externalId": "nelis-member:krasner,-lisa",
+              "name": "Krasner, Lisa",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:383",
+              "externalId": "nelis-member:lange,-roberta",
+              "name": "Lange, Roberta",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:129",
+              "externalId": "nelis-member:neal,-dina",
+              "name": "Neal, Dina",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:nguyen,-rochelle",
+              "name": "Nguyen, Rochelle",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:67",
+              "externalId": "nelis-member:ohrenschall,-james",
+              "name": "Ohrenschall, James",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:391",
+              "externalId": "nelis-member:pazina,-julie",
+              "name": "Pazina, Julie",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": "nv-lcb:legislator:425",
+              "externalId": "nelis-member:rogich,-lori",
+              "name": "Rogich, Lori",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:358",
+              "externalId": "nelis-member:scheible,-melanie",
+              "name": "Scheible, Melanie",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:steinbeck,-john",
+              "name": "Steinbeck, John",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": "nv-lcb:legislator:390",
+              "externalId": "nelis-member:stone,-jeff",
+              "name": "Stone, Jeff",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:taylor,-angela",
+              "name": "Taylor, Angela",
+              "originalValue": "Yea",
+              "normalizedValue": "yes"
+            },
+            {
+              "officialId": null,
+              "externalId": "nelis-member:titus,-robin",
+              "name": "Titus, Robin",
+              "originalValue": "Nay",
+              "normalizedValue": "no"
+            }
+          ]
+        }
+      ],
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11833/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB44/Text",
+      "selectionReason": "First-batch subject breadth: essential-goods trade practices.",
+      "sources": [
+        {
+          "id": "ab44-overview",
+          "organization": "Nevada Legislature (NELIS)",
+          "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/FillSelectedBillTab?billKey=11833&selectedTab=Overview",
+          "retrievedAt": "2026-08-23T02:05:35.519Z",
+          "documentSha256": "03364bfde1fbcb576d572d0a576a499929442ca712fedae24172cb96595476cb",
+          "coverageLabel": "Phase 9.2 enhanced bill review source package",
+          "parserVersion": "enhanced-bill-review-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "id": "ab44-votes",
+          "organization": "Nevada Legislature (NELIS)",
+          "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVotes?billKey=11833&voteTypeId=3",
+          "retrievedAt": "2026-08-23T02:05:34.137Z",
+          "documentSha256": "d5c7f19a0be24146c371ea2e6d81398fc14f459b58ae2d05707754bacdf9b2c4",
+          "coverageLabel": "Phase 9.2 enhanced bill review source package",
+          "parserVersion": "enhanced-bill-review-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "id": "ab44-vote-12518-members",
+          "organization": "Nevada Legislature (NELIS)",
+          "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12518&voteResultPanel=All",
+          "retrievedAt": "2026-08-23T02:05:36.666Z",
+          "documentSha256": "f88646a459c1408f505b299256ecb8fb694197df40d26f9cb4779ff3481d36b0",
+          "coverageLabel": "Phase 9.2 enhanced bill review source package",
+          "parserVersion": "enhanced-bill-review-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "id": "ab44-vote-12963-members",
+          "organization": "Nevada Legislature (NELIS)",
+          "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12963&voteResultPanel=All",
+          "retrievedAt": "2026-08-23T02:05:36.537Z",
+          "documentSha256": "9ea9046a4b65650f5c303d6b05df95d4c650d4369981791c6ede0b54726dc358",
+          "coverageLabel": "Phase 9.2 enhanced bill review source package",
+          "parserVersion": "enhanced-bill-review-v1",
+          "validationState": "source-verified"
+        },
+        {
+          "id": "ab44-vote-12964-members",
+          "organization": "Nevada Legislature (NELIS)",
+          "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12964&voteResultPanel=All",
+          "retrievedAt": "2026-08-23T02:05:36.903Z",
+          "documentSha256": "280eb75b161fb94e67efeed66ecf89b6603788222de01c241d7d731353d0dda5",
+          "coverageLabel": "Phase 9.2 enhanced bill review source package",
+          "parserVersion": "enhanced-bill-review-v1",
+          "validationState": "source-verified"
+        }
+      ],
+      "editorialReview": {
+        "state": "human-approved",
+        "reviewerName": "william elder",
+        "reviewerRole": "founder",
+        "reviewedAt": "2026-08-24T16:30:46.025Z",
+        "candidateFingerprint": "a0ae12d93e934d8d79161cce580e928423821d49042d6841ad9ebff5e83cb6e0",
+        "uncertaintyNotes": []
+      }
     }
   ],
   "sources": [
@@ -6145,6 +6942,56 @@
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12504&voteResultPanel=All",
       "retrievedAt": "2026-08-23T02:05:37.296Z",
+      "documentSha256": "280eb75b161fb94e67efeed66ecf89b6603788222de01c241d7d731353d0dda5",
+      "coverageLabel": "Phase 9.2 enhanced bill review source package",
+      "parserVersion": "enhanced-bill-review-v1",
+      "validationState": "source-verified"
+    },
+    {
+      "id": "ab44-overview",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/FillSelectedBillTab?billKey=11833&selectedTab=Overview",
+      "retrievedAt": "2026-08-23T02:05:35.519Z",
+      "documentSha256": "03364bfde1fbcb576d572d0a576a499929442ca712fedae24172cb96595476cb",
+      "coverageLabel": "Phase 9.2 enhanced bill review source package",
+      "parserVersion": "enhanced-bill-review-v1",
+      "validationState": "source-verified"
+    },
+    {
+      "id": "ab44-votes",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVotes?billKey=11833&voteTypeId=3",
+      "retrievedAt": "2026-08-23T02:05:34.137Z",
+      "documentSha256": "d5c7f19a0be24146c371ea2e6d81398fc14f459b58ae2d05707754bacdf9b2c4",
+      "coverageLabel": "Phase 9.2 enhanced bill review source package",
+      "parserVersion": "enhanced-bill-review-v1",
+      "validationState": "source-verified"
+    },
+    {
+      "id": "ab44-vote-12518-members",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12518&voteResultPanel=All",
+      "retrievedAt": "2026-08-23T02:05:36.666Z",
+      "documentSha256": "f88646a459c1408f505b299256ecb8fb694197df40d26f9cb4779ff3481d36b0",
+      "coverageLabel": "Phase 9.2 enhanced bill review source package",
+      "parserVersion": "enhanced-bill-review-v1",
+      "validationState": "source-verified"
+    },
+    {
+      "id": "ab44-vote-12963-members",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12963&voteResultPanel=All",
+      "retrievedAt": "2026-08-23T02:05:36.537Z",
+      "documentSha256": "9ea9046a4b65650f5c303d6b05df95d4c650d4369981791c6ede0b54726dc358",
+      "coverageLabel": "Phase 9.2 enhanced bill review source package",
+      "parserVersion": "enhanced-bill-review-v1",
+      "validationState": "source-verified"
+    },
+    {
+      "id": "ab44-vote-12964-members",
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12964&voteResultPanel=All",
+      "retrievedAt": "2026-08-23T02:05:36.903Z",
       "documentSha256": "280eb75b161fb94e67efeed66ecf89b6603788222de01c241d7d731353d0dda5",
       "coverageLabel": "Phase 9.2 enhanced bill review source package",
       "parserVersion": "enhanced-bill-review-v1",

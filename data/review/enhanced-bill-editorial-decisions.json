@@ -325,6 +325,48 @@
         "role": "founder"
       },
       "reviewedAt": "2026-08-24T01:16:26.242Z"
+    },
+    {
+      "billIdentifier": "AB44",
+      "candidateFingerprint": "a0ae12d93e934d8d79161cce580e928423821d49042d6841ad9ebff5e83cb6e0",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12518",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12518&voteResultPanel=All",
+          "note": "Confirmed as the Assembly passage vote on 2025-04-22 against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12963",
+          "classification": "initial-passage-later-reconsidered",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12963&voteResultPanel=All",
+          "note": "Confirmed as the Senate's initial 14–7 passage on 2025-05-22, which the official NELIS history records was subsequently reconsidered."
+        },
+        {
+          "voteId": "nv-vote:12964",
+          "classification": "passage-after-reconsideration",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12964&voteResultPanel=All",
+          "note": "Confirmed as the Senate's 13–8 passage after reconsideration on 2025-05-22 against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T16:30:46.025Z"
     }
   ]
 }

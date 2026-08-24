@@ -11,11 +11,26 @@ export const editorialChecklistKeys = [
 
 export const editorialVoteClassifications = [
   "passage",
+  "initial-passage-later-reconsidered",
+  "passage-after-reconsideration",
   "concurrence",
   "amendment",
   "procedural",
   "veto-override",
 ] as const;
+
+export const editorialVoteLabels = {
+  passage: "Passage",
+  "initial-passage-later-reconsidered": "Initial passage — later reconsidered",
+  "passage-after-reconsideration": "Passage after reconsideration",
+  concurrence: "Concurrence",
+  amendment: "Amendment",
+  procedural: "Procedural action",
+  "veto-override": "Veto override",
+} as const satisfies Record<
+  (typeof editorialVoteClassifications)[number],
+  string
+>;
 
 const checklistSchema = z.object(
   Object.fromEntries(

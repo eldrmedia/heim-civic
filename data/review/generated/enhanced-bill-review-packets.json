@@ -48,6 +48,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13137&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -62,6 +64,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13317&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -115,6 +119,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13358&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -129,6 +135,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13486&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -182,6 +190,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13374&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -196,6 +206,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12499&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -249,6 +261,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12553&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -263,6 +277,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12815&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -316,6 +332,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12421&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -330,6 +348,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12668&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -383,6 +403,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12518&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -397,6 +419,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12963&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -411,6 +435,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12964&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -464,6 +490,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13135&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -478,6 +506,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13315&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -531,6 +561,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12400&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -545,6 +577,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12821&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -598,6 +632,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12388&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -612,6 +648,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12803&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -665,6 +703,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12892&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",
@@ -679,6 +719,8 @@
           "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12504&voteResultPanel=All",
           "allowedClassifications": [
             "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
             "concurrence",
             "amendment",
             "procedural",

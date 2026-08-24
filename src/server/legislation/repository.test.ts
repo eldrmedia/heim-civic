@@ -12,28 +12,37 @@ describe("legislation repository", () => {
     const bills = getAllPilotBills();
 
     expect(bundle.schemaVersion).toBe(1);
-    expect(bills).toHaveLength(11);
+    expect(bills).toHaveLength(12);
     expect(bills.filter((bill) => bill.jurisdiction === "state")).toHaveLength(
-      10,
+      11,
     );
     expect(
       bills.filter((bill) => bill.jurisdiction === "federal"),
     ).toHaveLength(1);
     expect(
-      bills.every(
-        (bill) =>
-          bill.votes.length === 2 &&
-          bill.sources.every(
-            (source) =>
-              source.validationState === "source-verified" &&
-              source.documentSha256.length === 64,
-          ),
+      bills.every((bill) =>
+        bill.sources.every(
+          (source) =>
+            source.validationState === "source-verified" &&
+            source.documentSha256.length === 64,
+        ),
       ),
     ).toBe(true);
     expect(
       bills.filter((bill) => bill.editorialReview?.state === "human-approved"),
-    ).toHaveLength(9);
-    expect(bills.some((bill) => bill.identifier === "AB44")).toBe(false);
+    ).toHaveLength(10);
+
+    const ab44 = bills.find((bill) => bill.identifier === "AB44");
+    expect(ab44?.votes.map((vote) => vote.question)).toEqual([
+      "Passage",
+      "Initial passage — later reconsidered",
+      "Passage after reconsideration",
+    ]);
+    expect(
+      bills
+        .filter((bill) => bill.identifier !== "AB44")
+        .every((bill) => bill.votes.length === 2),
+    ).toBe(true);
   });
 
   it("connects Mark Amodei to sponsorship and both federal roll calls", () => {

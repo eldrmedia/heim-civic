@@ -4,6 +4,7 @@ import {
   editorialChecklistKeys,
   editorialDecisionsBundleSchema,
   editorialVoteClassifications,
+  editorialVoteLabels,
   type EditorialDecisionsBundle,
   type EditorialReviewPacketBundle,
 } from "../../src/domain/legislation/editorial-review-types";
@@ -238,8 +239,5 @@ function formatVoteClassification(
   classification: (typeof editorialVoteClassifications)[number] | undefined,
 ) {
   if (!classification) throw new Error("Missing reviewed vote classification");
-  return classification
-    .split("-")
-    .map((part) => part[0]?.toUpperCase() + part.slice(1))
-    .join(" ");
+  return editorialVoteLabels[classification];
 }

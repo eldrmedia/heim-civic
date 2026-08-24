@@ -39,10 +39,10 @@ is operating.
 
 ## Product/data blockers
 
-- Enhanced Pilot Coverage has ten published Nevada bills, not the PRD's
-  approximately 30–50 Nevada records. AB44 remains queued pending
-  reconsideration-aware vote labels; later candidate batches and editorial
-  approvals remain incomplete under decision record 0007.
+- Enhanced Pilot Coverage has eleven published Nevada bills, not the PRD's
+  approximately 30–50 Nevada records. The first editorial batch is fully
+  approved; later candidate batches and editorial approvals remain incomplete
+  under decision record 0007.
 - The 200-address golden geographic review and authoritative 99 percent agreement
   evidence are not complete.
 - Nevada state campaign-finance aggregates remain unpublished until supported,

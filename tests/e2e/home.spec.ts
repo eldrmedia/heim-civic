@@ -345,7 +345,7 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   expect(results.violations).toEqual([]);
 });
 
-test("the enhanced bill selection log exposes a sourced queue without claiming approval", async ({
+test("the enhanced bill selection log exposes the completed first review batch", async ({
   page,
 }) => {
   await page.goto("/bills/selection");
@@ -357,11 +357,16 @@ test("the enhanced bill selection log exposes a sourced queue without claiming a
     }),
   ).toBeVisible();
   await expect(
-    page.getByText("Awaiting human review", { exact: true }).first(),
+    page.getByText("Awaiting human review", { exact: true }),
+  ).toHaveCount(1);
+  await expect(
+    page.getByText(
+      "Only accountable human-approved records are labeled enhanced.",
+    ),
   ).toBeVisible();
   await expect(
-    page.getByText("No queued bill is labeled enhanced yet."),
-  ).toBeVisible();
+    page.getByText("Published after human review", { exact: true }),
+  ).toHaveCount(10);
   await expect(page.locator(".selection-record")).toHaveCount(10);
 
   const ab226 = page.locator(".selection-record").filter({ hasText: "AB226" });
@@ -369,11 +374,13 @@ test("the enhanced bill selection log exposes a sourced queue without claiming a
     ab226.getByText("Budget and tax", { exact: true }),
   ).toBeVisible();
   await expect(
-    ab226.getByRole("link", { name: "Open official NELIS record" }),
-  ).toHaveAttribute(
-    "href",
-    "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12228/Overview",
-  );
+    ab226.getByRole("link", { name: "Open enhanced bill record" }),
+  ).toHaveAttribute("href", "/bills/nv-83-2025-ab226");
+
+  const ab44 = page.locator(".selection-record").filter({ hasText: "AB44" });
+  await expect(
+    ab44.getByRole("link", { name: "Open enhanced bill record" }),
+  ).toHaveAttribute("href", "/bills/nv-83-2025-ab44");
 
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations).toEqual([]);

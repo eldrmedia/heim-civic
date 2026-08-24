@@ -10,6 +10,9 @@ import {
 
 const reviewBundle = reviewData as unknown as EnhancedBillReviewBundle;
 const candidate = reviewBundle.records[0]!;
+const reconsideredCandidate = reviewBundle.records.find(
+  (record) => record.billIdentifier === "AB44",
+)!;
 
 function approvedDecision() {
   return {
@@ -46,6 +49,46 @@ function approvedDecision() {
   };
 }
 
+function reconsiderationDecision() {
+  return {
+    schemaVersion: 1,
+    sourceSnapshotId: reviewBundle.snapshotId,
+    decisions: [
+      {
+        billIdentifier: reconsideredCandidate.billIdentifier,
+        candidateFingerprint: fingerprintCandidate(reconsideredCandidate),
+        decision: "approved",
+        checklist: {
+          digestComparedToEnrolledText: true,
+          materialAmendmentsReviewed: true,
+          statusAndLatestActionConfirmed: true,
+          votesClassified: true,
+          sponsorsAndCommitteesReviewed: true,
+          selectionExplanationApproved: true,
+        },
+        voteDecisions: reconsideredCandidate.votes.map((vote) => ({
+          voteId: vote.id,
+          classification:
+            vote.id === "nv-vote:12963"
+              ? "initial-passage-later-reconsidered"
+              : vote.id === "nv-vote:12964"
+                ? "passage-after-reconsideration"
+                : "passage",
+          evidenceUrl: vote.sourceUrl,
+          note: "Confirmed against the official AB44 history and roll call.",
+        })),
+        summary: { kind: "official-digest" },
+        uncertaintyNotes: [],
+        reviewer: {
+          name: "Accountable Editor",
+          role: "Civic records editor",
+        },
+        reviewedAt: "2026-08-24T12:00:00.000Z",
+      },
+    ],
+  };
+}
+
 describe("enhanced bill editorial promotion", () => {
   it("builds reproducible packets for every queued record and vote", () => {
     const packets = buildEditorialReviewPackets(reviewBundle);
@@ -72,6 +115,30 @@ describe("enhanced bill editorial promotion", () => {
     expect(
       promoted.bills[0]?.votes.every((vote) => vote.question === "Passage"),
     ).toBe(true);
+  });
+
+  it("preserves initial and reconsidered passage events as distinct public labels", () => {
+    const promoted = promoteApprovedCandidates(
+      reviewBundle,
+      reconsiderationDecision(),
+    );
+
+    expect(
+      promoted.bills[0]?.votes.map((vote) => ({
+        id: vote.id,
+        question: vote.question,
+      })),
+    ).toEqual([
+      { id: "nv-vote:12518", question: "Passage" },
+      {
+        id: "nv-vote:12963",
+        question: "Initial passage — later reconsidered",
+      },
+      {
+        id: "nv-vote:12964",
+        question: "Passage after reconsideration",
+      },
+    ]);
   });
 
   it("fails closed when the reviewed source fingerprint has changed", () => {
