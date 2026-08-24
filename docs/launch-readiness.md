@@ -14,9 +14,10 @@ is operating.
 - Machine-readable sitemap, robots policy, security contact, and snapshot health.
 - Complete official index of 1,152 source-listed 2025 Nevada Assembly and Senate
   bills, with all 86 veto qualifiers reconciled and visibly labeled.
-- Public selection log and a source-verified first batch of ten Nevada bills
-  spanning all ten PRD subject areas, with 21 reconciled roll calls and 41
-  checksummed NELIS documents.
+- Public selection log with 30 source-verified Nevada candidates across three
+  batches, spanning all ten PRD subject areas, with 61 reconciled roll calls and
+  121 checksummed NELIS documents. All 30 candidates are human-approved and
+  published alongside the original AB83 enhanced record.
 - CI checks for formatting, lint, types, unit/API tests, dependency audit,
   snapshot freshness, production build, and browser journeys.
 - Incident, monitoring, backup, and restore procedures.
@@ -39,10 +40,10 @@ is operating.
 
 ## Product/data blockers
 
-- Enhanced Pilot Coverage has 21 published Nevada bills, not the PRD's
-  approximately 30–50 Nevada records. The first two editorial batches are fully
-  approved. Batch 3 preparation, accountable review, and the final breadth audit
-  remain incomplete under decision record 0007.
+- Enhanced Pilot Coverage has 31 published Nevada bills and meets the lower end
+  of the PRD's approximately 30–50-record target. The final subject-breadth,
+  label-consistency, search, accessibility, sitemap, and source-health audit
+  remains incomplete under decision record 0007.
 - The 200-address golden geographic review and authoritative 99 percent agreement
   evidence are not complete.
 - Nevada state campaign-finance aggregates remain unpublished until supported,

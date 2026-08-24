@@ -55,7 +55,38 @@ AB82 and AB98 retain the disclosed NELIS “co-sponsor” versus enrolled-headin
 
 ## Remaining Phase 9.3 work
 
-1. Prepare and review Batch 3 using a documented extension of the same neutral
-   processing rule.
-2. Audit the resulting 30-plus enhanced Nevada records for subject breadth,
+1. Audit the resulting 30-plus enhanced Nevada records for subject breadth,
    consistent labels, source health, accessibility, search, and sitemap coverage.
+
+## Batch 3 selection and preparation
+
+Batch 3 continues the same neutral processing rule: after excluding AB83 and all
+20 records in Batches 1 and 2, select the next ten governor-veto qualifiers in
+ascending official bill-identifier order. The selected identifiers are AB204,
+AB205, AB209, AB213, AB217, AB237, AB245, AB259, AB278, and AB280. Party,
+sponsor, ideology, predicted popularity, and an unexplained importance judgment
+do not affect the order.
+
+Run:
+
+```bash
+npm run data:enhanced-bill-review:batch-3
+npm run data:editorial-review-packets:batch-3
+npm run data:promote-enhanced-bills
+```
+
+The Batch 3 bundle contains ten records, 20 passage roll calls, and 40
+checksummed NELIS source documents. Its separate decision ledger preserves the
+reviewer, role, UTC decision time, candidate fingerprints, completed checklists,
+and passage classifications.
+
+## Batch 3 assessment state
+
+The AI-assisted assessment reviewed all ten enrolled PDFs, final amendments,
+veto histories, sponsor and committee labels, and every displayed roll call. The
+normalized digest comparisons range from 99.62 to 100 percent. It recommends all
+ten records for approval with no proposed coverage limitation. William Elder,
+founder, accepted all ten recommendations at `2026-08-24T18:45:58.200Z`. The
+matching fingerprints passed the promotion gate, so all ten records now have
+local enhanced routes and Enhanced Pilot Coverage contains 31 published Nevada
+bills.

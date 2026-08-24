@@ -61,13 +61,14 @@ export function EnhancedBillSelectionLog({
       </section>
 
       <section aria-labelledby="selection-rules-title">
-        <h2 id="selection-rules-title">How this first batch was selected</h2>
+        <h2 id="selection-rules-title">How this review queue was selected</h2>
         <p>
           Every record is independently present in the official 2025 NELIS bill
           index and governor-veto report, so each is an automatic review-queue
           qualifier. The first batch includes one bill from each subject area
-          required by the PRD. Subject breadth affects processing order, not how
-          prominently a party or lawmaker is shown.
+          required by the PRD. Later batches take the next unprocessed veto
+          qualifiers in bill-number order. Subject breadth affects processing
+          order, not how prominently a party or lawmaker is shown.
         </p>
       </section>
 

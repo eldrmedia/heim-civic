@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshotId": "phase-9.3-batch-3-enhanced-review:2026-08-24",
+  "decisions": [
+    {
+      "billIdentifier": "AB204",
+      "candidateFingerprint": "d4a5c49de74278c1b36110623a1fa4ee32786204b19cca8d9323e02ff0808850",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:13266",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13266&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:13478",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13478&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB205",
+      "candidateFingerprint": "ff06bb8d3771285cfc0a6257500f3cae0a70a1e0f0572c6d3bc24ba375d8f731",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12551",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12551&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12814",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12814&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB209",
+      "candidateFingerprint": "f481b0eaf12300ef4d3d5a5a9c10d8f0d9a42037e0050f140fde850cee66d1d2",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12552",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12552&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12972",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12972&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB213",
+      "candidateFingerprint": "6c40149bf19285216ae79212768639d37e47d3ee64558d5080fc18c0924e61a7",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12452",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12452&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:13354",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13354&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB217",
+      "candidateFingerprint": "6910ee9928161dbb84ed23581c93858bed1c52d88916543d1934756cb4e8e22a",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12397",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12397&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:13106",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13106&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB237",
+      "candidateFingerprint": "12c9bd47b52c508cd9793123bf75388701537496fdf49bebf73fb11967578624",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12312",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12312&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12819",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12819&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB245",
+      "candidateFingerprint": "ae19a318efecb3c095caa2fed8ac17a715a47f8b4b1ce7cd0dbbb60e40c42a73",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12557",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12557&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12822",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12822&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB259",
+      "candidateFingerprint": "7b8559f14afd8ca3803e08e673bfa21714e3606519a7938b6bf4f53c4e3f198a",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:13216",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13216&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:13509",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13509&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB278",
+      "candidateFingerprint": "9ef73d6c117e5a79f88c4f0af1ce3ac1dec08c68c39d1452e17cfaf07cbd1078",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12405",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12405&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12826",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12826&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    },
+    {
+      "billIdentifier": "AB280",
+      "candidateFingerprint": "82082d2774e2e75dd27a39b4b704bd4953340a907e5d0eb5c8b9450a5c8220d9",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12562",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12562&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12827",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12827&voteResultPanel=All",
+          "note": "Confirmed as a chamber passage vote against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-24T18:45:58.200Z"
+    }
+  ]
+}

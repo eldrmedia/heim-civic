@@ -27,6 +27,16 @@ const reviewInputs = [
       "data/review/enhanced-bill-editorial-decisions-batch-2.json",
     ),
   },
+  {
+    reviewPath: path.join(
+      projectRoot,
+      "src/data/generated/enhanced-bill-review-batch-3.json",
+    ),
+    decisionsPath: path.join(
+      projectRoot,
+      "data/review/enhanced-bill-editorial-decisions-batch-3.json",
+    ),
+  },
 ];
 const publishedPath = path.join(
   projectRoot,

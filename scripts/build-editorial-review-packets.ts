@@ -42,8 +42,10 @@ function parseBatchArgument(arguments_: string[]) {
     .find((argument) => argument.startsWith("--batch="))
     ?.slice("--batch=".length);
   const batch = value === undefined ? 1 : Number(value);
-  if (!Number.isInteger(batch) || batch < 1 || batch > 2) {
-    throw new Error("--batch must identify configured Batch 1 or Batch 2");
+  if (!Number.isInteger(batch) || batch < 1 || batch > 3) {
+    throw new Error(
+      "--batch must identify configured Batch 1, Batch 2, or Batch 3",
+    );
   }
   return batch;
 }

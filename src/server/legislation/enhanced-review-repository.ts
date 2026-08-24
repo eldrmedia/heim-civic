@@ -2,6 +2,7 @@ import "server-only";
 
 import enhancedReviewData from "@/data/generated/enhanced-bill-review.json";
 import enhancedReviewBatch2Data from "@/data/generated/enhanced-bill-review-batch-2.json";
+import enhancedReviewBatch3Data from "@/data/generated/enhanced-bill-review-batch-3.json";
 import type {
   EnhancedBillReviewBundle,
   EnhancedBillReviewCandidate,
@@ -10,6 +11,7 @@ import type {
 const bundles = [
   enhancedReviewData as unknown as EnhancedBillReviewBundle,
   enhancedReviewBatch2Data as unknown as EnhancedBillReviewBundle,
+  enhancedReviewBatch3Data as unknown as EnhancedBillReviewBundle,
 ];
 const bundle: EnhancedBillReviewBundle = {
   schemaVersion: 1,
@@ -21,7 +23,7 @@ const bundle: EnhancedBillReviewBundle = {
   parserVersion: [...new Set(bundles.map((item) => item.parserVersion))].join(
     "+",
   ),
-  coverageLabel: "Phase 9.3 first two enhanced-review batches",
+  coverageLabel: "Phase 9.3 first three enhanced-review batches",
   targetRange: bundles[0]!.targetRange,
   records: bundles.flatMap((item) => item.records),
   sources: [

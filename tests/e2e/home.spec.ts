@@ -345,7 +345,7 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   expect(results.violations).toEqual([]);
 });
 
-test("the enhanced bill selection log distinguishes published and queued batches", async ({
+test("the enhanced bill selection log exposes all three published batches", async ({
   page,
 }) => {
   await page.goto("/bills/selection");
@@ -366,8 +366,8 @@ test("the enhanced bill selection log distinguishes published and queued batches
   ).toBeVisible();
   await expect(
     page.getByText("Published after human review", { exact: true }),
-  ).toHaveCount(20);
-  await expect(page.locator(".selection-record")).toHaveCount(20);
+  ).toHaveCount(30);
+  await expect(page.locator(".selection-record")).toHaveCount(30);
 
   const ab226 = page.locator(".selection-record").filter({ hasText: "AB226" });
   await expect(
@@ -389,6 +389,14 @@ test("the enhanced bill selection log distinguishes published and queued batches
   await expect(
     ab79.getByRole("link", { name: "Open enhanced bill record" }),
   ).toHaveAttribute("href", "/bills/nv-83-2025-ab79");
+
+  const ab204 = page.locator(".selection-record").filter({ hasText: "AB204" });
+  await expect(
+    ab204.getByText("Published after human review", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    ab204.getByRole("link", { name: "Open enhanced bill record" }),
+  ).toHaveAttribute("href", "/bills/nv-83-2025-ab204");
 
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations).toEqual([]);

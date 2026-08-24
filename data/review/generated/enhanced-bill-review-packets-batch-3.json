@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshotId": "phase-9.3-batch-3-enhanced-review:2026-08-24",
+  "generatedAt": "2026-08-24T17:40:54.271Z",
+  "records": [
+    {
+      "billIdentifier": "AB204",
+      "candidateFingerprint": "d4a5c49de74278c1b36110623a1fa4ee32786204b19cca8d9323e02ff0808850",
+      "subjectArea": "Health",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12174/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB204/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12174/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:13266",
+          "occurredOn": "2025-05-29",
+          "chamber": "Assembly (3rd Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13266&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:13478",
+          "occurredOn": "2025-06-02",
+          "chamber": "Senate (4th Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13478&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB205",
+      "candidateFingerprint": "ff06bb8d3771285cfc0a6257500f3cae0a70a1e0f0572c6d3bc24ba375d8f731",
+      "subjectArea": "Education",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12175/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB205/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12175/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12551",
+          "occurredOn": "2025-04-22",
+          "chamber": "Assembly (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12551&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:12814",
+          "occurredOn": "2025-05-21",
+          "chamber": "Senate (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12814&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB209",
+      "candidateFingerprint": "f481b0eaf12300ef4d3d5a5a9c10d8f0d9a42037e0050f140fde850cee66d1d2",
+      "subjectArea": "Criminal justice and public safety",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12210/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB209/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12210/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12552",
+          "occurredOn": "2025-04-22",
+          "chamber": "Assembly (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12552&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:12972",
+          "occurredOn": "2025-05-22",
+          "chamber": "Senate (2nd Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12972&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB213",
+      "candidateFingerprint": "6c40149bf19285216ae79212768639d37e47d3ee64558d5080fc18c0924e61a7",
+      "subjectArea": "Labor and business",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12215/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB213/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12215/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12452",
+          "occurredOn": "2025-04-21",
+          "chamber": "Assembly (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12452&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:13354",
+          "occurredOn": "2025-05-30",
+          "chamber": "Senate (2nd Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13354&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB217",
+      "candidateFingerprint": "6910ee9928161dbb84ed23581c93858bed1c52d88916543d1934756cb4e8e22a",
+      "subjectArea": "Education",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12219/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB217/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12219/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12397",
+          "occurredOn": "2025-04-17",
+          "chamber": "Assembly (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12397&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:13106",
+          "occurredOn": "2025-05-23",
+          "chamber": "Senate (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13106&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB237",
+      "candidateFingerprint": "12c9bd47b52c508cd9793123bf75388701537496fdf49bebf73fb11967578624",
+      "subjectArea": "Elections and government",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12257/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB237/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12257/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12312",
+          "occurredOn": "2025-04-16",
+          "chamber": "Assembly (As Introduced)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12312&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:12819",
+          "occurredOn": "2025-05-21",
+          "chamber": "Senate (As Introduced)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12819&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB245",
+      "candidateFingerprint": "ae19a318efecb3c095caa2fed8ac17a715a47f8b4b1ce7cd0dbbb60e40c42a73",
+      "subjectArea": "Criminal justice and public safety",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12275/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB245/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12275/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12557",
+          "occurredOn": "2025-04-22",
+          "chamber": "Assembly (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12557&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:12822",
+          "occurredOn": "2025-05-21",
+          "chamber": "Senate (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12822&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB259",
+      "candidateFingerprint": "7b8559f14afd8ca3803e08e673bfa21714e3606519a7938b6bf4f53c4e3f198a",
+      "subjectArea": "Health",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12296/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB259/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12296/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:13216",
+          "occurredOn": "2025-05-27",
+          "chamber": "Assembly (2nd Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13216&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:13509",
+          "occurredOn": "2025-06-02",
+          "chamber": "Senate (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=13509&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB278",
+      "candidateFingerprint": "9ef73d6c117e5a79f88c4f0af1ce3ac1dec08c68c39d1452e17cfaf07cbd1078",
+      "subjectArea": "Civil rights and social services",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12329/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB278/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12329/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12405",
+          "occurredOn": "2025-04-17",
+          "chamber": "Assembly (As Introduced)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12405&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:12826",
+          "occurredOn": "2025-05-21",
+          "chamber": "Senate (As Introduced)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12826&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    },
+    {
+      "billIdentifier": "AB280",
+      "candidateFingerprint": "82082d2774e2e75dd27a39b4b704bd4953340a907e5d0eb5c8b9450a5c8220d9",
+      "subjectArea": "Housing",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12333/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB280/Text",
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12333/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
+      "reviewChecklist": [
+        {
+          "key": "digestComparedToEnrolledText",
+          "instruction": "Compare the official digest with the enrolled and vetoed bill text."
+        },
+        {
+          "key": "materialAmendmentsReviewed",
+          "instruction": "Confirm that material amendments are represented and uncertainty is explicit."
+        },
+        {
+          "key": "statusAndLatestActionConfirmed",
+          "instruction": "Confirm status and latest action against the official history."
+        },
+        {
+          "key": "votesClassified",
+          "instruction": "Classify every displayed vote using the official record."
+        },
+        {
+          "key": "sponsorsAndCommitteesReviewed",
+          "instruction": "Review sponsor and committee coverage for omissions or ambiguity."
+        },
+        {
+          "key": "selectionExplanationApproved",
+          "instruction": "Approve the neutral selection explanation under the published rubric."
+        }
+      ],
+      "votes": [
+        {
+          "voteId": "nv-vote:12562",
+          "occurredOn": "2025-04-22",
+          "chamber": "Assembly (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12562&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        },
+        {
+          "voteId": "nv-vote:12827",
+          "occurredOn": "2025-05-21",
+          "chamber": "Senate (1st Reprint)",
+          "extractedQuestion": "Final-passage roll call (NELIS vote type 3)",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12827&voteResultPanel=All",
+          "allowedClassifications": [
+            "passage",
+            "initial-passage-later-reconsidered",
+            "passage-after-reconsideration",
+            "concurrence",
+            "amendment",
+            "procedural",
+            "veto-override"
+          ]
+        }
+      ]
+    }
+  ]
+}

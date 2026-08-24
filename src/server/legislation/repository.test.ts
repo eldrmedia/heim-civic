@@ -12,9 +12,9 @@ describe("legislation repository", () => {
     const bills = getAllPilotBills();
 
     expect(bundle.schemaVersion).toBe(1);
-    expect(bills).toHaveLength(22);
+    expect(bills).toHaveLength(32);
     expect(bills.filter((bill) => bill.jurisdiction === "state")).toHaveLength(
-      21,
+      31,
     );
     expect(
       bills.filter((bill) => bill.jurisdiction === "federal"),
@@ -30,7 +30,7 @@ describe("legislation repository", () => {
     ).toBe(true);
     expect(
       bills.filter((bill) => bill.editorialReview?.state === "human-approved"),
-    ).toHaveLength(20);
+    ).toHaveLength(30);
 
     const ab44 = bills.find((bill) => bill.identifier === "AB44");
     expect(ab44?.votes.map((vote) => vote.question)).toEqual([

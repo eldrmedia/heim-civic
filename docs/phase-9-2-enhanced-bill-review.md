@@ -69,8 +69,8 @@ The implemented packet and promotion workflow is documented in
 
 ## Remaining work
 
-- Select and prepare Phase 9.3 Batch 3, then continue accountable review until
-  approximately 30–50 Nevada bills are published with broad
+- Complete the Phase 9.3 breadth audit now that 31 Nevada bills are published
+  across approximately 30–50 target records with broad
   subject coverage.
 - Test special sessions, non-final vote types, and bills without recorded floor
   votes before broadening the parser.

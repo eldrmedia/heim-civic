@@ -34,9 +34,16 @@ const manifestFileName =
     ? "enhanced-bill-selection.manifest.json"
     : `enhanced-bill-selection.batch-${batchNumber}.manifest.json`;
 const manifestPath = path.join(projectRoot, "data/review", manifestFileName);
-const firstBatchManifestPath = path.join(
-  projectRoot,
-  "data/review/enhanced-bill-selection.manifest.json",
+const priorManifestPaths = Array.from(
+  { length: batchNumber - 1 },
+  (_, index) => {
+    const priorBatch = index + 1;
+    const fileName =
+      priorBatch === 1
+        ? "enhanced-bill-selection.manifest.json"
+        : `enhanced-bill-selection.batch-${priorBatch}.manifest.json`;
+    return path.join(projectRoot, "data/review", fileName);
+  },
 );
 const billIndexPath = path.join(
   projectRoot,
@@ -106,14 +113,18 @@ async function main() {
     );
   }
 
-  const [billIndex, vetoAudit, officials, firstBatchManifest, published] =
+  const [billIndex, vetoAudit, officials, priorManifests, published] =
     await Promise.all([
       readJson<NevadaBillIndexBundle>(billIndexPath),
       readJson<{
         records: Array<{ billIdentifier: string; billKey: string }>;
       }>(vetoAuditPath),
       readJson<OfficialsBundle>(officialsPath),
-      readJson<z.infer<typeof manifestSchema>>(firstBatchManifestPath),
+      Promise.all(
+        priorManifestPaths.map((manifest) =>
+          readJson<z.infer<typeof manifestSchema>>(manifest),
+        ),
+      ),
       readJson<LegislationBundle>(publishedPath),
     ]);
   const indexByIdentifier = new Map(
@@ -130,7 +141,9 @@ async function main() {
   );
 
   const priorCoveredIdentifiers = new Set([
-    ...firstBatchManifest.records.map((record) => record.billIdentifier),
+    ...priorManifests.flatMap((priorManifest) =>
+      priorManifest.records.map((record) => record.billIdentifier),
+    ),
     ...published.bills
       .filter((bill) => bill.jurisdiction === "state")
       .map((bill) => bill.identifier),
@@ -558,8 +571,10 @@ function parseBatchArgument(arguments_: string[]) {
     .find((argument) => argument.startsWith("--batch="))
     ?.slice("--batch=".length);
   const batch = value === undefined ? 1 : Number(value);
-  if (!Number.isInteger(batch) || batch < 1 || batch > 2) {
-    throw new Error("--batch must identify configured Batch 1 or Batch 2");
+  if (!Number.isInteger(batch) || batch < 1 || batch > 3) {
+    throw new Error(
+      "--batch must identify configured Batch 1, Batch 2, or Batch 3",
+    );
   }
   return batch;
 }
