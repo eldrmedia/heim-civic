@@ -3,8 +3,25 @@ import billIndexData from "../src/data/generated/nevada-bill-index.json";
 import enhancedReviewData from "../src/data/generated/enhanced-bill-review.json";
 import financeData from "../src/data/generated/pilot-finance.json";
 import legislationData from "../src/data/generated/pilot-legislation.json";
+import promotedLegislationData from "../src/data/generated/promoted-enhanced-legislation.json";
 import officialsData from "../src/data/generated/current-officials.json";
 import { evaluateSourceHealth } from "../src/domain/status/source-health";
+
+const publishedLegislation = {
+  generatedAt: [
+    legislationData.generatedAt,
+    promotedLegislationData.generatedAt,
+  ]
+    .sort()
+    .at(-1)!,
+  recordCount:
+    legislationData.bills.length + promotedLegislationData.bills.length,
+  sourceCount: new Set(
+    [...legislationData.sources, ...promotedLegislationData.sources].map(
+      (source) => source.id,
+    ),
+  ).size,
+};
 
 const report = evaluateSourceHealth([
   {
@@ -36,9 +53,9 @@ const report = evaluateSourceHealth([
   },
   {
     id: "legislation",
-    generatedAt: legislationData.generatedAt,
-    recordCount: legislationData.bills.length,
-    sourceCount: legislationData.sources.length,
+    generatedAt: publishedLegislation.generatedAt,
+    recordCount: publishedLegislation.recordCount,
+    sourceCount: publishedLegislation.sourceCount,
   },
   {
     id: "finance",

@@ -63,6 +63,8 @@ can enter the published enhanced snapshot:
 
 Until those steps are complete, the public selection log labels each record
 “Awaiting human review,” links to NELIS, and does not create an enhanced page.
+The implemented packet and promotion workflow is documented in
+`docs/phase-9-2b-editorial-review-and-promotion.md`.
 
 ## Remaining work
 

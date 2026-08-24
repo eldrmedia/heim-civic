@@ -7,16 +7,18 @@ import {
 } from "@/server/legislation/repository";
 
 describe("legislation repository", () => {
-  it("publishes one state and one federal bill with verified sources", () => {
+  it("publishes the approved Nevada batch and federal pilot with verified sources", () => {
     const bundle = getLegislationBundle();
     const bills = getAllPilotBills();
 
     expect(bundle.schemaVersion).toBe(1);
-    expect(bills).toHaveLength(2);
-    expect(bills.map((bill) => bill.jurisdiction).sort()).toEqual([
-      "federal",
-      "state",
-    ]);
+    expect(bills).toHaveLength(11);
+    expect(bills.filter((bill) => bill.jurisdiction === "state")).toHaveLength(
+      10,
+    );
+    expect(
+      bills.filter((bill) => bill.jurisdiction === "federal"),
+    ).toHaveLength(1);
     expect(
       bills.every(
         (bill) =>
@@ -28,6 +30,10 @@ describe("legislation repository", () => {
           ),
       ),
     ).toBe(true);
+    expect(
+      bills.filter((bill) => bill.editorialReview?.state === "human-approved"),
+    ).toHaveLength(9);
+    expect(bills.some((bill) => bill.identifier === "AB44")).toBe(false);
   });
 
   it("connects Mark Amodei to sponsorship and both federal roll calls", () => {

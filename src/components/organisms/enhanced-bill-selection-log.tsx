@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 import type {
   EnhancedBillReviewBundle,
@@ -8,10 +9,17 @@ import type {
 export function EnhancedBillSelectionLog({
   bundle,
   publishedNevadaCount,
+  promotedIdentifiers,
 }: {
   bundle: EnhancedBillReviewBundle;
   publishedNevadaCount: number;
+  promotedIdentifiers: string[];
 }) {
+  const promoted = new Set(promotedIdentifiers);
+  const awaitingReviewCount = bundle.records.filter(
+    (record) => !promoted.has(record.billIdentifier),
+  ).length;
+
   return (
     <>
       <section aria-labelledby="selection-progress-title">
@@ -24,7 +32,7 @@ export function EnhancedBillSelectionLog({
           </article>
           <article>
             <span>Awaiting human review</span>
-            <strong>{bundle.records.length}</strong>
+            <strong>{awaitingReviewCount}</strong>
             <p>
               Official source packages are ready; editorial approval is not.
             </p>
@@ -38,12 +46,16 @@ export function EnhancedBillSelectionLog({
           </article>
         </div>
         <div className="selection-notice" role="note">
-          <strong>No queued bill is labeled enhanced yet.</strong>
+          <strong>
+            {awaitingReviewCount === bundle.records.length
+              ? "No queued bill is labeled enhanced yet."
+              : "Only accountable human-approved records are labeled enhanced."}
+          </strong>
           <p>
-            The official records below passed automated source checks. They
-            still require an accountable human editor to review the digest,
-            amendments, status, vote type, and selection explanation before a
-            local enhanced bill page can be published.
+            The official records below passed automated source checks. Records
+            labeled “Awaiting human review” still require an accountable editor
+            to review the digest, amendments, status, vote type, and selection
+            explanation before a local enhanced bill page can be published.
           </p>
         </div>
       </section>
@@ -63,7 +75,11 @@ export function EnhancedBillSelectionLog({
         <h2 id="selection-queue-title">Batch 1 review queue</h2>
         <div className="selection-log">
           {bundle.records.map((record) => (
-            <SelectionRecord key={record.id} record={record} />
+            <SelectionRecord
+              isPromoted={promoted.has(record.billIdentifier)}
+              key={record.id}
+              record={record}
+            />
           ))}
         </div>
       </section>
@@ -71,12 +87,22 @@ export function EnhancedBillSelectionLog({
   );
 }
 
-function SelectionRecord({ record }: { record: EnhancedBillReviewCandidate }) {
+function SelectionRecord({
+  record,
+  isPromoted,
+}: {
+  record: EnhancedBillReviewCandidate;
+  isPromoted: boolean;
+}) {
   return (
     <article className="selection-record">
       <div className="selection-record__labels">
         <span>{record.subjectArea}</span>
-        <span>Awaiting human review</span>
+        <span>
+          {isPromoted
+            ? "Published after human review"
+            : "Awaiting human review"}
+        </span>
       </div>
       <p className="selection-record__identifier">
         {record.billIdentifier} · Batch {record.batch}
@@ -96,9 +122,14 @@ function SelectionRecord({ record }: { record: EnhancedBillReviewCandidate }) {
           </dd>
         </div>
       </dl>
-      <a href={record.officialPageUrl}>
-        Open official NELIS record <ExternalLink aria-hidden="true" size={15} />
-      </a>
+      {isPromoted ? (
+        <Link href={`/bills/${record.id}`}>Open enhanced bill record →</Link>
+      ) : (
+        <a href={record.officialPageUrl}>
+          Open official NELIS record{" "}
+          <ExternalLink aria-hidden="true" size={15} />
+        </a>
+      )}
     </article>
   );
 }

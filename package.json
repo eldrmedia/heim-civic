@@ -19,6 +19,8 @@
     "data:bill-index": "node --import tsx scripts/build-nevada-bill-index.ts",
     "data:bill-selection": "tsx scripts/audit-pilot-bill-selection.ts",
     "data:enhanced-bill-review": "tsx scripts/build-enhanced-bill-review.ts",
+    "data:editorial-review-packets": "node --import tsx scripts/build-editorial-review-packets.ts",
+    "data:promote-enhanced-bills": "node --import tsx scripts/promote-enhanced-bills.ts",
     "data:finance": "tsx scripts/build-finance.ts",
     "ops:source-health": "node --import tsx scripts/check-source-health.ts",
     "audit": "npm audit --audit-level=high",

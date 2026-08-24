@@ -13,9 +13,13 @@ export const metadata: Metadata = {
 
 export default function EnhancedBillSelectionPage() {
   const bundle = getEnhancedBillReviewBundle();
-  const publishedNevadaCount = getAllPilotBills().filter(
+  const publishedBills = getAllPilotBills();
+  const publishedNevadaCount = publishedBills.filter(
     (bill) => bill.jurisdiction === "state",
   ).length;
+  const promotedIdentifiers = publishedBills
+    .filter((bill) => bill.editorialReview?.state === "human-approved")
+    .map((bill) => bill.identifier);
 
   return (
     <ContentPageTemplate
@@ -27,6 +31,7 @@ export default function EnhancedBillSelectionPage() {
       <EnhancedBillSelectionLog
         bundle={bundle}
         publishedNevadaCount={publishedNevadaCount}
+        promotedIdentifiers={promotedIdentifiers}
       />
     </ContentPageTemplate>
   );

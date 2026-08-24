@@ -54,11 +54,18 @@ export function BillPageTemplate({
         <div className="layout-shell bill-page__layout">
           <article className="bill-page__content">
             <section aria-labelledby="summary-title">
-              <p className="eyebrow">Official-source summary</p>
+              <p className="eyebrow">
+                {bill.officialSummary.reviewState === "official-source"
+                  ? "Official-source summary"
+                  : "Human-approved summary"}
+              </p>
               <h2 id="summary-title">What this bill does</h2>
               <p>{bill.officialSummary.text}</p>
               <p className="bill-page__attribution">
-                This text is not AI-generated. Source:{" "}
+                {bill.officialSummary.reviewState === "official-source"
+                  ? "This text is not AI-generated."
+                  : bill.officialSummary.assistanceDisclosure}{" "}
+                Source:{" "}
                 <a href={bill.officialSummary.sourceUrl}>
                   {bill.officialSummary.attribution}
                 </a>
@@ -218,6 +225,13 @@ export function BillPageTemplate({
                 review; index-only bills link to NELIS without claiming the same
                 depth of local coverage.
               </p>
+              {bill.editorialReview ? (
+                <p>
+                  Approved by {bill.editorialReview.reviewerName},{" "}
+                  {bill.editorialReview.reviewerRole}, on{" "}
+                  {formatDate(bill.editorialReview.reviewedAt)}.
+                </p>
+              ) : null}
             </section>
           </aside>
         </div>

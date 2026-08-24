@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "frameworkVersion": "editorial-bill-review-v1",
+  "sourceSnapshotId": "phase-9.2-enhanced-review:2026-08-23",
+  "assessedAt": "2026-08-24T00:30:39Z",
+  "assessor": {
+    "type": "ai-assisted",
+    "system": "OpenAI Codex",
+    "humanApprovalRequired": true
+  },
+  "evidenceCapture": {
+    "retrievedAt": "2026-08-24T00:30:39Z",
+    "parserVersion": "pypdf-6.10.0-plus-enhanced-bill-review-v1",
+    "normalization": "Unicode text extraction followed by lowercase whitespace and punctuation normalization for digest comparison",
+    "coverage": "All 10 enrolled bill PDFs, all 41 captured NELIS source documents, 21 roll calls, and the official veto report",
+    "validationState": "ai-reviewed-recommendation-awaiting-human-decision"
+  },
+  "scope": {
+    "records": 10,
+    "capturedOfficialSources": 41,
+    "capturedSourcesMatchingSnapshot": 41,
+    "enrolledBillPdfs": 10,
+    "recordedRollCalls": 21
+  },
+  "sharedEvidence": [
+    {
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed",
+      "purpose": "Official veto status and date",
+      "retrievedAt": "2026-08-24T00:30:39Z",
+      "documentSha256": "463fb35bfe37f292e0ca7ef99dd65031fb247a1aa54b9ce0ff07ef52f2261168"
+    }
+  ],
+  "results": [
+    {
+      "billIdentifier": "AB226",
+      "candidateFingerprint": "160b5c1387651054c3735cdcf4fc6819fac7911516d6013aaf33aa91d03d0231",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB226_EN.pdf",
+        "sha256": "c841f334d5d11c5908df20857c81e40edf24afbccd961a8489e283e7d77b2b16",
+        "pages": 44,
+        "digestNormalizedSimilarity": 0.9879
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:13137", "classification": "passage" },
+        { "voteId": "nv-vote:13317", "classification": "passage" }
+      ],
+      "reason": "The official digest, enrolled provisions, amendment history, veto status, sponsor and committees, and both chamber passage votes reconcile without a material discrepancy."
+    },
+    {
+      "billIdentifier": "AB397",
+      "candidateFingerprint": "05f9777a2f5fed099b920d689df7ea927d0545af02fafc213b967d0eec18c6fa",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB397_EN.pdf",
+        "sha256": "19a3451a824bcbbdac9f0076c4f38ad73c9b271c8468ccb8fa80c5edaa372a2d",
+        "pages": 16,
+        "digestNormalizedSimilarity": 0.9963
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:13358", "classification": "passage" },
+        { "voteId": "nv-vote:13486", "classification": "passage" }
+      ],
+      "reason": "The enrolled digest reflects both amendments and the final waiver provisions; the two displayed roll calls are the Assembly and Senate passage votes. The recorded Assembly concurrence is retained in the history and is not presented as a roll call."
+    },
+    {
+      "billIdentifier": "SB128",
+      "candidateFingerprint": "78dfc8cb64c89289a671e29f6a5c9c3f866001a2f8b103210c6f00774b510274",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/SB/SB128_EN.pdf",
+        "sha256": "4e54b7bdfda2bfeb55eb99c3c6c243f0a4a899d429b99f1d20fffa02bbc4dc4f",
+        "pages": 12,
+        "digestNormalizedSimilarity": 0.993
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:13374", "classification": "passage" },
+        { "voteId": "nv-vote:12499", "classification": "passage" }
+      ],
+      "reason": "The final digest and operative text reconcile the prior-authorization and stem-cell provisions, all three amendments appear in history, and the displayed votes are supported chamber passage votes."
+    },
+    {
+      "billIdentifier": "AB223",
+      "candidateFingerprint": "4debd1b21a6841251925487b73a60f0e1342768ddff2fe333ee94944e81a8bf1",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB223_EN.pdf",
+        "sha256": "541d0d2c8d0d7abb90347fcf5b066fe2ee62ed771559d576e9cd320687633546",
+        "pages": 24,
+        "digestNormalizedSimilarity": 0.9959
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12553", "classification": "passage" },
+        { "voteId": "nv-vote:12815", "classification": "passage" }
+      ],
+      "reason": "The detailed enrolled digest matches the final tenant-remedy provisions, the amendment is reflected, sponsor and cosponsors reconcile, and both chamber passage totals match the official member records."
+    },
+    {
+      "billIdentifier": "AB306",
+      "candidateFingerprint": "dfd3c03ab5facdd54136bc3a6fa2c50fd64b1df214d15e8b73b67ea1e7cd7404",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB306_EN.pdf",
+        "sha256": "97a38e36e97b5d1cb8c2db8edad3ef88f559b74699b5f26049c18a9ca977e58d",
+        "pages": 8,
+        "digestNormalizedSimilarity": 0.994
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12421", "classification": "passage" },
+        { "voteId": "nv-vote:12668", "classification": "passage" }
+      ],
+      "reason": "The enrolled text supports the drop-box locations, hours, monitoring, and security claims; joint sponsors, committees, veto status, and both passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB44",
+      "candidateFingerprint": "a0ae12d93e934d8d79161cce580e928423821d49042d6841ad9ebff5e83cb6e0",
+      "disposition": "changes-required",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB44_EN.pdf",
+        "sha256": "227a6f9d9f81c3b50a587800d24b69f5fc4d6c30974662a45a99d745b30b3a48",
+        "pages": 8,
+        "digestNormalizedSimilarity": 0.9931
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "fail",
+        "selectionNeutrality": "pass",
+        "uncertainty": "fail"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12518", "classification": "passage" },
+        {
+          "voteId": "nv-vote:12963",
+          "classification": "initial-passage-later-reconsidered"
+        },
+        {
+          "voteId": "nv-vote:12964",
+          "classification": "passage-after-reconsideration"
+        }
+      ],
+      "reason": "Not recommended for approval yet. NELIS records a 14-7 Senate passage, an action of passage reconsidered, and a second 13-8 passage on the same day. The current promotion vocabulary and public bill page would label both Senate events simply 'Passage,' hiding their procedural relationship. Add public reconsideration-aware labels and preserve the sequence before approval."
+    },
+    {
+      "billIdentifier": "AB105",
+      "candidateFingerprint": "fe1dacc3b68726048812530d6f5e576b5b5c6af13a36af4911631dc4dd5bdd13",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB105_EN.pdf",
+        "sha256": "d7b696bb74d7045cbb3ddf13103bfc5c03a9b63919108a08ee6931eb9866ce93",
+        "pages": 4,
+        "digestNormalizedSimilarity": 0.9925
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:13135", "classification": "passage" },
+        { "voteId": "nv-vote:13315", "classification": "passage" }
+      ],
+      "reason": "The enrolled text supports the election-site firearm restrictions, exceptions, and penalties; the amendment, veto status, sponsor, committees, and both passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB244",
+      "candidateFingerprint": "8453d5c3711cd56fb85b388e6ae8133f146108f6dec9515364820634f06b5acc",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB244_EN.pdf",
+        "sha256": "64614f27c2ef322e19c166152c61c8f98a0d1c21b15c6c242e2ee34bd201c036",
+        "pages": 4,
+        "digestNormalizedSimilarity": 0.9915
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12400", "classification": "passage" },
+        { "voteId": "nv-vote:12821", "classification": "passage" }
+      ],
+      "reason": "The enrolled text supports the phased polystyrene-foodware prohibitions and effective dates; the amendment, sponsor, committees, veto status, and passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB140",
+      "candidateFingerprint": "8326a37e48c2e6d8380a19a40257e664fc5adccb2d39791d9e092c37f8628ec9",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB140_EN.pdf",
+        "sha256": "e12d32a98a4eeb3127739793877ee7e5c0f439a6824faf190e9dc390a090b797",
+        "pages": 4,
+        "digestNormalizedSimilarity": 0.9855
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12388", "classification": "passage" },
+        { "voteId": "nv-vote:12803", "classification": "passage" }
+      ],
+      "reason": "The final text supports DMV-set renewal periods aligned with driver licenses to the extent federal law allows; the amendment, sponsors, committees, veto status, and passage votes reconcile."
+    },
+    {
+      "billIdentifier": "SB171",
+      "candidateFingerprint": "f8e955bf956a59b294de9074cc16c9e7bb159bc5dd3bd7dff60af1b910e22615",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/SB/SB171_EN.pdf",
+        "sha256": "2a81ed2ce812d570456a6b5346c53e5c71a0ddf0ae8d2a48750ea4a09dd391b2",
+        "pages": 8,
+        "digestNormalizedSimilarity": 0.9904
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12892", "classification": "passage" },
+        { "voteId": "nv-vote:12504", "classification": "passage" }
+      ],
+      "reason": "The enrolled digest and text support the licensing, extradition, state-resource, and reciprocal-licensing provisions; sponsors, committees, veto status, and both passage votes reconcile."
+    }
+  ],
+  "summary": {
+    "recommendApproval": 9,
+    "changesRequired": 1,
+    "needsClarification": 0,
+    "humanApprovalsRecordedAtAssessment": 0
+  }
+}

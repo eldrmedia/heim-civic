@@ -66,7 +66,8 @@ export type PilotBill = {
     text: string;
     attribution: string;
     sourceUrl: string;
-    reviewState: "official-source";
+    reviewState: "official-source" | "human-approved";
+    assistanceDisclosure?: string;
   };
   committees: string[];
   people: BillPerson[];
@@ -76,6 +77,14 @@ export type PilotBill = {
   officialTextUrl: string;
   selectionReason: string;
   sources: LegislationSource[];
+  editorialReview?: {
+    state: "human-approved";
+    reviewerName: string;
+    reviewerRole: string;
+    reviewedAt: string;
+    candidateFingerprint: string;
+    uncertaintyNotes: string[];
+  };
 };
 
 export type LegislationBundle = {

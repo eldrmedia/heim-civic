@@ -26,6 +26,10 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
   const enhancedReview = getEnhancedBillReviewBundle();
   const legislation = getLegislationBundle();
   const finance = getFinanceBundle();
+  const promotedNevadaCount = legislation.bills.filter(
+    (bill) => bill.editorialReview?.state === "human-approved",
+  ).length;
+  const queuedNevadaCount = enhancedReview.records.length - promotedNevadaCount;
 
   return [
     {
@@ -72,8 +76,7 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
       version: enhancedReview.parserVersion,
       recordCount: enhancedReview.records.length,
       sourceCount: enhancedReview.sources.length,
-      scopeNote:
-        "Source-verified review packages awaiting accountable human approval; these records are not yet labeled as enhanced coverage.",
+      scopeNote: `${queuedNevadaCount} source-verified review packages await accountable human approval; ${promotedNevadaCount} have passed the Phase 9.2B promotion gate.`,
     },
     {
       id: "legislation",
@@ -83,8 +86,7 @@ export function getSourceSnapshotStatuses(): SourceSnapshotStatus[] {
       version: legislation.parserVersion,
       recordCount: legislation.bills.length,
       sourceCount: legislation.sources.length,
-      scopeNote:
-        "One published Nevada record and one federal vertical-slice record; queued Nevada packages remain separate until human approval.",
+      scopeNote: `${legislation.bills.filter((bill) => bill.jurisdiction === "state").length} published Nevada record(s) and ${legislation.bills.filter((bill) => bill.jurisdiction === "federal").length} federal record(s); queued Nevada packages remain separate until human approval.`,
     },
     {
       id: "finance",
