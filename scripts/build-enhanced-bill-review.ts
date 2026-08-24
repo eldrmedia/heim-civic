@@ -17,6 +17,7 @@ import {
 import type {
   BillAction,
   BillPerson,
+  LegislationBundle,
   LegislationSource,
   MemberVote,
   NormalizedVoteValue,
@@ -26,8 +27,14 @@ import type { NevadaBillIndexBundle } from "../src/domain/legislation/index-type
 import type { OfficialsBundle } from "../src/domain/officials/types";
 
 const projectRoot = process.cwd();
+const batchNumber = parseBatchArgument(process.argv.slice(2));
 const parserVersion = "enhanced-bill-review-v1";
-const manifestPath = path.join(
+const manifestFileName =
+  batchNumber === 1
+    ? "enhanced-bill-selection.manifest.json"
+    : `enhanced-bill-selection.batch-${batchNumber}.manifest.json`;
+const manifestPath = path.join(projectRoot, "data/review", manifestFileName);
+const firstBatchManifestPath = path.join(
   projectRoot,
   "data/review/enhanced-bill-selection.manifest.json",
 );
@@ -43,10 +50,15 @@ const officialsPath = path.join(
   projectRoot,
   "src/data/generated/current-officials.json",
 );
-const outputPath = path.join(
+const publishedPath = path.join(
   projectRoot,
-  "src/data/generated/enhanced-bill-review.json",
+  "src/data/generated/pilot-legislation.json",
 );
+const outputFileName =
+  batchNumber === 1
+    ? "enhanced-bill-review.json"
+    : `enhanced-bill-review-batch-${batchNumber}.json`;
+const outputPath = path.join(projectRoot, "src/data/generated", outputFileName);
 const nelisBase = "https://www.leg.state.nv.us";
 const vetoReportUrl = `${nelisBase}/App/NELIS/REL/83rd2025/Bills/Vetoed`;
 
@@ -61,6 +73,7 @@ const manifestRecordSchema = z.object({
 });
 const manifestSchema = z.object({
   schemaVersion: z.literal(1),
+  batch: z.number().int().positive(),
   coverageLabel: z.string().min(1),
   targetRange: z.object({
     minimum: z.number().int().positive(),
@@ -87,16 +100,22 @@ async function main() {
   if (manifest.targetRange.minimum > manifest.targetRange.maximum) {
     throw new Error("Enhanced coverage target minimum exceeds its maximum");
   }
+  if (manifest.batch !== batchNumber) {
+    throw new Error(
+      `Manifest batch ${manifest.batch} does not match requested batch ${batchNumber}`,
+    );
+  }
 
-  const billIndex = JSON.parse(
-    await readFile(billIndexPath, "utf8"),
-  ) as NevadaBillIndexBundle;
-  const vetoAudit = JSON.parse(await readFile(vetoAuditPath, "utf8")) as {
-    records: Array<{ billIdentifier: string; billKey: string }>;
-  };
-  const officials = JSON.parse(
-    await readFile(officialsPath, "utf8"),
-  ) as OfficialsBundle;
+  const [billIndex, vetoAudit, officials, firstBatchManifest, published] =
+    await Promise.all([
+      readJson<NevadaBillIndexBundle>(billIndexPath),
+      readJson<{
+        records: Array<{ billIdentifier: string; billKey: string }>;
+      }>(vetoAuditPath),
+      readJson<OfficialsBundle>(officialsPath),
+      readJson<z.infer<typeof manifestSchema>>(firstBatchManifestPath),
+      readJson<LegislationBundle>(publishedPath),
+    ]);
   const indexByIdentifier = new Map(
     billIndex.records.map((record) => [record.identifier, record]),
   );
@@ -110,7 +129,19 @@ async function main() {
     ]),
   );
 
-  validateManifest(manifest.records, indexByIdentifier, vetoedByIdentifier);
+  const priorCoveredIdentifiers = new Set([
+    ...firstBatchManifest.records.map((record) => record.billIdentifier),
+    ...published.bills
+      .filter((bill) => bill.jurisdiction === "state")
+      .map((bill) => bill.identifier),
+  ]);
+  validateManifest(
+    manifest,
+    indexByIdentifier,
+    vetoedByIdentifier,
+    vetoAudit.records,
+    priorCoveredIdentifiers,
+  );
   const records = await Promise.all(
     manifest.records.map((entry) =>
       buildCandidate(entry, indexByIdentifier, officialsBySortName),
@@ -128,7 +159,10 @@ async function main() {
   const generatedAt = new Date().toISOString();
   const bundle: EnhancedBillReviewBundle = {
     schemaVersion: 1,
-    snapshotId: `phase-9.2-enhanced-review:${generatedAt.slice(0, 10)}`,
+    snapshotId:
+      batchNumber === 1
+        ? `phase-9.2-enhanced-review:${generatedAt.slice(0, 10)}`
+        : `phase-9.3-batch-${batchNumber}-enhanced-review:${generatedAt.slice(0, 10)}`,
     generatedAt,
     parserVersion,
     coverageLabel: manifest.coverageLabel,
@@ -138,7 +172,7 @@ async function main() {
   };
 
   await writeFile(outputPath, `${JSON.stringify(bundle)}\n`, "utf8");
-  console.info("Built Phase 9.2 enhanced bill review package", {
+  console.info(`Built enhanced bill review package for Batch ${batchNumber}`, {
     records: records.length,
     votes: records.reduce((total, record) => total + record.votes.length, 0),
     sources: sources.length,
@@ -183,7 +217,7 @@ async function buildCandidate(
     id: `nv-83-2025-${identifier}`,
     billIdentifier: entry.billIdentifier,
     billKey: entry.billKey,
-    batch: 1,
+    batch: batchNumber,
     subjectArea: entry.subjectArea,
     officialSynopsis: indexRecord.synopsis,
     officialTitle: indexRecord.officialTitle,
@@ -206,7 +240,7 @@ async function buildCandidate(
     people: [
       ...parsePeople(
         $overview,
-        "#primarySponsors a",
+        "#primarySponsors a, .row:has(.font-weight-bold:contains('Primary Sponsor')) .col > a[href*='/Committee/']",
         "sponsor",
         officialsBySortName,
       ),
@@ -324,15 +358,36 @@ function parseMemberVotes(
 }
 
 function validateManifest(
-  entries: ManifestRecord[],
+  manifest: z.infer<typeof manifestSchema>,
   indexByIdentifier: Map<string, NevadaBillIndexBundle["records"][number]>,
   vetoedByIdentifier: Map<string, { billIdentifier: string; billKey: string }>,
+  vetoRecords: Array<{ billIdentifier: string; billKey: string }>,
+  priorCoveredIdentifiers: Set<string>,
 ) {
+  const entries = manifest.records;
   if (new Set(entries.map((entry) => entry.billIdentifier)).size !== 10) {
-    throw new Error("The first enhanced-review batch must contain ten bills");
+    throw new Error("Each enhanced-review batch must contain ten unique bills");
   }
-  if (new Set(entries.map((entry) => entry.subjectArea)).size !== 10) {
+  if (
+    manifest.batch === 1 &&
+    new Set(entries.map((entry) => entry.subjectArea)).size !== 10
+  ) {
     throw new Error("The first batch must cover all ten PRD subject areas");
+  }
+  if (manifest.batch > 1) {
+    const expectedIdentifiers = vetoRecords
+      .map((record) => record.billIdentifier)
+      .filter((identifier) => !priorCoveredIdentifiers.has(identifier))
+      .sort(compareBillIdentifiers)
+      .slice(0, 10);
+    const actualIdentifiers = entries.map((entry) => entry.billIdentifier);
+    if (
+      JSON.stringify(actualIdentifiers) !== JSON.stringify(expectedIdentifiers)
+    ) {
+      throw new Error(
+        `Batch ${manifest.batch} must contain the next ten unprocessed veto qualifiers in ascending bill-identifier order`,
+      );
+    }
   }
   for (const entry of entries) {
     const indexRecord = required(indexByIdentifier.get(entry.billIdentifier));
@@ -419,7 +474,7 @@ function toSourceRecord(source: DownloadedSource): LegislationSource {
     url: source.url,
     retrievedAt: source.retrievedAt,
     documentSha256: source.sha256,
-    coverageLabel: "Phase 9.2 enhanced bill review source package",
+    coverageLabel: `Batch ${batchNumber} enhanced bill review source package`,
     parserVersion,
     validationState: "source-verified",
   };
@@ -489,6 +544,28 @@ function required<T>(value: T | null | undefined): T {
 
 function delay(milliseconds: number) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
+
+function compareBillIdentifiers(left: string, right: string) {
+  const leftMatch = required(left.match(/^(AB|SB)(\d+)$/));
+  const rightMatch = required(right.match(/^(AB|SB)(\d+)$/));
+  const chamberOrder = leftMatch[1]!.localeCompare(rightMatch[1]!);
+  return chamberOrder || Number(leftMatch[2]) - Number(rightMatch[2]);
+}
+
+function parseBatchArgument(arguments_: string[]) {
+  const value = arguments_
+    .find((argument) => argument.startsWith("--batch="))
+    ?.slice("--batch=".length);
+  const batch = value === undefined ? 1 : Number(value);
+  if (!Number.isInteger(batch) || batch < 1 || batch > 2) {
+    throw new Error("--batch must identify configured Batch 1 or Batch 2");
+  }
+  return batch;
+}
+
+async function readJson<T>(filePath: string): Promise<T> {
+  return JSON.parse(await readFile(filePath, "utf8")) as T;
 }
 
 main().catch((error: unknown) => {

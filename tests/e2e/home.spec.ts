@@ -345,7 +345,7 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   expect(results.violations).toEqual([]);
 });
 
-test("the enhanced bill selection log exposes the completed first review batch", async ({
+test("the enhanced bill selection log distinguishes published and queued batches", async ({
   page,
 }) => {
   await page.goto("/bills/selection");
@@ -366,8 +366,8 @@ test("the enhanced bill selection log exposes the completed first review batch",
   ).toBeVisible();
   await expect(
     page.getByText("Published after human review", { exact: true }),
-  ).toHaveCount(10);
-  await expect(page.locator(".selection-record")).toHaveCount(10);
+  ).toHaveCount(20);
+  await expect(page.locator(".selection-record")).toHaveCount(20);
 
   const ab226 = page.locator(".selection-record").filter({ hasText: "AB226" });
   await expect(
@@ -382,8 +382,26 @@ test("the enhanced bill selection log exposes the completed first review batch",
     ab44.getByRole("link", { name: "Open enhanced bill record" }),
   ).toHaveAttribute("href", "/bills/nv-83-2025-ab44");
 
+  const ab79 = page.locator(".selection-record").filter({ hasText: "AB79" });
+  await expect(
+    ab79.getByText("Published after human review", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    ab79.getByRole("link", { name: "Open enhanced bill record" }),
+  ).toHaveAttribute("href", "/bills/nv-83-2025-ab79");
+
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations).toEqual([]);
+
+  await page.goto("/bills/nv-83-2025-ab82");
+  await expect(
+    page.getByText("Coverage limitations", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(
+      "The NELIS overview labels the listed Senate participants as co-sponsors, while the enrolled bill heading calls them joint sponsors; this record follows the NELIS overview role label.",
+    ),
+  ).toBeVisible();
 });
 
 test("a federal finance page preserves official categories and coverage limits", async ({

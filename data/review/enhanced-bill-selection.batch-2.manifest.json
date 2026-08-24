@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "batch": 2,
+  "coverageLabel": "Phase 9.3 second enhanced-review batch",
+  "targetRange": { "minimum": 30, "maximum": 50 },
+  "records": [
+    {
+      "billIdentifier": "AB79",
+      "billKey": "11899",
+      "subjectArea": "Elections and government",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB82",
+      "billKey": "11903",
+      "subjectArea": "Elections and government",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB88",
+      "billKey": "11952",
+      "subjectArea": "Criminal justice and public safety",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB98",
+      "billKey": "11980",
+      "subjectArea": "Civil rights and social services",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB112",
+      "billKey": "12013",
+      "subjectArea": "Labor and business",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB144",
+      "billKey": "12070",
+      "subjectArea": "Civil rights and social services",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB155",
+      "billKey": "12097",
+      "subjectArea": "Labor and business",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB185",
+      "billKey": "12155",
+      "subjectArea": "Civil rights and social services",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB188",
+      "billKey": "12158",
+      "subjectArea": "Health",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    },
+    {
+      "billIdentifier": "AB201",
+      "billKey": "12171",
+      "subjectArea": "Criminal justice and public safety",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Batch 2 deterministic order: next unprocessed governor-veto qualifier in ascending bill-identifier order.",
+      "reviewState": "source-preparation"
+    }
+  ]
+}

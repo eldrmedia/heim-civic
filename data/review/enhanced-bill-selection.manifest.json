@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "batch": 1,
   "coverageLabel": "Phase 9.2 first enhanced-review batch",
   "targetRange": { "minimum": 30, "maximum": 50 },
   "records": [

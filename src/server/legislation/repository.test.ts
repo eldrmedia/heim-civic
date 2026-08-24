@@ -12,9 +12,9 @@ describe("legislation repository", () => {
     const bills = getAllPilotBills();
 
     expect(bundle.schemaVersion).toBe(1);
-    expect(bills).toHaveLength(12);
+    expect(bills).toHaveLength(22);
     expect(bills.filter((bill) => bill.jurisdiction === "state")).toHaveLength(
-      11,
+      21,
     );
     expect(
       bills.filter((bill) => bill.jurisdiction === "federal"),
@@ -30,7 +30,7 @@ describe("legislation repository", () => {
     ).toBe(true);
     expect(
       bills.filter((bill) => bill.editorialReview?.state === "human-approved"),
-    ).toHaveLength(10);
+    ).toHaveLength(20);
 
     const ab44 = bills.find((bill) => bill.identifier === "AB44");
     expect(ab44?.votes.map((vote) => vote.question)).toEqual([
@@ -43,6 +43,18 @@ describe("legislation repository", () => {
         .filter((bill) => bill.identifier !== "AB44")
         .every((bill) => bill.votes.length === 2),
     ).toBe(true);
+
+    const ab82 = bills.find((bill) => bill.identifier === "AB82");
+    const ab98 = bills.find((bill) => bill.identifier === "AB98");
+    const sponsorRoleLimitation =
+      "The NELIS overview labels the listed Senate participants as co-sponsors, while the enrolled bill heading calls them joint sponsors; this record follows the NELIS overview role label.";
+
+    expect(ab82?.editorialReview?.uncertaintyNotes).toEqual([
+      sponsorRoleLimitation,
+    ]);
+    expect(ab98?.editorialReview?.uncertaintyNotes).toEqual([
+      sponsorRoleLimitation,
+    ]);
   });
 
   it("connects Mark Amodei to sponsorship and both federal roll calls", () => {

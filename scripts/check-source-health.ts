@@ -1,6 +1,7 @@
 import boundariesData from "../src/data/generated/nevada-boundaries-2021.json";
 import billIndexData from "../src/data/generated/nevada-bill-index.json";
 import enhancedReviewData from "../src/data/generated/enhanced-bill-review.json";
+import enhancedReviewBatch2Data from "../src/data/generated/enhanced-bill-review-batch-2.json";
 import financeData from "../src/data/generated/pilot-finance.json";
 import legislationData from "../src/data/generated/pilot-legislation.json";
 import promotedLegislationData from "../src/data/generated/promoted-enhanced-legislation.json";
@@ -18,6 +19,22 @@ const publishedLegislation = {
     legislationData.bills.length + promotedLegislationData.bills.length,
   sourceCount: new Set(
     [...legislationData.sources, ...promotedLegislationData.sources].map(
+      (source) => source.id,
+    ),
+  ).size,
+};
+
+const enhancedReview = {
+  generatedAt: [
+    enhancedReviewData.generatedAt,
+    enhancedReviewBatch2Data.generatedAt,
+  ]
+    .sort()
+    .at(-1)!,
+  recordCount:
+    enhancedReviewData.records.length + enhancedReviewBatch2Data.records.length,
+  sourceCount: new Set(
+    [...enhancedReviewData.sources, ...enhancedReviewBatch2Data.sources].map(
       (source) => source.id,
     ),
   ).size,
@@ -47,9 +64,9 @@ const report = evaluateSourceHealth([
   },
   {
     id: "enhanced-review",
-    generatedAt: enhancedReviewData.generatedAt,
-    recordCount: enhancedReviewData.records.length,
-    sourceCount: enhancedReviewData.sources.length,
+    generatedAt: enhancedReview.generatedAt,
+    recordCount: enhancedReview.recordCount,
+    sourceCount: enhancedReview.sourceCount,
   },
   {
     id: "legislation",

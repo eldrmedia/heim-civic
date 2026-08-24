@@ -34,13 +34,14 @@ describe("public source freshness", () => {
     expect(
       snapshots.find((snapshot) => snapshot.id === "enhanced-review"),
     ).toMatchObject({
-      recordCount: 10,
-      sourceCount: 41,
+      recordCount: 20,
+      sourceCount: 81,
     });
     expect(
       snapshots.find((snapshot) => snapshot.id === "legislation"),
     ).toMatchObject({
-      recordCount: 12,
+      recordCount: 22,
+      sourceCount: 88,
     });
     expect(
       snapshots.find((snapshot) => snapshot.id === "finance"),

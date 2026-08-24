@@ -6,14 +6,28 @@ import type { LegislationBundle } from "../src/domain/legislation/types";
 import { promoteApprovedCandidates } from "./lib/enhanced-bill-promotion";
 
 const projectRoot = process.cwd();
-const reviewPath = path.join(
-  projectRoot,
-  "src/data/generated/enhanced-bill-review.json",
-);
-const decisionsPath = path.join(
-  projectRoot,
-  "data/review/enhanced-bill-editorial-decisions.json",
-);
+const reviewInputs = [
+  {
+    reviewPath: path.join(
+      projectRoot,
+      "src/data/generated/enhanced-bill-review.json",
+    ),
+    decisionsPath: path.join(
+      projectRoot,
+      "data/review/enhanced-bill-editorial-decisions.json",
+    ),
+  },
+  {
+    reviewPath: path.join(
+      projectRoot,
+      "src/data/generated/enhanced-bill-review-batch-2.json",
+    ),
+    decisionsPath: path.join(
+      projectRoot,
+      "data/review/enhanced-bill-editorial-decisions-batch-2.json",
+    ),
+  },
+];
 const publishedPath = path.join(
   projectRoot,
   "src/data/generated/pilot-legislation.json",
@@ -23,12 +37,45 @@ const outputPath = path.join(
   "src/data/generated/promoted-enhanced-legislation.json",
 );
 
-const [reviewBundle, decisions, existingPublished] = await Promise.all([
-  readJson<EnhancedBillReviewBundle>(reviewPath),
-  readJson<unknown>(decisionsPath),
+const [reviewPairs, existingPublished] = await Promise.all([
+  Promise.all(
+    reviewInputs.map(async ({ reviewPath, decisionsPath }) => ({
+      reviewBundle: await readJson<EnhancedBillReviewBundle>(reviewPath),
+      decisions: await readJson<unknown>(decisionsPath),
+    })),
+  ),
   readJson<LegislationBundle>(publishedPath),
 ]);
-const promoted = promoteApprovedCandidates(reviewBundle, decisions);
+const promotedBundles = reviewPairs.map(({ reviewBundle, decisions }) =>
+  promoteApprovedCandidates(reviewBundle, decisions),
+);
+const publishedPromotionBundles = promotedBundles.filter(
+  (bundle) => bundle.bills.length > 0,
+);
+const metadataBundles =
+  publishedPromotionBundles.length > 0
+    ? publishedPromotionBundles
+    : promotedBundles;
+const promoted: LegislationBundle = {
+  schemaVersion: 1,
+  snapshotId: metadataBundles.map((bundle) => bundle.snapshotId).join("+"),
+  generatedAt: metadataBundles
+    .map((bundle) => bundle.generatedAt)
+    .sort()
+    .at(-1)!,
+  parserVersion: [
+    ...new Set(metadataBundles.map((bundle) => bundle.parserVersion)),
+  ].join("+"),
+  coverageLabel: "Human-approved Nevada enhanced bill records",
+  bills: promotedBundles.flatMap((bundle) => bundle.bills),
+  sources: [
+    ...new Map(
+      promotedBundles
+        .flatMap((bundle) => bundle.sources)
+        .map((source) => [source.id, source]),
+    ).values(),
+  ],
+};
 const existingIds = new Set(existingPublished.bills.map((bill) => bill.id));
 const existingSlugs = new Set(existingPublished.bills.map((bill) => bill.slug));
 
@@ -43,8 +90,14 @@ for (const bill of promoted.bills) {
 await writeFile(outputPath, `${JSON.stringify(promoted, null, 2)}\n`, "utf8");
 console.info("Applied Phase 9.2B editorial promotion decisions", {
   approvedAndPromoted: promoted.bills.length,
-  stillAwaitingHumanReview: reviewBundle.records.length - promoted.bills.length,
-  sourceSnapshotId: reviewBundle.snapshotId,
+  stillAwaitingHumanReview:
+    reviewPairs.reduce(
+      (count, { reviewBundle }) => count + reviewBundle.records.length,
+      0,
+    ) - promoted.bills.length,
+  sourceSnapshotIds: reviewPairs.map(
+    ({ reviewBundle }) => reviewBundle.snapshotId,
+  ),
 });
 
 async function readJson<T>(filePath: string): Promise<T> {

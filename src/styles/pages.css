@@ -810,6 +810,14 @@
     @apply mt-2 text-sm leading-6 text-slate-700;
   }
 
+  .bill-page__uncertainty {
+    @apply border-clay-500/30 mt-4 border-t pt-4;
+  }
+
+  .bill-page__uncertainty ul {
+    @apply mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700;
+  }
+
   .finance-overview-card {
     @apply bg-desert-50 rounded-xl border p-5;
   }

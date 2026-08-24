@@ -72,7 +72,7 @@ export function EnhancedBillSelectionLog({
       </section>
 
       <section aria-labelledby="selection-queue-title">
-        <h2 id="selection-queue-title">Batch 1 review queue</h2>
+        <h2 id="selection-queue-title">Enhanced review queue</h2>
         <div className="selection-log">
           {bundle.records.map((record) => (
             <SelectionRecord

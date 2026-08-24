@@ -226,11 +226,23 @@ export function BillPageTemplate({
                 depth of local coverage.
               </p>
               {bill.editorialReview ? (
-                <p>
-                  Approved by {bill.editorialReview.reviewerName},{" "}
-                  {bill.editorialReview.reviewerRole}, on{" "}
-                  {formatDate(bill.editorialReview.reviewedAt)}.
-                </p>
+                <>
+                  <p>
+                    Approved by {bill.editorialReview.reviewerName},{" "}
+                    {bill.editorialReview.reviewerRole}, on{" "}
+                    {formatDate(bill.editorialReview.reviewedAt)}.
+                  </p>
+                  {bill.editorialReview.uncertaintyNotes.length > 0 ? (
+                    <div className="bill-page__uncertainty">
+                      <strong>Coverage limitations</strong>
+                      <ul>
+                        {bill.editorialReview.uncertaintyNotes.map((note) => (
+                          <li key={note}>{note}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                </>
               ) : null}
             </section>
           </aside>

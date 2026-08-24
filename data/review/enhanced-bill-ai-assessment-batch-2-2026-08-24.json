@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "frameworkVersion": "editorial-bill-review-v1",
+  "sourceSnapshotId": "phase-9.3-batch-2-enhanced-review:2026-08-24",
+  "assessedAt": "2026-08-24T17:08:02.494Z",
+  "assessor": {
+    "type": "ai-assisted",
+    "system": "OpenAI Codex",
+    "humanApprovalRequired": true
+  },
+  "evidenceCapture": {
+    "retrievedAt": "2026-08-24T17:08:02.494Z",
+    "parserVersion": "pypdf-6.10.0-plus-enhanced-bill-review-v1",
+    "normalization": "Unicode text extraction followed by lowercase alphanumeric normalization for enrolled-digest comparison",
+    "coverage": "All 10 enrolled bill PDFs, all 40 captured NELIS source documents, 20 roll calls, and the official veto audit",
+    "validationState": "human-approved-for-publication"
+  },
+  "scope": {
+    "records": 10,
+    "capturedOfficialSources": 40,
+    "capturedSourcesMatchingSnapshot": 40,
+    "enrolledBillPdfs": 10,
+    "recordedRollCalls": 20
+  },
+  "sharedEvidence": [
+    {
+      "organization": "Nevada Legislature (NELIS)",
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed",
+      "purpose": "Official veto qualification audit",
+      "retrievedAt": "2026-08-22T21:16:36.765Z",
+      "documentSha256": "2ed737a8e03cf607f1e852b03f260fe277ecf25a1ef2ecaa0f6b3e9f1c1bec71"
+    }
+  ],
+  "results": [
+    {
+      "billIdentifier": "AB79",
+      "candidateFingerprint": "73b8882cee5eb2886d02fd27c088e1b5af7f7c38709616a421ea3c3073b17b3c",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB79_EN.pdf",
+        "sha256": "c93ee3617a33ae632b8b8d581ac97ec0ad4d61c16b79e82475a78a00949938ac",
+        "pages": 24,
+        "digestNormalizedSimilarity": 0.9967
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12528", "classification": "passage" },
+        { "voteId": "nv-vote:13020", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects the three amendments and final campaign-finance provisions; NELIS identifies the Assembly committee sponsor, both referral committees, the veto, and two supported chamber passage votes."
+    },
+    {
+      "billIdentifier": "AB82",
+      "candidateFingerprint": "fb06eb6db8bc510ca86867eebeab886fde282fdc9ad17f284b99423100fc04b1",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB82_EN.pdf",
+        "sha256": "74b51166fdbe745ca94d42576fb98c41318151691408930ee658b10cab41bb02",
+        "pages": 2,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass-with-disclosure"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12380", "classification": "passage" },
+        { "voteId": "nv-vote:12797", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [
+        "The NELIS overview labels the listed Senate participants as co-sponsors, while the enrolled bill heading calls them joint sponsors; this record follows the NELIS overview role label."
+      ],
+      "reason": "The enrolled digest, two amendments, veto history, named participants, committees, and both passage votes reconcile. The differing official sponsor-role labels are narrow, disclosed, and do not change the bill's substance or vote record."
+    },
+    {
+      "billIdentifier": "AB88",
+      "candidateFingerprint": "50bf00422fd38e76a5e0424f3f687a2161dc0977f11a6b9853764b9104cc95a0",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB88_EN.pdf",
+        "sha256": "dfdd4edf248ee7610a71a014655691ceaa23257d76b2cb2f8ae18bc11fcac15c",
+        "pages": 2,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12529", "classification": "passage" },
+        { "voteId": "nv-vote:12967", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects both amendments and final juvenile-record provisions; NELIS identifies the Assembly committee sponsor, both Judiciary referrals, the veto, and the two chamber passage votes."
+    },
+    {
+      "billIdentifier": "AB98",
+      "candidateFingerprint": "e057b2562f7bc771fc2330e1637d28c1c8ba5d3ff4e45131e81b9d401553e9a9",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB98_EN.pdf",
+        "sha256": "8af832bf5b3d097819b79b61a30d224e783540c5b63ab6ab1775ff3e7da4a44e",
+        "pages": 2,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass-with-disclosure"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12294", "classification": "passage" },
+        { "voteId": "nv-vote:12800", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [
+        "The NELIS overview labels the listed Senate participants as co-sponsors, while the enrolled bill heading calls them joint sponsors; this record follows the NELIS overview role label."
+      ],
+      "reason": "The enrolled digest, Assembly amendment, veto history, named participants, committees, and both passage votes reconcile. The differing official sponsor-role labels are narrow, disclosed, and do not change the bill's substance or vote record."
+    },
+    {
+      "billIdentifier": "AB112",
+      "candidateFingerprint": "2dc35285bf685764262492fa2e342f372cd59e94b23481048395b4052fc47c68",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB112_EN.pdf",
+        "sha256": "fc7eee73b927d995d6a248b8049c0fb691461c54775b700ba2a47b6cbaaceb46",
+        "pages": 4,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12534", "classification": "passage" },
+        { "voteId": "nv-vote:13025", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects both amendments and the final sick-leave provisions; the sponsor, Commerce and Labor committees, veto history, and both passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB144",
+      "candidateFingerprint": "14594ddadcbe1cadc9fae9d1f8bbc1c6382e8a7f67b726f461dde63ef38abbe8",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB144_EN.pdf",
+        "sha256": "30c0ed0dd302d5f8a2dec77e461ae6f2626b68ee804358ff3b10d9067e7b20ab",
+        "pages": 2,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12295", "classification": "passage" },
+        { "voteId": "nv-vote:12805", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The unamended enrolled digest and text, sponsor, Government Affairs committees, veto history, and both as-introduced passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB155",
+      "candidateFingerprint": "e21591315d0e7144f09132323390be4b7852727c1a217cdf658bc0afcf86c6f0",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB155_EN.pdf",
+        "sha256": "70dec2b9265368b8bbe4a5977d339e952b2879a0f1b9070139363e58e0dbece6",
+        "pages": 8,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12391", "classification": "passage" },
+        { "voteId": "nv-vote:13104", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects the Assembly amendment and final mandatory-subject bargaining provisions; sponsors, Government Affairs committees, veto history, and both passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB185",
+      "candidateFingerprint": "76a43d1cb63c8e4e3dcbb84cad0c7d310e2e1dc58a51d4f4a842e845f2bb83b2",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB185_EN.pdf",
+        "sha256": "6045a4fc14b80bb86bd93ba2f6162cf1226c3866e6a6b219b3c8d9495aa293b7",
+        "pages": 4,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12394", "classification": "passage" },
+        { "voteId": "nv-vote:13105", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects both amendments and the final residential child-care provisions; the sponsor, referral committees, concurrence history, veto, and both passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB188",
+      "candidateFingerprint": "c2ffd1dc7a55139f80013c73c290182ac3726af16c388ac7a7cc34784b50764b",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB188_EN.pdf",
+        "sha256": "8a933a51991546bd935ed1902dc7a90ac66d3aed5157f1e2d7a44a59344379f0",
+        "pages": 12,
+        "digestNormalizedSimilarity": 0.998
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:13334", "classification": "passage" },
+        { "voteId": "nv-vote:13477", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects all three amendments, final benefits provisions, appropriation, and interim study; the sponsor, three committees, concurrence, veto, and both passage votes reconcile."
+    },
+    {
+      "billIdentifier": "AB201",
+      "candidateFingerprint": "1dd2f1648da303fc71d9848cca7c77949b00b5b23a92a1d662e14fd160820b3a",
+      "disposition": "recommend-approval",
+      "enrolledText": {
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB201_EN.pdf",
+        "sha256": "94bada221931ed9f32f78b6c13be0219a21b3a57e6e85f507cfe33ff3f144519",
+        "pages": 8,
+        "digestNormalizedSimilarity": 1.0
+      },
+      "checks": {
+        "identity": "pass",
+        "sourceIntegrity": "pass",
+        "digestFidelity": "pass",
+        "amendments": "pass",
+        "status": "pass",
+        "peopleAndCommittees": "pass",
+        "votes": "pass",
+        "selectionNeutrality": "pass",
+        "uncertainty": "pass"
+      },
+      "voteClassifications": [
+        { "voteId": "nv-vote:12549", "classification": "passage" },
+        { "voteId": "nv-vote:12813", "classification": "passage" }
+      ],
+      "uncertaintyNotes": [],
+      "reason": "The enrolled digest reflects the Assembly amendment and final eviction-record sealing provisions; the sponsor, Judiciary committees, veto history, and both passage votes reconcile."
+    }
+  ],
+  "summary": {
+    "recommendApproval": 10,
+    "changesRequired": 0,
+    "needsClarification": 0,
+    "humanApprovalsRecordedAtAssessment": 0
+  },
+  "humanDecisionState": "approved",
+  "humanDecision": {
+    "reviewer": {
+      "name": "william elder",
+      "role": "founder"
+    },
+    "reviewedAt": "2026-08-24T17:19:39.853Z",
+    "decisionLedger": "enhanced-bill-editorial-decisions-batch-2.json",
+    "approvedRecords": 10,
+    "coverageLimitationsPreservedFor": ["AB82", "AB98"]
+  }
+}

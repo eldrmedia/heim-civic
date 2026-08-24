@@ -127,10 +127,10 @@ mailbox configuration and fails closed when it is absent. No request data,
 address, correction content, waitlist contact, token, or raw network address is
 included in health output.
 
-The Phase 9.2 review queue follows a staged-publication boundary. A checked-in
-manifest selects candidates under FR-007, a server-side generator builds and
-validates checksummed official-source packages, and the public selection-log
-repository exposes only queue facts. Generated records remain
+The Phase 9.2 and 9.3 review queues follow a staged-publication boundary.
+Checked-in, batch-specific manifests select candidates under FR-007, a
+server-side generator builds and validates checksummed official-source packages,
+and the public selection-log repository combines only queue facts. Generated records remain
 `awaiting-human-review` and are excluded from enhanced routes until an
 accountable editor records approval.
 
