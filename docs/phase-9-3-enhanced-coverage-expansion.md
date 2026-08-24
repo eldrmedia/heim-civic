@@ -53,10 +53,41 @@ so all ten Batch 2 records now have local enhanced routes. The public records fo
 AB82 and AB98 retain the disclosed NELIS “co-sponsor” versus enrolled-heading
 “joint sponsor” coverage limitation.
 
-## Remaining Phase 9.3 work
+## Final coverage and integrity audit
 
-1. Audit the resulting 30-plus enhanced Nevada records for subject breadth,
-   consistent labels, source health, accessibility, search, and sitemap coverage.
+Run `npm run data:audit-enhanced-coverage` to reproduce the FR-007, FR-008, and
+FR-009 audit in `data/review/phase-9-3-final-coverage-audit.json`. The audit
+reconciles published Nevada records to the official index and automatic veto
+qualifiers, checks the 30–50 target and all ten required subjects, validates
+required bill fields, source hashes, roll-call totals and original values,
+checks accountable approvals and preserved limitations, and records selection-
+log coverage. Search, sitemap, accessibility, source-health, and production-
+build coverage remain enforced by the repository gates.
+
+The August 24, 2026 run verifies 31 published Nevada records, 125 unique source
+documents, 63 roll calls, every required subject, official-index reconciliation,
+complete required fields, source integrity, vote integrity, public selection-log
+coverage, and the approved AB82 and AB98 limitations. Search and sitemap tests
+now assert every enhanced route rather than representative samples.
+
+The audit is intentionally `action-required`, not closed. AB83 is the original
+vertical-slice record and predates the standardized human decision ledger. It
+has source-verified content, but it does not retain a reviewer, role, UTC review
+time, candidate fingerprint, or uncertainty decision. Its two state vote labels
+also use the older “Final passage” wording instead of the reviewed “Passage”
+vocabulary. The public selection log and bill page now identify this governance
+gap rather than implying approval. AB44's reviewed source snapshot contains no
+sponsor entity; its public page now states that condition and links readers to
+the authoritative record instead of rendering an unexplained empty list.
+
+### Remaining closure action
+
+1. Reconstruct and assess an AB83 evidence packet under the current editorial
+   framework.
+2. Obtain an accountable human decision against the exact candidate fingerprint.
+3. If approved, normalize the two vote labels through the promotion path, retain
+   the decision metadata, rerun the audit, and require `ready` status before
+   declaring Phase 9.3 complete.
 
 ## Batch 3 selection and preparation
 

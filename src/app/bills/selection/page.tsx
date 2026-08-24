@@ -14,12 +14,15 @@ export const metadata: Metadata = {
 export default function EnhancedBillSelectionPage() {
   const bundle = getEnhancedBillReviewBundle();
   const publishedBills = getAllPilotBills();
-  const publishedNevadaCount = publishedBills.filter(
+  const publishedNevadaBills = publishedBills.filter(
     (bill) => bill.jurisdiction === "state",
-  ).length;
-  const promotedIdentifiers = publishedBills
+  );
+  const promotedIdentifiers = publishedNevadaBills
     .filter((bill) => bill.editorialReview?.state === "human-approved")
     .map((bill) => bill.identifier);
+  const legacyPublishedBills = publishedNevadaBills.filter(
+    (bill) => !bill.editorialReview,
+  );
 
   return (
     <ContentPageTemplate
@@ -30,7 +33,8 @@ export default function EnhancedBillSelectionPage() {
     >
       <EnhancedBillSelectionLog
         bundle={bundle}
-        publishedNevadaCount={publishedNevadaCount}
+        legacyPublishedBills={legacyPublishedBills}
+        publishedNevadaCount={publishedNevadaBills.length}
         promotedIdentifiers={promotedIdentifiers}
       />
     </ContentPageTemplate>

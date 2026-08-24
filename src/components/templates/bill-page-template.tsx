@@ -183,27 +183,35 @@ export function BillPageTemplate({
             </section>
             <section className="bill-page__panel">
               <h2>Sponsors</h2>
-              <ul>
-                {bill.people.map((person) => {
-                  const official = person.officialId
-                    ? officials.get(person.officialId)
-                    : undefined;
-                  return (
-                    <li key={`${person.role}-${person.externalId}`}>
-                      <span>
-                        {person.role === "sponsor" ? "Sponsor" : "Cosponsor"}
-                      </span>
-                      {official ? (
-                        <Link href={`/officials/${official.slug}`}>
-                          {person.name}
-                        </Link>
-                      ) : (
-                        <strong>{person.name}</strong>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
+              {bill.people.length > 0 ? (
+                <ul>
+                  {bill.people.map((person) => {
+                    const official = person.officialId
+                      ? officials.get(person.officialId)
+                      : undefined;
+                    return (
+                      <li key={`${person.role}-${person.externalId}`}>
+                        <span>
+                          {person.role === "sponsor" ? "Sponsor" : "Cosponsor"}
+                        </span>
+                        {official ? (
+                          <Link href={`/officials/${official.slug}`}>
+                            {person.name}
+                          </Link>
+                        ) : (
+                          <strong>{person.name}</strong>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p>
+                  No sponsor entity was captured in this reviewed source
+                  snapshot. Check the official bill page for the authoritative
+                  record.
+                </p>
+              )}
             </section>
             <section className="bill-page__panel">
               <h2>Official records</h2>
@@ -221,9 +229,12 @@ export function BillPageTemplate({
             <section className="bill-page__scope">
               <strong>About this coverage</strong>
               <p>
-                {bill.selectionReason} This record has completed enhanced
-                review; index-only bills link to NELIS without claiming the same
-                depth of local coverage.
+                {bill.selectionReason}{" "}
+                {bill.editorialReview
+                  ? "This record has completed accountable enhanced review."
+                  : "This legacy record has enhanced source coverage, but standardized approval metadata is not yet available."}{" "}
+                Index-only bills link to NELIS without claiming the same depth
+                of local coverage.
               </p>
               {bill.editorialReview ? (
                 <>

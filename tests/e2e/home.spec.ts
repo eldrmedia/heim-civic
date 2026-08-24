@@ -345,7 +345,7 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   expect(results.violations).toEqual([]);
 });
 
-test("the enhanced bill selection log exposes all three published batches", async ({
+test("the enhanced bill selection log exposes every published Nevada record", async ({
   page,
 }) => {
   await page.goto("/bills/selection");
@@ -357,17 +357,20 @@ test("the enhanced bill selection log exposes all three published batches", asyn
     }),
   ).toBeVisible();
   await expect(
-    page.getByText("Awaiting human review", { exact: true }),
-  ).toHaveCount(1);
-  await expect(
-    page.getByText(
-      "Only accountable human-approved records are labeled enhanced.",
-    ),
+    page.getByText("Accountable approvals", { exact: true }),
   ).toBeVisible();
   await expect(
     page.getByText("Published after human review", { exact: true }),
   ).toHaveCount(30);
-  await expect(page.locator(".selection-record")).toHaveCount(30);
+  await expect(page.locator(".selection-record")).toHaveCount(31);
+
+  const ab83 = page.locator(".selection-record").filter({ hasText: "AB83" });
+  await expect(
+    ab83.getByText("Legacy approval evidence pending", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    ab83.getByRole("link", { name: "Open legacy bill record" }),
+  ).toHaveAttribute("href", "/bills/nv-83-2025-ab83");
 
   const ab226 = page.locator(".selection-record").filter({ hasText: "AB226" });
   await expect(
@@ -400,6 +403,21 @@ test("the enhanced bill selection log exposes all three published batches", asyn
 
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations).toEqual([]);
+
+  await page.goto("/bills/nv-83-2025-ab44");
+  await expect(
+    page.getByText(
+      "No sponsor entity was captured in this reviewed source snapshot. Check the official bill page for the authoritative record.",
+    ),
+  ).toBeVisible();
+
+  await page.goto("/bills/nv-83-2025-ab83");
+  await expect(
+    page.getByText(
+      "This legacy record has enhanced source coverage, but standardized approval metadata is not yet available.",
+      { exact: false },
+    ),
+  ).toBeVisible();
 
   await page.goto("/bills/nv-83-2025-ab82");
   await expect(

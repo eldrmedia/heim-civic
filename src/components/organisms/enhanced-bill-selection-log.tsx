@@ -5,13 +5,16 @@ import type {
   EnhancedBillReviewBundle,
   EnhancedBillReviewCandidate,
 } from "@/domain/legislation/enhanced-review-types";
+import type { PilotBill } from "@/domain/legislation/types";
 
 export function EnhancedBillSelectionLog({
   bundle,
+  legacyPublishedBills,
   publishedNevadaCount,
   promotedIdentifiers,
 }: {
   bundle: EnhancedBillReviewBundle;
+  legacyPublishedBills: PilotBill[];
   publishedNevadaCount: number;
   promotedIdentifiers: string[];
 }) {
@@ -31,11 +34,9 @@ export function EnhancedBillSelectionLog({
             <p>Completed source validation and enhanced publication.</p>
           </article>
           <article>
-            <span>Awaiting human review</span>
-            <strong>{awaitingReviewCount}</strong>
-            <p>
-              Official source packages are ready; editorial approval is not.
-            </p>
+            <span>Accountable approvals</span>
+            <strong>{promotedIdentifiers.length}</strong>
+            <p>Records with a reviewer, role, UTC time, and fingerprint.</p>
           </article>
           <article>
             <span>Pilot target</span>
@@ -47,15 +48,15 @@ export function EnhancedBillSelectionLog({
         </div>
         <div className="selection-notice" role="note">
           <strong>
-            {awaitingReviewCount === bundle.records.length
-              ? "No queued bill is labeled enhanced yet."
-              : "Only accountable human-approved records are labeled enhanced."}
+            Approval evidence is explicit for every reviewed batch.
           </strong>
           <p>
-            The official records below passed automated source checks. Records
-            labeled “Awaiting human review” still require an accountable editor
-            to review the digest, amendments, status, vote type, and selection
-            explanation before a local enhanced bill page can be published.
+            {awaitingReviewCount > 0
+              ? `${awaitingReviewCount} queued record${awaitingReviewCount === 1 ? "" : "s"} still require accountable human review. `
+              : "All three queued batches have completed accountable human review. "}
+            {legacyPublishedBills.length > 0
+              ? `${legacyPublishedBills.length} earlier published record predates the standard decision ledger and remains explicitly labeled below until that evidence is completed.`
+              : "No legacy approval gaps remain."}
           </p>
         </div>
       </section>
@@ -75,6 +76,9 @@ export function EnhancedBillSelectionLog({
       <section aria-labelledby="selection-queue-title">
         <h2 id="selection-queue-title">Enhanced review queue</h2>
         <div className="selection-log">
+          {legacyPublishedBills.map((bill) => (
+            <LegacySelectionRecord bill={bill} key={bill.id} />
+          ))}
           {bundle.records.map((record) => (
             <SelectionRecord
               isPromoted={promoted.has(record.billIdentifier)}
@@ -85,6 +89,36 @@ export function EnhancedBillSelectionLog({
         </div>
       </section>
     </>
+  );
+}
+
+function LegacySelectionRecord({ bill }: { bill: PilotBill }) {
+  return (
+    <article className="selection-record selection-record--legacy">
+      <div className="selection-record__labels">
+        <span>{bill.policyArea}</span>
+        <span>Legacy approval evidence pending</span>
+      </div>
+      <p className="selection-record__identifier">
+        {bill.identifier} · Original vertical slice
+      </p>
+      <h3>{bill.title}</h3>
+      <p>{bill.selectionReason}</p>
+      <dl>
+        <div>
+          <dt>Automatic rule</dt>
+          <dd>Governor veto or override</dd>
+        </div>
+        <div>
+          <dt>Published records</dt>
+          <dd>
+            {bill.votes.length} recorded roll calls · {bill.sources.length}{" "}
+            source documents
+          </dd>
+        </div>
+      </dl>
+      <Link href={`/bills/${bill.slug}`}>Open legacy bill record →</Link>
+    </article>
   );
 }
 

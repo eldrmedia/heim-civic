@@ -69,8 +69,7 @@ The implemented packet and promotion workflow is documented in
 
 ## Remaining work
 
-- Complete the Phase 9.3 breadth audit now that 31 Nevada bills are published
-  across approximately 30–50 target records with broad
-  subject coverage.
+- Resolve the AB83 legacy approval-metadata finding recorded by the Phase 9.3
+  final coverage audit before declaring the enhanced pilot complete.
 - Test special sessions, non-final vote types, and bills without recorded floor
   votes before broadening the parser.

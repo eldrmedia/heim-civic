@@ -1,6 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import sitemap from "@/app/sitemap";
+import baseLegislationData from "@/data/generated/pilot-legislation.json";
+import promotedLegislationData from "@/data/generated/promoted-enhanced-legislation.json";
 
 afterEach(() => {
   vi.unstubAllEnvs();
@@ -30,6 +32,12 @@ describe("public sitemap", () => {
     expect(urls).toContain(
       "https://civic.example/nevada/bills/nv-83-2025-ab204",
     );
+    for (const bill of [
+      ...baseLegislationData.bills,
+      ...promotedLegislationData.bills,
+    ]) {
+      expect(urls).toContain(`https://civic.example/nevada/bills/${bill.slug}`);
+    }
     expect(urls.some((url) => url.includes("/api/"))).toBe(false);
     expect(new Set(urls).size).toBe(urls.length);
   });

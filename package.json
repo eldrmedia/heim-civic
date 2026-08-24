@@ -25,6 +25,7 @@
     "data:editorial-review-packets:batch-2": "node --import tsx scripts/build-editorial-review-packets.ts --batch=2",
     "data:editorial-review-packets:batch-3": "node --import tsx scripts/build-editorial-review-packets.ts --batch=3",
     "data:promote-enhanced-bills": "node --import tsx scripts/promote-enhanced-bills.ts",
+    "data:audit-enhanced-coverage": "node --import tsx scripts/audit-enhanced-pilot-coverage.ts",
     "data:finance": "tsx scripts/build-finance.ts",
     "ops:source-health": "node --import tsx scripts/check-source-health.ts",
     "audit": "npm audit --audit-level=high",

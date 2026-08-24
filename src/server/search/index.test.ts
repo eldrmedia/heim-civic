@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 
+import baseLegislationData from "@/data/generated/pilot-legislation.json";
+import promotedLegislationData from "@/data/generated/promoted-enhanced-legislation.json";
 import { buildSearchIndex, searchCivicRecords } from "@/server/search/index";
 
 describe("civic search index", () => {
@@ -52,5 +54,24 @@ describe("civic search index", () => {
   it("does not return the full index for short or unrelated queries", () => {
     expect(searchCivicRecords("a")).toEqual([]);
     expect(searchCivicRecords("unpublished imaginary record")).toEqual([]);
+  });
+
+  it("gives every enhanced bill a local searchable route", () => {
+    for (const bill of [
+      ...baseLegislationData.bills,
+      ...promotedLegislationData.bills,
+    ]) {
+      const result = searchCivicRecords(bill.identifier).find(
+        (candidate) => candidate.href === `/bills/${bill.slug}`,
+      );
+
+      expect(result).toMatchObject({
+        kind: "bill",
+        actionLabel:
+          bill.jurisdiction === "state"
+            ? "View enhanced bill record"
+            : "View bill record",
+      });
+    }
   });
 });

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "auditVersion": "phase-9-3-coverage-audit-v1",
+  "auditedAt": "2026-08-24T19:29:22.430Z",
+  "evidenceSnapshots": {
+    "billIndex": "nv-nelis:83rd2025:bill-index:2026-08-22T23:18:39.441Z",
+    "baseLegislation": "phase-4-legislation:2026-08-22",
+    "promotedLegislation": "phase-9.2b-promoted:phase-9.2-enhanced-review:2026-08-23+phase-9.2b-promoted:phase-9.3-batch-2-enhanced-review:2026-08-24+phase-9.2b-promoted:phase-9.3-batch-3-enhanced-review:2026-08-24"
+  },
+  "status": "action-required",
+  "requirements": ["FR-007", "FR-008", "FR-009"],
+  "metrics": {
+    "publishedNevadaBills": 31,
+    "humanApprovedNevadaBills": 30,
+    "selectionLogRecords": 31,
+    "sourceDocuments": 125,
+    "recordedVotes": 63,
+    "subjectDistribution": {
+      "Budget and tax": 1,
+      "Civil rights and social services": 5,
+      "Criminal justice and public safety": 5,
+      "Education": 3,
+      "Elections and government": 4,
+      "Environment, water, and energy": 1,
+      "Health": 4,
+      "Housing": 2,
+      "Labor and business": 4,
+      "State government and observances": 1,
+      "Transportation": 1
+    }
+  },
+  "checks": {
+    "targetRange": true,
+    "subjectBreadth": true,
+    "officialIndexReconciliation": true,
+    "requiredBillFields": true,
+    "sourceIntegrity": true,
+    "voteIntegrity": true,
+    "accountableEditorialApproval": false,
+    "publicSelectionLogCoverage": true,
+    "approvedLimitationsPreserved": true
+  },
+  "findings": [
+    {
+      "id": "HCN-9.3-001",
+      "state": "open",
+      "severity": "blocker",
+      "requirement": "FR-007",
+      "title": "Published enhanced record lacks accountable approval metadata",
+      "affectedRecords": ["AB83"],
+      "evidence": "The published record has no reviewer name, role, UTC review time, candidate fingerprint, or preserved uncertainty decision.",
+      "requiredAction": "Reconstruct an evidence packet, complete human editorial review, and promote the unchanged fingerprint through the standard decision ledger before closing Phase 9.3."
+    },
+    {
+      "id": "HCN-9.3-003",
+      "state": "open",
+      "severity": "warning",
+      "requirement": "FR-009",
+      "title": "Legacy state vote label differs from the reviewed vocabulary",
+      "affectedRecords": ["AB83"],
+      "evidence": "The record uses “Final passage”; reviewed Nevada batches use the public label “Passage.” The meanings do not conflict, but the presentation is inconsistent.",
+      "requiredAction": "Confirm and normalize the label as part of the record's next accountable editorial review."
+    },
+    {
+      "id": "HCN-9.3-004",
+      "state": "resolved",
+      "severity": "observation",
+      "requirement": "FR-007",
+      "title": "Missing sponsor entity is explicitly disclosed",
+      "affectedRecords": ["AB44"],
+      "evidence": "The reviewed AB44 candidate contains an empty sponsor array. The public page now preserves that value and explains that no sponsor entity was captured in the reviewed source snapshot.",
+      "requiredAction": "Retain the textual fallback and recheck the official record during the next source refresh."
+    }
+  ]
+}
