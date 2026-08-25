@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "frameworkVersion": "editorial-bill-review-v1",
+  "candidateFingerprintVersion": "v2",
+  "sourceSnapshotId": "phase-9.3-legacy-ab83-reconciliation:2026-08-25",
+  "billIdentifier": "AB83",
+  "candidateFingerprint": "431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8",
+  "assessedAt": "2026-08-25T01:30:25.159Z",
+  "assessor": {
+    "type": "ai-assisted",
+    "system": "OpenAI Codex",
+    "humanApprovalRequired": true
+  },
+  "evidenceCapture": {
+    "retrievedAt": "2026-08-25T01:29:58.448Z",
+    "parserVersion": "pypdf-6.10.0-plus-enhanced-bill-review-v1-plus-candidate-fingerprint-v2",
+    "coverage": "Fresh NELIS overview, vote summary, both complete member roll calls, enrolled bill, both adopted amendments, and official veto audit",
+    "capturedOfficialSources": 4,
+    "capturedSourcesMatchingSnapshot": 4,
+    "validationState": "human-approved-for-publication"
+  },
+  "evidence": {
+    "officialOverviewUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
+    "vetoReport": {
+      "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed",
+      "retrievedAt": "2026-08-22T21:16:36.765Z",
+      "documentSha256": "2ed737a8e03cf607f1e852b03f260fe277ecf25a1ef2ecaa0f6b3e9f1c1bec71"
+    },
+    "enrolledText": {
+      "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB83_EN.pdf",
+      "sha256": "0bfbb84368893e7e5b80bb1dbfa2312c43fc363bd278122e160fd02f196bdcd8",
+      "pages": 2,
+      "digestNormalizedSimilarity": 1
+    },
+    "adoptedAmendments": [
+      {
+        "number": 69,
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/Amendments/A_AB83_69.pdf",
+        "sha256": "21ea87df6e34df0e09f7c7f38bf624adb3b742e68df6516d08dae63aae00c18e",
+        "effect": "Expanded Assembly sponsorship and added Senator Rochelle Nguyen as joint sponsor; it did not amend the summary, title, preamble, or Legislative Counsel's Digest."
+      },
+      {
+        "number": 692,
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/Amendments/A_AB83_R1_692.pdf",
+        "sha256": "e19fcdb25b6ba937b2045c9d9b0ec6fffd5e6cdbfe3fa23d1b39e2da13777412",
+        "effect": "Removed Assemblymember Heidi Kasama from the sponsorship heading; it did not amend the summary, title, preamble, joint sponsorship, or Legislative Counsel's Digest."
+      }
+    ],
+    "legacySnapshotComparison": {
+      "officialDigest": "exact-match",
+      "officialTitle": "exact-match",
+      "actions": "exact-match",
+      "committees": "exact-match",
+      "people": "exact-match",
+      "voteRecordsExcludingLegacyQuestionLabels": "exact-match"
+    }
+  },
+  "proposedReconciliation": {
+    "subjectArea": {
+      "from": "State government and observances",
+      "to": "Civil rights and social services",
+      "reason": "Uses the established enhanced taxonomy and matches AB98, the analogous reviewed labor-leader observance record."
+    },
+    "selectionReason": "Automatically qualified because the official Nevada governor-veto report lists AB83; this measure was also the original source-verified legislation vertical slice.",
+    "voteLabels": [
+      {
+        "voteId": "nv-vote:12381",
+        "classification": "passage",
+        "publicLabel": "Passage",
+        "reason": "Assembly passage on April 17, 2025, by 28-14."
+      },
+      {
+        "voteId": "nv-vote:12798",
+        "classification": "passage",
+        "publicLabel": "Passage",
+        "reason": "Senate passage on May 21, 2025, by 15-6."
+      }
+    ],
+    "officialSummary": {
+      "kind": "official-digest"
+    },
+    "uncertaintyNotes": [
+      "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label."
+    ]
+  },
+  "checks": {
+    "identity": "pass",
+    "sourceIntegrity": "pass",
+    "digestFidelity": "pass",
+    "amendments": "pass",
+    "status": "pass",
+    "peopleAndCommittees": "pass-with-disclosed-source-label-difference",
+    "votes": "pass",
+    "selectionNeutrality": "pass",
+    "uncertainty": "pass"
+  },
+  "disposition": "recommend-approval",
+  "humanDecisionState": "approved",
+  "humanDecision": {
+    "reviewer": {
+      "name": "william elder",
+      "role": "founder"
+    },
+    "reviewedAt": "2026-08-25T01:34:28.608Z",
+    "decisionLedger": "data/review/enhanced-bill-editorial-decisions-legacy-ab83.json"
+  },
+  "reason": "The fresh official package materially matches the legacy public record. The enrolled digest is an exact normalized match, both adopted amendments are accounted for, the veto status and both passage roll calls reconcile, and the sponsor-role source difference is explicitly disclosed. Approval would bind the complete v2 candidate, normalize its taxonomy and vote labels, and close the legacy governance gap without changing the official summary."
+}

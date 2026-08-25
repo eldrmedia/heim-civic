@@ -20,8 +20,11 @@ export default function EnhancedBillSelectionPage() {
   const promotedIdentifiers = publishedNevadaBills
     .filter((bill) => bill.editorialReview?.state === "human-approved")
     .map((bill) => bill.identifier);
+  const queuedIdentifiers = new Set(
+    bundle.records.map((record) => record.billIdentifier),
+  );
   const legacyPublishedBills = publishedNevadaBills.filter(
-    (bill) => !bill.editorialReview,
+    (bill) => !queuedIdentifiers.has(bill.identifier),
   );
 
   return (

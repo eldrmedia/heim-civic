@@ -70,24 +70,55 @@ complete required fields, source integrity, vote integrity, public selection-log
 coverage, and the approved AB82 and AB98 limitations. Search and sitemap tests
 now assert every enhanced route rather than representative samples.
 
-The audit is intentionally `action-required`, not closed. AB83 is the original
-vertical-slice record and predates the standardized human decision ledger. It
-has source-verified content, but it does not retain a reviewer, role, UTC review
-time, candidate fingerprint, or uncertainty decision. Its two state vote labels
-also use the older “Final passage” wording instead of the reviewed “Passage”
-vocabulary. The public selection log and bill page now identify this governance
-gap rather than implying approval. AB44's reviewed source snapshot contains no
-sponsor entity; its public page now states that condition and links readers to
+The first audit was intentionally `action-required` because AB83, the original
+vertical-slice record, predated the standardized human decision ledger. The
+August 25 reconciliation closed that governance gap: AB83 now retains its
+reviewer, role, UTC review time, v2 candidate fingerprint, uncertainty decision,
+and normalized `Passage` vote labels. The refreshed audit is `ready` with all 31
+Nevada records human approved. AB44's reviewed source snapshot still contains
+no sponsor entity; its public page states that condition and links readers to
 the authoritative record instead of rendering an unexplained empty list.
 
-### Remaining closure action
+### Closure result
 
-1. Reconstruct and assess an AB83 evidence packet under the current editorial
-   framework.
-2. Obtain an accountable human decision against the exact candidate fingerprint.
-3. If approved, normalize the two vote labels through the promotion path, retain
-   the decision metadata, rerun the audit, and require `ready` status before
-   declaring Phase 9.3 complete.
+The AB83 evidence packet was reconstructed under the current editorial
+framework, approved against the exact v2 fingerprint, reconciled into the public
+snapshot, and verified by a `ready` final audit. Phase 9.3's standardized
+approval-metadata finding is closed.
+
+## AB83 reconciliation readiness
+
+The source package is reproducible with:
+
+```bash
+npm run data:enhanced-bill-review:legacy-ab83
+npm run data:editorial-review-packets:legacy-ab83
+```
+
+The August 25, 2026 package freshly captures the NELIS overview, vote summary,
+and both complete member roll calls. The assessment additionally hashes and
+reviews the two-page enrolled bill and adopted Amendments 69 and 692. The
+official digest, title, actions, committees, people, vote records, and totals
+materially match the original snapshot. Amendment 69 changed sponsorship;
+Amendment 692 removed one Assembly sponsor. Neither changed the official digest.
+
+The advisory assessment recommends approval with one public limitation: NELIS
+labels Senator Rochelle Nguyen a co-sponsor, while the enrolled heading calls
+her joint sponsor. The candidate follows the NELIS role label, consistently with
+the already approved AB82 and AB98 records. The proposed reconciliation also
+uses the established `Civil rights and social services` category, matching the
+analogous AB98 labor-leader observance record, and classifies both chamber roll
+calls as `Passage`.
+
+The packet uses candidate fingerprint v2, which additionally binds subject
+taxonomy, official and evidence URLs, and selection factors. Existing approved
+batches retain their original v1 fingerprints; their decision ledgers are not
+rewritten. William Elder, founder, approved AB83 at
+`2026-08-25T01:34:28.608Z` against fingerprint
+`431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8`.
+The reconciliation completed successfully and preserves the public limitation
+that NELIS labels Senator Rochelle Nguyen a co-sponsor while the enrolled bill
+heading calls her joint sponsor.
 
 ## Batch 3 selection and preparation
 

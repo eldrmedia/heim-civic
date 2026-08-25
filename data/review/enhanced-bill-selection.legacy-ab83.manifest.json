@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "batch": 0,
+  "coverageLabel": "Phase 9.3 AB83 legacy editorial reconciliation",
+  "targetRange": {
+    "minimum": 30,
+    "maximum": 50
+  },
+  "records": [
+    {
+      "billIdentifier": "AB83",
+      "billKey": "11904",
+      "subjectArea": "Civil rights and social services",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Automatically qualified because the official Nevada governor-veto report lists AB83; this measure was also the original source-verified legislation vertical slice.",
+      "reviewState": "source-preparation"
+    }
+  ]
+}

@@ -1,11 +1,16 @@
 import { describe, expect, it } from "vitest";
 
+import legacyReviewData from "../../src/data/generated/enhanced-bill-review-legacy-ab83.json";
 import reviewData from "../../src/data/generated/enhanced-bill-review.json";
+import publishedData from "../../src/data/generated/pilot-legislation.json";
+import readinessData from "../../data/review/ab83-legacy-reconciliation-readiness-2026-08-25.json";
 import type { EnhancedBillReviewBundle } from "../../src/domain/legislation/enhanced-review-types";
+import type { LegislationBundle } from "../../src/domain/legislation/types";
 import {
   buildEditorialReviewPackets,
   fingerprintCandidate,
   promoteApprovedCandidates,
+  reconcileLegacyPublishedCandidate,
 } from "./enhanced-bill-promotion";
 
 const reviewBundle = reviewData as unknown as EnhancedBillReviewBundle;
@@ -13,6 +18,9 @@ const candidate = reviewBundle.records[0]!;
 const reconsideredCandidate = reviewBundle.records.find(
   (record) => record.billIdentifier === "AB44",
 )!;
+const legacyReviewBundle =
+  legacyReviewData as unknown as EnhancedBillReviewBundle;
+const legacyCandidate = legacyReviewBundle.records[0]!;
 
 function approvedDecision() {
   return {
@@ -89,6 +97,43 @@ function reconsiderationDecision() {
   };
 }
 
+function legacyApprovedDecision() {
+  return {
+    schemaVersion: 1,
+    sourceSnapshotId: legacyReviewBundle.snapshotId,
+    decisions: [
+      {
+        billIdentifier: "AB83",
+        candidateFingerprint: fingerprintCandidate(legacyCandidate, "v2"),
+        decision: "approved",
+        checklist: {
+          digestComparedToEnrolledText: true,
+          materialAmendmentsReviewed: true,
+          statusAndLatestActionConfirmed: true,
+          votesClassified: true,
+          sponsorsAndCommitteesReviewed: true,
+          selectionExplanationApproved: true,
+        },
+        voteDecisions: legacyCandidate.votes.map((vote) => ({
+          voteId: vote.id,
+          classification: "passage",
+          evidenceUrl: vote.sourceUrl,
+          note: "Confirmed against the official history and complete roll call.",
+        })),
+        summary: { kind: "official-digest" },
+        uncertaintyNotes: [
+          "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label.",
+        ],
+        reviewer: {
+          name: "Accountable Editor",
+          role: "Civic records editor",
+        },
+        reviewedAt: "2026-08-25T01:30:00.000Z",
+      },
+    ],
+  };
+}
+
 describe("enhanced bill editorial promotion", () => {
   it("builds reproducible packets for every queued record and vote", () => {
     const packets = buildEditorialReviewPackets(reviewBundle);
@@ -96,6 +141,50 @@ describe("enhanced bill editorial promotion", () => {
     expect(packets.records).toHaveLength(10);
     expect(packets.records.flatMap((record) => record.votes)).toHaveLength(21);
     expect(packets.records[0]?.candidateFingerprint).toHaveLength(64);
+  });
+
+  it("binds the v2 fingerprint to taxonomy and evidence fields", () => {
+    const packets = buildEditorialReviewPackets(legacyReviewBundle, "v2");
+    const changedSubject = {
+      ...legacyCandidate,
+      subjectArea: "Elections and government" as const,
+    };
+
+    expect(packets.candidateFingerprintVersion).toBe("v2");
+    expect(packets.records[0]?.candidateFingerprint).not.toBe(
+      fingerprintCandidate(changedSubject, "v2"),
+    );
+    expect(packets.records[0]?.candidateFingerprint).toBe(
+      readinessData.candidateFingerprint,
+    );
+  });
+
+  it("reconciles the legacy record without duplicating its public route", () => {
+    const reconciled = reconcileLegacyPublishedCandidate(
+      publishedData as unknown as LegislationBundle,
+      legacyReviewBundle,
+      legacyApprovedDecision(),
+    );
+    const ab83Records = reconciled.bills.filter(
+      (bill) => bill.identifier === "AB83",
+    );
+
+    expect(ab83Records).toHaveLength(1);
+    expect(ab83Records[0]).toMatchObject({
+      policyArea: "Civil rights and social services",
+      selectionReason: legacyCandidate.queueReason,
+      editorialReview: {
+        state: "human-approved",
+        candidateFingerprint: fingerprintCandidate(legacyCandidate, "v2"),
+      },
+    });
+    expect(ab83Records[0]?.votes.map((vote) => vote.question)).toEqual([
+      "Passage",
+      "Passage",
+    ]);
+    expect(
+      reconciled.sources.some((source) => source.id === "nv-ab83-overview"),
+    ).toBe(false);
   });
 
   it("promotes a fully reviewed record with accountable approval metadata", () => {

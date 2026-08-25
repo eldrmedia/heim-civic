@@ -1,29 +1,26 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "phase-4-legislation:2026-08-22+legacy-reconciled:phase-9.3-legacy-ab83-reconciliation:2026-08-25",
+  "snapshotId": "phase-9.3-legacy-ab83-reconciliation:2026-08-25",
   "generatedAt": "2026-08-25T01:29:58.464Z",
-  "parserVersion": "pilot-legislation-v1+enhanced-bill-promotion-v2",
-  "coverageLabel": "Accountably reviewed Nevada legacy record and federal pilot legislation",
-  "bills": [
+  "parserVersion": "enhanced-bill-review-v1",
+  "coverageLabel": "Phase 9.3 AB83 legacy editorial reconciliation",
+  "targetRange": { "minimum": 30, "maximum": 50 },
+  "records": [
     {
       "id": "nv-83-2025-ab83",
-      "slug": "nv-83-2025-ab83",
-      "jurisdiction": "state",
-      "identifier": "AB83",
-      "session": "Nevada 83rd Session (2025)",
-      "title": "Designates “Larry Itliong Day” as a day of observance in this State. (BDR 19-99)",
+      "billIdentifier": "AB83",
+      "billKey": "11904",
+      "batch": 0,
+      "subjectArea": "Civil rights and social services",
+      "officialSynopsis": "Designates “Larry Itliong Day” as a day of observance in this State. (BDR 19-99)",
       "officialTitle": "AN ACT relating to days of observance; requiring the Governor to annually proclaim October 25 to be “Larry Itliong Day” in the State of Nevada; and providing other matters properly relating thereto.",
-      "policyArea": "Civil rights and social services",
+      "officialDigest": "Under existing law, various days, weeks and months of observance are recognized in this State. (NRS 236.018-236.095) This bill requires the Governor to annually proclaim October 25 to be “Larry Itliong Day” in the State of Nevada.",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
+      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB83/Text",
       "status": {
         "label": "Vetoed",
         "asOf": "2025-06-03",
         "latestAction": "(No further action taken.)"
-      },
-      "officialSummary": {
-        "text": "Under existing law, various days, weeks and months of observance are recognized in this State. (NRS 236.018-236.095) This bill requires the Governor to annually proclaim October 25 to be “Larry Itliong Day” in the State of Nevada.",
-        "attribution": "Official Nevada Legislative Counsel Bureau digest",
-        "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
-        "reviewState": "official-source"
       },
       "committees": [
         "Assembly Government Affairs",
@@ -102,10 +99,7 @@
           "occurredOn": "2024-12-09",
           "text": "Prefiled. Referred to Committee on Government Affairs. To printer."
         },
-        {
-          "occurredOn": "2024-12-12",
-          "text": "From printer."
-        },
+        { "occurredOn": "2024-12-12", "text": "From printer." },
         {
           "occurredOn": "2025-02-04",
           "text": "Read first time. To committee."
@@ -138,10 +132,7 @@
           "occurredOn": "2025-04-17",
           "text": "Read third time. Passed, as amended. Title approved. Preamble adopted. (Yeas: 28, Nays: 14.) To Senate."
         },
-        {
-          "occurredOn": "2025-04-18",
-          "text": "In Senate."
-        },
+        { "occurredOn": "2025-04-18", "text": "In Senate." },
         {
           "occurredOn": "2025-04-23",
           "text": "Read first time. Referred to Committee on Government Affairs. To committee."
@@ -158,10 +149,7 @@
           "occurredOn": "2025-05-21",
           "text": "Read third time. Passed, as amended. Title approved. Preamble adopted. (Yeas: 15, Nays: 6.) To Assembly."
         },
-        {
-          "occurredOn": "2025-05-22",
-          "text": "In Assembly."
-        },
+        { "occurredOn": "2025-05-22", "text": "In Assembly." },
         {
           "occurredOn": "2025-05-26",
           "text": "Senate Amendment No. 692 concurred in. To enrollment."
@@ -174,16 +162,13 @@
           "occurredOn": "2025-06-02",
           "text": "Vetoed by the Governor. Returned to Assembly with Governor's veto message."
         },
-        {
-          "occurredOn": "2025-06-03",
-          "text": "(No further action taken.)"
-        }
+        { "occurredOn": "2025-06-03", "text": "(No further action taken.)" }
       ],
       "votes": [
         {
           "id": "nv-vote:12381",
           "chamber": "Assembly (1st Reprint)",
-          "question": "Passage",
+          "question": "Final-passage roll call (NELIS vote type 3)",
           "result": "Passed",
           "occurredOn": "2025-04-17",
           "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12381&voteResultPanel=All",
@@ -497,7 +482,7 @@
         {
           "id": "nv-vote:12798",
           "chamber": "Senate (2nd Reprint)",
-          "question": "Passage",
+          "question": "Final-passage roll call (NELIS vote type 3)",
           "result": "Passed",
           "occurredOn": "2025-05-21",
           "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12798&voteResultPanel=All",
@@ -662,9 +647,16 @@
           ]
         }
       ],
-      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
-      "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB83/Text",
-      "selectionReason": "Automatically qualified because the official Nevada governor-veto report lists AB83; this measure was also the original source-verified legislation vertical slice.",
+      "automaticFactors": ["governor-veto-or-override"],
+      "impactFactors": [],
+      "queueReason": "Automatically qualified because the official Nevada governor-veto report lists AB83; this measure was also the original source-verified legislation vertical slice.",
+      "reviewState": "awaiting-human-review",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "evidenceUrls": [
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bills/Vetoed"
+      ],
       "sources": [
         {
           "id": "ab83-overview",
@@ -704,297 +696,6 @@
           "documentSha256": "4d5ccf5dfddac3f772ee97a2f052a7c11f4768d5957cdc0c76190b90913c9cc7",
           "coverageLabel": "AB83 legacy reconciliation source package",
           "parserVersion": "enhanced-bill-review-v1",
-          "validationState": "source-verified"
-        }
-      ],
-      "editorialReview": {
-        "state": "human-approved",
-        "reviewerName": "william elder",
-        "reviewerRole": "founder",
-        "reviewedAt": "2026-08-25T01:34:28.608Z",
-        "candidateFingerprint": "431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8",
-        "uncertaintyNotes": [
-          "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label."
-        ]
-      }
-    },
-    {
-      "id": "us-119-hr1366",
-      "slug": "us-119-hr1366",
-      "jurisdiction": "federal",
-      "identifier": "H.R. 1366",
-      "session": "119th Congress",
-      "title": "Mining Regulatory Clarity Act",
-      "officialTitle": "To provide for the location of multiple hardrock mining mill sites, to establish the Abandoned Hardrock Mine Fund, and for other purposes.",
-      "policyArea": "Environmental Protection",
-      "status": {
-        "label": "Passed House; on Senate calendar",
-        "asOf": "2026-03-17",
-        "latestAction": "Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 357."
-      },
-      "officialSummary": {
-        "text": "Mining Regulatory Clarity ActThis bill allows mining operators to use federal lands for activities ancillary to mining, such as waste disposal, regardless of whether those lands contain mineral deposits valuable enough to be mined (mineral validity). It also establishes the Abandoned Hardrock Mine Fund.The bill addresses a 2022 decision in the U.S. Court of Appeals for the Ninth Circuit related to the Rosemont Copper Mine in Arizona (commonly known as the Rosemont decision, described further in CRS Report R48166). The court held that mining claims are only allowed where mineral validity has been established and that mill site claims are more appropriate means for establishing a mining waste disposal site under the Mining Act.The bill allows a mining operator to (1) locate and include within its plan of operations as many mill site claims (e.g., areas for waste rock disposal) as are reasonably necessary for its operations, and (2) use or occupy public land in accordance with an approved plan of operations.Additionally, the bill requires any revenue generated from fees for such mill site claims to be deposited into the Abandoned Hardrock Mine Fund. The Department of the Interior must use the fund for certain abandoned hardrock mine reclamation activities.",
-        "attribution": "Congressional Research Service summary published by Congress.gov",
-        "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/1366",
-        "reviewState": "official-source"
-      },
-      "committees": ["Natural Resources Committee"],
-      "people": [
-        {
-          "officialId": "us-congress:bioguide:A000369",
-          "externalId": "us-congress:bioguide:A000369",
-          "name": "Mark E. Amodei",
-          "role": "sponsor"
-        },
-        {
-          "officialId": "us-congress:bioguide:H001066",
-          "externalId": "us-congress:bioguide:H001066",
-          "name": "Steven Horsford",
-          "role": "cosponsor"
-        },
-        {
-          "officialId": null,
-          "externalId": "us-congress:bioguide:B001323",
-          "name": "Nicholas J. Begich",
-          "role": "cosponsor"
-        }
-      ],
-      "actions": [
-        {
-          "occurredOn": "2025-02-14",
-          "text": "Introduced in House"
-        },
-        {
-          "occurredOn": "2025-02-14",
-          "text": "Introduced in House"
-        },
-        {
-          "occurredOn": "2025-02-14",
-          "text": "Referred to the House Committee on Natural Resources."
-        },
-        {
-          "occurredOn": "2025-08-29",
-          "text": "Referred to the Subcommittee on Energy and Mineral Resources."
-        },
-        {
-          "occurredOn": "2025-09-03",
-          "text": "Subcommittee Hearings Held"
-        },
-        {
-          "occurredOn": "2025-09-17",
-          "text": "Subcommittee on Energy and Mineral Resources Discharged"
-        },
-        {
-          "occurredOn": "2025-09-17",
-          "text": "Committee Consideration and Mark-up Session Held"
-        },
-        {
-          "occurredOn": "2025-09-17",
-          "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 25 - 17."
-        },
-        {
-          "occurredOn": "2025-11-25",
-          "text": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-386."
-        },
-        {
-          "occurredOn": "2025-11-25",
-          "text": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-386."
-        },
-        {
-          "occurredOn": "2025-11-25",
-          "text": "Placed on the Union Calendar, Calendar No. 336."
-        },
-        {
-          "occurredOn": "2025-12-16",
-          "text": "Rules Committee Resolution H. Res. 951 Reported to House. Rule provides for consideration of H.R. 4776, H.R. 1366, H.R. 845, H.R. 3616, H.R. 3632 and H.R. 4371. The resolution provides for consideration of H.R. 4776, under a structured rule and H.R. 1366, H.R. 845, H.R. 3616, H.R. 3632, and H.R. 4371 under a closed rule. The resolution provides one motion to recommit on each bill."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Considered under the provisions of rule H. Res. 951. (consideration: CR H6044-6049)"
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Rule provides for consideration of H.R. 4776, H.R. 1366, H.R. 845, H.R. 3616, H.R. 3632 and H.R. 4371. The resolution provides for consideration of H.R. 4776, under a structured rule and H.R. 1366, H.R. 845, H.R. 3616, H.R. 3632, and H.R. 4371 under a closed rule. The resolution provides one motion to recommit on each bill."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "DEBATE - The House proceeded with one hour of debate on H.R. 1366."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "The previous question was ordered pursuant to the rule."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Ms. Leger Fernandez moved to recommit to the Committee on Natural Resources. (text: CR H6049)"
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "The previous question on the motion to recommit was ordered pursuant to clause 2(b) of rule XIX."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "POSTPONED PROCEEDINGS - At the conclusion of debate on H.R. 1366, the Chair put the question on motion to recommit and by voice vote announced the noes had prevailed. Ms. Leger Fernandez demanded the yeas and nays and the Chair postponed further proceedings until a time to be announced."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Considered as unfinished business. (consideration: CR H6069-6070)"
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "On motion to recommit Failed by the Yeas and Nays: 205 - 213 (Roll no. 357)."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 219 - 198 (Roll no. 358)."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "On passage Passed by the Yeas and Nays: 219 - 198 (Roll no. 358). (text of amendment in the nature of a substitute: CR H6044)"
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Motion to reconsider laid on the table Agreed to without objection."
-        },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Received in the Senate."
-        },
-        {
-          "occurredOn": "2026-03-17",
-          "text": "Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 357."
-        }
-      ],
-      "votes": [
-        {
-          "id": "us-house-roll:357",
-          "chamber": "U.S. House",
-          "question": "On Motion to Recommit",
-          "result": "Failed",
-          "occurredOn": "2025-12-18",
-          "sourceUrl": "https://clerk.house.gov/Votes/2025357",
-          "memberCoverage": "nevada-delegation-only",
-          "totals": {
-            "yes": 205,
-            "no": 213,
-            "present": 0,
-            "notVoting": 15,
-            "excused": 0,
-            "absent": 0,
-            "total": 433
-          },
-          "memberVotes": [
-            {
-              "officialId": "us-congress:bioguide:A000369",
-              "externalId": "us-congress:bioguide:A000369",
-              "name": "Amodei (NV)",
-              "originalValue": "Nay",
-              "normalizedValue": "no"
-            },
-            {
-              "officialId": "us-congress:bioguide:H001066",
-              "externalId": "us-congress:bioguide:H001066",
-              "name": "Horsford",
-              "originalValue": "Yea",
-              "normalizedValue": "yes"
-            },
-            {
-              "officialId": "us-congress:bioguide:L000590",
-              "externalId": "us-congress:bioguide:L000590",
-              "name": "Lee (NV)",
-              "originalValue": "Yea",
-              "normalizedValue": "yes"
-            },
-            {
-              "officialId": "us-congress:bioguide:T000468",
-              "externalId": "us-congress:bioguide:T000468",
-              "name": "Titus",
-              "originalValue": "Yea",
-              "normalizedValue": "yes"
-            }
-          ]
-        },
-        {
-          "id": "us-house-roll:358",
-          "chamber": "U.S. House",
-          "question": "On Passage",
-          "result": "Passed",
-          "occurredOn": "2025-12-18",
-          "sourceUrl": "https://clerk.house.gov/Votes/2025358",
-          "memberCoverage": "nevada-delegation-only",
-          "totals": {
-            "yes": 219,
-            "no": 198,
-            "present": 0,
-            "notVoting": 16,
-            "excused": 0,
-            "absent": 0,
-            "total": 433
-          },
-          "memberVotes": [
-            {
-              "officialId": "us-congress:bioguide:A000369",
-              "externalId": "us-congress:bioguide:A000369",
-              "name": "Amodei (NV)",
-              "originalValue": "Yea",
-              "normalizedValue": "yes"
-            },
-            {
-              "officialId": "us-congress:bioguide:H001066",
-              "externalId": "us-congress:bioguide:H001066",
-              "name": "Horsford",
-              "originalValue": "Yea",
-              "normalizedValue": "yes"
-            },
-            {
-              "officialId": "us-congress:bioguide:L000590",
-              "externalId": "us-congress:bioguide:L000590",
-              "name": "Lee (NV)",
-              "originalValue": "Nay",
-              "normalizedValue": "no"
-            },
-            {
-              "officialId": "us-congress:bioguide:T000468",
-              "externalId": "us-congress:bioguide:T000468",
-              "name": "Titus",
-              "originalValue": "Nay",
-              "normalizedValue": "no"
-            }
-          ]
-        }
-      ],
-      "officialPageUrl": "https://www.congress.gov/bill/119th-congress/house-bill/1366",
-      "officialTextUrl": "https://www.congress.gov/bill/119th-congress/house-bill/1366/text",
-      "selectionReason": "A Nevada-sponsored federal bill with a Nevada cosponsor and two recorded House votes.",
-      "sources": [
-        {
-          "id": "us-hr1366-status",
-          "organization": "U.S. Government Publishing Office",
-          "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr1366.xml",
-          "retrievedAt": "2026-08-22T19:37:21.475Z",
-          "documentSha256": "f887474f8e27eb12c065bd00daec40f45baca2fa70b202a123314c458ad08a7a",
-          "coverageLabel": "Phase 4 bills and votes vertical slice",
-          "parserVersion": "pilot-legislation-v1",
-          "validationState": "source-verified"
-        },
-        {
-          "id": "us-hr1366-roll357",
-          "organization": "Office of the Clerk, U.S. House of Representatives",
-          "url": "https://clerk.house.gov/evs/2025/roll357.xml",
-          "retrievedAt": "2026-08-22T19:37:21.480Z",
-          "documentSha256": "eb604aae2a3462999425e014968f76eb8368100cc7f179ce9447476f5bb82560",
-          "coverageLabel": "Phase 4 bills and votes vertical slice",
-          "parserVersion": "pilot-legislation-v1",
-          "validationState": "source-verified"
-        },
-        {
-          "id": "us-hr1366-roll358",
-          "organization": "Office of the Clerk, U.S. House of Representatives",
-          "url": "https://clerk.house.gov/evs/2025/roll358.xml",
-          "retrievedAt": "2026-08-22T19:37:21.480Z",
-          "documentSha256": "b1e81849fe9b92a83adeb25f24043f3a8df8fd21ff110411ceb89cdd4db7acf3",
-          "coverageLabel": "Phase 4 bills and votes vertical slice",
-          "parserVersion": "pilot-legislation-v1",
           "validationState": "source-verified"
         }
       ]
@@ -1039,36 +740,6 @@
       "documentSha256": "4d5ccf5dfddac3f772ee97a2f052a7c11f4768d5957cdc0c76190b90913c9cc7",
       "coverageLabel": "AB83 legacy reconciliation source package",
       "parserVersion": "enhanced-bill-review-v1",
-      "validationState": "source-verified"
-    },
-    {
-      "id": "us-hr1366-status",
-      "organization": "U.S. Government Publishing Office",
-      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr1366.xml",
-      "retrievedAt": "2026-08-22T19:37:21.475Z",
-      "documentSha256": "f887474f8e27eb12c065bd00daec40f45baca2fa70b202a123314c458ad08a7a",
-      "coverageLabel": "Phase 4 bills and votes vertical slice",
-      "parserVersion": "pilot-legislation-v1",
-      "validationState": "source-verified"
-    },
-    {
-      "id": "us-hr1366-roll357",
-      "organization": "Office of the Clerk, U.S. House of Representatives",
-      "url": "https://clerk.house.gov/evs/2025/roll357.xml",
-      "retrievedAt": "2026-08-22T19:37:21.480Z",
-      "documentSha256": "eb604aae2a3462999425e014968f76eb8368100cc7f179ce9447476f5bb82560",
-      "coverageLabel": "Phase 4 bills and votes vertical slice",
-      "parserVersion": "pilot-legislation-v1",
-      "validationState": "source-verified"
-    },
-    {
-      "id": "us-hr1366-roll358",
-      "organization": "Office of the Clerk, U.S. House of Representatives",
-      "url": "https://clerk.house.gov/evs/2025/roll358.xml",
-      "retrievedAt": "2026-08-22T19:37:21.480Z",
-      "documentSha256": "b1e81849fe9b92a83adeb25f24043f3a8df8fd21ff110411ceb89cdd4db7acf3",
-      "coverageLabel": "Phase 4 bills and votes vertical slice",
-      "parserVersion": "pilot-legislation-v1",
       "validationState": "source-verified"
     }
   ]

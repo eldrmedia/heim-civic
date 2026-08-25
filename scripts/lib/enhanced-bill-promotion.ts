@@ -17,6 +17,8 @@ import type {
   PilotBill,
 } from "../../src/domain/legislation/types";
 
+export type CandidateFingerprintVersion = "v1" | "v2";
+
 const checklistInstructions = {
   digestComparedToEnrolledText:
     "Compare the official digest with the enrolled and vetoed bill text.",
@@ -31,8 +33,11 @@ const checklistInstructions = {
     "Approve the neutral selection explanation under the published rubric.",
 } satisfies Record<(typeof editorialChecklistKeys)[number], string>;
 
-export function fingerprintCandidate(candidate: EnhancedBillReviewCandidate) {
-  const materialRecord = {
+export function fingerprintCandidate(
+  candidate: EnhancedBillReviewCandidate,
+  version: CandidateFingerprintVersion = "v1",
+) {
+  const commonMaterial = {
     id: candidate.id,
     billIdentifier: candidate.billIdentifier,
     billKey: candidate.billKey,
@@ -51,6 +56,20 @@ export function fingerprintCandidate(candidate: EnhancedBillReviewCandidate) {
       documentSha256,
     })),
   };
+  const materialRecord =
+    version === "v1"
+      ? commonMaterial
+      : {
+          fingerprintVersion: version,
+          ...commonMaterial,
+          batch: candidate.batch,
+          subjectArea: candidate.subjectArea,
+          officialPageUrl: candidate.officialPageUrl,
+          officialTextUrl: candidate.officialTextUrl,
+          automaticFactors: candidate.automaticFactors,
+          impactFactors: candidate.impactFactors,
+          evidenceUrls: candidate.evidenceUrls,
+        };
 
   return createHash("sha256")
     .update(JSON.stringify(materialRecord))
@@ -59,14 +78,18 @@ export function fingerprintCandidate(candidate: EnhancedBillReviewCandidate) {
 
 export function buildEditorialReviewPackets(
   reviewBundle: EnhancedBillReviewBundle,
+  fingerprintVersion: CandidateFingerprintVersion = "v1",
 ): EditorialReviewPacketBundle {
   return {
     schemaVersion: 1,
+    ...(fingerprintVersion === "v2"
+      ? { candidateFingerprintVersion: fingerprintVersion }
+      : {}),
     sourceSnapshotId: reviewBundle.snapshotId,
     generatedAt: reviewBundle.generatedAt,
     records: reviewBundle.records.map((candidate) => ({
       billIdentifier: candidate.billIdentifier,
-      candidateFingerprint: fingerprintCandidate(candidate),
+      candidateFingerprint: fingerprintCandidate(candidate, fingerprintVersion),
       subjectArea: candidate.subjectArea,
       officialPageUrl: candidate.officialPageUrl,
       officialTextUrl: candidate.officialTextUrl,
@@ -90,6 +113,7 @@ export function buildEditorialReviewPackets(
 export function promoteApprovedCandidates(
   reviewBundle: EnhancedBillReviewBundle,
   uncheckedDecisions: unknown,
+  fingerprintVersion: CandidateFingerprintVersion = "v1",
 ): LegislationBundle {
   const decisionsBundle =
     editorialDecisionsBundleSchema.parse(uncheckedDecisions);
@@ -109,7 +133,10 @@ export function promoteApprovedCandidates(
       );
     }
 
-    if (fingerprintCandidate(candidate) !== decision.candidateFingerprint) {
+    if (
+      fingerprintCandidate(candidate, fingerprintVersion) !==
+      decision.candidateFingerprint
+    ) {
       throw new Error(
         `${decision.billIdentifier} changed after editorial review; review it again before promotion`,
       );
@@ -159,6 +186,59 @@ export function promoteApprovedCandidates(
     coverageLabel: "Human-approved Nevada enhanced bill records",
     bills,
     sources,
+  };
+}
+
+export function reconcileLegacyPublishedCandidate(
+  publishedBundle: LegislationBundle,
+  reviewBundle: EnhancedBillReviewBundle,
+  uncheckedDecisions: unknown,
+): LegislationBundle {
+  const promoted = promoteApprovedCandidates(
+    reviewBundle,
+    uncheckedDecisions,
+    "v2",
+  );
+  if (
+    reviewBundle.records.length !== 1 ||
+    reviewBundle.records[0]?.billIdentifier !== "AB83" ||
+    promoted.bills.length !== 1
+  ) {
+    throw new Error(
+      "Legacy reconciliation requires one approved AB83 candidate",
+    );
+  }
+
+  const reviewedBill = promoted.bills[0]!;
+  const matchingRecords = publishedBundle.bills.filter(
+    (bill) => bill.id === reviewedBill.id && bill.identifier === "AB83",
+  );
+  if (matchingRecords.length !== 1) {
+    throw new Error(
+      "The published bundle must contain exactly one matching legacy AB83 record",
+    );
+  }
+
+  const bills = publishedBundle.bills.map((bill) =>
+    bill.id === reviewedBill.id ? reviewedBill : bill,
+  );
+  return {
+    ...publishedBundle,
+    snapshotId: `${publishedBundle.snapshotId}+legacy-reconciled:${reviewBundle.snapshotId}`,
+    generatedAt: [publishedBundle.generatedAt, reviewBundle.generatedAt]
+      .sort()
+      .at(-1)!,
+    parserVersion: `${publishedBundle.parserVersion}+enhanced-bill-promotion-v2`,
+    coverageLabel:
+      "Accountably reviewed Nevada legacy record and federal pilot legislation",
+    bills,
+    sources: [
+      ...new Map(
+        bills.flatMap((bill) =>
+          bill.sources.map((source) => [source.id, source] as const),
+        ),
+      ).values(),
+    ],
   };
 }
 

@@ -27,24 +27,25 @@ import type { NevadaBillIndexBundle } from "../src/domain/legislation/index-type
 import type { OfficialsBundle } from "../src/domain/officials/types";
 
 const projectRoot = process.cwd();
+const isLegacyAb83Reconciliation = process.argv.includes("--legacy-ab83");
 const batchNumber = parseBatchArgument(process.argv.slice(2));
 const parserVersion = "enhanced-bill-review-v1";
-const manifestFileName =
-  batchNumber === 1
+const manifestFileName = isLegacyAb83Reconciliation
+  ? "enhanced-bill-selection.legacy-ab83.manifest.json"
+  : batchNumber === 1
     ? "enhanced-bill-selection.manifest.json"
     : `enhanced-bill-selection.batch-${batchNumber}.manifest.json`;
 const manifestPath = path.join(projectRoot, "data/review", manifestFileName);
-const priorManifestPaths = Array.from(
-  { length: batchNumber - 1 },
-  (_, index) => {
-    const priorBatch = index + 1;
-    const fileName =
-      priorBatch === 1
-        ? "enhanced-bill-selection.manifest.json"
-        : `enhanced-bill-selection.batch-${priorBatch}.manifest.json`;
-    return path.join(projectRoot, "data/review", fileName);
-  },
-);
+const priorManifestPaths = isLegacyAb83Reconciliation
+  ? []
+  : Array.from({ length: batchNumber - 1 }, (_, index) => {
+      const priorBatch = index + 1;
+      const fileName =
+        priorBatch === 1
+          ? "enhanced-bill-selection.manifest.json"
+          : `enhanced-bill-selection.batch-${priorBatch}.manifest.json`;
+      return path.join(projectRoot, "data/review", fileName);
+    });
 const billIndexPath = path.join(
   projectRoot,
   "src/data/generated/nevada-bill-index.json",
@@ -61,8 +62,9 @@ const publishedPath = path.join(
   projectRoot,
   "src/data/generated/pilot-legislation.json",
 );
-const outputFileName =
-  batchNumber === 1
+const outputFileName = isLegacyAb83Reconciliation
+  ? "enhanced-bill-review-legacy-ab83.json"
+  : batchNumber === 1
     ? "enhanced-bill-review.json"
     : `enhanced-bill-review-batch-${batchNumber}.json`;
 const outputPath = path.join(projectRoot, "src/data/generated", outputFileName);
@@ -80,13 +82,13 @@ const manifestRecordSchema = z.object({
 });
 const manifestSchema = z.object({
   schemaVersion: z.literal(1),
-  batch: z.number().int().positive(),
+  batch: z.number().int().nonnegative(),
   coverageLabel: z.string().min(1),
   targetRange: z.object({
     minimum: z.number().int().positive(),
     maximum: z.number().int().positive(),
   }),
-  records: z.array(manifestRecordSchema).length(10),
+  records: z.array(manifestRecordSchema).min(1).max(10),
 });
 
 type ManifestRecord = z.infer<typeof manifestRecordSchema>;
@@ -154,6 +156,7 @@ async function main() {
     vetoedByIdentifier,
     vetoAudit.records,
     priorCoveredIdentifiers,
+    isLegacyAb83Reconciliation,
   );
   const records = await Promise.all(
     manifest.records.map((entry) =>
@@ -172,8 +175,9 @@ async function main() {
   const generatedAt = new Date().toISOString();
   const bundle: EnhancedBillReviewBundle = {
     schemaVersion: 1,
-    snapshotId:
-      batchNumber === 1
+    snapshotId: isLegacyAb83Reconciliation
+      ? `phase-9.3-legacy-ab83-reconciliation:${generatedAt.slice(0, 10)}`
+      : batchNumber === 1
         ? `phase-9.2-enhanced-review:${generatedAt.slice(0, 10)}`
         : `phase-9.3-batch-${batchNumber}-enhanced-review:${generatedAt.slice(0, 10)}`,
     generatedAt,
@@ -185,12 +189,17 @@ async function main() {
   };
 
   await writeFile(outputPath, `${JSON.stringify(bundle)}\n`, "utf8");
-  console.info(`Built enhanced bill review package for Batch ${batchNumber}`, {
-    records: records.length,
-    votes: records.reduce((total, record) => total + record.votes.length, 0),
-    sources: sources.length,
-    reviewState: "awaiting-human-review",
-  });
+  console.info(
+    isLegacyAb83Reconciliation
+      ? "Built AB83 legacy reconciliation review package"
+      : `Built enhanced bill review package for Batch ${batchNumber}`,
+    {
+      records: records.length,
+      votes: records.reduce((total, record) => total + record.votes.length, 0),
+      sources: sources.length,
+      reviewState: "awaiting-human-review",
+    },
+  );
 }
 
 async function buildCandidate(
@@ -376,18 +385,31 @@ function validateManifest(
   vetoedByIdentifier: Map<string, { billIdentifier: string; billKey: string }>,
   vetoRecords: Array<{ billIdentifier: string; billKey: string }>,
   priorCoveredIdentifiers: Set<string>,
+  isLegacyReconciliation: boolean,
 ) {
   const entries = manifest.records;
-  if (new Set(entries.map((entry) => entry.billIdentifier)).size !== 10) {
-    throw new Error("Each enhanced-review batch must contain ten unique bills");
+  const expectedCount = isLegacyReconciliation ? 1 : 10;
+  if (
+    entries.length !== expectedCount ||
+    new Set(entries.map((entry) => entry.billIdentifier)).size !== expectedCount
+  ) {
+    throw new Error(
+      isLegacyReconciliation
+        ? "The legacy reconciliation package must contain only AB83"
+        : "Each enhanced-review batch must contain ten unique bills",
+    );
+  }
+  if (isLegacyReconciliation && entries[0]?.billIdentifier !== "AB83") {
+    throw new Error("Only AB83 may use the legacy reconciliation workflow");
   }
   if (
+    !isLegacyReconciliation &&
     manifest.batch === 1 &&
     new Set(entries.map((entry) => entry.subjectArea)).size !== 10
   ) {
     throw new Error("The first batch must cover all ten PRD subject areas");
   }
-  if (manifest.batch > 1) {
+  if (!isLegacyReconciliation && manifest.batch > 1) {
     const expectedIdentifiers = vetoRecords
       .map((record) => record.billIdentifier)
       .filter((identifier) => !priorCoveredIdentifiers.has(identifier))
@@ -487,7 +509,9 @@ function toSourceRecord(source: DownloadedSource): LegislationSource {
     url: source.url,
     retrievedAt: source.retrievedAt,
     documentSha256: source.sha256,
-    coverageLabel: `Batch ${batchNumber} enhanced bill review source package`,
+    coverageLabel: isLegacyAb83Reconciliation
+      ? "AB83 legacy reconciliation source package"
+      : `Batch ${batchNumber} enhanced bill review source package`,
     parserVersion,
     validationState: "source-verified",
   };
@@ -567,6 +591,7 @@ function compareBillIdentifiers(left: string, right: string) {
 }
 
 function parseBatchArgument(arguments_: string[]) {
+  if (arguments_.includes("--legacy-ab83")) return 0;
   const value = arguments_
     .find((argument) => argument.startsWith("--batch="))
     ?.slice("--batch=".length);

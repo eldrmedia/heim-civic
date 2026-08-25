@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import billIndexData from "../src/data/generated/nevada-bill-index.json";
 import enhancedReviewBatch2Data from "../src/data/generated/enhanced-bill-review-batch-2.json";
 import enhancedReviewBatch3Data from "../src/data/generated/enhanced-bill-review-batch-3.json";
+import enhancedReviewLegacyAb83Data from "../src/data/generated/enhanced-bill-review-legacy-ab83.json";
 import enhancedReviewData from "../src/data/generated/enhanced-bill-review.json";
 import baseLegislationData from "../src/data/generated/pilot-legislation.json";
 import promotedLegislationData from "../src/data/generated/promoted-enhanced-legislation.json";
@@ -32,6 +33,7 @@ const report = auditEnhancedPilotCoverage({
     ...enhancedReviewData.records,
     ...enhancedReviewBatch2Data.records,
     ...enhancedReviewBatch3Data.records,
+    ...enhancedReviewLegacyAb83Data.records,
   ] as EnhancedBillReviewCandidate[],
 });
 
@@ -41,6 +43,7 @@ const artifact = {
   auditedAt: new Date().toISOString(),
   evidenceSnapshots: {
     billIndex: billIndexData.snapshotId,
+    legacyAb83Review: enhancedReviewLegacyAb83Data.snapshotId,
     baseLegislation: baseLegislationData.snapshotId,
     promotedLegislation: promotedLegislationData.snapshotId,
   },

@@ -69,7 +69,6 @@ The implemented packet and promotion workflow is documented in
 
 ## Remaining work
 
-- Resolve the AB83 legacy approval-metadata finding recorded by the Phase 9.3
-  final coverage audit before declaring the enhanced pilot complete.
 - Test special sessions, non-final vote types, and bills without recorded floor
-  votes before broadening the parser.
+  votes before broadening the parser. The AB83 legacy approval-metadata finding
+  is closed by the August 25, 2026 reconciliation.

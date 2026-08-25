@@ -105,6 +105,7 @@ export type EditorialReviewPacket = {
 
 export type EditorialReviewPacketBundle = {
   schemaVersion: 1;
+  candidateFingerprintVersion?: "v1" | "v2";
   sourceSnapshotId: string;
   generatedAt: string;
   records: EditorialReviewPacket[];

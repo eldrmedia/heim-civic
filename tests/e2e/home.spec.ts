@@ -361,15 +361,15 @@ test("the enhanced bill selection log exposes every published Nevada record", as
   ).toBeVisible();
   await expect(
     page.getByText("Published after human review", { exact: true }),
-  ).toHaveCount(30);
+  ).toHaveCount(31);
   await expect(page.locator(".selection-record")).toHaveCount(31);
 
   const ab83 = page.locator(".selection-record").filter({ hasText: "AB83" });
   await expect(
-    ab83.getByText("Legacy approval evidence pending", { exact: true }),
+    ab83.getByText("Published after human review", { exact: true }),
   ).toBeVisible();
   await expect(
-    ab83.getByRole("link", { name: "Open legacy bill record" }),
+    ab83.getByRole("link", { name: "Open enhanced bill record" }),
   ).toHaveAttribute("href", "/bills/nv-83-2025-ab83");
 
   const ab226 = page.locator(".selection-record").filter({ hasText: "AB226" });
@@ -413,9 +413,14 @@ test("the enhanced bill selection log exposes every published Nevada record", as
 
   await page.goto("/bills/nv-83-2025-ab83");
   await expect(
+    page.getByText("Approved by william elder, founder", { exact: false }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Coverage limitations", { exact: true }),
+  ).toBeVisible();
+  await expect(
     page.getByText(
-      "This legacy record has enhanced source coverage, but standardized approval metadata is not yet available.",
-      { exact: false },
+      "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label.",
     ),
   ).toBeVisible();
 

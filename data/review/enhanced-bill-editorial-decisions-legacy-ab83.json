@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshotId": "phase-9.3-legacy-ab83-reconciliation:2026-08-25",
+  "decisions": [
+    {
+      "billIdentifier": "AB83",
+      "candidateFingerprint": "431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8",
+      "decision": "approved",
+      "checklist": {
+        "digestComparedToEnrolledText": true,
+        "materialAmendmentsReviewed": true,
+        "statusAndLatestActionConfirmed": true,
+        "votesClassified": true,
+        "sponsorsAndCommitteesReviewed": true,
+        "selectionExplanationApproved": true
+      },
+      "voteDecisions": [
+        {
+          "voteId": "nv-vote:12381",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12381&voteResultPanel=All",
+          "note": "Confirmed as the Assembly passage vote on 2025-04-17 by 28-14 against the official NELIS history and complete member roll call."
+        },
+        {
+          "voteId": "nv-vote:12798",
+          "classification": "passage",
+          "evidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12798&voteResultPanel=All",
+          "note": "Confirmed as the Senate passage vote on 2025-05-21 by 15-6 against the official NELIS history and complete member roll call."
+        }
+      ],
+      "summary": {
+        "kind": "official-digest"
+      },
+      "uncertaintyNotes": [
+        "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label."
+      ],
+      "reviewer": {
+        "name": "william elder",
+        "role": "founder"
+      },
+      "reviewedAt": "2026-08-25T01:34:28.608Z"
+    }
+  ]
+}

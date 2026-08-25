@@ -22,6 +22,9 @@ export function EnhancedBillSelectionLog({
   const awaitingReviewCount = bundle.records.filter(
     (record) => !promoted.has(record.billIdentifier),
   ).length;
+  const legacyPendingCount = legacyPublishedBills.filter(
+    (bill) => !bill.editorialReview,
+  ).length;
 
   return (
     <>
@@ -54,8 +57,8 @@ export function EnhancedBillSelectionLog({
             {awaitingReviewCount > 0
               ? `${awaitingReviewCount} queued record${awaitingReviewCount === 1 ? "" : "s"} still require accountable human review. `
               : "All three queued batches have completed accountable human review. "}
-            {legacyPublishedBills.length > 0
-              ? `${legacyPublishedBills.length} earlier published record predates the standard decision ledger and remains explicitly labeled below until that evidence is completed.`
+            {legacyPendingCount > 0
+              ? `${legacyPendingCount} earlier published record predates the standard decision ledger and remains explicitly labeled below until that evidence is completed.`
               : "No legacy approval gaps remain."}
           </p>
         </div>
@@ -93,11 +96,16 @@ export function EnhancedBillSelectionLog({
 }
 
 function LegacySelectionRecord({ bill }: { bill: PilotBill }) {
+  const isApproved = bill.editorialReview?.state === "human-approved";
   return (
     <article className="selection-record selection-record--legacy">
       <div className="selection-record__labels">
         <span>{bill.policyArea}</span>
-        <span>Legacy approval evidence pending</span>
+        <span>
+          {isApproved
+            ? "Published after human review"
+            : "Legacy approval evidence pending"}
+        </span>
       </div>
       <p className="selection-record__identifier">
         {bill.identifier} · Original vertical slice
@@ -117,7 +125,11 @@ function LegacySelectionRecord({ bill }: { bill: PilotBill }) {
           </dd>
         </div>
       </dl>
-      <Link href={`/bills/${bill.slug}`}>Open legacy bill record →</Link>
+      <Link href={`/bills/${bill.slug}`}>
+        {isApproved
+          ? "Open enhanced bill record →"
+          : "Open legacy bill record →"}
+      </Link>
     </article>
   );
 }

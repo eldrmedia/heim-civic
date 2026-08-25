@@ -30,7 +30,7 @@ describe("legislation repository", () => {
     ).toBe(true);
     expect(
       bills.filter((bill) => bill.editorialReview?.state === "human-approved"),
-    ).toHaveLength(30);
+    ).toHaveLength(31);
 
     const ab44 = bills.find((bill) => bill.identifier === "AB44");
     expect(ab44?.votes.map((vote) => vote.question)).toEqual([
@@ -55,6 +55,23 @@ describe("legislation repository", () => {
     expect(ab98?.editorialReview?.uncertaintyNotes).toEqual([
       sponsorRoleLimitation,
     ]);
+
+    const ab83 = bills.find((bill) => bill.identifier === "AB83");
+    expect(ab83?.policyArea).toBe("Civil rights and social services");
+    expect(ab83?.votes.map((vote) => vote.question)).toEqual([
+      "Passage",
+      "Passage",
+    ]);
+    expect(ab83?.editorialReview).toMatchObject({
+      state: "human-approved",
+      reviewerName: "william elder",
+      reviewerRole: "founder",
+      candidateFingerprint:
+        "431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8",
+      uncertaintyNotes: [
+        "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label.",
+      ],
+    });
   });
 
   it("connects Mark Amodei to sponsorship and both federal roll calls", () => {

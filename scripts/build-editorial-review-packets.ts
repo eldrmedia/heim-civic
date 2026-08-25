@@ -5,13 +5,16 @@ import type { EnhancedBillReviewBundle } from "../src/domain/legislation/enhance
 import { buildEditorialReviewPackets } from "./lib/enhanced-bill-promotion";
 
 const projectRoot = process.cwd();
+const isLegacyAb83Reconciliation = process.argv.includes("--legacy-ab83");
 const batchNumber = parseBatchArgument(process.argv.slice(2));
-const inputFileName =
-  batchNumber === 1
+const inputFileName = isLegacyAb83Reconciliation
+  ? "enhanced-bill-review-legacy-ab83.json"
+  : batchNumber === 1
     ? "enhanced-bill-review.json"
     : `enhanced-bill-review-batch-${batchNumber}.json`;
-const outputFileName =
-  batchNumber === 1
+const outputFileName = isLegacyAb83Reconciliation
+  ? "enhanced-bill-review-packets-legacy-ab83.json"
+  : batchNumber === 1
     ? "enhanced-bill-review-packets.json"
     : `enhanced-bill-review-packets-batch-${batchNumber}.json`;
 const inputPath = path.join(projectRoot, "src/data/generated", inputFileName);
@@ -24,20 +27,29 @@ const outputPath = path.join(
 const reviewBundle = JSON.parse(
   await readFile(inputPath, "utf8"),
 ) as EnhancedBillReviewBundle;
-const packets = buildEditorialReviewPackets(reviewBundle);
+const packets = buildEditorialReviewPackets(
+  reviewBundle,
+  isLegacyAb83Reconciliation ? "v2" : "v1",
+);
 
 await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(packets, null, 2)}\n`, "utf8");
-console.info(`Built editorial review packets for Batch ${batchNumber}`, {
-  records: packets.records.length,
-  votes: packets.records.reduce(
-    (count, record) => count + record.votes.length,
-    0,
-  ),
-  sourceSnapshotId: packets.sourceSnapshotId,
-});
+console.info(
+  isLegacyAb83Reconciliation
+    ? "Built AB83 legacy editorial review packet"
+    : `Built editorial review packets for Batch ${batchNumber}`,
+  {
+    records: packets.records.length,
+    votes: packets.records.reduce(
+      (count, record) => count + record.votes.length,
+      0,
+    ),
+    sourceSnapshotId: packets.sourceSnapshotId,
+  },
+);
 
 function parseBatchArgument(arguments_: string[]) {
+  if (arguments_.includes("--legacy-ab83")) return 0;
   const value = arguments_
     .find((argument) => argument.startsWith("--batch="))
     ?.slice("--batch=".length);
