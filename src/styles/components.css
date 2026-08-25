@@ -16,6 +16,31 @@
     @apply text-clay-600 m-0 text-xs font-bold tracking-[0.16em] uppercase;
   }
 
+  .breadcrumbs {
+    @apply mb-6 text-sm text-slate-600;
+  }
+
+  .breadcrumbs__list {
+    @apply flex flex-wrap items-center gap-x-2 gap-y-1 p-0;
+  }
+
+  .breadcrumbs__item {
+    @apply flex items-center gap-2;
+  }
+
+  .breadcrumbs__item:not(:last-child)::after {
+    content: "/";
+    @apply text-slate-400;
+  }
+
+  .breadcrumbs__item a {
+    @apply text-juniper-800 font-semibold underline-offset-4 hover:underline;
+  }
+
+  .breadcrumbs__item [aria-current="page"] {
+    @apply font-semibold text-slate-700;
+  }
+
   .button {
     @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border px-5 py-2.5 text-sm font-bold no-underline transition-colors disabled:cursor-not-allowed disabled:opacity-55;
   }

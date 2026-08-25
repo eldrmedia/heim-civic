@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Methodology",
   description:
     "How Heim Civic Nevada sources, validates, and publishes current officeholder records.",
-};
+  pathname: "/docs",
+});
 
 export default function MethodologyPage() {
   return (

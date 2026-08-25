@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 
 import { WaitlistForm } from "@/components/organisms/waitlist-form";
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Join the waitlist",
   description:
     "Join the confirmed-opt-in Heim Civic Nevada launch and membership waitlist.",
-};
+  pathname: "/join",
+});
 
 export default function JoinPage() {
   return (

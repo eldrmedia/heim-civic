@@ -2,6 +2,7 @@ import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 import { DistrictBoundaryMap } from "@/components/molecules/district-boundary-map";
+import { Breadcrumbs } from "@/components/molecules/breadcrumbs";
 import { RepresentativeCard } from "@/components/molecules/representative-card";
 import { SiteFooter } from "@/components/organisms/site-footer";
 import { SiteHeader } from "@/components/organisms/site-header";
@@ -26,9 +27,16 @@ export function DistrictPageTemplate({
       <main className="district-page" id="main-content">
         <header className="district-page__hero">
           <div className="layout-shell">
-            <Link className="district-page__back" href="/districts">
-              ← All Nevada districts
-            </Link>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Nevada districts", href: "/districts" },
+                {
+                  label: district.displayName,
+                  href: `/districts/${district.slug}`,
+                },
+              ]}
+            />
             <p className="eyebrow">Official electoral boundary</p>
             <h1>{district.displayName}</h1>
             <p>

@@ -2,6 +2,7 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 import type { BillIndexDisplayRecord } from "@/domain/legislation/index-types";
+import { getNevadaBillIndexSlug } from "@/server/legislation/bill-index-repository";
 
 export function BillIndexCard({ record }: { record: BillIndexDisplayRecord }) {
   return (
@@ -25,16 +26,18 @@ export function BillIndexCard({ record }: { record: BillIndexDisplayRecord }) {
           the marker without interpreting it.
         </p>
       ) : null}
-      {record.enhancedSlug ? (
-        <Link href={`/bills/${record.enhancedSlug}`}>
-          View enhanced bill record <ArrowRight aria-hidden="true" size={16} />
-        </Link>
-      ) : (
+      <Link href={`/bills/${getNevadaBillIndexSlug(record)}`}>
+        {record.enhancedSlug
+          ? "View enhanced bill record"
+          : "View official index record"}{" "}
+        <ArrowRight aria-hidden="true" size={16} />
+      </Link>
+      {!record.enhancedSlug ? (
         <a href={record.officialPageUrl}>
           Open official NELIS record{" "}
           <ExternalLink aria-hidden="true" size={15} />
         </a>
-      )}
+      ) : null}
     </article>
   );
 }

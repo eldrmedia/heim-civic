@@ -1,6 +1,6 @@
 import { ExternalLink, Info } from "lucide-react";
-import Link from "next/link";
 
+import { Breadcrumbs } from "@/components/molecules/breadcrumbs";
 import { SiteFooter } from "@/components/organisms/site-footer";
 import { SiteHeader } from "@/components/organisms/site-header";
 import type { CampaignFinanceSummary } from "@/domain/finance/types";
@@ -22,12 +22,16 @@ export function FinancePageTemplate({
       <main className="finance-page" id="main-content">
         <header className="finance-page__hero">
           <div className="layout-shell">
-            <Link
-              className="finance-page__back"
-              href={`/officials/${official.slug}`}
-            >
-              ← Back to {official.name}
-            </Link>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Campaign finance", href: "/finance" },
+                {
+                  label: official.name,
+                  href: `/finance/${summary.slug}`,
+                },
+              ]}
+            />
             <p className="eyebrow">Phase 5 · federal finance pilot</p>
             <div className="finance-page__heading">
               <div>

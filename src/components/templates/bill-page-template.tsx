@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
+import { Breadcrumbs } from "@/components/molecules/breadcrumbs";
 import { SiteFooter } from "@/components/organisms/site-footer";
 import { SiteHeader } from "@/components/organisms/site-header";
 import type { PilotBill } from "@/domain/legislation/types";
@@ -26,9 +27,13 @@ export function BillPageTemplate({
       <main className="bill-page" id="main-content">
         <header className="bill-page__hero">
           <div className="layout-shell">
-            <Link className="bill-page__back" href="/">
-              ← Back to district lookup
-            </Link>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "2025 Nevada bills", href: "/bills" },
+                { label: bill.identifier, href: `/bills/${bill.slug}` },
+              ]}
+            />
             <p className="eyebrow">
               Enhanced Pilot Coverage · sourced legislation
             </p>

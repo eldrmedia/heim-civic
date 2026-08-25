@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Future membership pricing",
   description:
     "Proposed future Heim Civic Nevada supporter memberships without paid entitlements or checkout.",
-};
+  pathname: "/pricing",
+});
 
 export default function PricingPage() {
   return (

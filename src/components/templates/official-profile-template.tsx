@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PartyLabel } from "@/components/atoms/party-label";
 import { BillCard } from "@/components/molecules/bill-card";
 import { FinanceOverviewCard } from "@/components/molecules/finance-overview-card";
+import { Breadcrumbs } from "@/components/molecules/breadcrumbs";
 import { SiteFooter } from "@/components/organisms/site-footer";
 import { SiteHeader } from "@/components/organisms/site-header";
 import type { CampaignFinanceSummary } from "@/domain/finance/types";
@@ -51,9 +52,13 @@ export function OfficialProfileTemplate({
               )}
             </div>
             <div>
-              <Link className="official-profile__back" href="/">
-                ← Back to district lookup
-              </Link>
+              <Breadcrumbs
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "Current officials", href: "/officials" },
+                  { label: official.name, href: `/officials/${official.slug}` },
+                ]}
+              />
               <p className="eyebrow">Current official profile</p>
               <h1 className="official-profile__title">{official.name}</h1>
               <p className="official-profile__office">
@@ -83,7 +88,15 @@ export function OfficialProfileTemplate({
                 </div>
                 <div>
                   <dt>Constituency</dt>
-                  <dd>{official.office.districtLabel}</dd>
+                  <dd>
+                    {districtHref(official) ? (
+                      <Link href={districtHref(official)!}>
+                        {official.office.districtLabel}
+                      </Link>
+                    ) : (
+                      official.office.districtLabel
+                    )}
+                  </dd>
                 </div>
                 <div>
                   <dt>Party</dt>
@@ -238,4 +251,17 @@ function formatDate(value: string) {
   return new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(
     new Date(value),
   );
+}
+
+function districtHref(official: CurrentOfficial) {
+  if (!official.office.districtNumber) return null;
+  const prefix = {
+    "us-house": "congressional",
+    "state-senate": "state-senate",
+    "state-assembly": "state-assembly",
+    "us-senate": null,
+  }[official.office.chamber];
+  return prefix
+    ? `/districts/${prefix}-${official.office.districtNumber}`
+    : null;
 }

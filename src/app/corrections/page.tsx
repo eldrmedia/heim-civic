@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 
 import { CorrectionForm } from "@/components/organisms/correction-form";
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Corrections",
   description:
     "Submit an evidence-based factual correction to Heim Civic Nevada.",
-};
+  pathname: "/corrections",
+});
 
 type CorrectionsPageProps = {
   searchParams: Promise<{ record?: string | string[] }>;

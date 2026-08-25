@@ -4,6 +4,8 @@ import {
   getAllNevadaBillIndexRecords,
   getNevadaBillDirectoryPage,
   getNevadaBillIndexBundle,
+  getNevadaBillIndexRecordBySlug,
+  getNevadaBillIndexSlug,
 } from "@/server/legislation/bill-index-repository";
 
 describe("Nevada bill index repository", () => {
@@ -48,5 +50,18 @@ describe("Nevada bill index repository", () => {
     expect(
       result.records.every((record) => record.measureType === "assembly-bill"),
     ).toBe(true);
+  });
+
+  it("assigns one unique durable local route to every indexed bill", () => {
+    const records = getAllNevadaBillIndexRecords();
+    const slugs = records.map(getNevadaBillIndexSlug);
+
+    expect(new Set(slugs).size).toBe(1152);
+    expect(slugs).toContain("nv-83-2025-ab1");
+    expect(slugs).toContain("nv-83-2025-sb500");
+    expect(getNevadaBillIndexRecordBySlug("nv-83-2025-ab83")).toMatchObject({
+      identifier: "AB83",
+      enhancedSlug: "nv-83-2025-ab83",
+    });
   });
 });

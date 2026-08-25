@@ -31,6 +31,32 @@ export function getAllNevadaBillIndexRecords(): BillIndexDisplayRecord[] {
   return bundle.records.map(withEnhancedCoverage);
 }
 
+export function getNevadaBillIndexSlug(
+  record: Pick<
+    NevadaBillIndexRecord,
+    "billKey" | "canonicalIdentifier" | "sourceMarker"
+  >,
+) {
+  const base = `nv-83-2025-${record.canonicalIdentifier.toLocaleLowerCase("en-US")}`;
+  return record.sourceMarker ? `${base}-nelis-${record.billKey}` : base;
+}
+
+export function getNevadaBillIndexRecordBySlug(
+  slug: string,
+): BillIndexDisplayRecord | undefined {
+  return getAllNevadaBillIndexRecords().find(
+    (record) => getNevadaBillIndexSlug(record) === slug,
+  );
+}
+
+export function getBillIndexSource(record: NevadaBillIndexRecord) {
+  const source = bundle.sources.find(
+    (candidate) => candidate.id === record.sourceId,
+  );
+  if (!source) throw new Error(`Missing source ${record.sourceId}`);
+  return source;
+}
+
 export function getNevadaBillDirectoryPage(filters: BillDirectoryFilters = {}) {
   const query = normalize(filters.query ?? "");
   const chamber = filters.chamber ?? "all";

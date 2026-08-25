@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 import { getPublishedSnapshotHealth } from "@/server/status/health-report";
 import { getSourceSnapshotStatuses } from "@/server/status/source-snapshots";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Source freshness",
   description:
     "Published coverage, retrieval times, parser versions, and limitations for Heim Civic Nevada source snapshots.",
-};
+  pathname: "/status",
+});
 
 export default function StatusPage() {
   const snapshots = getSourceSnapshotStatuses();

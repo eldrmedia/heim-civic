@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 import { getSecurityContactEmail } from "@/server/security/security-contact";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Security",
   description:
     "How to privately report a potential security or privacy vulnerability to Heim Civic Nevada.",
-};
+  pathname: "/security",
+});
 
 export default function SecurityPage() {
   const contactEmail = getSecurityContactEmail();

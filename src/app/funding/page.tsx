@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Funding disclosure",
   description:
     "How Heim Civic Nevada separates funding from public civic facts and editorial decisions.",
-};
+  pathname: "/funding",
+});
 
 export default function FundingPage() {
   return (

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Editorial policy",
   description:
     "The source, neutrality, review, correction, and conflict standards governing Heim Civic Nevada.",
-};
+  pathname: "/editorial",
+});
 
 export default function EditorialPolicyPage() {
   return (

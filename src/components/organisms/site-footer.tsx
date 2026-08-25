@@ -15,6 +15,9 @@ export function SiteFooter() {
           <Link className="site-footer__link" href="/districts">
             Districts
           </Link>
+          <Link className="site-footer__link" href="/officials">
+            Officials
+          </Link>
           <Link className="site-footer__link" href="/docs">
             Methodology
           </Link>

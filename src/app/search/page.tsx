@@ -3,12 +3,15 @@ import type { Metadata } from "next";
 import { SearchExperience } from "@/components/organisms/search-experience";
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
 import { searchCivicRecords } from "@/server/search/index";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Search Nevada civic records",
   description:
     "Search Nevada officials, districts, the complete 2025 bill index, enhanced legislation, and civic subjects.",
-};
+  pathname: "/search",
+  index: false,
+});
 
 type SearchPageProps = {
   searchParams: Promise<{ q?: string | string[] }>;

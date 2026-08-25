@@ -3,13 +3,15 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 import { getAllFinanceSummaries } from "@/server/finance/repository";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Federal campaign-finance pilot",
   description:
     "Official FEC aggregate campaign-finance summaries for the Phase 5 federal pilot.",
-};
+  pathname: "/finance",
+});
 
 export default function FinanceIndexPage() {
   const summaries = getAllFinanceSummaries();

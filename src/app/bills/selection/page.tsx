@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 
 import { EnhancedBillSelectionLog } from "@/components/organisms/enhanced-bill-selection-log";
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 import { getEnhancedBillReviewBundle } from "@/server/legislation/enhanced-review-repository";
 import { getAllPilotBills } from "@/server/legislation/repository";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Enhanced bill selection log",
   description:
     "See how Nevada bills enter Heim Civic's enhanced review queue and which records still await accountable human approval.",
-};
+  pathname: "/bills/selection",
+});
 
 export default function EnhancedBillSelectionPage() {
   const bundle = getEnhancedBillReviewBundle();

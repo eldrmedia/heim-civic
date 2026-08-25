@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { DistrictPageTemplate } from "@/components/templates/district-page-template";
+import { createPageMetadata } from "@/lib/seo";
 import {
   getAllPublishedDistricts,
   getBoundaryBundle,
@@ -26,11 +27,18 @@ export async function generateMetadata({
   const district = getPublishedDistrictBySlug(slug);
 
   return district
-    ? {
+    ? createPageMetadata({
         title: district.displayName,
-        description: `Official boundary, statewide context, and current representative for ${district.displayName}.`,
-      }
-    : { title: "District not found" };
+        description: `Official boundary, statewide Nevada context, current representative, effective date, and authoritative source for ${district.displayName}.`,
+        pathname: `/districts/${district.slug}`,
+      })
+    : createPageMetadata({
+        title: "District not found",
+        description:
+          "The requested Nevada electoral district is not available.",
+        pathname: `/districts/${slug}`,
+        index: false,
+      });
 }
 
 export default async function DistrictPage({ params }: DistrictPageProps) {

@@ -36,9 +36,15 @@ complete public-pilot scope are healthy.
 ## Public discovery and identity
 
 Next.js generates `/sitemap.xml` for every stable public page and record route,
-including all districts and current officials. `/robots.txt` permits public
-content and excludes route handlers. The footer and every content template state
-that Heim Civic Nevada is independent and is not an official government service.
+including all districts, current officials, complete-index Nevada bills,
+enhanced federal legislation, and finance records. Phase 9.5 adds unique
+canonicals, source-derived modification dates, social metadata, conservative
+JSON-LD, visible breadcrumbs, a complete official directory, and preview
+`noindex` safeguards. `/robots.txt` permits public records only at a configured
+HTTPS origin, excludes route handlers and onsite search, allows
+`OAI-SearchBot`, and keeps model-training access separate. The footer and every
+content template state that Heim Civic Nevada is independent and is not an
+official government service.
 
 The `/security` policy and `/.well-known/security.txt` use the server-only
 `SECURITY_CONTACT_EMAIL`. When it is missing or invalid, the machine-readable

@@ -324,6 +324,9 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   await expect(page.getByText("1 record matching “AB84”")).toBeVisible();
   await expect(page.getByText("Official index", { exact: true })).toBeVisible();
   await expect(
+    page.getByRole("link", { name: "View official index record" }),
+  ).toHaveAttribute("href", "/bills/nv-83-2025-ab84");
+  await expect(
     page.getByRole("link", { name: "Open official NELIS record" }),
   ).toHaveAttribute(
     "href",
@@ -340,6 +343,42 @@ test("the complete Nevada bill index distinguishes official and enhanced coverag
   await expect(
     ab83Card.getByText("Automatic veto qualifier", { exact: true }),
   ).toBeVisible();
+
+  const results = await new AxeBuilder({ page }).analyze();
+  expect(results.violations).toEqual([]);
+});
+
+test("index-only bills and the official directory are crawlable textual records", async ({
+  page,
+}) => {
+  await page.goto("/bills/nv-83-2025-ab84");
+
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: /Revises provisions relating to county roads/,
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      name: "What this page does—and does not—verify",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "View the official NELIS record" }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11905/Overview",
+  );
+  await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(
+    3,
+  );
+
+  await page.goto("/officials");
+  await expect(
+    page.getByRole("heading", { level: 1, name: "Who represents Nevada." }),
+  ).toBeVisible();
+  await expect(page.locator(".officials-index__link")).toHaveCount(69);
 
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations).toEqual([]);
@@ -615,7 +654,7 @@ test("trust disclosures expose coverage limits without enabling payment", async 
   expect(results.violations).toEqual([]);
 });
 
-test("pilot operations expose discovery, readiness, and honest security states", async ({
+test("preproduction operations fail closed while exposing readiness and security states", async ({
   page,
   request,
 }) => {
@@ -629,11 +668,13 @@ test("pilot operations expose discovery, readiness, and honest security states",
 
   const sitemap = await request.get("/sitemap.xml");
   expect(sitemap.status()).toBe(200);
-  expect(await sitemap.text()).toContain("/districts/congressional-1");
+  expect(await sitemap.text()).not.toContain("<url>");
 
   const robots = await request.get("/robots.txt");
   expect(robots.status()).toBe(200);
-  expect(await robots.text()).toContain("Disallow: /api/");
+  const robotsText = await robots.text();
+  expect(robotsText).toContain("Disallow: /");
+  expect(robotsText).not.toContain("Sitemap:");
 
   await page.goto("/security");
   await expect(

@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9.3 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, source-verified current officeholders, a complete 1,152-record official Nevada bill index, 31 published enhanced Nevada bills across three accountable editorial batches, one enhanced federal bill, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, snapshot-health monitoring, public-route discovery, and operator runbooks.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9.5 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, a 69-profile current-official directory, 1,152 canonical local Nevada bill records, 31 published enhanced Nevada bills across three accountable editorial batches, one enhanced federal bill, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, source-dated discovery metadata, preview indexing safeguards, snapshot-health monitoring, and operator runbooks.
 
 ## Requirements
 

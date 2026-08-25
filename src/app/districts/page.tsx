@@ -4,13 +4,15 @@ import Link from "next/link";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
 import type { DistrictType } from "@/domain/geography/types";
+import { createPageMetadata } from "@/lib/seo";
 import { getAllPublishedDistricts } from "@/server/geography/boundaries";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Nevada legislative districts",
   description:
     "Browse Nevada congressional, State Senate, and Assembly districts using official boundaries.",
-};
+  pathname: "/districts",
+});
 
 const groups: Array<{ type: DistrictType; title: string }> = [
   { type: "congressional", title: "U.S. Congressional districts" },

@@ -12,6 +12,10 @@ is operating.
   freshness, and security pages.
 - Independent-project and not-an-official-government-service disclosure.
 - Machine-readable sitemap, robots policy, security contact, and snapshot health.
+- Phase 9.5 canonical metadata, social metadata, conservative structured data,
+  preview `noindex` safeguards, visible record breadcrumbs, a 69-profile current-
+  official directory, and 1,152 durable local Nevada bill routes. The configured
+  public sitemap contains 1,306 unique, source-dated URLs.
 - Complete official index of 1,152 source-listed 2025 Nevada Assembly and Senate
   bills, with all 86 veto qualifiers reconciled and visibly labeled.
 - Public selection log with 31 human-approved Nevada records spanning all ten
@@ -28,6 +32,9 @@ is operating.
 
 - Acquire and clear the public domain; set `NEXT_PUBLIC_SITE_URL` to its HTTPS
   deployment root.
+- Validate production canonicals, structured data, social images, robots, and
+  sitemap at the final origin; then verify webmaster accounts and submit the
+  sitemap. Search inclusion and ranking remain external outcomes.
 - Configure and monitor `SECURITY_CONTACT_EMAIL`.
 - Configure external uptime, error, source-health, and broken-link monitoring and
   test alert delivery.

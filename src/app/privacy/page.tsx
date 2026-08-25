@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 import { ContentPageTemplate } from "@/components/templates/content-page-template";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Privacy",
   description: "The Heim Civic Nevada address privacy model.",
-};
+  pathname: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

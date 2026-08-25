@@ -7,12 +7,14 @@ import {
   getNevadaBillDirectoryPage,
   getNevadaBillIndexBundle,
 } from "@/server/legislation/bill-index-repository";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "2025 Nevada bills",
   description:
     "Search the complete official NELIS Assembly and Senate bill index and distinguish index-only records from enhanced reviewed coverage.",
-};
+  pathname: "/bills",
+});
 
 type BillsPageProps = {
   searchParams: Promise<{
