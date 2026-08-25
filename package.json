@@ -32,10 +32,12 @@
     "data:audit-geography": "node --import tsx scripts/audit-geographic-validation.ts",
     "data:finance": "tsx scripts/build-finance.ts",
     "ops:source-health": "node --import tsx scripts/check-source-health.ts",
+    "ops:launch-readiness": "node --import tsx scripts/check-launch-readiness.ts --mode=repository",
+    "ops:launch-readiness:production": "node --import tsx scripts/check-launch-readiness.ts --mode=production",
     "audit": "npm audit --audit-level=high",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run ops:source-health && npm run build"
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run ops:source-health && npm run ops:launch-readiness && npm run build"
   },
   "engines": {
     "node": ">=20.9.0"

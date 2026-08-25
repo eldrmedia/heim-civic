@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "deploymentUrl": "https://replace.invalid",
+  "reviewedAt": "2026-08-25T00:00:00.000Z",
+  "checks": [
+    {
+      "id": "production-seo-verification",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "monitoring-alert-drill",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "offsite-restore-exercise",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "correction-lifecycle-exercise",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "waitlist-lifecycle-exercise",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "funder-disclosure-review",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "manual-accessibility-device-review",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    },
+    {
+      "id": "privacy-telemetry-review",
+      "status": "pending",
+      "verifiedAt": null,
+      "evidenceReference": null,
+      "reviewerRole": null
+    }
+  ]
+}

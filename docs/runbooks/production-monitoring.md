@@ -50,3 +50,9 @@ Before launch, record probe URLs, alert recipients, test timestamps, simulated
 failure results, and screenshots or exported configuration in the private
 operations system. Do not store tokens or personal contact details in the
 repository.
+
+For the Phase 9.6 launch gate, record the successful exercise using the
+`monitoring-alert-drill` identifier in the private launch evidence file. Point
+`evidenceReference` to an opaque `private-ops:` record ID; do not place the
+export, screenshot, recipient list, or vendor URL in the repository. Re-run
+`npm run ops:launch-readiness:production` after updating the private record.

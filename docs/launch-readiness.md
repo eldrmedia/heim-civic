@@ -4,6 +4,22 @@ This checklist distinguishes repository implementation from real production
 configuration. A documented contract is not evidence that an external service
 is operating.
 
+Phase 9.6 introduces two fail-closed checks:
+
+- `npm run ops:launch-readiness` verifies the repository-controlled data and
+  source-freshness contract. It runs in the full local gate and CI.
+- `npm run ops:launch-readiness:production` additionally verifies the final
+  HTTPS origin, server-only integration configuration, and private evidence for
+  every external launch exercise. It must report `ready` before public launch.
+  The private evidence decision expires after 30 days so a stale exercise cannot
+  silently authorize a later deployment.
+
+The production check reads the absolute path in `LAUNCH_EVIDENCE_FILE`. Start
+from `docs/runbooks/launch-evidence.example.json`, store the completed copy in
+the private operations system outside this repository, and use only opaque
+`private-ops:` references. Never place screenshots, operator names, email
+addresses, vendor exports, tokens, or exact lookup inputs in this repository.
+
 ## Implemented and testable in the repository
 
 - Responsive, keyboard-accessible public journeys with automated axe coverage.
@@ -25,7 +41,8 @@ is operating.
   all 17 counties and all 67 district polygons. All 462 matchable Census and all
   600 NCES district comparisons agree with the Nevada LCB boundaries.
 - CI checks for formatting, lint, types, unit/API tests, dependency audit,
-  snapshot freshness, production build, and browser journeys.
+  snapshot freshness, repository launch readiness, production build, and
+  browser journeys.
 - Incident, monitoring, backup, and restore procedures.
 
 ## Requires production configuration and evidence
@@ -58,3 +75,12 @@ is operating.
 
 Until every P0 gate and production-evidence item is complete, the repository is
 a hardened private alpha rather than a public-pilot release.
+
+## Go/no-go decision
+
+The repository check establishes that code-controlled launch requirements have
+not regressed. It does not authorize a launch. The accountable launch reviewer
+must run the production check in the configured deployment environment, confirm
+that its report is `ready`, and retain the external evidence and decision in the
+private operations system. A `not-ready` result is a no-go; no check may be
+waived by editing the generated report.
