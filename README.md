@@ -33,6 +33,7 @@ npm run data:legislation
 npm run data:bill-index
 npm run data:enhanced-bill-review
 npm run data:finance
+npm run data:audit-geography
 npm run ops:source-health
 ```
 

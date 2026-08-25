@@ -17,3 +17,9 @@ founder, accepted its approval recommendation at `2026-08-25T01:34:28.608Z`
 against the exact v2 candidate fingerprint. The corresponding decision ledger
 retains that accountable decision and the public NELIS co-sponsor versus
 enrolled joint-sponsor limitation.
+
+`phase-9-4-geographic-validation.json` is the reproducible FR-001 and FR-002
+private-alpha exit audit. It evaluates the checked-in public-institution fixture
+against Census, NCES, and Nevada LCB evidence. A `ready` status means the 200-case
+target, statewide distribution, 99 percent agreement threshold, privacy class,
+and provenance checks passed; it is not a claim that every address will geocode.

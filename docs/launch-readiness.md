@@ -14,10 +14,12 @@ is operating.
 - Machine-readable sitemap, robots policy, security contact, and snapshot health.
 - Complete official index of 1,152 source-listed 2025 Nevada Assembly and Senate
   bills, with all 86 veto qualifiers reconciled and visibly labeled.
-- Public selection log with 30 source-verified Nevada candidates across three
-  batches, spanning all ten PRD subject areas, with 61 reconciled roll calls and
-  121 checksummed NELIS documents. All 30 candidates are human-approved and
-  published alongside the original AB83 enhanced record.
+- Public selection log with 31 human-approved Nevada records spanning all ten
+  PRD subject areas, with 63 reconciled roll calls and 125 checksummed NELIS
+  documents. The final coverage and approval audit is `ready`.
+- Phase 9.4 geographic exit audit with 200 public-institution addresses across
+  all 17 counties and all 67 district polygons. All 462 matchable Census and all
+  600 NCES district comparisons agree with the Nevada LCB boundaries.
 - CI checks for formatting, lint, types, unit/API tests, dependency audit,
   snapshot freshness, production build, and browser journeys.
 - Incident, monitoring, backup, and restore procedures.
@@ -38,16 +40,14 @@ is operating.
 - Complete a privacy review of hosting logs and any analytics/error vendor; full
   addresses must remain excluded.
 
-## Product/data blockers
+## Product/data limitations
 
-- Enhanced Pilot Coverage has 31 published Nevada bills and meets the lower end
-  of the PRD's approximately 30–50-record target. The final subject-breadth,
-  label-consistency, search, accessibility, sitemap, and source-health audit
-  remains incomplete under decision record 0007.
-- The 200-address golden geographic review and authoritative 99 percent agreement
-  evidence are not complete.
 - Nevada state campaign-finance aggregates remain unpublished until supported,
-  reproducible access is approved.
+  reproducible access is approved. The limited P0 federal aggregate pilot remains
+  clearly labeled and state/federal amounts are not combined.
+- Forty-six of the 200 public-institution inputs were not uniquely matched by
+  Census. They retain actionable unmatched or ambiguity handling and are not
+  included in the matchable-result agreement denominator.
 
 Until every P0 gate and production-evidence item is complete, the repository is
 a hardened private alpha rather than a public-pilot release.

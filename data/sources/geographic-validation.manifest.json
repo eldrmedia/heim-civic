@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "phase-9.4-geographic-validation:2026-08-25",
+  "selectionTarget": 200,
+  "minimumAgreementRate": 0.99,
+  "sources": {
+    "publicInstitutions": {
+      "organization": "National Center for Education Statistics EDGE",
+      "coverageLabel": "2024-2025 Nevada public school locations",
+      "sourcePageUrl": "https://nces.ed.gov/programs/edge/geographic/schoollocations",
+      "queryUrl": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_GEOCODE_PUBLICSCH_2425/MapServer/0/query?where=STATE%3D%27NV%27&outFields=NCESSCH%2CLEAID%2CNAME%2CSTREET%2CCITY%2CSTATE%2CZIP%2CNMCNTY%2CLOCALE%2CLAT%2CLON%2CCD%2CSLDL%2CSLDU%2CSCHOOLYEAR&returnGeometry=true&outSR=4326&orderByFields=NCESSCH&f=json",
+      "retrievedAt": "2026-08-25T03:51:08Z",
+      "documentSha256": "e2c552e1bd400f6354f518d03f7239f486d2ca7a85723ddeafad0faf779ec453",
+      "expectedRecordCount": 746
+    },
+    "geocoder": {
+      "organization": "United States Census Bureau",
+      "documentationUrl": "https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html",
+      "endpoint": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress",
+      "benchmark": "Public_AR_Current",
+      "vintage": "Current_Current"
+    },
+    "boundaries": {
+      "organization": "Nevada Legislative Counsel Bureau",
+      "manifestPath": "data/sources/nevada-boundaries-2021.manifest.json",
+      "sourcePageUrl": "https://www.leg.state.nv.us/Division/Research/Districts/Reapp/2021/district-plans/",
+      "expectedDistrictCounts": {
+        "congressional": 4,
+        "state-senate": 21,
+        "state-assembly": 42
+      }
+    }
+  },
+  "selection": {
+    "method": "Deterministic coverage-first selection from official public schools, then county round-robin fill",
+    "requiredCounties": 17,
+    "targetCommunities": [
+      "Carson City",
+      "Elko",
+      "Henderson",
+      "Las Vegas",
+      "Mesquite",
+      "North Las Vegas",
+      "Pahrump",
+      "Reno",
+      "Sparks"
+    ],
+    "boundaryProximityCount": 20
+  },
+  "parserVersion": "phase-9.4-geographic-validation-v1"
+}

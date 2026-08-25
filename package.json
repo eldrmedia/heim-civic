@@ -29,6 +29,7 @@
     "data:promote-enhanced-bills": "node --import tsx scripts/promote-enhanced-bills.ts",
     "data:reconcile-legacy-ab83": "node --import tsx scripts/reconcile-legacy-ab83.ts",
     "data:audit-enhanced-coverage": "node --import tsx scripts/audit-enhanced-pilot-coverage.ts",
+    "data:audit-geography": "node --import tsx scripts/audit-geographic-validation.ts",
     "data:finance": "tsx scripts/build-finance.ts",
     "ops:source-health": "node --import tsx scripts/check-source-health.ts",
     "audit": "npm audit --audit-level=high",

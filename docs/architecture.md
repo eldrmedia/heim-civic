@@ -141,3 +141,8 @@ waitlist receivers own their separate backup, retention, and restore controls.
 ## Planned data boundary
 
 Supabase PostgreSQL/PostGIS remains the planned durable store for later civic records. The current application intentionally uses immutable, versioned geographic, officeholder, complete Nevada bill-index, enhanced-review, enhanced-legislation, and federal-finance snapshots and does not create an address table. Correction cases remain behind a delivery interface until the durable schema and access controls are reviewed. Promoting the remaining enhanced bill queue, historical terms, Nevada finance, outside spending, and complete federal finance require separate reviewed operations or schema decisions.
+
+The Phase 9.4 geographic exit audit is an offline evidence workflow, not an
+application address store. It uses only published NCES public-school addresses,
+hashes the official Census responses, and commits the reviewed comparison
+fixture. Live user lookup addresses remain transient and never enter this audit.
