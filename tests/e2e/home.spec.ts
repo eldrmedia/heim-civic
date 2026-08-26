@@ -658,6 +658,16 @@ test("preproduction operations fail closed while exposing readiness and security
   page,
   request,
 }) => {
+  const home = await request.get("/");
+  const homeHeaders = home.headers();
+  expect(homeHeaders["content-security-policy"]).toContain(
+    "frame-ancestors 'none'",
+  );
+  expect(homeHeaders["strict-transport-security"]).toContain("max-age=");
+  expect(homeHeaders["x-content-type-options"]).toBe("nosniff");
+  expect(homeHeaders["x-frame-options"]).toBe("DENY");
+  expect(homeHeaders["x-powered-by"]).toBeUndefined();
+
   const health = await request.get("/api/health");
   expect(health.status()).toBe(200);
   await expect(health.json()).resolves.toMatchObject({

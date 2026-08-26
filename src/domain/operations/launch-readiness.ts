@@ -135,7 +135,7 @@ const weakSecretValues = new Set([
   "test-token",
 ]);
 
-function parseProductionUrl(value: string | undefined) {
+export function parsePublicProductionUrl(value: string | undefined) {
   if (!value) return null;
 
   try {
@@ -252,11 +252,11 @@ function repositoryChecks(
 function configurationChecks(
   environment: LaunchEnvironment,
 ): LaunchReadinessCheck[] {
-  const siteUrl = parseProductionUrl(environment.NEXT_PUBLIC_SITE_URL);
-  const correctionUrl = parseProductionUrl(
+  const siteUrl = parsePublicProductionUrl(environment.NEXT_PUBLIC_SITE_URL);
+  const correctionUrl = parsePublicProductionUrl(
     environment.CORRECTIONS_INTAKE_WEBHOOK_URL,
   );
-  const waitlistUrl = parseProductionUrl(
+  const waitlistUrl = parsePublicProductionUrl(
     environment.WAITLIST_INTAKE_WEBHOOK_URL,
   );
 
@@ -316,7 +316,7 @@ function externalEvidenceChecks(
   checkedAt: Date,
 ): LaunchReadinessCheck[] {
   const evidenceOrigin = evidence
-    ? parseProductionUrl(evidence.deploymentUrl)
+    ? parsePublicProductionUrl(evidence.deploymentUrl)
     : null;
   const matchingDeployment =
     siteUrl !== null &&
@@ -372,7 +372,7 @@ export function evaluateLaunchReadiness({
           ...repository,
           ...configurationChecks(environment),
           ...externalEvidenceChecks(
-            parseProductionUrl(environment.NEXT_PUBLIC_SITE_URL),
+            parsePublicProductionUrl(environment.NEXT_PUBLIC_SITE_URL),
             evidence,
             evidenceError,
             checkedAt,

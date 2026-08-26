@@ -34,6 +34,7 @@
     "ops:source-health": "node --import tsx scripts/check-source-health.ts",
     "ops:launch-readiness": "node --import tsx scripts/check-launch-readiness.ts --mode=repository",
     "ops:launch-readiness:production": "node --import tsx scripts/check-launch-readiness.ts --mode=production",
+    "ops:deployment-check": "node --import tsx scripts/check-production-deployment.ts",
     "audit": "npm audit --audit-level=high",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

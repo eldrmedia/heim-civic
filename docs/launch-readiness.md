@@ -20,6 +20,12 @@ the private operations system outside this repository, and use only opaque
 `private-ops:` references. Never place screenshots, operator names, email
 addresses, vendor exports, tokens, or exact lookup inputs in this repository.
 
+After the final domain is attached, set `DEPLOYMENT_CHECK_URL` in the operator
+shell and run `npm run ops:deployment-check`. The read-only smoke check verifies
+the production origin, security headers, health response, crawl policy, sitemap,
+security contact, and official directory without submitting personal data. See
+`docs/runbooks/production-deployment-rehearsal.md`.
+
 ## Implemented and testable in the repository
 
 - Responsive, keyboard-accessible public journeys with automated axe coverage.
