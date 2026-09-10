@@ -9,7 +9,7 @@ afterEach(() => {
 describe("GET /api/health", () => {
   it("returns a privacy-safe readiness report for current snapshots", async () => {
     vi.useFakeTimers();
-    vi.setSystemTime(new Date("2026-08-25T02:00:00.000Z"));
+    vi.setSystemTime(new Date("2026-09-10T20:05:00.000Z"));
 
     const response = GET();
     const result = await response.json();

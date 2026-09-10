@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "sourceSnapshotId": "phase-9.3-batch-3-enhanced-review:2026-08-24",
-  "generatedAt": "2026-08-24T17:40:54.271Z",
+  "sourceSnapshotId": "phase-9.3-batch-3-enhanced-review:2026-09-07",
+  "generatedAt": "2026-09-07T22:15:41.135Z",
   "records": [
     {
       "billIdentifier": "AB204",
-      "candidateFingerprint": "d4a5c49de74278c1b36110623a1fa4ee32786204b19cca8d9323e02ff0808850",
+      "candidateFingerprint": "aaca336bb6412f4210fbf1b6f1c38aaa9b441a8162c6d78608d808636c6d524f",
       "subjectArea": "Health",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12174/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB204/Text",
@@ -76,7 +76,7 @@
     },
     {
       "billIdentifier": "AB205",
-      "candidateFingerprint": "ff06bb8d3771285cfc0a6257500f3cae0a70a1e0f0572c6d3bc24ba375d8f731",
+      "candidateFingerprint": "fbbc397f67eaa3be22282fdb4856f5a786bb3b24d5a57e2f706a379726d22e72",
       "subjectArea": "Education",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12175/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB205/Text",
@@ -147,7 +147,7 @@
     },
     {
       "billIdentifier": "AB209",
-      "candidateFingerprint": "f481b0eaf12300ef4d3d5a5a9c10d8f0d9a42037e0050f140fde850cee66d1d2",
+      "candidateFingerprint": "273aed75f7175d0b974279bb5983d6278efad5590faa14406507bbfee173bbae",
       "subjectArea": "Criminal justice and public safety",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12210/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB209/Text",
@@ -218,7 +218,7 @@
     },
     {
       "billIdentifier": "AB213",
-      "candidateFingerprint": "6c40149bf19285216ae79212768639d37e47d3ee64558d5080fc18c0924e61a7",
+      "candidateFingerprint": "e7178351ddadd4152f882fa736e05c94da526416e1b97862af5d944017103730",
       "subjectArea": "Labor and business",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12215/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB213/Text",
@@ -289,7 +289,7 @@
     },
     {
       "billIdentifier": "AB217",
-      "candidateFingerprint": "6910ee9928161dbb84ed23581c93858bed1c52d88916543d1934756cb4e8e22a",
+      "candidateFingerprint": "9fd1b9a014c75390b3c3c730398a2cbc343bc0b2e2bf98327fd4798098ae5670",
       "subjectArea": "Education",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12219/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB217/Text",
@@ -360,7 +360,7 @@
     },
     {
       "billIdentifier": "AB237",
-      "candidateFingerprint": "12c9bd47b52c508cd9793123bf75388701537496fdf49bebf73fb11967578624",
+      "candidateFingerprint": "978a65586dc8cccedf6ce5619f23415ec99827871c5946b0972f80991eddedfe",
       "subjectArea": "Elections and government",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12257/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB237/Text",
@@ -431,7 +431,7 @@
     },
     {
       "billIdentifier": "AB245",
-      "candidateFingerprint": "ae19a318efecb3c095caa2fed8ac17a715a47f8b4b1ce7cd0dbbb60e40c42a73",
+      "candidateFingerprint": "fc832bcba8018a29943352373195018248617a13513903fcc0e5b10324e31cf6",
       "subjectArea": "Criminal justice and public safety",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12275/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB245/Text",
@@ -502,7 +502,7 @@
     },
     {
       "billIdentifier": "AB259",
-      "candidateFingerprint": "7b8559f14afd8ca3803e08e673bfa21714e3606519a7938b6bf4f53c4e3f198a",
+      "candidateFingerprint": "0496db700b9c274ff12ca7d07555bcadba254dab422e5e2e61a6ee4357910fee",
       "subjectArea": "Health",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12296/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB259/Text",
@@ -573,7 +573,7 @@
     },
     {
       "billIdentifier": "AB278",
-      "candidateFingerprint": "9ef73d6c117e5a79f88c4f0af1ce3ac1dec08c68c39d1452e17cfaf07cbd1078",
+      "candidateFingerprint": "433cbb16e03e640bc0fc73cf37428db0f8b6f29430ba2ad91566e0867c0119f6",
       "subjectArea": "Civil rights and social services",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12329/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB278/Text",
@@ -644,7 +644,7 @@
     },
     {
       "billIdentifier": "AB280",
-      "candidateFingerprint": "82082d2774e2e75dd27a39b4b704bd4953340a907e5d0eb5c8b9450a5c8220d9",
+      "candidateFingerprint": "7bf9723e86359a83448cd724e35c537fae6eab5be5da864443a688b34ec2c9d1",
       "subjectArea": "Housing",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12333/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB280/Text",

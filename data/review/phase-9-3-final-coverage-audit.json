@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "auditVersion": "phase-9-3-coverage-audit-v1",
-  "auditedAt": "2026-08-25T01:36:54.262Z",
+  "auditedAt": "2026-09-10T20:03:15.412Z",
   "evidenceSnapshots": {
-    "billIndex": "nv-nelis:83rd2025:bill-index:2026-08-22T23:18:39.441Z",
-    "legacyAb83Review": "phase-9.3-legacy-ab83-reconciliation:2026-08-25",
-    "baseLegislation": "phase-4-legislation:2026-08-22+legacy-reconciled:phase-9.3-legacy-ab83-reconciliation:2026-08-25",
-    "promotedLegislation": "phase-9.2b-promoted:phase-9.2-enhanced-review:2026-08-23+phase-9.2b-promoted:phase-9.3-batch-2-enhanced-review:2026-08-24+phase-9.2b-promoted:phase-9.3-batch-3-enhanced-review:2026-08-24"
+    "billIndex": "nv-nelis:83rd2025:bill-index:2026-09-07T21:50:39.054Z",
+    "legacyAb83Review": "phase-9.3-legacy-ab83-reconciliation:2026-09-07",
+    "baseLegislation": "phase-4-legislation:2026-09-07+legacy-reconciled:phase-9.3-legacy-ab83-reconciliation:2026-09-07",
+    "promotedLegislation": "phase-9.2b-promoted:phase-9.2-enhanced-review:2026-09-08+phase-9.2b-promoted:phase-9.3-batch-2-enhanced-review:2026-09-07+phase-9.2b-promoted:phase-9.3-batch-3-enhanced-review:2026-09-07"
   },
   "status": "ready",
   "requirements": ["FR-007", "FR-008", "FR-009"],
@@ -40,16 +40,5 @@
     "publicSelectionLogCoverage": true,
     "approvedLimitationsPreserved": true
   },
-  "findings": [
-    {
-      "id": "HCN-9.3-004",
-      "state": "resolved",
-      "severity": "observation",
-      "requirement": "FR-007",
-      "title": "Missing sponsor entity is explicitly disclosed",
-      "affectedRecords": ["AB44"],
-      "evidence": "The reviewed AB44 candidate contains an empty sponsor array. The public page now preserves that value and explains that no sponsor entity was captured in the reviewed source snapshot.",
-      "requiredAction": "Retain the textual fallback and recheck the official record during the next source refresh."
-    }
-  ]
+  "findings": []
 }

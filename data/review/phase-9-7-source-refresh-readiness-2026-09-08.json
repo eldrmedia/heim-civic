@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "frameworkVersion": "editorial-bill-review-v1",
+  "candidateFingerprintVersion": "v2",
+  "assessedAt": "2026-09-08T14:26:08.000Z",
+  "assessor": {
+    "type": "ai-assisted",
+    "system": "OpenAI Codex",
+    "humanApprovalRequired": true
+  },
+  "scope": {
+    "records": 31,
+    "rollCalls": 63,
+    "officialSources": 125,
+    "changedSourceHashes": 62,
+    "sourceSnapshots": [
+      "phase-9.2-enhanced-review:2026-09-08",
+      "phase-9.3-batch-2-enhanced-review:2026-09-07",
+      "phase-9.3-batch-3-enhanced-review:2026-09-07",
+      "phase-9.3-legacy-ab83-reconciliation:2026-09-07"
+    ]
+  },
+  "comparison": {
+    "method": "Compared every refreshed parsed record with its previously approved source package after excluding retrieval timestamps, snapshot identifiers, and raw document hashes. Then reviewed every remaining parsed-field difference against the official source.",
+    "unchangedParsedRecords": 30,
+    "changedParsedRecords": [
+      {
+        "billIdentifier": "AB44",
+        "field": "people",
+        "change": "Added Assembly Committee on Commerce and Labor as the primary sponsor.",
+        "officialEvidenceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/FillSelectedBillTab?billKey=11833&selectedTab=Overview",
+        "finding": "pass",
+        "reason": "The current official NELIS overview explicitly labels the Assembly Committee on Commerce and Labor as Primary Sponsor. The committee is retained as an organization and is not mapped to an individual officeholder."
+      }
+    ],
+    "unchangedFields": [
+      "bill identity and numeric key",
+      "official digest and title",
+      "status and latest action",
+      "committee referrals",
+      "vote events, member values, and totals",
+      "neutral selection reason",
+      "editorial taxonomy",
+      "published uncertainty limitations"
+    ],
+    "preservedLimitations": [
+      "AB82 and AB98 sponsor-role coverage limitations",
+      "AB83 NELIS co-sponsor versus enrolled joint-sponsor limitation"
+    ],
+    "rawHashFinding": "Raw HTML document hashes changed for 62 of 125 sources. Hash changes are retained and are not treated as evidence that parsed civic facts changed; the fingerprint gate still requires new human acceptance."
+  },
+  "checks": {
+    "identity": "pass",
+    "sourceIntegrity": "pass-with-new-source-hashes",
+    "digestFidelity": "pass-no-parsed-change",
+    "amendments": "pass-no-parsed-change",
+    "status": "pass-no-parsed-change",
+    "peopleAndCommittees": "pass-with-verified-ab44-primary-sponsor-addition",
+    "votes": "pass-no-parsed-change",
+    "selectionNeutrality": "pass-no-parsed-change",
+    "uncertainty": "pass-limitations-preserved"
+  },
+  "records": [
+    {
+      "billIdentifier": "AB226",
+      "candidateFingerprint": "91ea791da55e06d5428ff1ca945967e74a474712bbdc53214f009ae5f0d66f4b",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB397",
+      "candidateFingerprint": "0c153ff37f21b1200aa06c615d6bf6e885e1b09dd991699ecac51e504a3ddcc7",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "SB128",
+      "candidateFingerprint": "c3707441b368db9be826010c52db7e0d56c9c8d4679a2492818ddcef4267c396",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB223",
+      "candidateFingerprint": "13e5ed1f67ed15e2cf5d9c00b8f5027a82c36973630d1883bec5dbf7b9858a98",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB306",
+      "candidateFingerprint": "306741d99683ff8fb4aed123f53feb63ec85b785bbf421b7ca7d63444e43f05e",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB44",
+      "candidateFingerprint": "60700aab571fdeabab0cbb76c4b1d791cf1d53c967e23483deb883cdd90aa3af",
+      "recommendation": "approve-with-primary-sponsor-addition"
+    },
+    {
+      "billIdentifier": "AB105",
+      "candidateFingerprint": "9b8ce6243c882f18a571f3266224e69d4f0030d6cd00f7d4474f2d8b108d3cea",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB244",
+      "candidateFingerprint": "605937b71800b90e940fedba49040f23c108a5e2fc911783d39d18e80d045765",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB140",
+      "candidateFingerprint": "ef25aad4ce393d332137f26abd0fc3da766b5bb0f95e32cc8df5e006fc74787e",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "SB171",
+      "candidateFingerprint": "9ef08206bda388694f8c782cf3b929e9cfbe728ad0925be6a9fa8b24a9248ac9",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB79",
+      "candidateFingerprint": "c3a234e4c073d28902ddaeda80244d0b93042cc396740f592d31a76615c92071",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB82",
+      "candidateFingerprint": "c05a5cc340cf0da02d1e3965c74b6f001f6420c47620af16fe0dda91f5c2dac4",
+      "recommendation": "approve-with-existing-limitation"
+    },
+    {
+      "billIdentifier": "AB88",
+      "candidateFingerprint": "71beca7a7951b9f454d8bbb433dd0cc2aa8864962c8304e02af8cd9790d3dcd6",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB98",
+      "candidateFingerprint": "6df638beea1b7097a65820018d0e184d5d37b59c5c4e46e4b34ee6b4f5a4b867",
+      "recommendation": "approve-with-existing-limitation"
+    },
+    {
+      "billIdentifier": "AB112",
+      "candidateFingerprint": "21f6a9fb2e66c11c369dd74d99e9285981176cea3bc8c7ece06dec86b43f1e5f",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB144",
+      "candidateFingerprint": "d1acf84ead51a9028c4ae577d4db705a149a84d16131de2acd696a3d133873c0",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB155",
+      "candidateFingerprint": "150bac9e00d566899ddb5936cdafaa6165e4be6e8ae5ffab101218c91ec5663d",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB185",
+      "candidateFingerprint": "912f89ad5be35f7858a65c7890899e04351dae5e7422651d9963e1311c4c10da",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB188",
+      "candidateFingerprint": "cdeadc4aeed62ba6956743306fa9c41b4d67ef91f69954ccc434210f810fc5a3",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB201",
+      "candidateFingerprint": "e1e7e7e5c096e6f45380ab999894f2ad38727f9907115ee21e32fe279b44d7a6",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB204",
+      "candidateFingerprint": "aaca336bb6412f4210fbf1b6f1c38aaa9b441a8162c6d78608d808636c6d524f",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB205",
+      "candidateFingerprint": "fbbc397f67eaa3be22282fdb4856f5a786bb3b24d5a57e2f706a379726d22e72",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB209",
+      "candidateFingerprint": "273aed75f7175d0b974279bb5983d6278efad5590faa14406507bbfee173bbae",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB213",
+      "candidateFingerprint": "e7178351ddadd4152f882fa736e05c94da526416e1b97862af5d944017103730",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB217",
+      "candidateFingerprint": "9fd1b9a014c75390b3c3c730398a2cbc343bc0b2e2bf98327fd4798098ae5670",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB237",
+      "candidateFingerprint": "978a65586dc8cccedf6ce5619f23415ec99827871c5946b0972f80991eddedfe",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB245",
+      "candidateFingerprint": "fc832bcba8018a29943352373195018248617a13513903fcc0e5b10324e31cf6",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB259",
+      "candidateFingerprint": "0496db700b9c274ff12ca7d07555bcadba254dab422e5e2e61a6ee4357910fee",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB278",
+      "candidateFingerprint": "433cbb16e03e640bc0fc73cf37428db0f8b6f29430ba2ad91566e0867c0119f6",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB280",
+      "candidateFingerprint": "7bf9723e86359a83448cd724e35c537fae6eab5be5da864443a688b34ec2c9d1",
+      "recommendation": "approve"
+    },
+    {
+      "billIdentifier": "AB83",
+      "candidateFingerprint": "9ee82c70631cac15c61ca56cec15b6db4764235b891e909ba0d501fd6540e6a8",
+      "recommendation": "approve-with-existing-limitation"
+    }
+  ],
+  "disposition": "recommend-approval",
+  "humanDecisionState": "approved",
+  "reason": "Thirty records retain identical parsed civic facts and editorial fields. AB44 adds the committee that the current official NELIS overview explicitly identifies as its primary sponsor. No digest, status, vote, taxonomy, selection, or limitation change was detected. New source hashes and candidate fingerprints remain bound to a fresh human decision before publication.",
+  "humanDecision": {
+    "reviewer": {
+      "name": "william elder",
+      "role": "founder"
+    },
+    "reviewedAt": "2026-09-10T20:01:54.000Z",
+    "decisionLedgers": [
+      "data/review/enhanced-bill-editorial-decisions.json",
+      "data/review/enhanced-bill-editorial-decisions-batch-2.json",
+      "data/review/enhanced-bill-editorial-decisions-batch-3.json",
+      "data/review/enhanced-bill-editorial-decisions-legacy-ab83.json"
+    ]
+  }
+}

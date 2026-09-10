@@ -47,6 +47,7 @@ function evidence(): LaunchEvidence {
 
 const productionEnvironment = {
   NEXT_PUBLIC_SITE_URL: "https://heimcivic.org",
+  NEXT_PUBLIC_MAPTILER_KEY: "domain-restricted-public-map-key",
   LOOKUP_RATE_LIMIT_SECRET: "rate-limit-secret-with-32-plus-characters",
   SECURITY_CONTACT_EMAIL: "security@heimcivic.org",
   CORRECTIONS_INTAKE_WEBHOOK_URL: "https://intake.heimcivic.org/corrections",

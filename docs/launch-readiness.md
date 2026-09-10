@@ -50,6 +50,10 @@ security contact, and official directory without submitting personal data. See
   snapshot freshness, repository launch readiness, production build, and
   browser journeys.
 - Incident, monitoring, backup, and restore procedures.
+- Daily GitHub source-health incident monitoring and weekly/manual
+  refresh-to-pull-request automation.
+- A progressively enhanced MapLibre district map with the official SVG and text
+  equivalents retained when WebGL or the basemap provider is unavailable.
 
 ## Requires production configuration and evidence
 
@@ -59,6 +63,8 @@ security contact, and official directory without submitting personal data. See
   sitemap at the final origin; then verify webmaster accounts and submit the
   sitemap. Search inclusion and ranking remain external outcomes.
 - Configure and monitor `SECURITY_CONTACT_EMAIL`.
+- Configure an origin-restricted `NEXT_PUBLIC_MAPTILER_KEY`, usage alerts, and a
+  spend cap, or approve a replacement MapLibre style and CSP update.
 - Configure external uptime, error, source-health, and broken-link monitoring and
   test alert delivery.
 - Establish the off-site repository mirror and complete a recorded clean-room

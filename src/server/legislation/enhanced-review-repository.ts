@@ -3,6 +3,7 @@ import "server-only";
 import enhancedReviewData from "@/data/generated/enhanced-bill-review.json";
 import enhancedReviewBatch2Data from "@/data/generated/enhanced-bill-review-batch-2.json";
 import enhancedReviewBatch3Data from "@/data/generated/enhanced-bill-review-batch-3.json";
+import enhancedReviewLegacyAb83Data from "@/data/generated/enhanced-bill-review-legacy-ab83.json";
 import type {
   EnhancedBillReviewBundle,
   EnhancedBillReviewCandidate,
@@ -12,6 +13,7 @@ const bundles = [
   enhancedReviewData as unknown as EnhancedBillReviewBundle,
   enhancedReviewBatch2Data as unknown as EnhancedBillReviewBundle,
   enhancedReviewBatch3Data as unknown as EnhancedBillReviewBundle,
+  enhancedReviewLegacyAb83Data as unknown as EnhancedBillReviewBundle,
 ];
 const bundle: EnhancedBillReviewBundle = {
   schemaVersion: 1,
@@ -19,11 +21,11 @@ const bundle: EnhancedBillReviewBundle = {
   generatedAt: bundles
     .map((item) => item.generatedAt)
     .sort()
-    .at(-1)!,
+    .at(0)!,
   parserVersion: [...new Set(bundles.map((item) => item.parserVersion))].join(
     "+",
   ),
-  coverageLabel: "Phase 9.3 first three enhanced-review batches",
+  coverageLabel: "Phase 9.3 enhanced-review batches and reconciled AB83 record",
   targetRange: bundles[0]!.targetRange,
   records: bundles.flatMap((item) => item.records),
   sources: [

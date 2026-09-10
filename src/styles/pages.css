@@ -1118,6 +1118,10 @@
     @apply bg-sage-100 p-4 sm:p-6;
   }
 
+  .district-boundary-map > .interactive-district-map {
+    @apply border-b;
+  }
+
   .district-boundary-map__svg {
     @apply block h-auto w-full;
   }

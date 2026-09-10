@@ -28,10 +28,13 @@ const officialsPath = path.join(
   projectRoot,
   "src/data/generated/current-officials.json",
 );
-const outputPath = path.join(
-  projectRoot,
-  "src/data/generated/pilot-legislation.json",
-);
+const isRefreshCandidate = process.argv.includes("--candidate");
+const outputPath = isRefreshCandidate
+  ? path.join(
+      projectRoot,
+      "data/review/generated/pilot-legislation-refresh-candidate.json",
+    )
+  : path.join(projectRoot, "src/data/generated/pilot-legislation.json");
 
 const sourceSchema = z.object({
   id: z.string().min(1),
@@ -92,6 +95,9 @@ async function main() {
   };
   await writeFile(outputPath, `${JSON.stringify(bundle)}\n`, "utf8");
   console.info("Built verified Phase 4 legislation snapshot", {
+    publicationState: isRefreshCandidate
+      ? "refresh-candidate"
+      : "published-snapshot",
     bills: bills.length,
     votes: bills.reduce((count, bill) => count + bill.votes.length, 0),
     linkedMemberVotes: bills.reduce(
@@ -293,13 +299,15 @@ function parseFederalBill(
   );
   const summaryHtml = asArray(bill.summaries?.summary).at(-1)?.text ?? "";
   const $summary = load(summaryHtml);
-  const actions: BillAction[] = asArray(bill.actions?.item)
-    .map((action) => ({
-      occurredOn: String(action.actionDate ?? ""),
-      text: clean(String(action.text ?? "")),
-    }))
-    .filter((action) => action.occurredOn && action.text)
-    .reverse();
+  const actions = uniqueActions(
+    asArray(bill.actions?.item)
+      .map((action) => ({
+        occurredOn: String(action.actionDate ?? ""),
+        text: clean(String(action.text ?? "")),
+      }))
+      .filter((action) => action.occurredOn && action.text)
+      .reverse(),
+  );
   const people: BillPerson[] = [
     ...parseFederalPeople(bill.sponsors?.item, "sponsor", officialByBioguide),
     ...parseFederalPeople(
@@ -349,6 +357,17 @@ function parseFederalBill(
       "A Nevada-sponsored federal bill with a Nevada cosponsor and two recorded House votes.",
     sources: [statusSource, ...rollSources].map(toSourceRecord),
   };
+}
+
+function uniqueActions(actions: BillAction[]) {
+  return [
+    ...new Map(
+      actions.map((action) => [
+        `${action.occurredOn}\u0000${action.text}`,
+        action,
+      ]),
+    ).values(),
+  ];
 }
 
 function parseFederalPeople(

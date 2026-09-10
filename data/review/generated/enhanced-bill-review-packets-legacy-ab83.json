@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "candidateFingerprintVersion": "v2",
-  "sourceSnapshotId": "phase-9.3-legacy-ab83-reconciliation:2026-08-25",
-  "generatedAt": "2026-08-25T01:29:58.464Z",
+  "sourceSnapshotId": "phase-9.3-legacy-ab83-reconciliation:2026-09-07",
+  "generatedAt": "2026-09-07T22:15:26.022Z",
   "records": [
     {
       "billIdentifier": "AB83",
-      "candidateFingerprint": "431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8",
+      "candidateFingerprint": "9ee82c70631cac15c61ca56cec15b6db4764235b891e909ba0d501fd6540e6a8",
       "subjectArea": "Civil rights and social services",
       "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB83/Text",

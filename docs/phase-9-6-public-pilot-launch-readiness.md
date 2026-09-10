@@ -20,6 +20,7 @@ that a hosting, monitoring, backup, intake, or webmaster provider is configured.
 - a final non-reserved HTTPS public origin;
 - production deployment context when Vercel supplies `VERCEL_ENV`;
 - a monitored security mailbox;
+- a domain-restricted MapTiler browser key or approved replacement style;
 - strong server-only lookup, correction, and waitlist credentials; and
 - eight deployment-specific external exercises required by the PRD launch gate.
 

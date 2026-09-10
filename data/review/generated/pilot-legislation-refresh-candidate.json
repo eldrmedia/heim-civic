@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "phase-4-legislation:2026-09-07+legacy-reconciled:phase-9.3-legacy-ab83-reconciliation:2026-09-07",
-  "generatedAt": "2026-09-07T22:15:26.022Z",
-  "parserVersion": "pilot-legislation-v1+enhanced-bill-promotion-v2",
-  "coverageLabel": "Accountably reviewed Nevada legacy record and federal pilot legislation",
+  "snapshotId": "phase-4-legislation:2026-09-08",
+  "generatedAt": "2026-09-08T14:20:55.000Z",
+  "parserVersion": "pilot-legislation-v1",
+  "coverageLabel": "Phase 4 bills and votes vertical slice",
   "bills": [
     {
       "id": "nv-83-2025-ab83",
@@ -11,9 +11,9 @@
       "jurisdiction": "state",
       "identifier": "AB83",
       "session": "Nevada 83rd Session (2025)",
-      "title": "Designates “Larry Itliong Day” as a day of observance in this State. (BDR 19-99)",
+      "title": "Designates “Larry Itliong Day” as a day of observance in this State.",
       "officialTitle": "AN ACT relating to days of observance; requiring the Governor to annually proclaim October 25 to be “Larry Itliong Day” in the State of Nevada; and providing other matters properly relating thereto.",
-      "policyArea": "Civil rights and social services",
+      "policyArea": "State government and observances",
       "status": {
         "label": "Vetoed",
         "asOf": "2025-06-03",
@@ -22,7 +22,7 @@
       "officialSummary": {
         "text": "Under existing law, various days, weeks and months of observance are recognized in this State. (NRS 236.018-236.095) This bill requires the Governor to annually proclaim October 25 to be “Larry Itliong Day” in the State of Nevada.",
         "attribution": "Official Nevada Legislative Counsel Bureau digest",
-        "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
+        "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB83/Overview",
         "reviewState": "official-source"
       },
       "committees": [
@@ -102,10 +102,7 @@
           "occurredOn": "2024-12-09",
           "text": "Prefiled. Referred to Committee on Government Affairs. To printer."
         },
-        {
-          "occurredOn": "2024-12-12",
-          "text": "From printer."
-        },
+        { "occurredOn": "2024-12-12", "text": "From printer." },
         {
           "occurredOn": "2025-02-04",
           "text": "Read first time. To committee."
@@ -138,10 +135,7 @@
           "occurredOn": "2025-04-17",
           "text": "Read third time. Passed, as amended. Title approved. Preamble adopted. (Yeas: 28, Nays: 14.) To Senate."
         },
-        {
-          "occurredOn": "2025-04-18",
-          "text": "In Senate."
-        },
+        { "occurredOn": "2025-04-18", "text": "In Senate." },
         {
           "occurredOn": "2025-04-23",
           "text": "Read first time. Referred to Committee on Government Affairs. To committee."
@@ -158,10 +152,7 @@
           "occurredOn": "2025-05-21",
           "text": "Read third time. Passed, as amended. Title approved. Preamble adopted. (Yeas: 15, Nays: 6.) To Assembly."
         },
-        {
-          "occurredOn": "2025-05-22",
-          "text": "In Assembly."
-        },
+        { "occurredOn": "2025-05-22", "text": "In Assembly." },
         {
           "occurredOn": "2025-05-26",
           "text": "Senate Amendment No. 692 concurred in. To enrollment."
@@ -174,16 +165,13 @@
           "occurredOn": "2025-06-02",
           "text": "Vetoed by the Governor. Returned to Assembly with Governor's veto message."
         },
-        {
-          "occurredOn": "2025-06-03",
-          "text": "(No further action taken.)"
-        }
+        { "occurredOn": "2025-06-03", "text": "(No further action taken.)" }
       ],
       "votes": [
         {
           "id": "nv-vote:12381",
           "chamber": "Assembly (1st Reprint)",
-          "question": "Passage",
+          "question": "Final passage",
           "result": "Passed",
           "occurredOn": "2025-04-17",
           "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12381&voteResultPanel=All",
@@ -497,7 +485,7 @@
         {
           "id": "nv-vote:12798",
           "chamber": "Senate (2nd Reprint)",
-          "question": "Passage",
+          "question": "Final passage",
           "result": "Passed",
           "occurredOn": "2025-05-21",
           "sourceUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12798&voteResultPanel=All",
@@ -662,61 +650,51 @@
           ]
         }
       ],
-      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/11904/Overview",
+      "officialPageUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB83/Overview",
       "officialTextUrl": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/AB83/Text",
-      "selectionReason": "Automatically qualified because the official Nevada governor-veto report lists AB83; this measure was also the original source-verified legislation vertical slice.",
+      "selectionReason": "A complete Nevada lifecycle with committee activity, contested floor votes, and a governor veto.",
       "sources": [
         {
-          "id": "ab83-overview",
+          "id": "nv-ab83-overview",
           "organization": "Nevada Legislature (NELIS)",
           "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/FillSelectedBillTab?billKey=11904&selectedTab=Overview",
-          "retrievedAt": "2026-09-07T22:15:25.425Z",
+          "retrievedAt": "2026-09-08T14:20:54.924Z",
           "documentSha256": "2e92cda1c96181012bbf763ec7e41b1ac589fb344882fe9faaa08daf9d574b77",
-          "coverageLabel": "AB83 legacy reconciliation source package",
-          "parserVersion": "enhanced-bill-review-v1",
+          "coverageLabel": "Phase 4 bills and votes vertical slice",
+          "parserVersion": "pilot-legislation-v1",
           "validationState": "source-verified"
         },
         {
-          "id": "ab83-votes",
+          "id": "nv-ab83-votes",
           "organization": "Nevada Legislature (NELIS)",
           "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVotes?billKey=11904&voteTypeId=3",
-          "retrievedAt": "2026-09-07T22:15:22.964Z",
+          "retrievedAt": "2026-09-08T14:20:52.846Z",
           "documentSha256": "720e988e86616fafc9dc05ad52d15b568a6cddd22103b59506e9b96e8b298600",
-          "coverageLabel": "AB83 legacy reconciliation source package",
-          "parserVersion": "enhanced-bill-review-v1",
+          "coverageLabel": "Phase 4 bills and votes vertical slice",
+          "parserVersion": "pilot-legislation-v1",
           "validationState": "source-verified"
         },
         {
-          "id": "ab83-vote-12381-members",
+          "id": "nv-ab83-assembly-members",
           "organization": "Nevada Legislature (NELIS)",
           "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12381&voteResultPanel=All",
-          "retrievedAt": "2026-09-07T22:15:26.006Z",
+          "retrievedAt": "2026-09-08T14:20:53.205Z",
           "documentSha256": "2379782ce217e6f438f89bddaebb43e8588552bb574ab465f97104f2da4c1093",
-          "coverageLabel": "AB83 legacy reconciliation source package",
-          "parserVersion": "enhanced-bill-review-v1",
+          "coverageLabel": "Phase 4 bills and votes vertical slice",
+          "parserVersion": "pilot-legislation-v1",
           "validationState": "source-verified"
         },
         {
-          "id": "ab83-vote-12798-members",
+          "id": "nv-ab83-senate-members",
           "organization": "Nevada Legislature (NELIS)",
           "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12798&voteResultPanel=All",
-          "retrievedAt": "2026-09-07T22:15:25.975Z",
+          "retrievedAt": "2026-09-08T14:20:53.205Z",
           "documentSha256": "4d5ccf5dfddac3f772ee97a2f052a7c11f4768d5957cdc0c76190b90913c9cc7",
-          "coverageLabel": "AB83 legacy reconciliation source package",
-          "parserVersion": "enhanced-bill-review-v1",
+          "coverageLabel": "Phase 4 bills and votes vertical slice",
+          "parserVersion": "pilot-legislation-v1",
           "validationState": "source-verified"
         }
-      ],
-      "editorialReview": {
-        "state": "human-approved",
-        "reviewerName": "william elder",
-        "reviewerRole": "founder",
-        "reviewedAt": "2026-09-10T20:01:54.000Z",
-        "candidateFingerprint": "9ee82c70631cac15c61ca56cec15b6db4764235b891e909ba0d501fd6540e6a8",
-        "uncertaintyNotes": [
-          "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label."
-        ]
-      }
+      ]
     },
     {
       "id": "us-119-hr1366",
@@ -760,14 +738,7 @@
         }
       ],
       "actions": [
-        {
-          "occurredOn": "2025-02-14",
-          "text": "Introduced in House"
-        },
-        {
-          "occurredOn": "2025-02-14",
-          "text": "Introduced in House"
-        },
+        { "occurredOn": "2025-02-14", "text": "Introduced in House" },
         {
           "occurredOn": "2025-02-14",
           "text": "Referred to the House Committee on Natural Resources."
@@ -776,10 +747,7 @@
           "occurredOn": "2025-08-29",
           "text": "Referred to the Subcommittee on Energy and Mineral Resources."
         },
-        {
-          "occurredOn": "2025-09-03",
-          "text": "Subcommittee Hearings Held"
-        },
+        { "occurredOn": "2025-09-03", "text": "Subcommittee Hearings Held" },
         {
           "occurredOn": "2025-09-17",
           "text": "Subcommittee on Energy and Mineral Resources Discharged"
@@ -791,10 +759,6 @@
         {
           "occurredOn": "2025-09-17",
           "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 25 - 17."
-        },
-        {
-          "occurredOn": "2025-11-25",
-          "text": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-386."
         },
         {
           "occurredOn": "2025-11-25",
@@ -856,10 +820,7 @@
           "occurredOn": "2025-12-18",
           "text": "Motion to reconsider laid on the table Agreed to without objection."
         },
-        {
-          "occurredOn": "2025-12-18",
-          "text": "Received in the Senate."
-        },
+        { "occurredOn": "2025-12-18", "text": "Received in the Senate." },
         {
           "occurredOn": "2026-03-17",
           "text": "Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 357."
@@ -971,7 +932,7 @@
           "id": "us-hr1366-status",
           "organization": "U.S. Government Publishing Office",
           "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr1366.xml",
-          "retrievedAt": "2026-09-07T21:46:48.230Z",
+          "retrievedAt": "2026-09-08T14:20:52.768Z",
           "documentSha256": "f887474f8e27eb12c065bd00daec40f45baca2fa70b202a123314c458ad08a7a",
           "coverageLabel": "Phase 4 bills and votes vertical slice",
           "parserVersion": "pilot-legislation-v1",
@@ -981,7 +942,7 @@
           "id": "us-hr1366-roll357",
           "organization": "Office of the Clerk, U.S. House of Representatives",
           "url": "https://clerk.house.gov/evs/2025/roll357.xml",
-          "retrievedAt": "2026-09-07T21:46:48.196Z",
+          "retrievedAt": "2026-09-08T14:20:52.799Z",
           "documentSha256": "eb604aae2a3462999425e014968f76eb8368100cc7f179ce9447476f5bb82560",
           "coverageLabel": "Phase 4 bills and votes vertical slice",
           "parserVersion": "pilot-legislation-v1",
@@ -991,7 +952,7 @@
           "id": "us-hr1366-roll358",
           "organization": "Office of the Clerk, U.S. House of Representatives",
           "url": "https://clerk.house.gov/evs/2025/roll358.xml",
-          "retrievedAt": "2026-09-07T21:46:48.181Z",
+          "retrievedAt": "2026-09-08T14:20:52.814Z",
           "documentSha256": "b1e81849fe9b92a83adeb25f24043f3a8df8fd21ff110411ceb89cdd4db7acf3",
           "coverageLabel": "Phase 4 bills and votes vertical slice",
           "parserVersion": "pilot-legislation-v1",
@@ -1002,50 +963,50 @@
   ],
   "sources": [
     {
-      "id": "ab83-overview",
+      "id": "nv-ab83-overview",
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/FillSelectedBillTab?billKey=11904&selectedTab=Overview",
-      "retrievedAt": "2026-09-07T22:15:25.425Z",
+      "retrievedAt": "2026-09-08T14:20:54.924Z",
       "documentSha256": "2e92cda1c96181012bbf763ec7e41b1ac589fb344882fe9faaa08daf9d574b77",
-      "coverageLabel": "AB83 legacy reconciliation source package",
-      "parserVersion": "enhanced-bill-review-v1",
+      "coverageLabel": "Phase 4 bills and votes vertical slice",
+      "parserVersion": "pilot-legislation-v1",
       "validationState": "source-verified"
     },
     {
-      "id": "ab83-votes",
+      "id": "nv-ab83-votes",
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVotes?billKey=11904&voteTypeId=3",
-      "retrievedAt": "2026-09-07T22:15:22.964Z",
+      "retrievedAt": "2026-09-08T14:20:52.846Z",
       "documentSha256": "720e988e86616fafc9dc05ad52d15b568a6cddd22103b59506e9b96e8b298600",
-      "coverageLabel": "AB83 legacy reconciliation source package",
-      "parserVersion": "enhanced-bill-review-v1",
+      "coverageLabel": "Phase 4 bills and votes vertical slice",
+      "parserVersion": "pilot-legislation-v1",
       "validationState": "source-verified"
     },
     {
-      "id": "ab83-vote-12381-members",
+      "id": "nv-ab83-assembly-members",
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12381&voteResultPanel=All",
-      "retrievedAt": "2026-09-07T22:15:26.006Z",
+      "retrievedAt": "2026-09-08T14:20:53.205Z",
       "documentSha256": "2379782ce217e6f438f89bddaebb43e8588552bb574ab465f97104f2da4c1093",
-      "coverageLabel": "AB83 legacy reconciliation source package",
-      "parserVersion": "enhanced-bill-review-v1",
+      "coverageLabel": "Phase 4 bills and votes vertical slice",
+      "parserVersion": "pilot-legislation-v1",
       "validationState": "source-verified"
     },
     {
-      "id": "ab83-vote-12798-members",
+      "id": "nv-ab83-senate-members",
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/GetBillVoteMembers?voteKey=12798&voteResultPanel=All",
-      "retrievedAt": "2026-09-07T22:15:25.975Z",
+      "retrievedAt": "2026-09-08T14:20:53.205Z",
       "documentSha256": "4d5ccf5dfddac3f772ee97a2f052a7c11f4768d5957cdc0c76190b90913c9cc7",
-      "coverageLabel": "AB83 legacy reconciliation source package",
-      "parserVersion": "enhanced-bill-review-v1",
+      "coverageLabel": "Phase 4 bills and votes vertical slice",
+      "parserVersion": "pilot-legislation-v1",
       "validationState": "source-verified"
     },
     {
       "id": "us-hr1366-status",
       "organization": "U.S. Government Publishing Office",
       "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr1366.xml",
-      "retrievedAt": "2026-09-07T21:46:48.230Z",
+      "retrievedAt": "2026-09-08T14:20:52.768Z",
       "documentSha256": "f887474f8e27eb12c065bd00daec40f45baca2fa70b202a123314c458ad08a7a",
       "coverageLabel": "Phase 4 bills and votes vertical slice",
       "parserVersion": "pilot-legislation-v1",
@@ -1055,7 +1016,7 @@
       "id": "us-hr1366-roll357",
       "organization": "Office of the Clerk, U.S. House of Representatives",
       "url": "https://clerk.house.gov/evs/2025/roll357.xml",
-      "retrievedAt": "2026-09-07T21:46:48.196Z",
+      "retrievedAt": "2026-09-08T14:20:52.799Z",
       "documentSha256": "eb604aae2a3462999425e014968f76eb8368100cc7f179ce9447476f5bb82560",
       "coverageLabel": "Phase 4 bills and votes vertical slice",
       "parserVersion": "pilot-legislation-v1",
@@ -1065,7 +1026,7 @@
       "id": "us-hr1366-roll358",
       "organization": "Office of the Clerk, U.S. House of Representatives",
       "url": "https://clerk.house.gov/evs/2025/roll358.xml",
-      "retrievedAt": "2026-09-07T21:46:48.181Z",
+      "retrievedAt": "2026-09-08T14:20:52.814Z",
       "documentSha256": "b1e81849fe9b92a83adeb25f24043f3a8df8fd21ff110411ceb89cdd4db7acf3",
       "coverageLabel": "Phase 4 bills and votes vertical slice",
       "parserVersion": "pilot-legislation-v1",

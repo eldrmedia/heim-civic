@@ -100,6 +100,8 @@ export type LaunchReadinessReport = {
 type LaunchEnvironment = Partial<
   Record<
     | "NEXT_PUBLIC_SITE_URL"
+    | "NEXT_PUBLIC_MAPTILER_KEY"
+    | "NEXT_PUBLIC_MAP_STYLE_URL"
     | "LOOKUP_RATE_LIMIT_SECRET"
     | "SECURITY_CONTACT_EMAIL"
     | "CORRECTIONS_INTAKE_WEBHOOK_URL"
@@ -172,6 +174,13 @@ function hasStrongServerSecret(value: string | undefined) {
 
 function hasValidSecurityContact(value: string | undefined) {
   return z.email().max(254).safeParse(value?.trim()).success;
+}
+
+function hasConfiguredPublicMap(environment: LaunchEnvironment) {
+  if (environment.NEXT_PUBLIC_MAPTILER_KEY?.trim()) return true;
+  return (
+    parsePublicProductionUrl(environment.NEXT_PUBLIC_MAP_STYLE_URL) !== null
+  );
 }
 
 function check(
@@ -282,6 +291,13 @@ function configurationChecks(
       hasStrongServerSecret(environment.LOOKUP_RATE_LIMIT_SECRET),
       "A sufficiently strong server-only lookup rate-limit secret is configured.",
       "Configure a unique server-only lookup rate-limit secret of at least 32 characters.",
+    ),
+    check(
+      "interactive-map-provider",
+      "configuration",
+      hasConfiguredPublicMap(environment),
+      "A browser-safe interactive map provider is configured.",
+      "Configure a domain-restricted NEXT_PUBLIC_MAPTILER_KEY or an approved HTTPS NEXT_PUBLIC_MAP_STYLE_URL.",
     ),
     check(
       "security-contact",

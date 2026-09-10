@@ -44,6 +44,18 @@ export default function PrivacyPage() {
         </p>
       </section>
       <section>
+        <h2>Interactive map provider</h2>
+        <p>
+          When the interactive map is configured, the browser requests only the
+          visible map tiles and style resources from the disclosed basemap
+          provider. The application does not send the entered street address or
+          precise geocoder coordinate to that provider and does not place an
+          address marker on the map. Like other web infrastructure, the provider
+          may receive the network address and approximate map area required to
+          deliver those resources under its own privacy and retention terms.
+        </p>
+      </section>
+      <section>
         <h2>Corrections and waitlist</h2>
         <p>
           Correction contact information is used only to acknowledge and

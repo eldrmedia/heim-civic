@@ -49,12 +49,6 @@ describe("Phase 9.3 enhanced coverage audit", () => {
     expect(
       report.findings.some((finding) => finding.id === "HCN-9.3-003"),
     ).toBe(false);
-    expect(
-      report.findings.find((finding) => finding.id === "HCN-9.3-004"),
-    ).toMatchObject({
-      state: "resolved",
-      severity: "observation",
-      affectedRecords: ["AB44"],
-    });
+    expect(report.findings).toEqual([]);
   });
 });

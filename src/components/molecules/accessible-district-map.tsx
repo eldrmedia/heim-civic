@@ -11,6 +11,7 @@ import {
   type DistrictType,
   type StateOutline,
 } from "@/domain/geography/types";
+import { MapLibreDistrictMap } from "@/components/molecules/maplibre-district-map";
 
 const labels: Record<DistrictType, string> = {
   congressional: "U.S. Congress",
@@ -85,6 +86,14 @@ export function AccessibleDistrictMap({
           </p>
         </div>
         <div className="district-map__canvas">
+          <MapLibreDistrictMap
+            districts={districts}
+            stateOutline={stateOutline}
+            visibleLayers={visibleLayers}
+          />
+          <p className="district-map__fallback-label">
+            Accessible statewide boundary overview
+          </p>
           <svg
             className="district-map__svg"
             viewBox="0 0 1000 600"

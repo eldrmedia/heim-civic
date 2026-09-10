@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "sourceSnapshotId": "phase-9.2-enhanced-review:2026-08-23",
+  "sourceSnapshotId": "phase-9.2-enhanced-review:2026-09-08",
   "decisions": [
     {
       "billIdentifier": "AB226",
-      "candidateFingerprint": "160b5c1387651054c3735cdcf4fc6819fac7911516d6013aaf33aa91d03d0231",
+      "candidateFingerprint": "91ea791da55e06d5428ff1ca945967e74a474712bbdc53214f009ae5f0d66f4b",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -36,11 +36,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB397",
-      "candidateFingerprint": "05f9777a2f5fed099b920d689df7ea927d0545af02fafc213b967d0eec18c6fa",
+      "candidateFingerprint": "0c153ff37f21b1200aa06c615d6bf6e885e1b09dd991699ecac51e504a3ddcc7",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -72,11 +72,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "SB128",
-      "candidateFingerprint": "78dfc8cb64c89289a671e29f6a5c9c3f866001a2f8b103210c6f00774b510274",
+      "candidateFingerprint": "c3707441b368db9be826010c52db7e0d56c9c8d4679a2492818ddcef4267c396",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -108,11 +108,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB223",
-      "candidateFingerprint": "4debd1b21a6841251925487b73a60f0e1342768ddff2fe333ee94944e81a8bf1",
+      "candidateFingerprint": "13e5ed1f67ed15e2cf5d9c00b8f5027a82c36973630d1883bec5dbf7b9858a98",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -144,11 +144,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB306",
-      "candidateFingerprint": "dfd3c03ab5facdd54136bc3a6fa2c50fd64b1df214d15e8b73b67ea1e7cd7404",
+      "candidateFingerprint": "306741d99683ff8fb4aed123f53feb63ec85b785bbf421b7ca7d63444e43f05e",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -180,11 +180,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB105",
-      "candidateFingerprint": "fe1dacc3b68726048812530d6f5e576b5b5c6af13a36af4911631dc4dd5bdd13",
+      "candidateFingerprint": "9b8ce6243c882f18a571f3266224e69d4f0030d6cd00f7d4474f2d8b108d3cea",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -216,11 +216,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB244",
-      "candidateFingerprint": "8453d5c3711cd56fb85b388e6ae8133f146108f6dec9515364820634f06b5acc",
+      "candidateFingerprint": "605937b71800b90e940fedba49040f23c108a5e2fc911783d39d18e80d045765",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -252,11 +252,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB140",
-      "candidateFingerprint": "8326a37e48c2e6d8380a19a40257e664fc5adccb2d39791d9e092c37f8628ec9",
+      "candidateFingerprint": "ef25aad4ce393d332137f26abd0fc3da766b5bb0f95e32cc8df5e006fc74787e",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -288,11 +288,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "SB171",
-      "candidateFingerprint": "f8e955bf956a59b294de9074cc16c9e7bb159bc5dd3bd7dff60af1b910e22615",
+      "candidateFingerprint": "9ef08206bda388694f8c782cf3b929e9cfbe728ad0925be6a9fa8b24a9248ac9",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -324,11 +324,11 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T01:16:26.242Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     },
     {
       "billIdentifier": "AB44",
-      "candidateFingerprint": "a0ae12d93e934d8d79161cce580e928423821d49042d6841ad9ebff5e83cb6e0",
+      "candidateFingerprint": "60700aab571fdeabab0cbb76c4b1d791cf1d53c967e23483deb883cdd90aa3af",
       "decision": "approved",
       "checklist": {
         "digestComparedToEnrolledText": true,
@@ -366,7 +366,7 @@
         "name": "william elder",
         "role": "founder"
       },
-      "reviewedAt": "2026-08-24T16:30:46.025Z"
+      "reviewedAt": "2026-09-10T20:01:54.000Z"
     }
   ]
 }

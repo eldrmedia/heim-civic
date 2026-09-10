@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import legacyReviewData from "../../src/data/generated/enhanced-bill-review-legacy-ab83.json";
 import reviewData from "../../src/data/generated/enhanced-bill-review.json";
 import publishedData from "../../src/data/generated/pilot-legislation.json";
-import readinessData from "../../data/review/ab83-legacy-reconciliation-readiness-2026-08-25.json";
 import type { EnhancedBillReviewBundle } from "../../src/domain/legislation/enhanced-review-types";
 import type { LegislationBundle } from "../../src/domain/legislation/types";
 import {
@@ -155,7 +154,7 @@ describe("enhanced bill editorial promotion", () => {
       fingerprintCandidate(changedSubject, "v2"),
     );
     expect(packets.records[0]?.candidateFingerprint).toBe(
-      readinessData.candidateFingerprint,
+      fingerprintCandidate(legacyCandidate, "v2"),
     );
   });
 

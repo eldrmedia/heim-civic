@@ -10,6 +10,7 @@ import {
 } from "@/lib/seo";
 
 import "./globals.css";
+import "maplibre-gl/dist/maplibre-gl.css";
 
 export const metadata: Metadata = {
   title: {

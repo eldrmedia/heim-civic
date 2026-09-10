@@ -1,6 +1,6 @@
 # Heim Civic Nevada
 
-A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9.5 hardened private-alpha foundation: transient address lookup, a complete 67-page Nevada district directory, a 69-profile current-official directory, 1,152 canonical local Nevada bill records, 31 published enhanced Nevada bills across three accountable editorial batches, one enhanced federal bill, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, source-dated discovery metadata, preview indexing safeguards, snapshot-health monitoring, and operator runbooks.
+A nonpartisan, source-driven civic transparency product for Nevada residents. The current repository state includes the Phase 9 public-pilot foundation: transient address lookup, accessible SVG maps with an optional MapLibre/MapTiler street-map enhancement, a complete 67-page Nevada district directory, a 69-profile current-official directory, 1,152 canonical local Nevada bill records, 31 published enhanced Nevada bills across three accountable editorial batches, one enhanced federal bill, two federal campaign-finance summaries, civic search, auditable correction and confirmed-opt-in waitlist contracts, public trust disclosures, source-dated discovery metadata, preview indexing safeguards, scheduled source-health monitoring, reviewable refresh automation, and operator runbooks.
 
 ## Requirements
 
@@ -35,6 +35,8 @@ npm run data:enhanced-bill-review
 npm run data:finance
 npm run data:audit-geography
 npm run ops:source-health
+npm run ops:launch-readiness
+npm run ops:deployment-check
 ```
 
 `npm run check` runs all non-browser gates in sequence.
@@ -43,6 +45,11 @@ The machine-readable `/api/health` route and `npm run ops:source-health` apply
 the same snapshot-freshness policy. Production probes, restore evidence, and
 remaining launch blockers are documented in `docs/phase-9-pilot-hardening.md`
 and `docs/launch-readiness.md`.
+
+Scheduled monitoring and refresh-to-pull-request operations are documented in
+`docs/phase-9-7-source-freshness-automation.md`. Interactive map privacy,
+fallback, attribution, and provider-replacement behavior are documented in
+`docs/phase-9-8-interactive-map.md`.
 
 ## Structure
 

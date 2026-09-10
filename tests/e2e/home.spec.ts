@@ -231,6 +231,11 @@ test("a confirmed lookup shows an accessible map and equivalent text", async ({
   await expect(
     page.getByRole("img", { name: /Your districts across Nevada/ }),
   ).toBeVisible();
+  await expect(
+    page.getByText(
+      "The street map is unavailable. The official boundary graphic and complete district results remain available below.",
+    ),
+  ).toBeVisible();
   const addressCard = await page
     .locator(".lookup-experience__content")
     .boundingBox();
@@ -445,9 +450,9 @@ test("the enhanced bill selection log exposes every published Nevada record", as
 
   await page.goto("/bills/nv-83-2025-ab44");
   await expect(
-    page.getByText(
-      "No sponsor entity was captured in this reviewed source snapshot. Check the official bill page for the authoritative record.",
-    ),
+    page.getByText("Assembly Committee on Commerce and Labor", {
+      exact: true,
+    }),
   ).toBeVisible();
 
   await page.goto("/bills/nv-83-2025-ab83");

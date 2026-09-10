@@ -19,7 +19,7 @@ const bundle: LegislationBundle = {
   generatedAt:
     promotedBundle.bills.length === 0
       ? baseBundle.generatedAt
-      : [baseBundle.generatedAt, promotedBundle.generatedAt].sort().at(-1)!,
+      : [baseBundle.generatedAt, promotedBundle.generatedAt].sort().at(0)!,
   parserVersion:
     promotedBundle.bills.length === 0
       ? baseBundle.parserVersion

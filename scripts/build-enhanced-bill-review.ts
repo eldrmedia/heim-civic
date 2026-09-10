@@ -511,7 +511,9 @@ function toSourceRecord(source: DownloadedSource): LegislationSource {
     documentSha256: source.sha256,
     coverageLabel: isLegacyAb83Reconciliation
       ? "AB83 legacy reconciliation source package"
-      : `Batch ${batchNumber} enhanced bill review source package`,
+      : batchNumber === 1
+        ? "Phase 9.2 enhanced bill review source package"
+        : `Batch ${batchNumber} enhanced bill review source package`,
     parserVersion,
     validationState: "source-verified",
   };

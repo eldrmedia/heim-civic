@@ -65,7 +65,7 @@ function sourceSnapshots(): SourceHealthInput[] {
       generatedAt: enhancedBundles
         .map((bundle) => bundle.generatedAt)
         .sort()
-        .at(-1)!,
+        .at(0)!,
       recordCount: enhancedBundles.reduce(
         (count, bundle) => count + bundle.records.length,
         0,
@@ -81,7 +81,7 @@ function sourceSnapshots(): SourceHealthInput[] {
       generatedAt: publishedBundles
         .map((bundle) => bundle.generatedAt)
         .sort()
-        .at(-1)!,
+        .at(0)!,
       recordCount: publishedBundles.reduce(
         (count, bundle) => count + bundle.bills.length,
         0,

@@ -16,7 +16,7 @@ const publishedLegislation = {
     promotedLegislationData.generatedAt,
   ]
     .sort()
-    .at(-1)!,
+    .at(0)!,
   recordCount:
     legislationData.bills.length + promotedLegislationData.bills.length,
   sourceCount: new Set(
@@ -34,7 +34,7 @@ const enhancedReview = {
     enhancedReviewLegacyAb83Data.generatedAt,
   ]
     .sort()
-    .at(-1)!,
+    .at(0)!,
   recordCount:
     enhancedReviewData.records.length +
     enhancedReviewBatch2Data.records.length +

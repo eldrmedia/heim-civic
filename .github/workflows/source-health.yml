@@ -1,0 +1,92 @@
+name: Source health monitor
+
+on:
+  schedule:
+    - cron: "17 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: source-health-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - id: repository_health
+        continue-on-error: true
+        run: npm run ops:source-health > repository-source-health.json
+      - id: production_health
+        if: vars.PUBLIC_SITE_URL != ''
+        continue-on-error: true
+        env:
+          PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+        run: |
+          curl --fail --silent --show-error --max-time 15 \
+            "${PUBLIC_SITE_URL%/}/api/health" > production-source-health.json
+          jq -e '.status == "ready"' production-source-health.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-health-${{ github.run_id }}
+          path: "*-source-health.json"
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Open, update, or resolve the source-health incident
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          REPOSITORY_RESULT: ${{ steps.repository_health.outcome }}
+          PRODUCTION_RESULT: ${{ steps.production_health.outcome }}
+          PRODUCTION_CONFIGURED: ${{ vars.PUBLIC_SITE_URL != '' }}
+        with:
+          script: |
+            const fs = require('fs');
+            const title = 'Source health requires attention';
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100,
+            });
+            const incident = issues.find((issue) => !issue.pull_request && issue.title === title);
+            const repositoryFailed = process.env.REPOSITORY_RESULT !== 'success';
+            const productionFailed = process.env.PRODUCTION_CONFIGURED === 'true' && process.env.PRODUCTION_RESULT !== 'success';
+            const failed = repositoryFailed || productionFailed;
+            const readReport = (path) => fs.existsSync(path) ? fs.readFileSync(path, 'utf8').slice(0, 12000) : 'Not configured or unavailable.';
+            const body = [
+              'The scheduled Heim Civic source-health monitor detected a condition that requires operator review.',
+              '',
+              `- Repository snapshot health: ${process.env.REPOSITORY_RESULT}`,
+              `- Production health: ${process.env.PRODUCTION_CONFIGURED === 'true' ? process.env.PRODUCTION_RESULT : 'not configured'}`,
+              `- Workflow: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              '',
+              'Do not alter timestamps manually. Refresh from official sources, retain the last-known-good publication on failure, and review material changes before merge.',
+              '',
+              '<details><summary>Repository report</summary>',
+              '',
+              '```json', readReport('repository-source-health.json'), '```',
+              '</details>',
+            ].join('\n');
+            if (failed && incident) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: incident.number, body });
+            } else if (failed) {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
+            } else if (incident) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: incident.number, body: `Source health recovered in workflow run ${context.runId}.` });
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: incident.number, state: 'closed' });
+            }
+      - name: Fail after incident handling
+        if: steps.repository_health.outcome != 'success' || (vars.PUBLIC_SITE_URL != '' && steps.production_health.outcome != 'success')
+        run: exit 1

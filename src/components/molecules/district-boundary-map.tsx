@@ -1,6 +1,7 @@
 import { geoIdentity, geoPath } from "d3-geo";
 
 import type { PublishedDistrict, StateOutline } from "@/domain/geography/types";
+import { MapLibreDistrictMap } from "@/components/molecules/maplibre-district-map";
 
 const districtTypeLabels = {
   congressional: "U.S. Congressional district",
@@ -30,6 +31,11 @@ export function DistrictBoundaryMap({
 
   return (
     <figure className="district-boundary-map">
+      <MapLibreDistrictMap
+        districts={[district]}
+        stateOutline={stateOutline}
+        visibleLayers={[district.type]}
+      />
       <div className="district-boundary-map__canvas">
         <svg
           aria-labelledby="district-boundary-map-title district-boundary-map-description"

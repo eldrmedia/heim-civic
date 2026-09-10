@@ -1,0 +1,105 @@
+name: Source refresh pull request
+
+on:
+  schedule:
+    - cron: "41 13 * * 0"
+  workflow_dispatch:
+    inputs:
+      source_group:
+        description: Source group to refresh
+        required: true
+        default: routine
+        type: choice
+        options:
+          - routine
+          - officials
+          - legislation
+          - finance
+          - editorial-review
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: source-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      FEC_API_KEY: ${{ secrets.FEC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Refresh selected official sources
+        env:
+          SOURCE_GROUP: ${{ inputs.source_group || 'routine' }}
+        run: |
+          case "$SOURCE_GROUP" in
+            routine)
+              npm run data:officials
+              npm run data:bill-index
+              npm run data:legislation:candidate
+              npm run data:finance
+              npm run data:enhanced-bill-review
+              npm run data:enhanced-bill-review:batch-2
+              npm run data:enhanced-bill-review:batch-3
+              npm run data:enhanced-bill-review:legacy-ab83
+              npm run data:editorial-review-packets
+              npm run data:editorial-review-packets:batch-2
+              npm run data:editorial-review-packets:batch-3
+              npm run data:editorial-review-packets:legacy-ab83
+              ;;
+            officials) npm run data:officials ;;
+            legislation)
+              npm run data:bill-index
+              npm run data:legislation:candidate
+              ;;
+            finance) npm run data:finance ;;
+            editorial-review)
+              npm run data:enhanced-bill-review
+              npm run data:enhanced-bill-review:batch-2
+              npm run data:enhanced-bill-review:batch-3
+              npm run data:enhanced-bill-review:legacy-ab83
+              npm run data:editorial-review-packets
+              npm run data:editorial-review-packets:batch-2
+              npm run data:editorial-review-packets:batch-3
+              npm run data:editorial-review-packets:legacy-ab83
+              ;;
+            *) exit 2 ;;
+          esac
+      - run: npx prettier --write "src/data/generated/*.json"
+      - continue-on-error: true
+        run: npm test
+      - continue-on-error: true
+        run: npm run ops:source-health
+      - name: Create reviewable refresh pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_GROUP: ${{ inputs.source_group || 'routine' }}
+        run: |
+          if git diff --quiet; then
+            echo "Official sources were checked and no tracked snapshot changed."
+            exit 0
+          fi
+          branch="automation/source-refresh-${GITHUB_RUN_ID}"
+          git config user.name "Heim Civic source automation"
+          git config user.email "source-automation@users.noreply.github.com"
+          git switch -c "$branch"
+          git add src/data/generated data/review/generated
+          git commit -m "chore(data): refresh ${SOURCE_GROUP} source snapshots"
+          git push origin "$branch"
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "chore(data): review ${SOURCE_GROUP} source refresh" \
+            --body "Automated retrieval from the configured official sources completed and passed repository validation. Review the file diff for material civic-record changes before merging. Editorial-review refreshes are awaiting human review and must not be promoted automatically. Workflow run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

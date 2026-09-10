@@ -33,6 +33,13 @@ describe("legislation repository", () => {
     ).toHaveLength(31);
 
     const ab44 = bills.find((bill) => bill.identifier === "AB44");
+    expect(ab44?.people).toContainEqual({
+      officialId: null,
+      externalId:
+        "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Committee/448/Overview",
+      name: "Assembly Committee on Commerce and Labor",
+      role: "sponsor",
+    });
     expect(ab44?.votes.map((vote) => vote.question)).toEqual([
       "Passage",
       "Initial passage — later reconsidered",
@@ -67,7 +74,7 @@ describe("legislation repository", () => {
       reviewerName: "william elder",
       reviewerRole: "founder",
       candidateFingerprint:
-        "431e8093eb517d92b189453fc0f6facbacba997541abc94a30b1f9ebc70ec3f8",
+        "9ee82c70631cac15c61ca56cec15b6db4764235b891e909ba0d501fd6540e6a8",
       uncertaintyNotes: [
         "The NELIS overview labels Senator Rochelle Nguyen as a co-sponsor, while the enrolled bill heading calls her joint sponsor; this record follows the NELIS overview role label.",
       ],

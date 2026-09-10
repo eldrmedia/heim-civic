@@ -7,14 +7,14 @@ import {
 } from "@/server/legislation/enhanced-review-repository";
 
 describe("enhanced bill review repository", () => {
-  it("stages three source-verified batches without claiming automated approval", () => {
+  it("stages all source-verified review bundles without claiming automated approval", () => {
     const bundle = getEnhancedBillReviewBundle();
     const records = getEnhancedBillReviewQueue();
 
     expect(bundle.schemaVersion).toBe(1);
     expect(bundle.parserVersion).toBe("enhanced-bill-review-v1");
     expect(bundle.targetRange).toEqual({ minimum: 30, maximum: 50 });
-    expect(records).toHaveLength(30);
+    expect(records).toHaveLength(31);
     expect(new Set(records.map((record) => record.subjectArea))).toEqual(
       new Set(enhancedSubjectAreas),
     );
@@ -30,6 +30,9 @@ describe("enhanced bill review repository", () => {
     expect(records.filter((record) => record.batch === 1)).toHaveLength(10);
     expect(records.filter((record) => record.batch === 2)).toHaveLength(10);
     expect(records.filter((record) => record.batch === 3)).toHaveLength(10);
+    expect(
+      records.filter((record) => record.billIdentifier === "AB83"),
+    ).toHaveLength(1);
     expect(
       records
         .filter((record) => record.batch === 3)
@@ -73,8 +76,8 @@ describe("enhanced bill review repository", () => {
     const bundle = getEnhancedBillReviewBundle();
     const records = getEnhancedBillReviewQueue();
 
-    expect(bundle.sources).toHaveLength(121);
-    expect(records.flatMap((record) => record.votes)).toHaveLength(61);
+    expect(bundle.sources).toHaveLength(125);
+    expect(records.flatMap((record) => record.votes)).toHaveLength(63);
     expect(
       records.every(
         (record) =>
