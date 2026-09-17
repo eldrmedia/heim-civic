@@ -44,6 +44,24 @@ during an active session; finance daily near filing deadlines; and boundaries
 after an official change. The eight-day and 92-day health limits are outside-
 active-period backstops, not permission to ignore known events.
 
+## GitHub Actions failure triage
+
+The daily source-health workflow intentionally fails while snapshots are stale
+and adds a report to the open source-health incident. Inspect the report, review
+the source-refresh pull request, and merge only after the required data and human
+editorial reviews. Do not change retrieval timestamps or relax freshness limits
+to clear an alert. The CI source-health gate also remains blocking for stale data.
+
+The browser readiness test verifies that `/api/health` returns 200 for ready data
+and 503 for degraded data at the report's check time. A valid stale-data response
+is expected endpoint behavior; route unit tests cover both states explicitly.
+
+TypeScript major updates are temporarily excluded from Dependabot because the
+current linter integration rejects TypeScript 7. Reassess this restriction when
+the Next.js ESLint integration supports it. Existing dependency pull requests
+containing TypeScript 7 need to be regenerated or revised to retain TypeScript 6
+before rerunning CI.
+
 ## Verification record
 
 Before launch, record probe URLs, alert recipients, test timestamps, simulated

@@ -1,6 +1,8 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
+import { evaluateSourceHealth } from "../../src/domain/status/source-health";
+
 const confirmedLookup = {
   status: "confirmed",
   districts: [
@@ -674,12 +676,33 @@ test("preproduction operations fail closed while exposing readiness and security
   expect(homeHeaders["x-powered-by"]).toBeUndefined();
 
   const health = await request.get("/api/health");
-  expect(health.status()).toBe(200);
-  await expect(health.json()).resolves.toMatchObject({
+  const healthReport = await health.json();
+  expect(healthReport).toMatchObject({
     schemaVersion: 1,
     scope: "published-snapshot-readiness",
-    status: "ready",
   });
+  expect(
+    healthReport.checks.map((check: { id: string }) => check.id).sort(),
+  ).toEqual([
+    "bill-index",
+    "boundaries",
+    "enhanced-review",
+    "finance",
+    "legislation",
+    "officials",
+  ]);
+  // Snapshot age changes with time. Verify readiness at the server's check time;
+  // the operational source-health gate separately requires fresh snapshots.
+  const expectedHealth = evaluateSourceHealth(
+    healthReport.checks,
+    new Date(healthReport.checkedAt),
+  );
+  expect(healthReport).toMatchObject(expectedHealth);
+  expect(expectedHealth.checks.some((check) => check.state === "invalid")).toBe(
+    false,
+  );
+  expect(health.status()).toBe(expectedHealth.status === "ready" ? 200 : 503);
+  expect(health.headers()["cache-control"]).toContain("no-store");
 
   const sitemap = await request.get("/sitemap.xml");
   expect(sitemap.status()).toBe(200);

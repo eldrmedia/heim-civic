@@ -4,6 +4,11 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    # The current typescript-eslint integration rejects TypeScript 7.
+    # Revisit after eslint-config-next supports the new compiler API.
+    ignore:
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
     groups:
       development-tooling:
         dependency-type: development
