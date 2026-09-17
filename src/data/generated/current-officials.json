@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "nv-current-officials:2026-09-07",
-  "generatedAt": "2026-09-07T21:44:13.262Z",
+  "snapshotId": "nv-current-officials:2026-09-17",
+  "generatedAt": "2026-09-17T19:17:13.738Z",
   "parserVersion": "official-roster-v1",
   "jurisdiction": "Nevada",
   "sources": [
@@ -9,43 +9,43 @@
       "id": "nv-lcb-assembly-current",
       "organization": "Nevada Legislature",
       "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
-      "retrievedAt": "2026-09-07T21:44:11.672Z"
+      "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
+      "retrievedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "nv-lcb-senate-current",
       "organization": "Nevada Legislature",
       "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
-      "retrievedAt": "2026-09-07T21:44:11.640Z"
+      "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
+      "retrievedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "us-house-clerk-current",
       "organization": "Office of the Clerk, U.S. House of Representatives",
       "url": "https://clerk.house.gov/Members/ViewMemberList",
       "documentSha256": "82a4d0c24a14c6b0b7f244cea46211e9549f38075796f7f6ede92f4d66e0d512",
-      "retrievedAt": "2026-09-07T21:44:11.965Z"
+      "retrievedAt": "2026-09-17T19:17:12.569Z"
     },
     {
       "id": "us-house-directory-current",
       "organization": "U.S. House of Representatives",
       "url": "https://www.house.gov/representatives",
-      "documentSha256": "3d44530104691865bef607668d94bc2cd1a4891a1fc3824b89798bca956ed29d",
-      "retrievedAt": "2026-09-07T21:44:11.687Z"
+      "documentSha256": "d2676112ce843670ce17aceb5c7a4b93045c7c44ec28b3e4922e25b69a6a7b8f",
+      "retrievedAt": "2026-09-17T19:17:08.838Z"
     },
     {
       "id": "us-senate-contact-current",
       "organization": "U.S. Senate",
       "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
       "documentSha256": "984865a4a6e00af68c9617ea45f52b8939f49143780c832cb68c747fa4bfef5e",
-      "retrievedAt": "2026-09-07T21:44:12.053Z"
+      "retrievedAt": "2026-09-17T19:17:09.127Z"
     },
     {
       "id": "us-senate-detail-current",
       "organization": "U.S. Senate",
       "url": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
       "documentSha256": "9727326ea3559ce8f0743cdb0e3a277608a261eff3813f95a27c7fd2cffda22a",
-      "retrievedAt": "2026-09-07T21:44:11.990Z"
+      "retrievedAt": "2026-09-17T19:17:08.832Z"
     }
   ],
   "officials": [
@@ -89,9 +89,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:1",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -99,9 +99,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/1",
           "externalId": "nv-lcb:legislator:307",
-          "retrievedAt": "2026-09-07T21:44:12.712Z",
+          "retrievedAt": "2026-09-17T19:17:13.146Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "933643e589956c5dfa19c283921ce8351ad54ee0f13cdfbd677d2fd9f98a9440",
+          "documentSha256": "a0e665060dabf1db6ea19851a0a6ffc9ea18dcb641ff9b7f8a4a2545427e24a1",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -136,9 +136,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:2",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -146,9 +146,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/2",
           "externalId": "nv-lcb:legislator:379",
-          "retrievedAt": "2026-09-07T21:44:12.638Z",
+          "retrievedAt": "2026-09-17T19:17:13.056Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "8dc8a99690bf392662099b2988e3cb5b9d0973fea02c958b09e8811d0fd76266",
+          "documentSha256": "88ea331496da8e7d7f6b68e25e4700da479a715b0466fbf839e657214563df80",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -189,9 +189,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:3",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -199,9 +199,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/3",
           "externalId": "nv-lcb:legislator:359",
-          "retrievedAt": "2026-09-07T21:44:12.861Z",
+          "retrievedAt": "2026-09-17T19:17:13.252Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "edbfd4fa24af3e410fa8db5207635de02afa0b0287a84ff86e21605849af7d63",
+          "documentSha256": "a7b00260d1854ad069284327f66d02889fb980ee9b374d5e530ee151e8ee3e1e",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -247,9 +247,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:4",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -257,9 +257,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/4",
           "externalId": "nv-lcb:legislator:410",
-          "retrievedAt": "2026-09-07T21:44:12.248Z",
+          "retrievedAt": "2026-09-17T19:17:12.795Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "9c77a5f7d1cce62a64e537ed802ba5efb813347cdcd7bf7f2ff2caf74c5300be",
+          "documentSha256": "3ba375253a463e87c8d3046c259bc8adf6ff139ac76a7b081437d222d9386958",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -305,9 +305,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:5",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -315,9 +315,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/5",
           "externalId": "nv-lcb:legislator:304",
-          "retrievedAt": "2026-09-07T21:44:12.711Z",
+          "retrievedAt": "2026-09-17T19:17:13.135Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "dd23ef382ed147547c94a51ad059b06d61e562b3a6d289eb2469f0c16b8641ef",
+          "documentSha256": "b5e6aee5ea864c8bdf7b02c980adc9990eab20e9c739c7f995afde2fc941aa5c",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -358,9 +358,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:6",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -368,9 +368,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/6",
           "externalId": "nv-lcb:legislator:422",
-          "retrievedAt": "2026-09-07T21:44:12.600Z",
+          "retrievedAt": "2026-09-17T19:17:13.067Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "2bc21aebd32f0799d99fdf9dcb752519840d18207fb7ce986d70f00977127d06",
+          "documentSha256": "c4754ff755aea255a6bb089a713a9cbaff8ef2fc9266e57b816db132f1e30f70",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -411,9 +411,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:7",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -421,9 +421,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/7",
           "externalId": "nv-lcb:legislator:423",
-          "retrievedAt": "2026-09-07T21:44:12.391Z",
+          "retrievedAt": "2026-09-17T19:17:12.905Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "99720fee6b1b12e1dbf35c446b312baa9581b3ce5b60c097431ee32bb50fd60f",
+          "documentSha256": "8d2486cb9fdffd390d9611319895b5dcfc0452778998a3ba62966806598c405e",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -464,9 +464,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:8",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -474,9 +474,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/8",
           "externalId": "nv-lcb:legislator:392",
-          "retrievedAt": "2026-09-07T21:44:12.784Z",
+          "retrievedAt": "2026-09-17T19:17:13.201Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "d521740c4f53d204996778cc319824902051adeca2e2bfbb1252eb02b99956ed",
+          "documentSha256": "0c0cc5557fc016a1ac45986891571b38d1aa63b024c9d1c2687b2970c117e091",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -517,9 +517,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:9",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -527,9 +527,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/9",
           "externalId": "nv-lcb:legislator:310",
-          "retrievedAt": "2026-09-07T21:44:12.882Z",
+          "retrievedAt": "2026-09-17T19:17:13.271Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "5cdbc825468ad7dd931a1d101f8b532d65cf765b57cf075b9b1e055ea5d9c0c1",
+          "documentSha256": "4f1df325d5b765b16906d014126ddbabe275a7c710f7c24c6bb7fedd85bb17db",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -570,9 +570,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:10",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -580,9 +580,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/10",
           "externalId": "nv-lcb:legislator:421",
-          "retrievedAt": "2026-09-07T21:44:12.637Z",
+          "retrievedAt": "2026-09-17T19:17:13.069Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "843a5eefa0eec9c70f02b8e53c43b13c01bd358ec5959159f1f038eb4e1fe2db",
+          "documentSha256": "9c7d942dd2b94370ce1780a4f30011ae48f91f2c00a2d289fac226e9362872cc",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -628,9 +628,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:11",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -638,9 +638,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/11",
           "externalId": "nv-lcb:legislator:412",
-          "retrievedAt": "2026-09-07T21:44:12.753Z",
+          "retrievedAt": "2026-09-17T19:17:13.150Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "fd7c9dece2b89e8a6f210829d7216e665c8910ff69169b5a1ba8505ad9535b85",
+          "documentSha256": "2a54ca9baa505893dc1d24c8a26364ac97114b0ba278b8ddebfb70d827df2b8d",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -681,9 +681,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:12",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -691,9 +691,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/12",
           "externalId": "nv-lcb:legislator:393",
-          "retrievedAt": "2026-09-07T21:44:12.246Z",
+          "retrievedAt": "2026-09-17T19:17:12.775Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "cb6bc2a972dec786033e3a84b01692ccfa1745256a3e7dd457ddec2441da213b",
+          "documentSha256": "a93ec1e6b845f1d5d579f5db53c6a66fcb29b6e2fc8152d41da10d073ded3ebc",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -734,9 +734,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:13",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -744,9 +744,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/13",
           "externalId": "nv-lcb:legislator:394",
-          "retrievedAt": "2026-09-07T21:44:12.505Z",
+          "retrievedAt": "2026-09-17T19:17:13.006Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "d1da3eef798c57e8e90a4cea75f503b7a99a6e2a2338aa97b9cf323c1d3c7fd0",
+          "documentSha256": "7a46dc961ecafb7aa1b263afff5a992b948373ad11bc9f294bd14f2603fca1f4",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -792,9 +792,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:14",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -802,9 +802,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/14",
           "externalId": "nv-lcb:legislator:395",
-          "retrievedAt": "2026-09-07T21:44:12.713Z",
+          "retrievedAt": "2026-09-17T19:17:13.158Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "34cdff47964062949ff3b56c4b10c6a2c798365c321587b9fda56c6b6972e4b6",
+          "documentSha256": "9aec17da08a7a1f8ddd1a340542db54dfc57ef7ef300499aa86551feb13211e2",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -845,9 +845,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:15",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -855,9 +855,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/15",
           "externalId": "nv-lcb:legislator:363",
-          "retrievedAt": "2026-09-07T21:44:12.867Z",
+          "retrievedAt": "2026-09-17T19:17:13.280Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "acc3359b694ab44288ea1c3972e0c909429489df147fa7c7936cce7225e139bb",
+          "documentSha256": "b90ec8c0ed9805d83912879d873e08494d1a3e8759d32678c2233839b0840a6e",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -903,9 +903,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:16",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -913,9 +913,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/16",
           "externalId": "nv-lcb:legislator:378",
-          "retrievedAt": "2026-09-07T21:44:12.413Z",
+          "retrievedAt": "2026-09-17T19:17:12.925Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "2dea913cb9f52ab562c224b68eca4cc0fbbc6756262fe0ffb4da3141e61919b6",
+          "documentSha256": "445d3c9d43fe5898ea86f6723b9773c24273152e129e635cea0ed11a09dcde2d",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -956,9 +956,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:17",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -966,9 +966,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/17",
           "externalId": "nv-lcb:legislator:420",
-          "retrievedAt": "2026-09-07T21:44:12.510Z",
+          "retrievedAt": "2026-09-17T19:17:12.992Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "2eb57e8bb54fa82168cb16b764bf6f5666f247f2345b3e4ab0d1fc9492dbe2d1",
+          "documentSha256": "6fe99111b8d4047d97df3ea6e5254ded469331b9ac3b3c489b36de309ee938e3",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1009,9 +1009,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:18",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1019,9 +1019,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/18",
           "externalId": "nv-lcb:legislator:380",
-          "retrievedAt": "2026-09-07T21:44:12.232Z",
+          "retrievedAt": "2026-09-17T19:17:12.779Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "654494e372472a91d7a8a907efe1c528dbc8ab67e556d1c389bda5550a196e02",
+          "documentSha256": "dcdd07baf75168172a90f1e1e169385d6007527b94d95987fb95b3a9e2258f0e",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1062,9 +1062,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:19",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1072,9 +1072,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/19",
           "externalId": "nv-lcb:legislator:426",
-          "retrievedAt": "2026-09-07T21:44:12.828Z",
+          "retrievedAt": "2026-09-17T19:17:13.219Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "c5591dea39a0f95bac5b74995c242a05fe40991a024ec4c12dd7150803821020",
+          "documentSha256": "8cdf6eb60aba2e92ef575f2086ea2a203b7a6c361ca976bdb5ebbd9c3ab7a96a",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1115,9 +1115,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:20",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1125,9 +1125,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/20",
           "externalId": "nv-lcb:legislator:377",
-          "retrievedAt": "2026-09-07T21:44:12.788Z",
+          "retrievedAt": "2026-09-17T19:17:13.220Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "a3de19a995312b4500a3127a4b010224eeeaee347b3928e89d3d215203218dd7",
+          "documentSha256": "6a2bb64f9f745794fbacba216cef836d2335ec42cb8ace7a4b007a3581e937d6",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1168,9 +1168,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:21",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1178,9 +1178,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/21",
           "externalId": "nv-lcb:legislator:376",
-          "retrievedAt": "2026-09-07T21:44:12.705Z",
+          "retrievedAt": "2026-09-17T19:17:13.139Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "b95ed62ba2ea57afe6663b13e39aa2e5eecad79caf5d81866f3c3085e33d887b",
+          "documentSha256": "61363bdec3a22c41771fd4384d24d0320b57c3024491ce11e181e5653e0f5ccd",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1221,9 +1221,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:22",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1231,9 +1231,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/22",
           "externalId": "nv-lcb:legislator:364",
-          "retrievedAt": "2026-09-07T21:44:12.487Z",
+          "retrievedAt": "2026-09-17T19:17:13.008Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "3d030aff5c0446ce4f70d50165f5bb9911a4768fb8fe446d1ae54a0bab8b24fd",
+          "documentSha256": "06f22f0c66d3f28e7327852bfd542c08996ac70b6121728d480e91829ede16d5",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1274,9 +1274,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:23",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1284,9 +1284,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/23",
           "externalId": "nv-lcb:legislator:397",
-          "retrievedAt": "2026-09-07T21:44:12.389Z",
+          "retrievedAt": "2026-09-17T19:17:12.929Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "43b9cc52182abce6e75b80779e7fefe25099b2b63541839022ec225228117549",
+          "documentSha256": "0a232730d1a2d08321192a189f755df7281f66fd91a96cefffcac1cc516c796f",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1327,9 +1327,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:24",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1337,9 +1337,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/24",
           "externalId": "nv-lcb:legislator:413",
-          "retrievedAt": "2026-09-07T21:44:12.851Z",
+          "retrievedAt": "2026-09-17T19:17:13.241Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "7d783d04a136083fd389c739c6e2a8c4e537f5cb06e3eaf6686f284ef6b1d528",
+          "documentSha256": "3e413279c0a6070638ab6ca741a7cf42b940c4ec60319226473d5733c39a921a",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1380,9 +1380,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:25",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1390,9 +1390,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/25",
           "externalId": "nv-lcb:legislator:398",
-          "retrievedAt": "2026-09-07T21:44:12.638Z",
+          "retrievedAt": "2026-09-17T19:17:13.085Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "e817996939c2925c55a89353897941b6d8efb438bf1740a338e8e4cdbd628d47",
+          "documentSha256": "56b2327243ba5c662b345d4bd0fd9341e639b6abbdfcb191078548d0e188ea94",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1433,9 +1433,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:26",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1443,9 +1443,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/26",
           "externalId": "nv-lcb:legislator:399",
-          "retrievedAt": "2026-09-07T21:44:12.313Z",
+          "retrievedAt": "2026-09-17T19:17:12.841Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "a20a5e2a243d8b3f990f7f670b56c8a6f8df0475520069bf757d880b5d0a184e",
+          "documentSha256": "350ef5cbe8d52de53d41f497c81e22b3f3f627f78972d5e1aabb343a1063e87b",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1486,9 +1486,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:27",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1496,9 +1496,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/27",
           "externalId": "nv-lcb:legislator:416",
-          "retrievedAt": "2026-09-07T21:44:12.419Z",
+          "retrievedAt": "2026-09-17T19:17:12.923Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "a7c3c4b8d8337a4f4e8031a528b67a3e92a81f7b7e8d25aaf4a504ec98d775c7",
+          "documentSha256": "795493837c86bf459768dd1596e7e255f76738f866eba4f2eb88f212b288a37b",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1539,9 +1539,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:28",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1549,9 +1549,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/28",
           "externalId": "nv-lcb:legislator:401",
-          "retrievedAt": "2026-09-07T21:44:12.333Z",
+          "retrievedAt": "2026-09-17T19:17:12.845Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "cf8649b2e6eb6f3514199fc66c8f40a5d52c1e5c08e62e77269827efd73f4916",
+          "documentSha256": "0992ba28bb76639f81b64d639190e0485b7b7b2de49af8780d69d67e5da8cbd0",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1592,9 +1592,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:29",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1602,9 +1602,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/29",
           "externalId": "nv-lcb:legislator:414",
-          "retrievedAt": "2026-09-07T21:44:12.354Z",
+          "retrievedAt": "2026-09-17T19:17:12.849Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "f418cae33b0deb5dcd4858927736f9fd66f0ec401cb0ee73f0d11aeff7eaefca",
+          "documentSha256": "12d8e24caa70175bb841a2de2a5b50ddee0879b9cf54f51dc3fe0643770fbaec",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1645,9 +1645,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:30",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1655,9 +1655,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/30",
           "externalId": "nv-lcb:legislator:375",
-          "retrievedAt": "2026-09-07T21:44:12.219Z",
+          "retrievedAt": "2026-09-17T19:17:12.758Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "91589250975e94d1aea5100e21d3b8ff3160324e12a5722d2f309f800cd196d4",
+          "documentSha256": "8679c95ca9a95f2f1213b99f29be3fdd64a37987d0ea3ee1ae7e2da5208a3dfe",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1703,9 +1703,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:31",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1713,9 +1713,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/31",
           "externalId": "nv-lcb:legislator:277",
-          "retrievedAt": "2026-09-07T21:44:12.325Z",
+          "retrievedAt": "2026-09-17T19:17:12.852Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "7abd81ef9ab571c00351b92b045c81cde88653ed88256370e866047c69cfa46b",
+          "documentSha256": "94c736f9fea94f46c3a94e43d35dec646db8ca56107af88d3c67c13874e8a804",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1756,9 +1756,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:32",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1766,9 +1766,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/32",
           "externalId": "nv-lcb:legislator:366",
-          "retrievedAt": "2026-09-07T21:44:12.485Z",
+          "retrievedAt": "2026-09-17T19:17:12.998Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "637c8126bd06766a356a8ec0337e641d3a0634a7a106b6e6b0b55c2f4c0892c9",
+          "documentSha256": "55b6ff6e1ba9f49c1caefb9196e65fcdb70ce546d3b1ab88d3a61dba852a501a",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1809,9 +1809,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:33",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1819,9 +1819,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33",
           "externalId": "nv-lcb:legislator:402",
-          "retrievedAt": "2026-09-07T21:44:12.424Z",
+          "retrievedAt": "2026-09-17T19:17:12.955Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "f3d22c4ce359de9eee022a786d525e1bad5b3b8580fba1494526b6a20ac947c7",
+          "documentSha256": "a8a20b6a67933e258ca813138fa2a99ef146db91feb3291dc771638396a13c01",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1867,9 +1867,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:34",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1877,9 +1877,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/34",
           "externalId": "nv-lcb:legislator:415",
-          "retrievedAt": "2026-09-07T21:44:12.741Z",
+          "retrievedAt": "2026-09-17T19:17:13.156Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "dd8d72d36d25b709e9ee2e94b139b527d2aed1bd8d9b241f347f1974f678fbb9",
+          "documentSha256": "f1cbbef60557574d6b3ff22b89abb99921df3234ddf632026ac55196f6b802b5",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1925,9 +1925,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:35",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1935,9 +1935,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/35",
           "externalId": "nv-lcb:legislator:411",
-          "retrievedAt": "2026-09-07T21:44:12.343Z",
+          "retrievedAt": "2026-09-17T19:17:12.915Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "ef9b1762d2a728300b0962b03398acaf9262fd9565dcb2e295b794c215d07f88",
+          "documentSha256": "e9fe6d4ba4e6966028fcc46b5b9d1e8e6c958e2caed2a6f24a631ff6faeb1a8d",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -1978,9 +1978,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:36",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -1988,9 +1988,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/36",
           "externalId": "nv-lcb:legislator:371",
-          "retrievedAt": "2026-09-07T21:44:12.449Z",
+          "retrievedAt": "2026-09-17T19:17:12.994Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "9398ebffb7093f702e3c459e69446e7aba119e8863d9fed2f83d18a54cdd9a37",
+          "documentSha256": "e1b4b3ac72f98aba4c02ddd81d72814c80f823426d812d6116ac72fe82e3c3a0",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2031,9 +2031,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:37",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2041,9 +2041,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/37",
           "externalId": "nv-lcb:legislator:368",
-          "retrievedAt": "2026-09-07T21:44:12.222Z",
+          "retrievedAt": "2026-09-17T19:17:12.773Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "6d67485eeb6b2b0602344d9e983fe3dd30f5e96bd265f40176bc5e93ac19c6fe",
+          "documentSha256": "73d77487f23cbbcdbb02a6f4d254187a069f316ff3c4afc57b73300fe169d4f0",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2084,9 +2084,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:38",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2094,9 +2094,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/38",
           "externalId": "nv-lcb:legislator:403",
-          "retrievedAt": "2026-09-07T21:44:12.643Z",
+          "retrievedAt": "2026-09-17T19:17:13.088Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "bd938558212189da085fd50c7f8da0d615f433ef3885e35e6a677322ae782585",
+          "documentSha256": "a928ad6efee1c84ea50ad9fd0226a43b84b83b19279b650dc08dd6b23ec4b473",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2137,9 +2137,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:39",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2147,9 +2147,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/39",
           "externalId": "nv-lcb:legislator:427",
-          "retrievedAt": "2026-09-07T21:44:12.787Z",
+          "retrievedAt": "2026-09-17T19:17:13.212Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "ebf3b08ba01e3190686bb9a2e7437e62016edf2cafa7ac15858c5707f4c8a2b1",
+          "documentSha256": "eb4e49dced341680f37d533b4dc81b78990022970a369b9f2f05cbcf854653a4",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2190,9 +2190,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:40",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2200,9 +2200,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/40",
           "externalId": "nv-lcb:legislator:285",
-          "retrievedAt": "2026-09-07T21:44:12.797Z",
+          "retrievedAt": "2026-09-17T19:17:13.215Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "875be19298eb36bd8248d38a8f0ce763b923b6754fdb86c9902ab3232436c13e",
+          "documentSha256": "3ea601c8720873cc07303e463130f658fb89a5f5741d7e45e63584aca5a67dcb",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2248,9 +2248,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:41",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2258,9 +2258,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/41",
           "externalId": "nv-lcb:legislator:344",
-          "retrievedAt": "2026-09-07T21:44:12.625Z",
+          "retrievedAt": "2026-09-17T19:17:13.082Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "7a149f3c5827ed1119433b7ec1263b89c44a07222f4aec426e13c0c2af9adcd7",
+          "documentSha256": "4741752767721bcdde3b023fe423db49fd3b849feb8c315945561a7c3281947e",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2301,9 +2301,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
           "externalId": "state-assembly:42",
-          "retrievedAt": "2026-09-07T21:44:11.672Z",
+          "retrievedAt": "2026-09-17T19:17:08.831Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "461080c79a2f0375679d6b661e97c355e6beee0397bd020629c7a04bda3e3577",
+          "documentSha256": "b54494ae0c972cbe67c9be962961e967c5d4f391ed6617dd47370a3bb0ad8670",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2311,9 +2311,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/42",
           "externalId": "nv-lcb:legislator:353",
-          "retrievedAt": "2026-09-07T21:44:12.289Z",
+          "retrievedAt": "2026-09-17T19:17:12.768Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "3fa79982e66f7d5a7f4ac9111c1f08c5dc08a44c0e0deb91461f647f23d88a41",
+          "documentSha256": "147d918de73cafee39d7362ff7c07484da2c75a49a506df5cb1b79712320a995",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2354,9 +2354,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:1",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2364,9 +2364,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/1",
           "externalId": "nv-lcb:legislator:419",
-          "retrievedAt": "2026-09-07T21:44:12.932Z",
+          "retrievedAt": "2026-09-17T19:17:13.303Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "86d077a5d25d001135175d8433b822bc8adfc068d7c9a25a9d3ac0e420bc5f15",
+          "documentSha256": "52658db04f034032550e3b376d523ca723598ac3259ee9b99c19f1e318c2e4e3",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2407,9 +2407,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:2",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2417,9 +2417,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/2",
           "externalId": "nv-lcb:legislator:273",
-          "retrievedAt": "2026-09-07T21:44:13.052Z",
+          "retrievedAt": "2026-09-17T19:17:13.375Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "32bff2b150d0364292c68d963bef8214e8969de3952ec586bd5d9710d6e13a74",
+          "documentSha256": "4bf6333e6313026fa4a67b9bbb033dfe22417729f53c1bafc21618012141225d",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2460,9 +2460,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:3",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2470,9 +2470,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/3",
           "externalId": "nv-lcb:legislator:372",
-          "retrievedAt": "2026-09-07T21:44:13.066Z",
+          "retrievedAt": "2026-09-17T19:17:13.419Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "539efb45f92c46fd88cc5ff16fe173af69f836d050496c79d9d2eb82ac107c45",
+          "documentSha256": "d19c2a03e171e16c2e9b1bad9a9aa0d8ee8f8cb52e700f39e68bb691f2abeb50",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2513,9 +2513,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:4",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2523,9 +2523,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/4",
           "externalId": "nv-lcb:legislator:129",
-          "retrievedAt": "2026-09-07T21:44:13.063Z",
+          "retrievedAt": "2026-09-17T19:17:13.421Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "e965ae75c37875e5a65d219ed685c1e30eb318a2dcc3c8dd1c63574bf69b9e4c",
+          "documentSha256": "24aa05906c4806d0aba4e764d36bd11af1363b7b9654a955abab893cab2a278b",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2566,9 +2566,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:5",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2576,9 +2576,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/5",
           "externalId": "nv-lcb:legislator:387",
-          "retrievedAt": "2026-09-07T21:44:12.897Z",
+          "retrievedAt": "2026-09-17T19:17:13.284Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "feb6ac98a52449e2a5c26b9045de82aecd9bc7ac225cd8c925ad2dce48633e9a",
+          "documentSha256": "ab88d23d356454164ff6f2e84ec0688d64191fb7911154ffee38b21250b27e8e",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2619,9 +2619,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:6",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2629,9 +2629,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/6",
           "externalId": "nv-lcb:legislator:347",
-          "retrievedAt": "2026-09-07T21:44:12.927Z",
+          "retrievedAt": "2026-09-17T19:17:13.296Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "dde49b6a99cdf7f0e1fe4232bb30ef949373ac6785695236b848c6277660da76",
+          "documentSha256": "bc84db542e54b301a2c0bc340025229f91f6133da28fea3d3776f0f7349fb4f6",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2672,9 +2672,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:7",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2682,9 +2682,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/7",
           "externalId": "nv-lcb:legislator:383",
-          "retrievedAt": "2026-09-07T21:44:13.041Z",
+          "retrievedAt": "2026-09-17T19:17:13.387Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "4f3e127cdd9cdf892348b4949f4c26e7c5721911e9538db361e229a45ddd4576",
+          "documentSha256": "1d466d5c4a9d472317ef26aacba435c19def11077fdea65f48409628d266a0a3",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2725,9 +2725,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:8",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2735,9 +2735,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/8",
           "externalId": "nv-lcb:legislator:92",
-          "retrievedAt": "2026-09-07T21:44:12.976Z",
+          "retrievedAt": "2026-09-17T19:17:13.345Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "646a2dc8c03e7c85f5f45e63da830ef892a8f5dead19534bd16f180b401f575e",
+          "documentSha256": "6af824b9daef10ff7f5a9b939d73013fcfc31e11e10b29d4987804cb236ba5e1",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2778,9 +2778,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:9",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2788,9 +2788,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/9",
           "externalId": "nv-lcb:legislator:358",
-          "retrievedAt": "2026-09-07T21:44:13.135Z",
+          "retrievedAt": "2026-09-17T19:17:13.444Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "47602fe5b948c01ed37d3e5442d69584c2ec2125758eabf5b93f9ee5ffb7d232",
+          "documentSha256": "2aac5ff1aa90b4920401c178ab5945eb0ef28277fbb6026b3733110901c270b8",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2831,9 +2831,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:10",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2841,9 +2841,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/10",
           "externalId": "nv-lcb:legislator:350",
-          "retrievedAt": "2026-09-07T21:44:12.948Z",
+          "retrievedAt": "2026-09-17T19:17:13.320Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "f8825eb887b7492466e4b807fd6b6df5bd475b87313a1c4b7a532486adcbaa93",
+          "documentSha256": "e5dcc90c154ebfbdfc91859a114e524c6b3c54c08efab8570aaf579ad14ab015",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2884,9 +2884,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:11",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2894,9 +2894,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/11",
           "externalId": "nv-lcb:legislator:425",
-          "retrievedAt": "2026-09-07T21:44:13.122Z",
+          "retrievedAt": "2026-09-17T19:17:13.471Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "fcf9aa4a58419303303f8dfcb908ead2b199d3f6fecb60f9e08ff356b8d534fc",
+          "documentSha256": "683eca0f8200047a340d32dd6d5693ab0c17742f847d5a834e6a14045e0c8125",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2937,9 +2937,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:12",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -2947,9 +2947,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/12",
           "externalId": "nv-lcb:legislator:391",
-          "retrievedAt": "2026-09-07T21:44:13.117Z",
+          "retrievedAt": "2026-09-17T19:17:13.447Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "ea0351aa9ba79b8dbbd6cabd9b78a8ef091bd0a04a014aad69ff123cf991abd2",
+          "documentSha256": "20ec2e9518de038ae427503f897ed7a6c00bf0bf9078a167a35afb9042381ec4",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -2990,9 +2990,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:13",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3000,9 +3000,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/13",
           "externalId": "nv-lcb:legislator:155",
-          "retrievedAt": "2026-09-07T21:44:12.956Z",
+          "retrievedAt": "2026-09-17T19:17:13.304Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "20721918667c4d0eea5ca04a644e3213263ded5a5b6c5b2138c76cee9e437318",
+          "documentSha256": "7ee20b33d7638db300a742f1f5a1883dd581687035f60b18015c59af35eae95c",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3043,9 +3043,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:14",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3053,9 +3053,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/14",
           "externalId": "nv-lcb:legislator:157",
-          "retrievedAt": "2026-09-07T21:44:13.017Z",
+          "retrievedAt": "2026-09-17T19:17:13.369Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "b952594525f8b190fb86ca066a8b675af1749b99c32c9914c87c0237d4ea65ba",
+          "documentSha256": "b43f3ec832bc05de367561d0f96b51a2553d44c9ffce2870e091e00a68b088f5",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3096,9 +3096,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:15",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3106,9 +3106,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/15",
           "externalId": "nv-lcb:legislator:424",
-          "retrievedAt": "2026-09-07T21:44:13.181Z",
+          "retrievedAt": "2026-09-17T19:17:13.482Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "b0a78bb5564babf7ff82b25c1c057eed5fbf4f8dc20983ae0aa74268cd864da5",
+          "documentSha256": "7f1fdc42031edadc97b8fead5d0b2249890bb81a7fdff0124a28beaa632ab4c6",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3149,9 +3149,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:16",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3159,9 +3159,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/16",
           "externalId": "nv-lcb:legislator:327",
-          "retrievedAt": "2026-09-07T21:44:13.040Z",
+          "retrievedAt": "2026-09-17T19:17:13.377Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "4cab359b919adf4fb3bef1917ee50d5994a180cbac41d2907d4d3c1def53cd6f",
+          "documentSha256": "f16b2bb11daefbdf11dd725f99dae5de8c19dd229bd4ff4ab317bb1b1563e70a",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3202,9 +3202,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:17",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3212,9 +3212,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/17",
           "externalId": "nv-lcb:legislator:281",
-          "retrievedAt": "2026-09-07T21:44:13.191Z",
+          "retrievedAt": "2026-09-17T19:17:13.536Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "9e81c249cd080c53342b56dfa6bac67847630496427dc88484cf5c184b5f3fb0",
+          "documentSha256": "a2cec7a9a47a89f23acef3c4d804961f72dea8b85e261812108053cf40d9ab7a",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3255,9 +3255,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:18",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3265,9 +3265,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/18",
           "externalId": "nv-lcb:legislator:418",
-          "retrievedAt": "2026-09-07T21:44:13.137Z",
+          "retrievedAt": "2026-09-17T19:17:13.490Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "7e85c088a36559cc4ef17f0ad915aa59836a906aece3c5bca280f0e795d9a72c",
+          "documentSha256": "3368f0296e6551f3e7c51b119990221277537c00f8fb76580a1bed95e6941f06",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3308,9 +3308,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:19",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2028",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3318,9 +3318,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/19",
           "externalId": "nv-lcb:legislator:417",
-          "retrievedAt": "2026-09-07T21:44:12.989Z",
+          "retrievedAt": "2026-09-17T19:17:13.354Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "0c8374a29129c96a3bde5b83c228a86320d755872c40cbe0caf81ec32ee4fbdf",
+          "documentSha256": "baa99ea37a68cd60a6f5e44e6438dfc26604afb76b353fac208b54526f2fac02",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3361,9 +3361,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:20",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3371,9 +3371,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/20",
           "externalId": "nv-lcb:legislator:390",
-          "retrievedAt": "2026-09-07T21:44:13.139Z",
+          "retrievedAt": "2026-09-17T19:17:13.508Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "a0809590ca22eff8597d019c4810d64a8e105d0e0351c89b3236a0e9cb339581",
+          "documentSha256": "4bcc52368ef255bd173514b99476fa5be96d58ecfadff4891c6a562929a0cd99",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3414,9 +3414,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
           "externalId": "state-senate:21",
-          "retrievedAt": "2026-09-07T21:44:11.640Z",
+          "retrievedAt": "2026-09-17T19:17:08.821Z",
           "coverageLabel": "Current roster; term ends 2026",
-          "documentSha256": "f28fb37e9b7a7697eec097037713d1e7b445e2d470cb21bfe83a436c0e733eee",
+          "documentSha256": "aeeea7cf3d6e31ebe855e35a711ae8617de5e4c8ed2e230ee2c37e843100e337",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         },
@@ -3424,9 +3424,9 @@
           "organization": "Nevada Legislature",
           "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/21",
           "externalId": "nv-lcb:legislator:67",
-          "retrievedAt": "2026-09-07T21:44:13.100Z",
+          "retrievedAt": "2026-09-17T19:17:13.427Z",
           "coverageLabel": "Current official profile",
-          "documentSha256": "16261c1b23667a160b1da1481822bf79f37acb2beb76170b56ef1e104ccf9b13",
+          "documentSha256": "3721c174479e4d14ec5137844415f21648bb3e0ff7d85939564a41d276df9d55",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3476,7 +3476,7 @@
           "organization": "Office of the Clerk, U.S. House of Representatives",
           "sourceUrl": "https://clerk.house.gov/Members/T000468",
           "externalId": "us-congress:bioguide:T000468",
-          "retrievedAt": "2026-09-07T21:44:11.965Z",
+          "retrievedAt": "2026-09-17T19:17:12.569Z",
           "coverageLabel": "Current members of the 119th Congress",
           "documentSha256": "82a4d0c24a14c6b0b7f244cea46211e9549f38075796f7f6ede92f4d66e0d512",
           "parserVersion": "official-roster-v1",
@@ -3486,9 +3486,9 @@
           "organization": "U.S. House of Representatives",
           "sourceUrl": "https://www.house.gov/representatives",
           "externalId": "us-house:nv:1",
-          "retrievedAt": "2026-09-07T21:44:11.687Z",
+          "retrievedAt": "2026-09-17T19:17:08.838Z",
           "coverageLabel": "Current House directory and committee assignments",
-          "documentSha256": "3d44530104691865bef607668d94bc2cd1a4891a1fc3824b89798bca956ed29d",
+          "documentSha256": "d2676112ce843670ce17aceb5c7a4b93045c7c44ec28b3e4922e25b69a6a7b8f",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3538,7 +3538,7 @@
           "organization": "Office of the Clerk, U.S. House of Representatives",
           "sourceUrl": "https://clerk.house.gov/Members/A000369",
           "externalId": "us-congress:bioguide:A000369",
-          "retrievedAt": "2026-09-07T21:44:11.965Z",
+          "retrievedAt": "2026-09-17T19:17:12.569Z",
           "coverageLabel": "Current members of the 119th Congress",
           "documentSha256": "82a4d0c24a14c6b0b7f244cea46211e9549f38075796f7f6ede92f4d66e0d512",
           "parserVersion": "official-roster-v1",
@@ -3548,9 +3548,9 @@
           "organization": "U.S. House of Representatives",
           "sourceUrl": "https://www.house.gov/representatives",
           "externalId": "us-house:nv:2",
-          "retrievedAt": "2026-09-07T21:44:11.687Z",
+          "retrievedAt": "2026-09-17T19:17:08.838Z",
           "coverageLabel": "Current House directory and committee assignments",
-          "documentSha256": "3d44530104691865bef607668d94bc2cd1a4891a1fc3824b89798bca956ed29d",
+          "documentSha256": "d2676112ce843670ce17aceb5c7a4b93045c7c44ec28b3e4922e25b69a6a7b8f",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3600,7 +3600,7 @@
           "organization": "Office of the Clerk, U.S. House of Representatives",
           "sourceUrl": "https://clerk.house.gov/Members/L000590",
           "externalId": "us-congress:bioguide:L000590",
-          "retrievedAt": "2026-09-07T21:44:11.965Z",
+          "retrievedAt": "2026-09-17T19:17:12.569Z",
           "coverageLabel": "Current members of the 119th Congress",
           "documentSha256": "82a4d0c24a14c6b0b7f244cea46211e9549f38075796f7f6ede92f4d66e0d512",
           "parserVersion": "official-roster-v1",
@@ -3610,9 +3610,9 @@
           "organization": "U.S. House of Representatives",
           "sourceUrl": "https://www.house.gov/representatives",
           "externalId": "us-house:nv:3",
-          "retrievedAt": "2026-09-07T21:44:11.687Z",
+          "retrievedAt": "2026-09-17T19:17:08.838Z",
           "coverageLabel": "Current House directory and committee assignments",
-          "documentSha256": "3d44530104691865bef607668d94bc2cd1a4891a1fc3824b89798bca956ed29d",
+          "documentSha256": "d2676112ce843670ce17aceb5c7a4b93045c7c44ec28b3e4922e25b69a6a7b8f",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3657,7 +3657,7 @@
           "organization": "Office of the Clerk, U.S. House of Representatives",
           "sourceUrl": "https://clerk.house.gov/Members/H001066",
           "externalId": "us-congress:bioguide:H001066",
-          "retrievedAt": "2026-09-07T21:44:11.965Z",
+          "retrievedAt": "2026-09-17T19:17:12.569Z",
           "coverageLabel": "Current members of the 119th Congress",
           "documentSha256": "82a4d0c24a14c6b0b7f244cea46211e9549f38075796f7f6ede92f4d66e0d512",
           "parserVersion": "official-roster-v1",
@@ -3667,9 +3667,9 @@
           "organization": "U.S. House of Representatives",
           "sourceUrl": "https://www.house.gov/representatives",
           "externalId": "us-house:nv:4",
-          "retrievedAt": "2026-09-07T21:44:11.687Z",
+          "retrievedAt": "2026-09-17T19:17:08.838Z",
           "coverageLabel": "Current House directory and committee assignments",
-          "documentSha256": "3d44530104691865bef607668d94bc2cd1a4891a1fc3824b89798bca956ed29d",
+          "documentSha256": "d2676112ce843670ce17aceb5c7a4b93045c7c44ec28b3e4922e25b69a6a7b8f",
           "parserVersion": "official-roster-v1",
           "validationState": "source-verified"
         }
@@ -3725,7 +3725,7 @@
           "organization": "U.S. Senate",
           "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
           "externalId": "us-congress:bioguide:C001113",
-          "retrievedAt": "2026-09-07T21:44:12.053Z",
+          "retrievedAt": "2026-09-17T19:17:09.127Z",
           "coverageLabel": "Current senators of the 119th Congress",
           "documentSha256": "984865a4a6e00af68c9617ea45f52b8939f49143780c832cb68c747fa4bfef5e",
           "parserVersion": "official-roster-v1",
@@ -3735,7 +3735,7 @@
           "organization": "U.S. Senate",
           "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
           "externalId": "us-senate:lis:S385",
-          "retrievedAt": "2026-09-07T21:44:11.990Z",
+          "retrievedAt": "2026-09-17T19:17:08.832Z",
           "coverageLabel": "Current Senate information and committee assignments",
           "documentSha256": "9727326ea3559ce8f0743cdb0e3a277608a261eff3813f95a27c7fd2cffda22a",
           "parserVersion": "official-roster-v1",
@@ -3793,7 +3793,7 @@
           "organization": "U.S. Senate",
           "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
           "externalId": "us-congress:bioguide:R000608",
-          "retrievedAt": "2026-09-07T21:44:12.053Z",
+          "retrievedAt": "2026-09-17T19:17:09.127Z",
           "coverageLabel": "Current senators of the 119th Congress",
           "documentSha256": "984865a4a6e00af68c9617ea45f52b8939f49143780c832cb68c747fa4bfef5e",
           "parserVersion": "official-roster-v1",
@@ -3803,7 +3803,7 @@
           "organization": "U.S. Senate",
           "sourceUrl": "https://www.senate.gov/legislative/LIS_MEMBER/cvc_member_data.xml",
           "externalId": "us-senate:lis:S402",
-          "retrievedAt": "2026-09-07T21:44:11.990Z",
+          "retrievedAt": "2026-09-17T19:17:08.832Z",
           "coverageLabel": "Current Senate information and committee assignments",
           "documentSha256": "9727326ea3559ce8f0743cdb0e3a277608a261eff3813f95a27c7fd2cffda22a",
           "parserVersion": "official-roster-v1",
@@ -3824,7 +3824,7 @@
       "currentOfficialId": "nv-lcb:legislator:307",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:10",
@@ -3837,7 +3837,7 @@
       "currentOfficialId": "nv-lcb:legislator:421",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:11",
@@ -3850,7 +3850,7 @@
       "currentOfficialId": "nv-lcb:legislator:412",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:12",
@@ -3863,7 +3863,7 @@
       "currentOfficialId": "nv-lcb:legislator:393",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:13",
@@ -3876,7 +3876,7 @@
       "currentOfficialId": "nv-lcb:legislator:394",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:14",
@@ -3889,7 +3889,7 @@
       "currentOfficialId": "nv-lcb:legislator:395",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:15",
@@ -3902,7 +3902,7 @@
       "currentOfficialId": "nv-lcb:legislator:363",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:16",
@@ -3915,7 +3915,7 @@
       "currentOfficialId": "nv-lcb:legislator:378",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:17",
@@ -3928,7 +3928,7 @@
       "currentOfficialId": "nv-lcb:legislator:420",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:18",
@@ -3941,7 +3941,7 @@
       "currentOfficialId": "nv-lcb:legislator:380",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:19",
@@ -3954,7 +3954,7 @@
       "currentOfficialId": "nv-lcb:legislator:426",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:2",
@@ -3967,7 +3967,7 @@
       "currentOfficialId": "nv-lcb:legislator:379",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:20",
@@ -3980,7 +3980,7 @@
       "currentOfficialId": "nv-lcb:legislator:377",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:21",
@@ -3993,7 +3993,7 @@
       "currentOfficialId": "nv-lcb:legislator:376",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:22",
@@ -4006,7 +4006,7 @@
       "currentOfficialId": "nv-lcb:legislator:364",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:23",
@@ -4019,7 +4019,7 @@
       "currentOfficialId": "nv-lcb:legislator:397",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:24",
@@ -4032,7 +4032,7 @@
       "currentOfficialId": "nv-lcb:legislator:413",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:25",
@@ -4045,7 +4045,7 @@
       "currentOfficialId": "nv-lcb:legislator:398",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:26",
@@ -4058,7 +4058,7 @@
       "currentOfficialId": "nv-lcb:legislator:399",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:27",
@@ -4071,7 +4071,7 @@
       "currentOfficialId": "nv-lcb:legislator:416",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:28",
@@ -4084,7 +4084,7 @@
       "currentOfficialId": "nv-lcb:legislator:401",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:29",
@@ -4097,7 +4097,7 @@
       "currentOfficialId": "nv-lcb:legislator:414",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:3",
@@ -4110,7 +4110,7 @@
       "currentOfficialId": "nv-lcb:legislator:359",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:30",
@@ -4123,7 +4123,7 @@
       "currentOfficialId": "nv-lcb:legislator:375",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:31",
@@ -4136,7 +4136,7 @@
       "currentOfficialId": "nv-lcb:legislator:277",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:32",
@@ -4149,7 +4149,7 @@
       "currentOfficialId": "nv-lcb:legislator:366",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:33",
@@ -4162,7 +4162,7 @@
       "currentOfficialId": "nv-lcb:legislator:402",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:34",
@@ -4175,7 +4175,7 @@
       "currentOfficialId": "nv-lcb:legislator:415",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:35",
@@ -4188,7 +4188,7 @@
       "currentOfficialId": "nv-lcb:legislator:411",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:36",
@@ -4201,7 +4201,7 @@
       "currentOfficialId": "nv-lcb:legislator:371",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:37",
@@ -4214,7 +4214,7 @@
       "currentOfficialId": "nv-lcb:legislator:368",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:38",
@@ -4227,7 +4227,7 @@
       "currentOfficialId": "nv-lcb:legislator:403",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:39",
@@ -4240,7 +4240,7 @@
       "currentOfficialId": "nv-lcb:legislator:427",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:4",
@@ -4253,7 +4253,7 @@
       "currentOfficialId": "nv-lcb:legislator:410",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:40",
@@ -4266,7 +4266,7 @@
       "currentOfficialId": "nv-lcb:legislator:285",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:41",
@@ -4279,7 +4279,7 @@
       "currentOfficialId": "nv-lcb:legislator:344",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:42",
@@ -4292,7 +4292,7 @@
       "currentOfficialId": "nv-lcb:legislator:353",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:5",
@@ -4305,7 +4305,7 @@
       "currentOfficialId": "nv-lcb:legislator:304",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:6",
@@ -4318,7 +4318,7 @@
       "currentOfficialId": "nv-lcb:legislator:422",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:7",
@@ -4331,7 +4331,7 @@
       "currentOfficialId": "nv-lcb:legislator:423",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:8",
@@ -4344,7 +4344,7 @@
       "currentOfficialId": "nv-lcb:legislator:392",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-assembly:nv:9",
@@ -4357,7 +4357,7 @@
       "currentOfficialId": "nv-lcb:legislator:310",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.672Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.831Z"
     },
     {
       "id": "state-senate:nv:1",
@@ -4370,7 +4370,7 @@
       "currentOfficialId": "nv-lcb:legislator:419",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:10",
@@ -4383,7 +4383,7 @@
       "currentOfficialId": "nv-lcb:legislator:350",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:11",
@@ -4396,7 +4396,7 @@
       "currentOfficialId": "nv-lcb:legislator:425",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:12",
@@ -4409,7 +4409,7 @@
       "currentOfficialId": "nv-lcb:legislator:391",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:13",
@@ -4422,7 +4422,7 @@
       "currentOfficialId": "nv-lcb:legislator:155",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:14",
@@ -4435,7 +4435,7 @@
       "currentOfficialId": "nv-lcb:legislator:157",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:15",
@@ -4448,7 +4448,7 @@
       "currentOfficialId": "nv-lcb:legislator:424",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:16",
@@ -4461,7 +4461,7 @@
       "currentOfficialId": "nv-lcb:legislator:327",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:17",
@@ -4474,7 +4474,7 @@
       "currentOfficialId": "nv-lcb:legislator:281",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:18",
@@ -4487,7 +4487,7 @@
       "currentOfficialId": "nv-lcb:legislator:418",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:19",
@@ -4500,7 +4500,7 @@
       "currentOfficialId": "nv-lcb:legislator:417",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:2",
@@ -4513,7 +4513,7 @@
       "currentOfficialId": "nv-lcb:legislator:273",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:20",
@@ -4526,7 +4526,7 @@
       "currentOfficialId": "nv-lcb:legislator:390",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:21",
@@ -4539,7 +4539,7 @@
       "currentOfficialId": "nv-lcb:legislator:67",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:3",
@@ -4552,7 +4552,7 @@
       "currentOfficialId": "nv-lcb:legislator:372",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:4",
@@ -4565,7 +4565,7 @@
       "currentOfficialId": "nv-lcb:legislator:129",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:5",
@@ -4578,7 +4578,7 @@
       "currentOfficialId": "nv-lcb:legislator:387",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:6",
@@ -4591,7 +4591,7 @@
       "currentOfficialId": "nv-lcb:legislator:347",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:7",
@@ -4604,7 +4604,7 @@
       "currentOfficialId": "nv-lcb:legislator:383",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:8",
@@ -4617,7 +4617,7 @@
       "currentOfficialId": "nv-lcb:legislator:92",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "state-senate:nv:9",
@@ -4630,7 +4630,7 @@
       "currentOfficialId": "nv-lcb:legislator:358",
       "statusNote": null,
       "sourceUrl": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current",
-      "lastVerifiedAt": "2026-09-07T21:44:11.640Z"
+      "lastVerifiedAt": "2026-09-17T19:17:08.821Z"
     },
     {
       "id": "us-house:nv:1",
@@ -4643,7 +4643,7 @@
       "currentOfficialId": "us-congress:bioguide:T000468",
       "statusNote": null,
       "sourceUrl": "https://clerk.house.gov/Members/T000468",
-      "lastVerifiedAt": "2026-09-07T21:44:11.965Z"
+      "lastVerifiedAt": "2026-09-17T19:17:12.569Z"
     },
     {
       "id": "us-house:nv:2",
@@ -4656,7 +4656,7 @@
       "currentOfficialId": "us-congress:bioguide:A000369",
       "statusNote": null,
       "sourceUrl": "https://clerk.house.gov/Members/A000369",
-      "lastVerifiedAt": "2026-09-07T21:44:11.965Z"
+      "lastVerifiedAt": "2026-09-17T19:17:12.569Z"
     },
     {
       "id": "us-house:nv:3",
@@ -4669,7 +4669,7 @@
       "currentOfficialId": "us-congress:bioguide:L000590",
       "statusNote": null,
       "sourceUrl": "https://clerk.house.gov/Members/L000590",
-      "lastVerifiedAt": "2026-09-07T21:44:11.965Z"
+      "lastVerifiedAt": "2026-09-17T19:17:12.569Z"
     },
     {
       "id": "us-house:nv:4",
@@ -4682,7 +4682,7 @@
       "currentOfficialId": "us-congress:bioguide:H001066",
       "statusNote": null,
       "sourceUrl": "https://clerk.house.gov/Members/H001066",
-      "lastVerifiedAt": "2026-09-07T21:44:11.965Z"
+      "lastVerifiedAt": "2026-09-17T19:17:12.569Z"
     },
     {
       "id": "us-senate:nv:class-i",
@@ -4695,7 +4695,7 @@
       "currentOfficialId": "us-congress:bioguide:R000608",
       "statusNote": null,
       "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
-      "lastVerifiedAt": "2026-09-07T21:44:12.053Z"
+      "lastVerifiedAt": "2026-09-17T19:17:09.127Z"
     },
     {
       "id": "us-senate:nv:class-iii",
@@ -4708,7 +4708,7 @@
       "currentOfficialId": "us-congress:bioguide:C001113",
       "statusNote": null,
       "sourceUrl": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
-      "lastVerifiedAt": "2026-09-07T21:44:12.053Z"
+      "lastVerifiedAt": "2026-09-17T19:17:09.127Z"
     }
   ]
 }
