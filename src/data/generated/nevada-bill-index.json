@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "nv-nelis:83rd2025:bill-index:2026-09-07T21:50:39.054Z",
-  "generatedAt": "2026-09-07T21:50:39.054Z",
+  "snapshotId": "nv-nelis:83rd2025:bill-index:2026-09-17T19:13:35.774Z",
+  "generatedAt": "2026-09-17T19:13:35.774Z",
   "parserVersion": "nelis-bill-index-v1",
   "coverageLabel": "All Assembly and Senate bill records listed by NELIS for the 83rd (2025) Session",
   "session": "83rd (2025) Nevada Legislature",
@@ -17293,7 +17293,7 @@
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/HomeBill/BillsTab?Page=1&Filters.OnlyTrackedBills=False&Filters.DisplayTitles=True&Filters.DisplayNotes=False&Filters.DisplayTags=False&Filters.PageSize=2147483647&SelectedBillTypes=AB",
       "billType": "AB",
-      "retrievedAt": "2026-09-07T21:50:38.997Z",
+      "retrievedAt": "2026-09-17T19:13:35.628Z",
       "documentSha256": "e91065bdd523d3524944578076abfe28eb9dc249c768726fd6325aacebd974b8",
       "parserVersion": "nelis-bill-index-v1",
       "validationState": "source-verified"
@@ -17303,7 +17303,7 @@
       "organization": "Nevada Legislature (NELIS)",
       "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/HomeBill/BillsTab?Page=1&Filters.OnlyTrackedBills=False&Filters.DisplayTitles=True&Filters.DisplayNotes=False&Filters.DisplayTags=False&Filters.PageSize=2147483647&SelectedBillTypes=SB",
       "billType": "SB",
-      "retrievedAt": "2026-09-07T21:50:38.143Z",
+      "retrievedAt": "2026-09-17T19:13:35.456Z",
       "documentSha256": "b7423668bd4170f0db85515bd101642d6a2c4d7644667ecfc00f38e09937093c",
       "parserVersion": "nelis-bill-index-v1",
       "validationState": "source-verified"
