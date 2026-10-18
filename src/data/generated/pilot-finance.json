@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "phase-5-federal-finance:2026-09-07",
-  "generatedAt": "2026-09-07T21:50:29.697Z",
+  "snapshotId": "phase-5-federal-finance:2026-10-18",
+  "generatedAt": "2026-10-18T16:52:56.031Z",
   "parserVersion": "fec-candidate-totals-v1",
   "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
   "records": [
@@ -23,8 +23,8 @@
       },
       "reportingPeriod": {
         "startsOn": "2025-01-01",
-        "endsOn": "2026-06-30",
-        "lastReportType": "JULY QUARTERLY",
+        "endsOn": "2026-09-30",
+        "lastReportType": "OCTOBER QUARTERLY",
         "lastReportYear": 2026
       },
       "receipts": {
@@ -42,15 +42,15 @@
         "other": 0
       },
       "spending": {
-        "total": 513949.91,
-        "operating": 429549.91,
+        "total": 560057.15,
+        "operating": 468657.15,
         "contributionRefunds": 65700,
         "transfersToAuthorizedCommittees": 5000,
         "loanRepayments": 0,
-        "other": 13700
+        "other": 20700
       },
       "cash": {
-        "onHand": 372458.4,
+        "onHand": 326351.16,
         "debtsOwedByCommittee": 9000,
         "debtsOwedToCommittee": 0
       },
@@ -65,8 +65,8 @@
           "organization": "Federal Election Commission",
           "url": "https://api.open.fec.gov/v1/candidate/H2NV02395/totals/?cycle=2026&election_full=true",
           "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true",
-          "retrievedAt": "2026-09-07T21:50:29.679Z",
-          "documentSha256": "908218d465d4ed7c685669b8e2b0727e668a3c5cb1b940546e309d90ffeb7d99",
+          "retrievedAt": "2026-10-18T16:52:56.026Z",
+          "documentSha256": "da16ec516338e77cf62a6a66487e3bf043efa2b41c00e9bf58d589a99b84defb",
           "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
           "parserVersion": "fec-candidate-totals-v1",
           "validationState": "source-verified"
@@ -76,8 +76,8 @@
           "organization": "Federal Election Commission",
           "url": "https://api.open.fec.gov/v1/candidate/H2NV02395/committees/?cycle=2026&designation=P",
           "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true",
-          "retrievedAt": "2026-09-07T21:50:29.678Z",
-          "documentSha256": "6c892d72e947b2f345c5e66f7e738c62be853e3afe2e4a736bee4940d0822aee",
+          "retrievedAt": "2026-10-18T16:52:56.016Z",
+          "documentSha256": "dc6cd1af368cba5420aa253f8c37179ab5e5af9adb7cc0c52c41071ed1630739",
           "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
           "parserVersion": "fec-candidate-totals-v1",
           "validationState": "source-verified"
@@ -102,35 +102,35 @@
       },
       "reportingPeriod": {
         "startsOn": "2025-01-01",
-        "endsOn": "2026-06-30",
-        "lastReportType": "JULY QUARTERLY",
+        "endsOn": "2026-09-30",
+        "lastReportType": "OCTOBER QUARTERLY",
         "lastReportYear": 2026
       },
       "receipts": {
-        "total": 3350562.82,
-        "contributions": 3125110.26,
-        "individual": 1336757.39,
-        "itemizedIndividual": 1127341.31,
-        "unitemizedIndividual": 209416.08,
-        "partyCommittees": 5593.72,
-        "otherPoliticalCommittees": 1782759.15,
+        "total": 3967520.15,
+        "contributions": 3695907.67,
+        "individual": 1541112.94,
+        "itemizedIndividual": 1311486.83,
+        "unitemizedIndividual": 229626.11,
+        "partyCommittees": 5885.58,
+        "otherPoliticalCommittees": 2148909.15,
         "candidateSelfFunding": 0,
-        "transfersFromAuthorizedCommittees": 213795.94,
+        "transfersFromAuthorizedCommittees": 259776.46,
         "loans": 0,
-        "offsetsToOperatingExpenditures": 4727.4,
+        "offsetsToOperatingExpenditures": 4906.8,
         "other": 6929.22
       },
       "spending": {
-        "total": 1860631.09,
-        "operating": 1830725.4,
-        "contributionRefunds": 14675.74,
+        "total": 2797522.09,
+        "operating": 2669044.29,
+        "contributionRefunds": 18697.85,
         "transfersToAuthorizedCommittees": 0,
         "loanRepayments": 0,
-        "other": 15229.95
+        "other": 109779.95
       },
       "cash": {
-        "onHand": 1496222.24,
-        "debtsOwedByCommittee": 22500,
+        "onHand": 1176288.57,
+        "debtsOwedByCommittee": 0,
         "debtsOwedToCommittee": 0
       },
       "outsideSpending": {
@@ -144,8 +144,8 @@
           "organization": "Federal Election Commission",
           "url": "https://api.open.fec.gov/v1/candidate/H2NV04011/totals/?cycle=2026&election_full=true",
           "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV04011/?cycle=2026&election_full=true",
-          "retrievedAt": "2026-09-07T21:50:29.697Z",
-          "documentSha256": "1d3a3930f41813fa80e5854a401c4917f877b1e29a66e90a5c6982e3e4d0cdda",
+          "retrievedAt": "2026-10-18T16:52:56.030Z",
+          "documentSha256": "38dc1016360a773b23fb8702c90de9e28138a4457c113f0bf12d8f256eafe64d",
           "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
           "parserVersion": "fec-candidate-totals-v1",
           "validationState": "source-verified"
@@ -155,8 +155,8 @@
           "organization": "Federal Election Commission",
           "url": "https://api.open.fec.gov/v1/candidate/H2NV04011/committees/?cycle=2026&designation=P",
           "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV04011/?cycle=2026&election_full=true",
-          "retrievedAt": "2026-09-07T21:50:29.677Z",
-          "documentSha256": "6f7730544e23cd4fe451b699634b0e0af3cd73db7572b38ab542725a32091d30",
+          "retrievedAt": "2026-10-18T16:52:56.017Z",
+          "documentSha256": "980414a576ea2a18457ff98389498b7782e95c193097113b8c1b491d8c1de6cb",
           "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
           "parserVersion": "fec-candidate-totals-v1",
           "validationState": "source-verified"
@@ -170,8 +170,8 @@
       "organization": "Federal Election Commission",
       "url": "https://api.open.fec.gov/v1/candidate/H2NV02395/totals/?cycle=2026&election_full=true",
       "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true",
-      "retrievedAt": "2026-09-07T21:50:29.679Z",
-      "documentSha256": "908218d465d4ed7c685669b8e2b0727e668a3c5cb1b940546e309d90ffeb7d99",
+      "retrievedAt": "2026-10-18T16:52:56.026Z",
+      "documentSha256": "da16ec516338e77cf62a6a66487e3bf043efa2b41c00e9bf58d589a99b84defb",
       "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
       "parserVersion": "fec-candidate-totals-v1",
       "validationState": "source-verified"
@@ -181,8 +181,8 @@
       "organization": "Federal Election Commission",
       "url": "https://api.open.fec.gov/v1/candidate/H2NV02395/committees/?cycle=2026&designation=P",
       "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV02395/?cycle=2026&election_full=true",
-      "retrievedAt": "2026-09-07T21:50:29.678Z",
-      "documentSha256": "6c892d72e947b2f345c5e66f7e738c62be853e3afe2e4a736bee4940d0822aee",
+      "retrievedAt": "2026-10-18T16:52:56.016Z",
+      "documentSha256": "dc6cd1af368cba5420aa253f8c37179ab5e5af9adb7cc0c52c41071ed1630739",
       "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
       "parserVersion": "fec-candidate-totals-v1",
       "validationState": "source-verified"
@@ -192,8 +192,8 @@
       "organization": "Federal Election Commission",
       "url": "https://api.open.fec.gov/v1/candidate/H2NV04011/totals/?cycle=2026&election_full=true",
       "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV04011/?cycle=2026&election_full=true",
-      "retrievedAt": "2026-09-07T21:50:29.697Z",
-      "documentSha256": "1d3a3930f41813fa80e5854a401c4917f877b1e29a66e90a5c6982e3e4d0cdda",
+      "retrievedAt": "2026-10-18T16:52:56.030Z",
+      "documentSha256": "38dc1016360a773b23fb8702c90de9e28138a4457c113f0bf12d8f256eafe64d",
       "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
       "parserVersion": "fec-candidate-totals-v1",
       "validationState": "source-verified"
@@ -203,8 +203,8 @@
       "organization": "Federal Election Commission",
       "url": "https://api.open.fec.gov/v1/candidate/H2NV04011/committees/?cycle=2026&designation=P",
       "publicRecordUrl": "https://www.fec.gov/data/candidate/H2NV04011/?cycle=2026&election_full=true",
-      "retrievedAt": "2026-09-07T21:50:29.677Z",
-      "documentSha256": "6f7730544e23cd4fe451b699634b0e0af3cd73db7572b38ab542725a32091d30",
+      "retrievedAt": "2026-10-18T16:52:56.017Z",
+      "documentSha256": "980414a576ea2a18457ff98389498b7782e95c193097113b8c1b491d8c1de6cb",
       "coverageLabel": "Phase 5 federal campaign-finance vertical slice",
       "parserVersion": "fec-candidate-totals-v1",
       "validationState": "source-verified"
