@@ -45,7 +45,7 @@ jobs:
           if-no-files-found: ignore
       - name: Open, update, or resolve the source-health incident
         if: always()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           REPOSITORY_RESULT: ${{ steps.repository_health.outcome }}
           PRODUCTION_RESULT: ${{ steps.production_health.outcome }}
